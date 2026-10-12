@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Google Fonts ──────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+
+/* ── CSS Variables ─────────────────────────────────────────────── */
+:root {
+  --bg:          #0A0E1A;
+  --bg2:         #0F1525;
+  --bg3:         #141C30;
+  --bg4:         #1A2540;
+
+  --ink:         #E8F0FF;
+  --ink-light:   #A8B8D8;
+  --ink-faint:   #5A6A8A;
+
+  --accent:      #00D4FF;
+  --accent-dim:  #0EA5E9;
+  --accent-glow: rgba(0, 212, 255, 0.18);
+  --accent-bg:   rgba(0, 212, 255, 0.08);
+
+  --cyan:        #00D4FF;
+  --cyan-bg:     rgba(0, 212, 255, 0.08);
+
+  --purple:      #8B5CF6;
+  --purple-bg:   rgba(139, 92, 246, 0.1);
+
+  --amber:       #F59E0B;
+  --amber-bg:    rgba(245, 158, 11, 0.1);
+
+  --danger:      #F87171;
+  --danger-bg:   rgba(248, 113, 113, 0.1);
+
+  --border:      rgba(255, 255, 255, 0.08);
+  --border-str:  rgba(255, 255, 255, 0.16);
+  --border-acc:  rgba(0, 212, 255, 0.35);
+
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-xl:   18px;
+
+  --nav-height:  60px;
+}
+
+/* ── Base reset ────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* Site-wide default font size bumped +1% (from 16px to ~16.16px)
+     so all rem/em-based text reads slightly larger by default. */
+  font-size: 101%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Typography ────────────────────────────────────────────────── */
+/* Site-wide: sans-serif only. Both the custom "display" heading font
+   and Tailwind's built-in "font-serif" utility are pointed at the
+   same DM Sans stack as body text, rather than the Fraunces serif
+   that was here before — this one rule covers every component that
+   uses className="font-display" or className="font-serif" without
+   needing to touch each of them individually. */
+.font-display,
+.font-serif {
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 5px; height: 5px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: rgba(255,255,255,0.10); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0,212,255,0.30); }
+
+/* ── Focus ring ────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── Selection ─────────────────────────────────────────────────── */
+::selection {
+  background: rgba(0, 212, 255, 0.25);
+  color: var(--ink);
+}
+
+/* ── Utility classes used across components ────────────────────── */
+@layer components {
+
+  /* Neon glow text */
+  .text-glow {
+    text-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+  }
+
+  /* Accent gradient – logo-matched */
+  .gradient-accent {
+    background: linear-gradient(135deg, #135BEC, #00D4FF);
+  }
+
+  /* Animated underline for nav links */
+  .nav-link-underline {
+    position: relative;
+  }
+  .nav-link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: var(--accent);
+    transition: width 0.2s ease;
+    box-shadow: 0 0 8px rgba(0,212,255,0.6);
+  }
+  .nav-link-underline:hover::after,
+  .nav-link-underline[aria-current='page']::after {
+    width: 100%;
+  }
+
+  /* Glass card */
+  .glass-card {
+    background: rgba(15, 21, 37, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-str);
+  }
+
+  /* Ambient glow overlay (hero bg) */
+  .hero-ambient {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 800px 400px at 50% -10%, rgba(0,212,255,0.10) 0%, transparent 70%),
+      radial-gradient(ellipse 600px 300px at 80% 40%,  rgba(0,212,255,0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 400px 300px at 20% 60%,  rgba(139,92,246,0.05) 0%, transparent 70%);
+  }
+
+  /* Dot-grid texture */
+  .dot-grid {
+    background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
+
+/* ── Page transition ───────────────────────────────────────────── */
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter {
+  animation: pageIn 0.25s cubic-bezier(0.22, 0.68, 0, 1.1) both;
+}

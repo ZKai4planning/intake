@@ -1,0 +1,49 @@
+graph TD
+    QS["<b>questionSlots.ts</b><br/>QUESTION_SLOTS<br/>id · prompt · options"]
+
+    QS -->|"slot ids + option values"| ROUTE
+    QS -->|"same schema"| ENGINE
+
+    subgraph SERVER["/api/chat/ask/route.ts"]
+        ROUTE["RESOLVABLE_SLOTS<br/>+ resolve_answer tool<br/>+ lookup_council tool"]
+        HANDLER["runResolveAnswer()<br/>validates value against<br/>slot.options"]
+        ROUTE --> HANDLER
+    end
+
+    ROUTE -->|"tool schema, built from<br/>slot prompts"| SKILL["<b>chatSkill.ts</b><br/>CHAT_FUNNEL_SKILL prompt"]
+    SKILL -->|"conversation + tool defs"| GROQ["Groq LLM"]
+    GROQ -->|"tool_calls:<br/>lookup_council, resolve_answer"| HANDLER
+    HANDLER -->|"reply, resolvedPostcode,<br/>resolvedSlots"| ANSWERS
+
+    ANSWERS["<b>chatAnswers.ts</b><br/>generateAnswerRemote()<br/>RemoteAnswerResult"]
+    ANSWERS -->|"one object,<br/>every call site"| APPLY
+
+    subgraph HOOK["useReportChatFlow.ts"]
+        APPLY["applyResolvedAnswer()<br/>← single funnel point"]
+        SLOTS["handleResolvedSlots()<br/>guard: activeQuestionRef"]
+        POSTCODE["handleResolvedPostcode()<br/>guard: reportLaunchedRef"]
+        AREF[("answersRef.current")]
+        QREF[("queueRef.current<br/>pending questions")]
+
+        APPLY --> SLOTS
+        APPLY --> POSTCODE
+        SLOTS -->|"merge"| AREF
+        SLOTS -->|"filter out slots<br/>just answered"| QREF
+        POSTCODE -->|"merge + startReportFlow()"| AREF
+    end
+
+    subgraph ENGINEBOX["questionEngine.ts"]
+        ENGINE["getTailoredQuestions()<br/>filters q.id in answers"]
+    end
+
+    AREF -->|"answers param"| ENGINE
+    ENGINE -->|"remaining questions"| QREF
+    QREF -->|"advanceQueue()"| UI["<b>ReportChatFlow.tsx</b><br/>QuestionBubble / NumberedCard"]
+    UI -->|"tap / type"| APPLY
+
+    classDef source fill:#1F2937,color:#fff,stroke:#1F2937
+    classDef gotcha fill:#FDECEA,color:#7A1F1A,stroke:#E8998E
+    classDef hub fill:#E9F7EF,color:#1B4332,stroke:#95D5B2
+    class QS source
+    class APPLY hub
+    class HANDLER,SLOTS gotcha

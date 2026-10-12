@@ -1,0 +1,1 @@
+export { IntentConfirmation } from './IntentConfirmation'
