@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Home, List } from 'lucide-react'
 import { cn } from '@/lib/cn'
 import {
@@ -12,7 +12,8 @@ import {
   isAnswered,
   visibleQuestions,
 } from '@/lib/intake/projectTypes'
-import type { IntakeMore, IntakePlanning, IntakeProperty } from '@/lib/intake/types'
+import { hasPreview } from '@/lib/intake/footprint'
+import type { IntakeMore, IntakePlanning, IntakeProperty, SiteFit } from '@/lib/intake/types'
 import { ExtensionPreview } from '../ExtensionPreview'
 import { QuestionField } from '../QuestionField'
 import { IDLE, SELECTED, StepActions, StepCard } from '../ui'
@@ -32,6 +33,7 @@ interface Props {
  */
 export function TellMoreCard({ property, planning, value, onChange, onBack, onNext }: Props) {
   const [tried, setTried] = useState(false)
+  const [askProceed, setAskProceed] = useState(false)
   const category = getCategory(planning.categoryId)
 
   // Make sure subtypeId is always valid for the current category.
@@ -45,6 +47,23 @@ export function TellMoreCard({ property, planning, value, onChange, onBack, onNe
   const set = useMemo(() => getQuestionSet(planning.categoryId, validSubtype, planning.routeKnown), [planning.categoryId, validSubtype, planning.routeKnown])
   const questions = visibleQuestions(set, value.answers)
 
+  // Latest value for the async fit callback (avoids writing a stale draft back).
+  const latest = useRef(value)
+  latest.current = value
+  const onFit = (fit: SiteFit | null) => {
+    const cur = latest.current
+    if (JSON.stringify(cur.fit ?? null) === JSON.stringify(fit)) return
+    onChange({ ...cur, subtypeId: validSubtype, fit })
+  }
+  // Types of work with no preview must not keep an old result.
+  const previewable = hasPreview(planning.categoryId, validSubtype)
+  useEffect(() => {
+    if (!previewable && latest.current.fit) onChange({ ...latest.current, fit: null })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [previewable])
+  // A changed result re-arms the warning.
+  useEffect(() => setAskProceed(false), [value.fit?.status, value.fit?.message])
+
   const setAnswer = (id: string, v: string) => onChange({ ...value, subtypeId: validSubtype, answers: { ...value.answers, [id]: v } })
 
   function submit(e: React.FormEvent) {
@@ -53,6 +72,11 @@ export function TellMoreCard({ property, planning, value, onChange, onBack, onNe
     if (missing) {
       setTried(true)
       requestAnimationFrame(() => document.querySelector(`[data-qid="${missing.id}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' }))
+      return
+    }
+    if (previewable && value.fit?.status === 'collision' && !askProceed) {
+      setAskProceed(true)
+      requestAnimationFrame(() => document.querySelector('[data-testid="extension-preview"]')?.scrollIntoView({ behavior: 'smooth', block: 'center' }))
       return
     }
     onNext()
@@ -110,7 +134,7 @@ export function TellMoreCard({ property, planning, value, onChange, onBack, onNe
         </div>
 
         {/* Live preview of the proposal on the map / aerial photo (extensions, outbuildings, garages) */}
-        <ExtensionPreview property={property} planning={planning} more={{ ...value, subtypeId: validSubtype }} className="mt-4" />
+        <ExtensionPreview property={property} planning={planning} more={{ ...value, subtypeId: validSubtype }} onFit={onFit} className="mt-4" />
 
         {/* Dynamic questions */}
         <div className="mt-5 space-y-5" key={`${planning.categoryId}-${validSubtype}-${planning.routeKnown}`}>
@@ -125,6 +149,16 @@ export function TellMoreCard({ property, planning, value, onChange, onBack, onNe
             />
           ))}
         </div>
+
+        {askProceed && value.fit?.status === 'collision' && (
+          <div role="alert" className="mt-5 rounded-xl border border-[#EF4444]/40 bg-[#EF4444]/10 p-3.5 text-[13px] text-[#FCA5A5]">
+            <p className="font-semibold">Your plan appears to clash with a neighbouring building.</p>
+            <p className="mt-1 text-[#FCA5A5]/90">Change the size above, or carry on if you think the map is wrong — we’ll flag it for a planning check.</p>
+            <button type="button" onClick={onNext} className="mt-2.5 rounded-full border border-[#EF4444]/50 px-4 py-1.5 text-[12.5px] font-semibold text-[#FCA5A5] hover:bg-[#EF4444]/15">
+              Continue anyway
+            </button>
+          </div>
+        )}
 
         <StepActions onBack={onBack} />
       </form>

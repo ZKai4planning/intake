@@ -64,10 +64,25 @@ export interface IntakePlanning {
   routeKnown: 'yes' | 'no'
 }
 
+export interface SiteFit {
+  /** ok = no clash found · tight = very close to a neighbour · collision = overlaps a neighbouring building · unknown = couldn't check */
+  status: 'ok' | 'tight' | 'collision' | 'unknown'
+  /** Plain-English result, shown to the person and saved with the project. */
+  message: string
+  /** Largest size (metres) that would still fit, when a clash was found. */
+  maxFit?: { label: string; value: number } | null
+  /** "Map checks" list (neighbouring buildings + registered title boundary), same wording as the planning engine. */
+  items?: { status: 'fail' | 'warn' | 'pass' | 'info'; message: string }[]
+  /** Registered title boundary result. 'crosses' = the proposal sticks out beyond it. */
+  boundary?: { status: 'inside' | 'crosses' | 'unavailable' | 'unreliable'; outsideM2: number; maxOutsideM: number } | null
+}
+
 export interface IntakeMore {
   subtypeId: string | null
   /** question id → answer. See projectTypes.ts for the value formats. */
   answers: Record<string, string>
+  /** Result of checking the proposal against neighbouring buildings (live preview). */
+  fit?: SiteFit | null
 }
 
 export interface IntakeDraft {

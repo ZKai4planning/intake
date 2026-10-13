@@ -93,12 +93,13 @@ export function buildPreview(
       case 'wrap': {
         const d = num('wrap.depth', 3)
         const w = num('wrap.width', 2.5)
-        const a = W / 2
-        const b = W / 2 + w.v
-        const pts = side > 0
-          ? [P(a, D / 2 - 1), P(b, D / 2 - 1), P(b, -D / 2 - d.v), P(-a, -D / 2 - d.v), P(-a, -D / 2), P(a, -D / 2)]
-          : [P(-a, D / 2 - 1), P(-b, D / 2 - 1), P(-b, -D / 2 - d.v), P(a, -D / 2 - d.v), P(a, -D / 2), P(-a, -D / 2)]
-        return { existing, complete: d.known && w.known, label: `Wraparound · ${m1(d.v)} m rear, ${m1(w.v)} m side`, proposed: [pts] }
+                // Two rectangles (rear part + side part) so each polygon is convex.
+        const u0 = side > 0 ? -W / 2 : -W / 2 - w.v
+        const u1 = side > 0 ? W / 2 + w.v : W / 2
+        const su0 = side > 0 ? W / 2 : -W / 2 - w.v
+        const su1 = side > 0 ? W / 2 + w.v : -W / 2
+        const pts = [rect(u0, u1, -D / 2 - d.v, -D / 2), rect(su0, su1, -D / 2, D / 2 - 1)]
+        return { existing, complete: d.known && w.known, label: `Wraparound · ${m1(d.v)} m rear, ${m1(w.v)} m side`, proposed: pts }
       }
       case 'porch': {
         const p = num('porch.projection', 1.5)

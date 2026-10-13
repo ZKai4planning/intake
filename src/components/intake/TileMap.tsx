@@ -34,6 +34,13 @@ function worldPixel(lng: number, lat: number, zoom: number) {
   return { x, y }
 }
 
+/** lng/lat → TileMap viewBox coordinates, for a map centred on (lat0, lng0) at `zoom`. */
+export function projectToView(lat0: number, lng0: number, zoom: number, lng: number, lat: number): { x: number; y: number } {
+  const c = worldPixel(lng0, lat0, zoom)
+  const p = worldPixel(lng, lat, zoom)
+  return { x: MAP_W / 2 + (p.x - c.x), y: MAP_H / 2 + (p.y - c.y) }
+}
+
 interface Props {
   lat: number
   lng: number

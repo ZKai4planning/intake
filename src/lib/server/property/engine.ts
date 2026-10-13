@@ -6,6 +6,7 @@ import type {
   SearchResponse,
 } from '@/lib/intake/propertyTypes'
 import { mockConfirm, mockSearch } from './mock'
+import { finishProposal, toEngineProposal, type EngineWorkType, type ProposalInput } from './proposalMap'
 
 /**
  * Client for the UK Planning Application Engine (the Express service in
@@ -209,4 +210,89 @@ export async function fetchMedia(applicationId: string, kind: MediaKind): Promis
 export function errorStatus(err: unknown): { status: number; message: string } {
   if (err instanceof EngineError) return { status: err.status >= 400 && err.status < 600 ? err.status : 502, message: err.message }
   return { status: 500, message: 'Something went wrong' }
+}
+
+
+// ── Proposal preview (map + Map checks computed BY THE ENGINE) ─────────────
+
+export interface EngineMapLayer {
+  id: string
+  kind: 'building' | 'existing_extension' | 'proposal' | 'plot' | 'neighbour' | string
+  label: string
+  style: string
+  status?: string
+  indicative: boolean
+  dimsText: string | null
+  /** [lng, lat] pairs, closed. */
+  ring: [number, number][]
+}
+
+export interface SiteCheckItem { status: 'fail' | 'warn' | 'pass' | 'info'; message: string }
+
+export interface ProposalPreview {
+  frame: { frontBearingDeg: number; frontSource: string; houseWidthM: number; houseDepthM: number; indicative: boolean }
+  layers: EngineMapLayer[]
+  siteChecks: {
+    items: SiteCheckItem[]
+    disclaimer: string
+    attribution: string[]
+    boundary: { status: string; outsideM2: number; maxOutsideM: number }
+    neighbours: { status: string }[]
+  }
+  frontNote: string
+  proposalLabel: string | null
+  /** Permitted-development screening, passed through untouched for later use. */
+  assessment: unknown
+}
+
+let workTypeCache: { at: number; list: EngineWorkType[] } | null = null
+
+/** The engine's own list of work types (fields, defaults, limits). Cached for 10 minutes. */
+async function workTypes(): Promise<EngineWorkType[]> {
+  if (workTypeCache && Date.now() - workTypeCache.at < 10 * 60_000) return workTypeCache.list
+  const data = await engineJson<{ types?: EngineWorkType[] }>('/api/work-types', {}, 15_000)
+  const list = data.types ?? []
+  workTypeCache = { at: Date.now(), list }
+  return list
+}
+
+/**
+ * Sends the person's answers to the engine as a proposal and returns what it computed:
+ * the map layers, the Map checks (neighbour overlap + title boundary) and the front direction.
+ * Optionally overrides which way the front faces first (the "Swap front / back" button).
+ */
+export async function previewProposal(applicationId: string, inp: ProposalInput, frontBearingDeg?: number): Promise<ProposalPreview> {
+  if (isDemoMode() || applicationId.startsWith('demo-')) throw new EngineError(503, 'Planning engine not available')
+  const mapped = toEngineProposal(inp)
+  if (!mapped) throw new EngineError(400, 'No preview for this type of work')
+  const wt = (await workTypes()).find(w => w.type === mapped.type)
+  if (!wt) throw new EngineError(502, 'The planning engine does not offer this type of work')
+
+  const id = encodeURIComponent(applicationId)
+  const json = { 'Content-Type': 'application/json' }
+  if (frontBearingDeg !== undefined) {
+    await engineJson(`/api/applications/${id}/profile`, { method: 'PATCH', headers: json, body: JSON.stringify({ frontBearingDeg }) }, 30_000)
+  }
+  const s = await engineJson<{
+    map: { frame: ProposalPreview['frame']; layers: EngineMapLayer[]; siteChecks: ProposalPreview['siteChecks']; frontNote: string }
+    assessment?: unknown
+  }>(`/api/applications/${id}/proposal`, { method: 'PUT', headers: json, body: JSON.stringify(finishProposal(wt, mapped.values)) }, 45_000)
+
+  const layers = s.map.layers.map(l => ({
+    id: l.id, kind: l.kind, label: l.label, style: l.style, status: l.status, indicative: !!l.indicative, dimsText: l.dimsText ?? null, ring: l.ring,
+  }))
+  return {
+    frame: s.map.frame,
+    layers,
+    siteChecks: {
+      items: s.map.siteChecks.items,
+      disclaimer: s.map.siteChecks.disclaimer,
+      attribution: s.map.siteChecks.attribution ?? [],
+      boundary: s.map.siteChecks.boundary,
+      neighbours: s.map.siteChecks.neighbours.map(n => ({ status: n.status })),
+    },
+    frontNote: s.map.frontNote,
+    proposalLabel: layers.find(l => l.kind === 'proposal')?.label ?? null,
+    assessment: s.assessment ?? null,
+  }
 }

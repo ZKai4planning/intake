@@ -5,6 +5,7 @@ import type {
   SearchResponse,
 } from './propertyTypes'
 import type { IntakeProperty } from './types'
+import type { EnginePreview } from './engineMap'
 
 /** Browser-side calls to /api/property/*. Never throws — errors come back as { error }. */
 
@@ -70,5 +71,21 @@ export function toIntakeProperty(r: ConfirmResponse): IntakeProperty {
     manual: r.manual,
     demo: r.demo,
     confirmed: false,
+  }
+}
+
+/** Asks the planning engine (via our server) to draw + check the proposal. Never throws. */
+export async function fetchEnginePreview(
+  body: { applicationId: string; categoryId: string; subtypeId: string | null; answers: Record<string, string>; flip: boolean; frontBearingDeg?: number },
+  signal?: AbortSignal,
+): Promise<{ data: EnginePreview } | { error: string }> {
+  try {
+    const res = await fetch('/api/property/proposal', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal })
+    const json = await res.json().catch(() => null)
+    if (!res.ok || !json?.layers) return { error: json?.message ?? 'Preview unavailable' }
+    return { data: json as EnginePreview }
+  } catch (err) {
+    if (err instanceof DOMException && err.name === 'AbortError') return { error: 'aborted' }
+    return { error: 'Preview unavailable' }
   }
 }

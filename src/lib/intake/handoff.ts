@@ -53,6 +53,7 @@ export async function claimIntakeIntoDraft(): Promise<{ draftId: string; actorId
   const description = [
     summary.subtype ? `${summary.category} — ${summary.subtype}` : summary.category,
     ...summary.lines.map(l => `${l.label}: ${l.value}`),
+    ...(more.fit && (more.fit.status === 'collision' || more.fit.status === 'tight') ? [`Site check: ${more.fit.message}`] : []),
   ].join('. ')
 
   const answers: Record<string, QuestionAnswer> = {

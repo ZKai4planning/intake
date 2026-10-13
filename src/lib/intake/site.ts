@@ -25,6 +25,11 @@ export interface Site {
   bearing: number
   /** True when the front was worked out from a nearby road. */
   fromRoad: boolean
+  /** Outlines of the other buildings nearby (next door, behind, opposite). */
+  neighbours: Pt[][]
+  /** HM Land Registry title boundary containing the house (indicative, NOT the legal boundary), or null. */
+  plot: Pt[] | null
+  plotAreaM2: number | null
 }
 
 export function toLocal(origin: LatLng, p: LatLng): Pt {
@@ -66,6 +71,12 @@ export function minAreaRect(poly: Pt[]) {
   }
 }
 
+function polyArea(p: Pt[]): number {
+  let a = 0
+  for (let i = 0; i < p.length; i++) { const q = p[(i + 1) % p.length]; a += p[i].x * q.y - q.x * p[i].y }
+  return a / 2
+}
+
 function distToSegment(p: Pt, a: Pt, b: Pt): number {
   const dx = b.x - a.x, dy = b.y - a.y
   const l2 = dx * dx + dy * dy
@@ -73,7 +84,7 @@ function distToSegment(p: Pt, a: Pt, b: Pt): number {
   return Math.hypot(p.x - (a.x + t * dx), p.y - (a.y + t * dy))
 }
 
-export function deriveSite(origin: LatLng, outlineLL: LatLng[], roadsLL: LatLng[][]): Site | null {
+export function deriveSite(origin: LatLng, outlineLL: LatLng[], roadsLL: LatLng[][], neighboursLL: LatLng[][] = [], plotLL: LatLng[] | null = null): Site | null {
   const outline = outlineLL.map(p => toLocal(origin, p))
   // OSM closes polygons by repeating the first point.
   if (outline.length > 1 && Math.hypot(outline[0].x - outline[outline.length - 1].x, outline[0].y - outline[outline.length - 1].y) < 0.01) outline.pop()
@@ -112,5 +123,18 @@ export function deriveSite(origin: LatLng, outlineLL: LatLng[], roadsLL: LatLng[
 
   // `pick.ext` is the extent measured along the front direction = the house's depth.
   const bearing = ((Math.atan2(pick.dir.x, -pick.dir.y) * 180) / Math.PI + 360) % 360
-  return { outline, center: rect.center, width: pick.across, depth: pick.ext, bearing, fromRoad }
+  const neighbours = neighboursLL
+    .map(n => {
+      const pts = n.map(p => toLocal(origin, p))
+      if (pts.length > 1 && Math.hypot(pts[0].x - pts[pts.length - 1].x, pts[0].y - pts[pts.length - 1].y) < 0.01) pts.pop()
+      return pts
+    })
+    .filter(n => n.length >= 3)
+  let plot: Pt[] | null = null
+  if (plotLL && plotLL.length >= 4) {
+    plot = plotLL.map(p => toLocal(origin, p))
+    if (Math.hypot(plot[0].x - plot[plot.length - 1].x, plot[0].y - plot[plot.length - 1].y) < 0.01) plot.pop()
+    if (plot.length < 3) plot = null
+  }
+  return { outline, center: rect.center, width: pick.across, depth: pick.ext, bearing, fromRoad, neighbours, plot, plotAreaM2: plot ? Math.abs(polyArea(plot)) : null }
 }
