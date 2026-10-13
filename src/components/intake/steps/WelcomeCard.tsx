@@ -32,11 +32,24 @@ export function WelcomeCard({ onStart }: { onStart?: () => void }) {
 
       {/* House photo from the design */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/intake/welcome-house.jpg"
-        alt="A welcoming home at dusk"
-        className="mt-5 h-[150px] w-full rounded-xl border border-white/10 object-cover"
-      />
+      
+{/* Welcome house image */}
+<div className="relative mt-5 w-full overflow-hidden rounded-2xl border border-white/10 bg-[#0F1525]">
+  <div className="relative aspect-[16/7] w-full">
+    <img
+      src="/intake/welcome-house.png"
+      alt="A welcoming home at dusk"
+      className="absolute inset-0 h-full w-full object-contain sm:object-cover object-center"
+    />
+    <div className="pointer-events-none absolute inset-0 backdrop-blur-[1px] opacity-20" />
+    {/* Soft atmospheric blending */}
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0F1525]/45 via-transparent to-[#0F1525]/10" />
+
+    {/* Subtle edge blending */}
+    <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_24px_rgba(15,21,37,0.25)]" />
+  </div>
+</div>
+
 
       {onStart && (
         <Button type="button" size="lg" fullWidth className="mt-6 rounded-full" onClick={onStart} rightIcon={<ArrowRight className="h-4 w-4" />}>

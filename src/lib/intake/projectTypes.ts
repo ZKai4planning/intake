@@ -62,7 +62,7 @@ export interface Category {
 export const CATEGORIES: Category[] = [
   {
     id: 'extend',
-    image: '/intake/extend.jpg',
+    image: '/intake/extend.png',
     label: 'Extend a property',
     icon: 'expand',
     subtypeLabel: 'What are you extending?',
@@ -76,7 +76,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: 'convert',
-    image: '/intake/convert.jpg',
+    image: '/intake/convert.png',
     label: 'Convert or alter part of a property',
     icon: 'layers',
     subtypeLabel: 'What are you converting?',
@@ -88,7 +88,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: 'build',
-    image: '/intake/build.jpg',
+    image: '/intake/build.png',
     label: 'Build something new',
     icon: 'hammer',
     subtypeLabel: 'What are you building?',
@@ -100,7 +100,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: 'use',
-    image: '/intake/use.jpg',
+    image: '/intake/use.png',
     label: 'Change how the property is used',
     icon: 'repeat',
     subtypeLabel: 'What will it change to?',
@@ -113,7 +113,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: 'exterior',
-    image: '/intake/exterior.jpg',
+    image: '/intake/exterior.png',
     label: 'Alter the exterior',
     note: '(windows, doors, etc.)',
     icon: 'door',
@@ -128,7 +128,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: 'access',
-    image: '/intake/access.jpg',
+    image: '/intake/access.png',
     label: 'Access, parking or boundary works',
     icon: 'car',
     subtypeLabel: 'What works are you planning?',
@@ -141,7 +141,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: 'trees',
-    image: '/intake/trees.jpg',
+    image: '/intake/trees.png',
     label: 'Works to trees or landscape',
     icon: 'tree',
     subtypeLabel: 'What kind of work?',
@@ -153,7 +153,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: 'existing',
-    image: '/intake/existing.jpg',
+    image: '/intake/existing.png',
     label: 'Something already built or changed',
     icon: 'history',
     subtypeLabel: 'What was built or changed?',
