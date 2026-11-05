@@ -47,14 +47,14 @@ export function AgentxShell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-[#0A0E1A]">
       <header className="border-b border-white/[0.08] bg-[#0F1525] px-6 py-3.5 flex items-center justify-between">
         <Link href="/agentx/users" className="flex items-baseline gap-2">
-          <span className="text-[11px] font-semibold tracking-wide text-[#5A6A8A] uppercase">AI4Planning</span>
-          <span className="text-[14.5px] font-semibold text-[#E8F0FF]">Agent portal</span>
+          <span className="text-[12.5px] font-semibold tracking-wide text-[#5A6A8A] uppercase">AI4Planning</span>
+          <span className="text-[16px] font-semibold text-[#E8F0FF]">Agent portal</span>
         </Link>
         <div className="flex items-center gap-4">
-          <span className="text-[12.5px] text-[#5A6A8A]">{agent?.email}</span>
+          <span className="text-[14px] text-[#5A6A8A]">{agent?.email}</span>
           <button
             onClick={handleLogout}
-            className="px-3 py-1.5 rounded-[8px] text-[13px] font-medium text-[#A8B8D8] hover:text-[#F87171] hover:bg-white/[0.05] transition-colors"
+            className="px-3 py-1.5 rounded-[8px] text-[14.5px] font-medium text-[#A8B8D8] hover:text-[#F87171] hover:bg-white/[0.05] transition-colors"
           >
             Sign out
           </button>

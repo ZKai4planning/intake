@@ -44,12 +44,12 @@
 //   }, [draftId])
 
 //   if (project === undefined) {
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 //   }
 
 //   if (!project) {
 //     if (typeof window !== 'undefined') router.replace('/dashboard/new/intent')
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 //   }
 
 //   function handleFindAddress() {
@@ -95,22 +95,22 @@
 //     <div className="max-w-[560px] mx-auto">
 //       <button
 //         onClick={() => router.push(`/dashboard/new/${draftId}`)}
-//         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+//         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 //       >
 //         ← Back
 //       </button>
 
-//       <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
+//       <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
 //         Step 3 of 4 · Location &amp; address
 //       </p>
-//       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-2">Where is the property?</h1>
-//       <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed mb-6">
+//       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-2">Where is the property?</h1>
+//       <p className="text-[15px] text-[#A8B8D8] leading-relaxed mb-6">
 //         Your postcode lets us automatically check planning constraints — conservation areas,
 //         listed buildings, Article&nbsp;4 directions, flood zones, and more.
 //       </p>
 
 //       <div className="space-y-2.5 mb-4">
-//         <label className="text-[13.5px] font-semibold text-[#E8F0FF]">Property postcode</label>
+//         <label className="text-[15px] font-semibold text-[#E8F0FF]">Property postcode</label>
 //         <div className="flex gap-2">
 //           <input
 //             type="text"
@@ -118,7 +118,7 @@
 //             onChange={e => setPostcode(e.target.value)}
 //             placeholder="e.g. SW1A 1AA"
 //             className={cn(
-//               'flex-1 rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+//               'flex-1 rounded-[10px] px-3.5 py-2.5 text-[15px]',
 //               'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
 //               'border border-white/[0.12] outline-none transition-all',
 //               'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -128,7 +128,7 @@
 //             type="button"
 //             onClick={handleFindAddress}
 //             disabled={!postcode.trim()}
-//             className="px-4 py-2.5 rounded-[10px] text-[13.5px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
+//             className="px-4 py-2.5 rounded-[10px] text-[15px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
 //           >
 //             🔍 Find address
 //           </button>
@@ -137,7 +137,7 @@
 
 //       {options && (
 //         <div className="space-y-2.5 mb-6">
-//           <label className="text-[13.5px] font-semibold text-[#E8F0FF]">Select your address</label>
+//           <label className="text-[15px] font-semibold text-[#E8F0FF]">Select your address</label>
 //           <div className="space-y-2">
 //             {options.map(opt => (
 //               <button
@@ -145,7 +145,7 @@
 //                 type="button"
 //                 onClick={() => handleSelectAddress(opt)}
 //                 className={cn(
-//                   'w-full text-left px-3.5 py-3 rounded-[10px] border text-[13.5px] transition-colors',
+//                   'w-full text-left px-3.5 py-3 rounded-[10px] border text-[15px] transition-colors',
 //                   selected?.id === opt.id
 //                     ? 'border-[#135BEC] bg-[rgba(19,91,236,0.07)] text-[#E8F0FF]'
 //                     : 'border-white/[0.12] bg-[#141C30] text-[#A8B8D8] hover:border-white/[0.24] hover:text-[#E8F0FF]'
@@ -163,10 +163,10 @@
 //           <div className="flex items-center gap-3 mb-3">
 //             <span className="text-xl" aria-hidden="true">📍</span>
 //             <div>
-//               <p className="text-[13.5px] font-semibold text-[#E8F0FF]">
+//               <p className="text-[15px] font-semibold text-[#E8F0FF]">
 //                 {selected.line1}, {selected.city}, {selected.postcode}
 //               </p>
-//               <p className="text-[12px] text-[#5A6A8A] mt-0.5">{councilFor(selected.postcode)}</p>
+//               <p className="text-[13.5px] text-[#5A6A8A] mt-0.5">{councilFor(selected.postcode)}</p>
 //             </div>
 //           </div>
 //           <div className="flex flex-wrap gap-1.5">
@@ -179,12 +179,12 @@
 
 //       {selected && (
 //         <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-//           <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3">
+//           <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3">
 //             Planning constraint check — running automatically
 //           </p>
 
 //           {checking && (
-//             <p className="text-[13px] text-[#5A6A8A] py-2 inline-flex items-center gap-2">
+//             <p className="text-[14.5px] text-[#5A6A8A] py-2 inline-flex items-center gap-2">
 //               <Spinner /> Checking planning.data.gov.uk &amp; Environment Agency…
 //             </p>
 //           )}
@@ -200,7 +200,7 @@
 //               {constraints.some(c => c.status === 'warning') && (
 //                 <div className="flex items-start gap-2.5 rounded-[10px] border border-[#F59E0B]/30 bg-[rgba(245,158,11,0.08)] p-3 mb-4">
 //                   <span className="text-[#F59E0B] shrink-0" aria-hidden="true">⚠</span>
-//                   <p className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+//                   <p className="text-[14px] text-[#A8B8D8] leading-relaxed">
 //                     A constraint that may restrict some works was detected. We&rsquo;ll factor this into your snapshot now.
 //                   </p>
 //                 </div>
@@ -210,7 +210,7 @@
 //                 type="button"
 //                 onClick={handleGenerateSnapshot}
 //                 disabled={isSaving}
-//                 className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed"
+//                 className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed"
 //               >
 //                 {isSaving ? 'Saving…' : 'Generate my free snapshot →'}
 //               </button>
@@ -226,7 +226,7 @@
 //   return (
 //     <span
 //       className={cn(
-//         'inline-flex items-center px-2.5 py-1 rounded-full text-[11.5px] font-medium border',
+//         'inline-flex items-center px-2.5 py-1 rounded-full text-[13px] font-medium border',
 //         tone === 'warning'
 //           ? 'bg-[rgba(245,158,11,0.1)] border-[#F59E0B]/30 text-[#FCD34D]'
 //           : 'bg-[rgba(19,91,236,0.08)] border-[#135BEC]/30 text-[#135BEC]'
@@ -306,12 +306,12 @@ export default function AddressCheckPage() {
   }, [draftId])
 
   if (project === undefined) {
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
   }
 
   if (!project) {
     if (typeof window !== 'undefined') router.replace('/dashboard/new/intent')
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
   }
 
   function handleFindAddress() {
@@ -366,22 +366,22 @@ export default function AddressCheckPage() {
     <div className="max-w-[560px] mx-auto">
       <button
         onClick={() => router.push(`/dashboard/new/${draftId}`)}
-        className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+        className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
       >
         ← Back
       </button>
 
-      <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
+      <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
         Step 3 of 4 · Location &amp; address
       </p>
-      <h1 className="font-display text-[26px] text-[#E8F0FF] mb-2">Where is the property?</h1>
-      <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed mb-6">
+      <h1 className="font-display text-[29px] text-[#E8F0FF] mb-2">Where is the property?</h1>
+      <p className="text-[15px] text-[#A8B8D8] leading-relaxed mb-6">
         Your postcode lets us automatically check planning constraints — conservation areas,
         listed buildings, Article&nbsp;4 directions, flood zones, and more.
       </p>
 
       <div className="space-y-2.5 mb-4">
-        <label className="text-[13.5px] font-semibold text-[#E8F0FF]">Property postcode</label>
+        <label className="text-[15px] font-semibold text-[#E8F0FF]">Property postcode</label>
         <div className="flex gap-2">
           <input
             type="text"
@@ -389,7 +389,7 @@ export default function AddressCheckPage() {
             onChange={e => setPostcode(e.target.value)}
             placeholder="e.g. SW1A 1AA"
             className={cn(
-              'flex-1 rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+              'flex-1 rounded-[10px] px-3.5 py-2.5 text-[15px]',
               'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
               'border border-white/[0.12] outline-none transition-all',
               'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -399,7 +399,7 @@ export default function AddressCheckPage() {
             type="button"
             onClick={handleFindAddress}
             disabled={!postcode.trim()}
-            className="px-4 py-2.5 rounded-[10px] text-[13.5px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
+            className="px-4 py-2.5 rounded-[10px] text-[15px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
           >
             🔍 Find address
           </button>
@@ -408,7 +408,7 @@ export default function AddressCheckPage() {
 
       {options && (
         <div className="space-y-2.5 mb-6">
-          <label className="text-[13.5px] font-semibold text-[#E8F0FF]">Select your address</label>
+          <label className="text-[15px] font-semibold text-[#E8F0FF]">Select your address</label>
           <div className="space-y-2">
             {options.map(opt => (
               <button
@@ -416,7 +416,7 @@ export default function AddressCheckPage() {
                 type="button"
                 onClick={() => handleSelectAddress(opt)}
                 className={cn(
-                  'w-full text-left px-3.5 py-3 rounded-[10px] border text-[13.5px] transition-colors',
+                  'w-full text-left px-3.5 py-3 rounded-[10px] border text-[15px] transition-colors',
                   selected?.id === opt.id
                     ? 'border-[#135BEC] bg-[rgba(19,91,236,0.07)] text-[#E8F0FF]'
                     : 'border-white/[0.12] bg-[#141C30] text-[#A8B8D8] hover:border-white/[0.24] hover:text-[#E8F0FF]'
@@ -434,10 +434,10 @@ export default function AddressCheckPage() {
           <div className="flex items-center gap-3 mb-3">
             <span className="text-xl" aria-hidden="true">📍</span>
             <div>
-              <p className="text-[13.5px] font-semibold text-[#E8F0FF]">
+              <p className="text-[15px] font-semibold text-[#E8F0FF]">
                 {selected.line1}, {selected.city}, {selected.postcode}
               </p>
-              <p className="text-[12px] text-[#5A6A8A] mt-0.5">{council ?? '…'}</p>
+              <p className="text-[13.5px] text-[#5A6A8A] mt-0.5">{council ?? '…'}</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-1.5">
@@ -450,12 +450,12 @@ export default function AddressCheckPage() {
 
       {selected && (
         <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-          <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3">
+          <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3">
             Planning constraint check — running automatically
           </p>
 
           {checking && (
-            <p className="text-[13px] text-[#5A6A8A] py-2 inline-flex items-center gap-2">
+            <p className="text-[14.5px] text-[#5A6A8A] py-2 inline-flex items-center gap-2">
               <Spinner /> Checking planning.data.gov.uk &amp; Environment Agency…
             </p>
           )}
@@ -471,7 +471,7 @@ export default function AddressCheckPage() {
               {constraints.some(c => c.status === 'warning') && (
                 <div className="flex items-start gap-2.5 rounded-[10px] border border-[#F59E0B]/30 bg-[rgba(245,158,11,0.08)] p-3 mb-4">
                   <span className="text-[#F59E0B] shrink-0" aria-hidden="true">⚠</span>
-                  <p className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+                  <p className="text-[14px] text-[#A8B8D8] leading-relaxed">
                     A constraint that may restrict some works was detected. We&rsquo;ll factor this into your snapshot now.
                   </p>
                 </div>
@@ -480,7 +480,7 @@ export default function AddressCheckPage() {
               {dataSource === 'estimate' && dataNote && (
                 <div className="flex items-start gap-2.5 rounded-[10px] border border-white/[0.12] bg-white/[0.03] p-3 mb-4">
                   <span className="text-[#5A6A8A] shrink-0" aria-hidden="true">ⓘ</span>
-                  <p className="text-[12px] text-[#5A6A8A] leading-relaxed">{dataNote}</p>
+                  <p className="text-[13.5px] text-[#5A6A8A] leading-relaxed">{dataNote}</p>
                 </div>
               )}
 
@@ -488,7 +488,7 @@ export default function AddressCheckPage() {
                 type="button"
                 onClick={handleGenerateSnapshot}
                 disabled={isSaving}
-                className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {isSaving ? 'Saving…' : 'Generate my free snapshot →'}
               </button>
@@ -504,7 +504,7 @@ function Chip({ label, tone }: { label: string; tone: 'warning' | 'clear' }) {
   return (
     <span
       className={cn(
-        'inline-flex items-center px-2.5 py-1 rounded-full text-[11.5px] font-medium border',
+        'inline-flex items-center px-2.5 py-1 rounded-full text-[13px] font-medium border',
         tone === 'warning'
           ? 'bg-[rgba(245,158,11,0.1)] border-[#F59E0B]/30 text-[#FCD34D]'
           : 'bg-[rgba(19,91,236,0.08)] border-[#135BEC]/30 text-[#135BEC]'

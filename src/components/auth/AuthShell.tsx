@@ -83,19 +83,19 @@ export function AuthShell({
           >
             {/* Eyebrow */}
             {eyebrow && (
-              <p className="text-[11px] font-semibold tracking-[0.08em] uppercase text-[#5A6A8A] mb-3">
+              <p className="text-[12.5px] font-semibold tracking-[0.08em] uppercase text-[#5A6A8A] mb-3">
                 {eyebrow}
               </p>
             )}
 
             {/* Title */}
-            <h1 className="font-display text-[26px] sm:text-[30px] font-normal tracking-tight text-[#E8F0FF] mb-2 leading-tight">
+            <h1 className="font-display text-[29px] sm:text-[33.5px] font-normal tracking-tight text-[#E8F0FF] mb-2 leading-tight">
               {title}
             </h1>
 
             {/* Subtitle */}
             {subtitle && (
-              <p className="text-[14px] text-[#5A6A8A] mb-7 leading-relaxed">
+              <p className="text-[15.5px] text-[#5A6A8A] mb-7 leading-relaxed">
                 {subtitle}
               </p>
             )}
@@ -105,7 +105,7 @@ export function AuthShell({
 
           {/* Footer line */}
           {footerText && footerLink && (
-            <p className="mt-5 text-center text-[13px] text-[#5A6A8A]">
+            <p className="mt-5 text-center text-[14.5px] text-[#5A6A8A]">
               {footerText}{' '}
               <Link
                 href={footerLink.href}

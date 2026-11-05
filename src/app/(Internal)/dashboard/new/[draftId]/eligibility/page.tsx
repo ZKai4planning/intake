@@ -137,12 +137,12 @@
 //   }, [])
 
 //   if (project === undefined || record === null) {
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 //   }
 
 //   if (!project) {
 //     if (typeof window !== 'undefined') router.replace('/dashboard/new/intent')
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 //   }
 
 //   const step = ELIGIBILITY_STEPS[stepIndex]
@@ -263,7 +263,7 @@
 //       <div className="mx-auto max-w-[880px]">
 //         <Link
 //           href="/dashboard/reports"
-//           className="mb-4 inline-flex items-center gap-1 text-[12.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
+//           className="mb-4 inline-flex items-center gap-1 text-[14px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
 //         >
 //           <ChevronLeft className="h-3.5 w-3.5" />
 //           Back to My Reports
@@ -271,21 +271,21 @@
 
 //         <div className="mb-6 flex items-start justify-between gap-4">
 //           <div>
-//             <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#00D4FF] mb-1.5">
+//             <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#00D4FF] mb-1.5">
 //               Eligibility check
 //             </p>
-//             <h1 className="font-display text-[24px] sm:text-[28px] font-normal text-[#E8F0FF] tracking-tight">
+//             <h1 className="font-display text-[27px] sm:text-[31.5px] font-normal text-[#E8F0FF] tracking-tight">
 //               {project.title}
 //             </h1>
 //             {record.featureTitle && (
-//               <p className="mt-1 text-[12.5px] text-[#5A6A8A]">
+//               <p className="mt-1 text-[14px] text-[#5A6A8A]">
 //                 Tailored to: <span className="text-[#A8B8D8] font-medium">{record.featureTitle}</span> — only the relevant questions are shown below.
 //               </p>
 //             )}
 //           </div>
 
 //           {!alreadyComplete && saveState !== 'idle' && (
-//             <span className="shrink-0 mt-1 inline-flex items-center gap-1.5 text-[11.5px] font-medium text-[#5A6A8A]">
+//             <span className="shrink-0 mt-1 inline-flex items-center gap-1.5 text-[13px] font-medium text-[#5A6A8A]">
 //               {saveState === 'saving' ? (
 //                 <>
 //                   <Loader2 className="h-3 w-3 animate-spin" />
@@ -313,7 +313,7 @@
 //                 onClick={() => goToStep(i)}
 //                 title={visitedEmpty ? 'Visited — no answers entered yet' : undefined}
 //                 className={cn(
-//                   'flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11.5px] font-semibold transition-colors',
+//                   'flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[13px] font-semibold transition-colors',
 //                   active
 //                     ? 'border-[#135BEC] bg-[#135BEC]/10 text-[#00D4FF]'
 //                     : answered
@@ -341,17 +341,17 @@
 //             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-300 mb-4">
 //               <CheckCircle2 className="h-5 w-5" />
 //             </span>
-//             <p className="text-[15px] font-semibold text-[#E8F0FF] mb-1.5">Eligibility check submitted</p>
+//             <p className="text-[17px] font-semibold text-[#E8F0FF] mb-1.5">Eligibility check submitted</p>
 //             {record.submissionRef && (
-//               <p className="text-[12px] text-[#5A6A8A] mb-1">
+//               <p className="text-[13.5px] text-[#5A6A8A] mb-1">
 //                 Reference: <span className="font-mono text-[#A8B8D8]">{record.submissionRef}</span>
 //               </p>
 //             )}
-//             <p className="text-[13px] text-[#5A6A8A] max-w-[380px] mb-1">
+//             <p className="text-[14.5px] text-[#5A6A8A] max-w-[380px] mb-1">
 //               Submitted {new Date(record.completedAt!).toLocaleString()}. We'll be in touch about next steps for {project.title}.
 //             </p>
 //             {session?.email && (
-//               <p className="mb-6 flex items-center gap-1.5 text-[11.5px] text-[#5A6A8A]">
+//               <p className="mb-6 flex items-center gap-1.5 text-[13px] text-[#5A6A8A]">
 //                 <Mail className="h-3 w-3" />
 //                 Confirmation sent to {session.email}
 //                 <span className="text-[#5A6A8A]/70">(preview — no email actually sent yet)</span>
@@ -361,7 +361,7 @@
 //               <button
 //                 onClick={handleDownloadReceipt}
 //                 disabled={isDownloadingReceipt}
-//                 className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] border border-white/[0.12] text-[#A8B8D8] text-[13px] font-semibold hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-60"
+//                 className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] border border-white/[0.12] text-[#A8B8D8] text-[14.5px] font-semibold hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-60"
 //               >
 //                 <Download className="h-3.5 w-3.5" />
 //                 {isDownloadingReceipt ? 'Preparing…' : 'Download receipt (PDF)'}
@@ -372,7 +372,7 @@
 //                   else if (project.address && project.constraints) router.push(`/dashboard/new/${draftId}/snapshot`)
 //                   else router.push('/dashboard/reports')
 //                 }}
-//                 className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[13px] font-semibold hover:bg-[#2A6BF0] transition-colors"
+//                 className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14.5px] font-semibold hover:bg-[#2A6BF0] transition-colors"
 //               >
 //                 {project.purchase
 //                   ? 'View your report →'
@@ -385,13 +385,13 @@
 //         ) : (
 //           <>
 //             <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-6 sm:p-7">
-//               <h2 className="text-[16px] font-semibold text-[#E8F0FF] mb-1">{step.title}</h2>
-//               <p className="text-[12.5px] text-[#5A6A8A] mb-6">{step.description}</p>
+//               <h2 className="text-[18px] font-semibold text-[#E8F0FF] mb-1">{step.title}</h2>
+//               <p className="text-[14px] text-[#5A6A8A] mb-6">{step.description}</p>
 
 //               {validationErrors.length > 0 && (
 //                 <div className="mb-6 flex items-start gap-2.5 rounded-[10px] border border-red-400/25 bg-red-500/[0.06] px-3.5 py-3">
 //                   <AlertCircle className="h-4 w-4 shrink-0 mt-0.5 text-red-300" />
-//                   <p className="text-[12.5px] text-[#E8F0FF]">
+//                   <p className="text-[14px] text-[#E8F0FF]">
 //                     <span className="font-semibold">Please complete before continuing:</span> {validationErrors.join(', ')}
 //                   </p>
 //                 </div>
@@ -412,7 +412,7 @@
 //               <button
 //                 onClick={() => goToStep(Math.max(0, stepIndex - 1))}
 //                 disabled={stepIndex === 0}
-//                 className="px-4 py-2.5 rounded-[10px] text-[13px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+//                 className="px-4 py-2.5 rounded-[10px] text-[14.5px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
 //               >
 //                 ← Back
 //               </button>
@@ -421,14 +421,14 @@
 //                 <button
 //                   onClick={handleSubmit}
 //                   disabled={isSubmitting}
-//                   className="px-6 py-2.5 rounded-[10px] font-semibold text-[13.5px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] transition-colors disabled:opacity-60"
+//                   className="px-6 py-2.5 rounded-[10px] font-semibold text-[15px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] transition-colors disabled:opacity-60"
 //                 >
 //                   {isSubmitting ? 'Submitting…' : 'Submit application'}
 //                 </button>
 //               ) : (
 //                 <button
 //                   onClick={handleContinue}
-//                   className="px-6 py-2.5 rounded-[10px] font-semibold text-[13.5px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] transition-colors"
+//                   className="px-6 py-2.5 rounded-[10px] font-semibold text-[15px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] transition-colors"
 //                 >
 //                   Continue →
 //                 </button>
@@ -585,12 +585,12 @@ export default function EligibilityPage() {
   }, [])
 
   if (project === undefined || record === null) {
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
   }
 
   if (!project) {
     if (typeof window !== 'undefined') router.replace('/dashboard/new/intent')
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
   }
 
   const step = ELIGIBILITY_STEPS[stepIndex]
@@ -747,7 +747,7 @@ export default function EligibilityPage() {
       <div className="mx-auto max-w-[880px]">
         <Link
           href="/dashboard/reports"
-          className="mb-4 inline-flex items-center gap-1 text-[12.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
+          className="mb-4 inline-flex items-center gap-1 text-[14px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
         >
           <ChevronLeft className="h-3.5 w-3.5" />
           Back to My Reports
@@ -755,21 +755,21 @@ export default function EligibilityPage() {
 
         <div className="mb-6 flex items-start justify-between gap-4">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#00D4FF] mb-1.5">
+            <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#00D4FF] mb-1.5">
               Eligibility check
             </p>
-            <h1 className="font-display text-[24px] sm:text-[28px] font-normal text-[#E8F0FF] tracking-tight">
+            <h1 className="font-display text-[27px] sm:text-[31.5px] font-normal text-[#E8F0FF] tracking-tight">
               {project.title}
             </h1>
             {record.featureTitle && (
-              <p className="mt-1 text-[12.5px] text-[#5A6A8A]">
+              <p className="mt-1 text-[14px] text-[#5A6A8A]">
                 Tailored to: <span className="text-[#A8B8D8] font-medium">{record.featureTitle}</span> — only the relevant questions are shown below.
               </p>
             )}
           </div>
 
           {!alreadyComplete && saveState !== 'idle' && (
-            <span className="shrink-0 mt-1 inline-flex items-center gap-1.5 text-[11.5px] font-medium text-[#5A6A8A]">
+            <span className="shrink-0 mt-1 inline-flex items-center gap-1.5 text-[13px] font-medium text-[#5A6A8A]">
               {saveState === 'saving' ? (
                 <>
                   <Loader2 className="h-3 w-3 animate-spin" />
@@ -797,7 +797,7 @@ export default function EligibilityPage() {
                 onClick={() => goToStep(i)}
                 title={visitedEmpty ? 'Visited — no answers entered yet' : undefined}
                 className={cn(
-                  'flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11.5px] font-semibold transition-colors',
+                  'flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[13px] font-semibold transition-colors',
                   active
                     ? 'border-[#135BEC] bg-[#135BEC]/10 text-[#00D4FF]'
                     : answered
@@ -825,17 +825,17 @@ export default function EligibilityPage() {
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-300 mb-4">
               <CheckCircle2 className="h-5 w-5" />
             </span>
-            <p className="text-[15px] font-semibold text-[#E8F0FF] mb-1.5">Eligibility check submitted</p>
+            <p className="text-[17px] font-semibold text-[#E8F0FF] mb-1.5">Eligibility check submitted</p>
             {record.submissionRef && (
-              <p className="text-[12px] text-[#5A6A8A] mb-1">
+              <p className="text-[13.5px] text-[#5A6A8A] mb-1">
                 Reference: <span className="font-mono text-[#A8B8D8]">{record.submissionRef}</span>
               </p>
             )}
-            <p className="text-[13px] text-[#5A6A8A] max-w-[380px] mb-1">
+            <p className="text-[14.5px] text-[#5A6A8A] max-w-[380px] mb-1">
               Submitted {new Date(record.completedAt!).toLocaleString()}. We'll be in touch about next steps for {project.title}.
             </p>
             {session?.email && (
-              <p className="mb-6 flex items-center gap-1.5 text-[11.5px] text-[#5A6A8A]">
+              <p className="mb-6 flex items-center gap-1.5 text-[13px] text-[#5A6A8A]">
                 <Mail className="h-3 w-3" />
                 Confirmation sent to {session.email}
                 <span className="text-[#5A6A8A]/70">(preview — no email actually sent yet)</span>
@@ -845,7 +845,7 @@ export default function EligibilityPage() {
               <button
                 onClick={handleDownloadReceipt}
                 disabled={isDownloadingReceipt}
-                className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] border border-white/[0.12] text-[#A8B8D8] text-[13px] font-semibold hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-60"
+                className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] border border-white/[0.12] text-[#A8B8D8] text-[14.5px] font-semibold hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-60"
               >
                 <Download className="h-3.5 w-3.5" />
                 {isDownloadingReceipt ? 'Preparing…' : 'Download receipt (PDF)'}
@@ -856,7 +856,7 @@ export default function EligibilityPage() {
                   else if (project.address && project.constraints) router.push(`/dashboard/new/${draftId}/snapshot`)
                   else router.push('/dashboard/reports')
                 }}
-                className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[13px] font-semibold hover:bg-[#2A6BF0] transition-colors"
+                className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14.5px] font-semibold hover:bg-[#2A6BF0] transition-colors"
               >
                 {project.purchase
                   ? 'View your report →'
@@ -869,13 +869,13 @@ export default function EligibilityPage() {
         ) : (
           <>
             <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-6 sm:p-7">
-              <h2 className="text-[16px] font-semibold text-[#E8F0FF] mb-1">{step.title}</h2>
-              <p className="text-[12.5px] text-[#5A6A8A] mb-6">{step.description}</p>
+              <h2 className="text-[18px] font-semibold text-[#E8F0FF] mb-1">{step.title}</h2>
+              <p className="text-[14px] text-[#5A6A8A] mb-6">{step.description}</p>
 
               {validationErrors.length > 0 && (
                 <div className="mb-6 flex items-start gap-2.5 rounded-[10px] border border-red-400/25 bg-red-500/[0.06] px-3.5 py-3">
                   <AlertCircle className="h-4 w-4 shrink-0 mt-0.5 text-red-300" />
-                  <p className="text-[12.5px] text-[#E8F0FF]">
+                  <p className="text-[14px] text-[#E8F0FF]">
                     <span className="font-semibold">Please complete before continuing:</span> {validationErrors.join(', ')}
                   </p>
                 </div>
@@ -896,7 +896,7 @@ export default function EligibilityPage() {
               <button
                 onClick={() => goToStep(Math.max(0, stepIndex - 1))}
                 disabled={stepIndex === 0}
-                className="px-4 py-2.5 rounded-[10px] text-[13px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                className="px-4 py-2.5 rounded-[10px] text-[14.5px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 ← Back
               </button>
@@ -905,14 +905,14 @@ export default function EligibilityPage() {
                 <button
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className="px-6 py-2.5 rounded-[10px] font-semibold text-[13.5px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] transition-colors disabled:opacity-60"
+                  className="px-6 py-2.5 rounded-[10px] font-semibold text-[15px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] transition-colors disabled:opacity-60"
                 >
                   {isSubmitting ? 'Submitting…' : 'Submit application'}
                 </button>
               ) : (
                 <button
                   onClick={handleContinue}
-                  className="px-6 py-2.5 rounded-[10px] font-semibold text-[13.5px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] transition-colors"
+                  className="px-6 py-2.5 rounded-[10px] font-semibold text-[15px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] transition-colors"
                 >
                   Continue →
                 </button>

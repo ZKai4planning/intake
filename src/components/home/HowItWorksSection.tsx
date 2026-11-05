@@ -47,10 +47,10 @@
 //       <div className="max-w-[1100px] mx-auto px-5 sm:px-8">
 
 //         <div className="text-center max-w-[560px] mx-auto mb-12">
-//           <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+//           <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
 //             How it works
 //           </p>
-//           <h2 id="how-it-works-heading" className="font-display text-[28px] sm:text-[34px] font-normal text-[#E8F0FF] tracking-tight">
+//           <h2 id="how-it-works-heading" className="font-display text-[31.5px] sm:text-[38px] font-normal text-[#E8F0FF] tracking-tight">
 //             From question to answer in four steps
 //           </h2>
 //         </div>
@@ -73,13 +73,13 @@
 //               >
 //                 {step.icon}
 //               </div>
-//               <span className="text-[11px] font-mono font-semibold text-[#5A6A8A] mb-1.5 tracking-wider">
+//               <span className="text-[12.5px] font-mono font-semibold text-[#5A6A8A] mb-1.5 tracking-wider">
 //                 {step.number}
 //               </span>
-//               <h3 className="text-[15px] font-semibold text-[#E8F0FF] mb-1.5">
+//               <h3 className="text-[17px] font-semibold text-[#E8F0FF] mb-1.5">
 //                 {step.title}
 //               </h3>
-//               <p className="text-[13px] text-[#A8B8D8] leading-relaxed">
+//               <p className="text-[14.5px] text-[#A8B8D8] leading-relaxed">
 //                 {step.body}
 //               </p>
 //             </div>
@@ -187,10 +187,10 @@ export function HowItWorksSection() {
           viewport={viewportOnce}
           variants={fadeUp}
         >
-          <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+          <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
             How it works
           </p>
-          <h2 id="how-it-works-heading" className="font-display text-[28px] sm:text-[34px] font-normal text-[#E8F0FF] tracking-tight">
+          <h2 id="how-it-works-heading" className="font-display text-[31.5px] sm:text-[38px] font-normal text-[#E8F0FF] tracking-tight">
             From question to answer in four steps
           </h2>
         </motion.div>
@@ -225,13 +225,13 @@ export function HowItWorksSection() {
               >
                 {step.icon}
               </div>
-              <span className="text-[11px] font-mono font-semibold text-[#5A6A8A] mb-1.5 tracking-wider">
+              <span className="text-[12.5px] font-mono font-semibold text-[#5A6A8A] mb-1.5 tracking-wider">
                 {step.number}
               </span>
-              <h3 className="text-[15px] font-semibold text-[#E8F0FF] mb-1.5">
+              <h3 className="text-[17px] font-semibold text-[#E8F0FF] mb-1.5">
                 {step.title}
               </h3>
-              <p className="text-[13px] text-[#A8B8D8] leading-relaxed">
+              <p className="text-[14.5px] text-[#A8B8D8] leading-relaxed">
                 {step.body}
               </p>
             </motion.div>

@@ -18,7 +18,7 @@ export function NewsletterForm() {
 
   if (submitted) {
     return (
-      <div className="flex items-center gap-2 text-[13px] text-[#00D4FF]">
+      <div className="flex items-center gap-2 text-[14.5px] text-[#00D4FF]">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M20 6 9 17l-5-5"/>
         </svg>
@@ -40,7 +40,7 @@ export function NewsletterForm() {
         placeholder="Email address"
         required
         aria-label="Email address for newsletter"
-        className="flex-1 bg-transparent py-2.5 text-[13px] text-[#E8F0FF] placeholder:text-[#3A4A60] outline-none"
+        className="flex-1 bg-transparent py-2.5 text-[14.5px] text-[#E8F0FF] placeholder:text-[#3A4A60] outline-none"
       />
       <button
         type="submit"

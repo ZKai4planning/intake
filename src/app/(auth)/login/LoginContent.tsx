@@ -89,15 +89,15 @@ export default function LoginContent() {
       <form onSubmit={handleSubmit} noValidate className="space-y-5">
         {prefilled && email && (
           <div className="rounded-[12px] border border-[#135BEC]/30 bg-[rgba(19,91,236,0.07)] px-4 py-3">
-            <p className="text-[12px] text-[#A8B8D8]">We&apos;ll send your sign-in code to</p>
-            <p className="mt-0.5 break-all text-[15px] font-semibold text-[#E8F0FF]">{email}</p>
+            <p className="text-[13.5px] text-[#A8B8D8]">We&apos;ll send your sign-in code to</p>
+            <p className="mt-0.5 break-all text-[17px] font-semibold text-[#E8F0FF]">{email}</p>
             <button
               type="button"
               onClick={() => {
                 setPrefilled(false)
                 setEmail('')
               }}
-              className="mt-1 text-[12px] font-medium text-[#00D4FF] hover:underline"
+              className="mt-1 text-[13.5px] font-medium text-[#00D4FF] hover:underline"
             >
               Not you? Use a different email
             </button>
@@ -123,7 +123,7 @@ export default function LoginContent() {
         )}
 
         {prefilled && email && error && (
-          <p className="text-[13px] text-[#F87171]" role="alert">{error}</p>
+          <p className="text-[14.5px] text-[#F87171]" role="alert">{error}</p>
         )}
 
         <Button

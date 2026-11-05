@@ -40,10 +40,10 @@ export function ActorRevisionBanner({
       <span className="text-[#F59E0B] text-base shrink-0 mt-0.5" aria-hidden="true">⚠</span>
 
       <div className="flex-1">
-        <p className="text-[13px] text-[#E8F0FF] font-medium leading-snug mb-0.5">
+        <p className="text-[14.5px] text-[#E8F0FF] font-medium leading-snug mb-0.5">
           This answer sounds more like a {implied.label.toLowerCase()}, not a {current.label.toLowerCase()}.
         </p>
-        <p className="text-[12px] text-[#A8B8D8] leading-relaxed">
+        <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed">
           We can switch your questions and tools to match — nothing you've answered so far will be lost.
         </p>
 
@@ -51,14 +51,14 @@ export function ActorRevisionBanner({
           <button
             type="button"
             onClick={onAccept}
-            className="px-3 py-1.5 rounded-[7px] text-[12px] font-semibold bg-[#F59E0B] text-[#050A12] hover:bg-[#FBBF24] transition-colors"
+            className="px-3 py-1.5 rounded-[7px] text-[13.5px] font-semibold bg-[#F59E0B] text-[#050A12] hover:bg-[#FBBF24] transition-colors"
           >
             Switch to {implied.label} →
           </button>
           <button
             type="button"
             onClick={onDismiss}
-            className="px-3 py-1.5 rounded-[7px] text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
+            className="px-3 py-1.5 rounded-[7px] text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
           >
             No, keep {current.label.toLowerCase()}
           </button>

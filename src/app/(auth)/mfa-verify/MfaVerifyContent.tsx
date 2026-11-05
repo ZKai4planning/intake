@@ -65,7 +65,7 @@
 //       <div className="space-y-6">
 //         <div className="flex justify-center">
 //           <span
-//             className="text-[48px]"
+//             className="text-[54px]"
 //             aria-hidden="true"
 //           >
 //             🔐
@@ -80,7 +80,7 @@
 
 //         {error && (
 //           <p
-//             className="text-center text-[13px] text-[#F87171]"
+//             className="text-center text-[14.5px] text-[#F87171]"
 //             role="alert"
 //           >
 //             {error}
@@ -98,7 +98,7 @@
 //           {isPending ? 'Verifying…' : 'Verify'}
 //         </Button>
 
-//         <p className="text-center text-[12px] text-[#5A6A8A]">
+//         <p className="text-center text-[13.5px] text-[#5A6A8A]">
 //           Lost access to your app?{' '}
 //           <button
 //             type="button"
@@ -115,7 +115,7 @@
 //       <p
 //         className={cn(
 //           'mt-7 pt-5 border-t border-white/[0.06]',
-//           'text-[11px] text-[#5A6A8A] text-center'
+//           'text-[12.5px] text-[#5A6A8A] text-center'
 //         )}
 //       >
 //         🛠 Mock mode — any valid 6-digit number works
@@ -212,7 +212,7 @@
 //       <div className="space-y-6">
 //         <div className="flex justify-center">
 //           <span
-//             className="text-[48px]"
+//             className="text-[54px]"
 //             aria-hidden="true"
 //           >
 //             🔐
@@ -227,7 +227,7 @@
 
 //         {error && (
 //           <p
-//             className="text-center text-[13px] text-[#F87171]"
+//             className="text-center text-[14.5px] text-[#F87171]"
 //             role="alert"
 //           >
 //             {error}
@@ -245,7 +245,7 @@
 //           {isPending ? 'Verifying…' : 'Verify'}
 //         </Button>
 
-//         <p className="text-center text-[12px] text-[#5A6A8A]">
+//         <p className="text-center text-[13.5px] text-[#5A6A8A]">
 //           Lost access to your app?{' '}
 //           <button
 //             type="button"
@@ -262,7 +262,7 @@
 //       <p
 //         className={cn(
 //           'mt-7 pt-5 border-t border-white/[0.06]',
-//           'text-[11px] text-[#5A6A8A] text-center'
+//           'text-[12.5px] text-[#5A6A8A] text-center'
 //         )}
 //       >
 //         🛠 Mock mode — any valid 6-digit number works
@@ -339,7 +339,7 @@
 //       <div className="space-y-6">
 //         <div className="flex justify-center">
 //           <span
-//             className="text-[48px]"
+//             className="text-[54px]"
 //             aria-hidden="true"
 //           >
 //             🔐
@@ -354,7 +354,7 @@
 
 //         {error && (
 //           <p
-//             className="text-center text-[13px] text-[#F87171]"
+//             className="text-center text-[14.5px] text-[#F87171]"
 //             role="alert"
 //           >
 //             {error}
@@ -372,7 +372,7 @@
 //           {isPending ? 'Verifying…' : 'Verify'}
 //         </Button>
 
-//         <p className="text-center text-[12px] text-[#5A6A8A]">
+//         <p className="text-center text-[13.5px] text-[#5A6A8A]">
 //           Lost access to your app?{' '}
 //           <button
 //             type="button"
@@ -389,7 +389,7 @@
 //       <p
 //         className={cn(
 //           'mt-7 pt-5 border-t border-white/[0.06]',
-//           'text-[11px] text-[#5A6A8A] text-center'
+//           'text-[12.5px] text-[#5A6A8A] text-center'
 //         )}
 //       >
 //         🛠 Mock mode — any valid 6-digit number works
@@ -488,7 +488,7 @@ export default function MfaVerifyContent() {
       <div className="space-y-6">
         <div className="flex justify-center">
           <span
-            className="text-[48px]"
+            className="text-[54px]"
             aria-hidden="true"
           >
             🔐
@@ -503,7 +503,7 @@ export default function MfaVerifyContent() {
 
         {error && (
           <p
-            className="text-center text-[13px] text-[#F87171]"
+            className="text-center text-[14.5px] text-[#F87171]"
             role="alert"
           >
             {error}
@@ -521,7 +521,7 @@ export default function MfaVerifyContent() {
           {isPending ? 'Verifying…' : 'Verify'}
         </Button>
 
-        <p className="text-center text-[12px] text-[#5A6A8A]">
+        <p className="text-center text-[13.5px] text-[#5A6A8A]">
           Lost access to your app?{' '}
           <button
             type="button"
@@ -538,7 +538,7 @@ export default function MfaVerifyContent() {
       <p
         className={cn(
           'mt-7 pt-5 border-t border-white/[0.06]',
-          'text-[11px] text-[#5A6A8A] text-center'
+          'text-[12.5px] text-[#5A6A8A] text-center'
         )}
       >
         🛠 Mock mode — any valid 6-digit number works

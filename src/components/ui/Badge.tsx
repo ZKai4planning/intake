@@ -19,7 +19,7 @@ export function Badge({ variant = 'muted', children, className }: BadgeProps) {
   return (
     <span
       className={cn(
-        'inline-flex items-center gap-1 text-[11px] font-medium px-2.5 py-[3px] rounded-full',
+        'inline-flex items-center gap-1 text-[12.5px] font-medium px-2.5 py-[3px] rounded-full',
         VARIANTS[variant],
         className
       )}

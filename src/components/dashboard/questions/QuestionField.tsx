@@ -59,22 +59,22 @@ function FieldWrapper({ question, children }: { question: QuestionRow; children:
   return (
     <div className="space-y-2.5">
       <div className="flex items-start justify-between gap-3">
-        <label className="text-[13.5px] font-semibold text-[#E8F0FF] leading-snug">
+        <label className="text-[15px] font-semibold text-[#E8F0FF] leading-snug">
           {question.field}
           {question.required && <span className="text-[#F87171] ml-1">*</span>}
         </label>
-        <span className="shrink-0 text-[10px] font-mono text-[#5A6A8A] mt-0.5">
+        <span className="shrink-0 text-[11px] font-mono text-[#5A6A8A] mt-0.5">
           {question.rowId}
         </span>
       </div>
-      <p className="text-[12px] text-[#5A6A8A] leading-relaxed">{question.guidance}</p>
+      <p className="text-[13.5px] text-[#5A6A8A] leading-relaxed">{question.guidance}</p>
       {children}
     </div>
   )
 }
 
 const inputBase = cn(
-  'w-full rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+  'w-full rounded-[10px] px-3.5 py-2.5 text-[15px]',
   'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
   'border border-white/[0.12] outline-none transition-all',
   'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -258,7 +258,7 @@ function CheckboxGroupField({ question, value, onChange }: { question: QuestionR
                 )}
               </span>
               <input type="checkbox" checked={checked} onChange={() => toggle(opt.value)} className="sr-only" />
-              <span className="text-[13px] text-[#A8B8D8]">{opt.label}</span>
+              <span className="text-[14.5px] text-[#A8B8D8]">{opt.label}</span>
             </label>
           )
         })}
@@ -293,8 +293,8 @@ function FileUploadField({ question, value, onChange }: { question: QuestionRow;
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5A6A8A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>
         </svg>
-        <span className="text-[12.5px] text-[#A8B8D8]">Click to upload or drag files here</span>
-        <span className="text-[11px] text-[#5A6A8A]">PDF, JPG, PNG, DWG — up to 25MB each</span>
+        <span className="text-[14px] text-[#A8B8D8]">Click to upload or drag files here</span>
+        <span className="text-[12.5px] text-[#5A6A8A]">PDF, JPG, PNG, DWG — up to 25MB each</span>
       </button>
       <input
         ref={inputRef}
@@ -307,7 +307,7 @@ function FileUploadField({ question, value, onChange }: { question: QuestionRow;
       {value.length > 0 && (
         <ul className="space-y-1.5 mt-2">
           {value.map((file, i) => (
-            <li key={i} className="flex items-center gap-2 px-3 py-2 rounded-[8px] bg-white/[0.03] text-[12.5px] text-[#A8B8D8]">
+            <li key={i} className="flex items-center gap-2 px-3 py-2 rounded-[8px] bg-white/[0.03] text-[14px] text-[#A8B8D8]">
               <span className="text-[#135BEC] shrink-0">📄</span>
               <span className="truncate flex-1">{file.name}</span>
               <button type="button" onClick={() => removeFile(i)} className="text-[#5A6A8A] hover:text-[#F87171] shrink-0">✕</button>
@@ -345,13 +345,13 @@ function RadioFileField({ question, value, onChange }: { question: QuestionRow; 
           <button
             type="button"
             onClick={() => inputRef.current?.click()}
-            className="w-full flex items-center justify-center gap-2 py-3 rounded-[8px] border border-dashed border-white/[0.16] hover:border-[#135BEC] text-[12px] text-[#A8B8D8] transition-colors"
+            className="w-full flex items-center justify-center gap-2 py-3 rounded-[8px] border border-dashed border-white/[0.16] hover:border-[#135BEC] text-[13.5px] text-[#A8B8D8] transition-colors"
           >
             📎 Upload supporting plan
           </button>
           <input ref={inputRef} type="file" multiple className="hidden" onChange={e => setFiles(Array.from(e.target.files ?? []))} />
           {files.length > 0 && (
-            <p className="text-[11px] text-[#135BEC] mt-1.5">{files.length} file(s) attached</p>
+            <p className="text-[12.5px] text-[#135BEC] mt-1.5">{files.length} file(s) attached</p>
           )}
         </div>
       )}
@@ -372,7 +372,7 @@ function SignatureField({ question, value, onChange }: { question: QuestionRow; 
           onChange={e => setAgreed(e.target.checked)}
           className="mt-0.5 w-4 h-4 accent-[#135BEC] shrink-0"
         />
-        <span className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+        <span className="text-[14px] text-[#A8B8D8] leading-relaxed">
           I confirm the information provided is accurate to the best of my knowledge,
           that I have authority to act on this application, and I agree to the terms of service.
         </span>
@@ -384,7 +384,7 @@ function SignatureField({ question, value, onChange }: { question: QuestionRow; 
           value={value ?? ''}
           onChange={e => onChange(e.target.value)}
           placeholder="Type your full name to sign"
-          className={cn(inputBase, 'mt-2.5 font-display text-[16px] italic')}
+          className={cn(inputBase, 'mt-2.5 font-display text-[18px] italic')}
         />
       )}
     </FieldWrapper>
@@ -400,7 +400,7 @@ function RadioPill({
       type="button"
       onClick={onClick}
       className={cn(
-        'px-3.5 py-2 rounded-full text-[12.5px] font-medium border transition-all',
+        'px-3.5 py-2 rounded-full text-[14px] font-medium border transition-all',
         selected
           ? flagged
             ? 'bg-[rgba(245,158,11,0.12)] border-[#F59E0B] text-[#F59E0B]'

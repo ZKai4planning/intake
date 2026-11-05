@@ -58,8 +58,8 @@ export function AgentZWidget() {
               <Sparkles className="h-3.5 w-3.5" />
             </span>
             <div>
-              <p className="text-[12.5px] font-semibold text-[#E8F0FF] leading-tight">Agent Z</p>
-              <p className="text-[10.5px] text-[#5A6A8A] leading-tight">Preview — not a live agent yet</p>
+              <p className="text-[14px] font-semibold text-[#E8F0FF] leading-tight">Agent Z</p>
+              <p className="text-[12px] text-[#5A6A8A] leading-tight">Preview — not a live agent yet</p>
             </div>
           </div>
           <button onClick={closeAgent} className="text-[#5A6A8A] hover:text-[#E8F0FF]" aria-label="Close">
@@ -69,7 +69,7 @@ export function AgentZWidget() {
 
         <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto px-4 py-3">
           {messages.length === 0 && !isTyping && (
-            <p className="text-[12px] text-[#5A6A8A]">
+            <p className="text-[13.5px] text-[#5A6A8A]">
               Ask about anything on this form — Agent Z picks up context from whatever field you were on.
             </p>
           )}
@@ -77,12 +77,12 @@ export function AgentZWidget() {
             <div key={m.id} className={cn('flex', m.role === 'user' ? 'justify-end' : 'justify-start')}>
               <div
                 className={cn(
-                  'max-w-[85%] rounded-[12px] px-3 py-2 text-[12.5px] leading-relaxed',
+                  'max-w-[85%] rounded-[12px] px-3 py-2 text-[14px] leading-relaxed',
                   m.role === 'user' ? 'bg-[#135BEC] text-white' : 'bg-white/[0.05] text-[#A8B8D8]'
                 )}
               >
                 {m.fieldLabel && m.role === 'user' && (
-                  <p className="mb-1 text-[10.5px] font-semibold uppercase tracking-wide text-white/70">{m.fieldLabel}</p>
+                  <p className="mb-1 text-[12px] font-semibold uppercase tracking-wide text-white/70">{m.fieldLabel}</p>
                 )}
                 {m.text}
               </div>
@@ -109,7 +109,7 @@ export function AgentZWidget() {
             onChange={e => setDraft(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleSend()}
             placeholder="Ask Agent Z…"
-            className="flex-1 rounded-full border border-white/[0.12] bg-[#141C30] px-3.5 py-2 text-[12.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC]"
+            className="flex-1 rounded-full border border-white/[0.12] bg-[#141C30] px-3.5 py-2 text-[14px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC]"
           />
           <button
             onClick={handleSend}

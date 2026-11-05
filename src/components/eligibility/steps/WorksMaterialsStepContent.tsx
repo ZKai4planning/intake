@@ -150,7 +150,7 @@ export function WorksMaterialsStepContent({
           <textarea
             rows={3}
             placeholder="Summarise the proposal, including size, number of storeys and position... Ask Agent Z to help to concise"
-            className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[13.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
+            className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[15px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
             value={asStringValue(savedFormData["Description of Proposed Works"])}
             onChange={e =>
               updateSection("eligibility", {
@@ -175,7 +175,7 @@ export function WorksMaterialsStepContent({
             type="button"
             onClick={() => updateDimensionsSupport("No")}
             disabled={!isDimensionsSupportAdded}
-            className="rounded-xl border border-white/[0.12] px-4 py-2 text-[13px] font-medium text-[#A8B8D8] transition-colors hover:bg-white/[0.05] hover:text-[#E8F0FF] disabled:cursor-not-allowed disabled:opacity-50"
+            className="rounded-xl border border-white/[0.12] px-4 py-2 text-[14.5px] font-medium text-[#A8B8D8] transition-colors hover:bg-white/[0.05] hover:text-[#E8F0FF] disabled:cursor-not-allowed disabled:opacity-50"
           >
             Remove from cart
           </button>
@@ -214,7 +214,7 @@ export function WorksMaterialsStepContent({
           <FieldLabel label="Kitchen Room Dimensions (metres)" />
           <div className="grid gap-6 md:grid-cols-2">
             <div>
-              <p className="mb-2 text-[12.5px] font-medium text-[#A8B8D8]">Length</p>
+              <p className="mb-2 text-[14px] font-medium text-[#A8B8D8]">Length</p>
               <input
                 value={asStringValue(savedFormData["Kitchen Room Length (metres)"])}
                 placeholder="Enter kitchen room length"
@@ -226,11 +226,11 @@ export function WorksMaterialsStepContent({
                     },
                   })
                 }
-                className="w-full rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[13.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
+                className="w-full rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[15px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
               />
             </div>
             <div>
-              <p className="mb-2 text-[12.5px] font-medium text-[#A8B8D8]">Width</p>
+              <p className="mb-2 text-[14px] font-medium text-[#A8B8D8]">Width</p>
               <input
                 value={asStringValue(savedFormData["Kitchen Room Width (metres)"])}
                 placeholder="Enter kitchen room width"
@@ -242,7 +242,7 @@ export function WorksMaterialsStepContent({
                     },
                   })
                 }
-                className="w-full rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[13.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
+                className="w-full rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[15px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
               />
             </div>
           </div>
@@ -251,7 +251,7 @@ export function WorksMaterialsStepContent({
           <FieldLabel label="Bathroom Room Dimensions (metres)" />
           <div className="grid gap-6 md:grid-cols-2">
             <div>
-              <p className="mb-2 text-[12.5px] font-medium text-[#A8B8D8]">Length</p>
+              <p className="mb-2 text-[14px] font-medium text-[#A8B8D8]">Length</p>
               <input
                 value={asStringValue(savedFormData["Bathroom Room Length (metres)"])}
                 placeholder="Enter bathroom room length"
@@ -263,11 +263,11 @@ export function WorksMaterialsStepContent({
                     },
                   })
                 }
-                className="w-full rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[13.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
+                className="w-full rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[15px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
               />
             </div>
             <div>
-              <p className="mb-2 text-[12.5px] font-medium text-[#A8B8D8]">Width</p>
+              <p className="mb-2 text-[14px] font-medium text-[#A8B8D8]">Width</p>
               <input
                 value={asStringValue(savedFormData["Bathroom Room Width (metres)"])}
                 placeholder="Enter bathroom room width"
@@ -279,7 +279,7 @@ export function WorksMaterialsStepContent({
                     },
                   })
                 }
-                className="w-full rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[13.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
+                className="w-full rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[15px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
               />
             </div>
           </div>

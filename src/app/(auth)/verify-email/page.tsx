@@ -167,7 +167,7 @@
 //             {/* Error message */}
 //             {errorMsg && (
 //               <p
-//                 className="text-center text-[13px] text-[#F87171] mt-1"
+//                 className="text-center text-[14.5px] text-[#F87171] mt-1"
 //                 role="alert"
 //               >
 //                 {errorMsg}
@@ -203,7 +203,7 @@
 
 //           {/* Resend row */}
 //           <div className="flex items-center justify-center gap-1.5 mt-2">
-//             <p className="text-[13px] text-[#5A6A8A]">
+//             <p className="text-[14.5px] text-[#5A6A8A]">
 //               {canResend ? "Didn't get it?" : `Resend in ${formatted}`}
 //             </p>
 //             {canResend && (
@@ -212,7 +212,7 @@
 //                 onClick={handleResend}
 //                 disabled={isResending}
 //                 className={cn(
-//                   'text-[13px] font-medium text-[#135BEC]',
+//                   'text-[14.5px] font-medium text-[#135BEC]',
 //                   'hover:text-[#2A6BF0] transition-colors',
 //                   'disabled:opacity-50 disabled:cursor-not-allowed'
 //                 )}
@@ -223,7 +223,7 @@
 //           </div>
 
 //           {/* Security note */}
-//           <p className="mt-6 pt-5 border-t border-white/[0.06] text-[11px] text-[#5A6A8A] text-center leading-relaxed">
+//           <p className="mt-6 pt-5 border-t border-white/[0.06] text-[12.5px] text-[#5A6A8A] text-center leading-relaxed">
 //             🔒 The code expires in 10 minutes. Never share it with anyone.
 //           </p>
 //         </>
@@ -331,7 +331,7 @@
 //         />
 
 //         {error && (
-//           <p className="text-center text-[13px] text-[#F87171]" role="alert">
+//           <p className="text-center text-[14.5px] text-[#F87171]" role="alert">
 //             {error}
 //           </p>
 //         )}
@@ -347,7 +347,7 @@
 //           {isPending ? 'Verifying…' : 'Verify code'}
 //         </Button>
 
-//         <p className="text-center text-[12px] text-[#5A6A8A]">
+//         <p className="text-center text-[13.5px] text-[#5A6A8A]">
 //           Didn't receive it?{' '}
 //           <button
 //             type="button"
@@ -361,7 +361,7 @@
 //       </div>
 
 //       {/* Dev hint */}
-//       <p className={cn('mt-7 pt-5 border-t border-white/[0.06]', 'text-[11px] text-[#5A6A8A] text-center')}>
+//       <p className={cn('mt-7 pt-5 border-t border-white/[0.06]', 'text-[12.5px] text-[#5A6A8A] text-center')}>
 //         🛠 Mock mode — use code <span className="text-[#135BEC] font-mono">{DEMO_OTP}</span>
 //       </p>
 //     </AuthShell>

@@ -99,7 +99,7 @@
 //         </Button>
 
 //         {/* Forgot / reset */}
-//         <p className="text-center text-[12px] text-[#5A6A8A]">
+//         <p className="text-center text-[13.5px] text-[#5A6A8A]">
 //           <Link
 //             href={`/forgot-password${email ? `?email=${encodeURIComponent(email)}` : ''}`}
 //             className="hover:text-[#A8B8D8] transition-colors"
@@ -112,7 +112,7 @@
 //       {/* Trust note */}
 //       <p className={cn(
 //         'mt-7 pt-5 border-t border-white/[0.06]',
-//         'text-[11px] text-[#5A6A8A] text-center leading-relaxed'
+//         'text-[12.5px] text-[#5A6A8A] text-center leading-relaxed'
 //       )}>
 //         🔒 We'll send a 6-digit code to your inbox. No password needed.
 //       </p>

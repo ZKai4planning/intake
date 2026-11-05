@@ -230,7 +230,7 @@
 //           <span className="text-[#00D4FF] text-sm shrink-0" aria-hidden="true">
 //             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
 //           </span>
-//           <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+//           <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
 //             {actorSuggestion.wasCorrected ? (
 //               <>
 //                 Did you mean{' '}
@@ -252,14 +252,14 @@
 //             <button
 //               type="button"
 //               onClick={onAcceptActorSuggestion}
-//               className="px-2.5 py-1 rounded-[6px] text-[12px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
+//               className="px-2.5 py-1 rounded-[6px] text-[13.5px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
 //             >
 //               ✓ Yes
 //             </button>
 //             <button
 //               type="button"
 //               onClick={() => onSelectActor?.(null)}
-//               className="px-2.5 py-1 rounded-[6px] text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
+//               className="px-2.5 py-1 rounded-[6px] text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
 //             >
 //               No
 //             </button>
@@ -295,7 +295,7 @@
 //               aria-expanded={actorMenuOpen}
 //               className={cn(
 //                 'flex items-center gap-1 pl-3 pr-2.5 py-1.5 rounded-full shrink-0',
-//                 'text-[13px] font-medium transition-colors border',
+//                 'text-[14.5px] font-medium transition-colors border',
 //                 selectedActorMeta
 //                   ? 'bg-[rgba(0,212,255,0.10)] border-[rgba(0,212,255,0.28)] text-[#00D4FF]'
 //                   : 'bg-white/[0.05] border-white/[0.12] text-[#A8B8D8] hover:bg-white/[0.09] hover:border-white/[0.2]'
@@ -349,7 +349,7 @@
 //                 'font-sans text-[#E8F0FF] placeholder:text-[#7C88A6]',
 //                 'focus:outline-none',
 //                 'transition-[font-size] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]',
-//                 isExpanded ? 'text-[17px] sm:text-[18px]' : 'text-[16px]',
+//                 isExpanded ? 'text-[19px] sm:text-[20px]' : 'text-[18px]',
 //                 isListening && 'placeholder:text-[#00D4FF]'
 //               )}
 //             />
@@ -459,7 +459,7 @@
 //         >
 //           <span
 //             className={cn(
-//               'flex items-center justify-center w-8 h-8 rounded-full text-[15px] shrink-0',
+//               'flex items-center justify-center w-8 h-8 rounded-full text-[17px] shrink-0',
 //               isSelected ? 'bg-[#00D4FF]/15' : 'bg-white/[0.06]'
 //             )}
 //             aria-hidden="true"
@@ -468,11 +468,11 @@
 //           </span>
 
 //           <span className="flex-1 min-w-0">
-//             <span className={cn('block text-[13.5px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
+//             <span className={cn('block text-[15px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
 //               {actor.label}
 //             </span>
 //             {actor.description && (
-//               <span className="block text-[11.5px] text-[#5A6A8A] truncate">
+//               <span className="block text-[13px] text-[#5A6A8A] truncate">
 //                 {actor.description}
 //               </span>
 //             )}
@@ -524,7 +524,7 @@
 //                 </span>
 //               </span>
 //             ) : (
-//               <span className="text-[15px] sm:text-[16px] text-[#A8B8D8] leading-relaxed">{highlightFreeReport(hintDefault)}</span>
+//               <span className="text-[17px] sm:text-[18px] text-[#A8B8D8] leading-relaxed">{highlightFreeReport(hintDefault)}</span>
 //             )}
 //           </p>
 //         </div>

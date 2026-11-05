@@ -38,7 +38,7 @@
 //         className="group block rounded-[12px] border border-white/[0.08] bg-[#141C30] p-3.5 hover:border-[rgba(19,91,236,0.35)] transition-colors"
 //       >
 //         <div className="flex items-center justify-between mb-2.5">
-//           <p className="text-[11.5px] font-semibold text-[#E8F0FF]">
+//           <p className="text-[13px] font-semibold text-[#E8F0FF]">
 //             Profile {pct}% complete
 //           </p>
 //           <svg
@@ -68,7 +68,7 @@
 //         {/* Missing items */}
 //         <ul className="space-y-1.5">
 //           {missing.map(item => (
-//             <li key={item.label} className="flex items-center gap-1.5 text-[11.5px] text-[#A8B8D8]">
+//             <li key={item.label} className="flex items-center gap-1.5 text-[13px] text-[#A8B8D8]">
 //               <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] shrink-0" aria-hidden="true" />
 //               {item.label}
 //             </li>
@@ -128,7 +128,7 @@ export function ProfileCompletionCard({ accountCreated, avatarSet, phoneSet, mfa
         className="group block rounded-[12px] border border-white/[0.08] bg-[#141C30] p-3.5 hover:border-[rgba(19,91,236,0.35)] transition-colors"
       >
         <div className="flex items-center justify-between mb-2.5">
-          <p className="text-[11.5px] font-semibold text-[#E8F0FF]">
+          <p className="text-[13px] font-semibold text-[#E8F0FF]">
             Profile {pct}% complete
           </p>
           <svg
@@ -158,7 +158,7 @@ export function ProfileCompletionCard({ accountCreated, avatarSet, phoneSet, mfa
         {/* Missing items */}
         <ul className="space-y-1.5">
           {missing.map(item => (
-            <li key={item.label} className="flex items-center gap-1.5 text-[11.5px] text-[#A8B8D8]">
+            <li key={item.label} className="flex items-center gap-1.5 text-[13px] text-[#A8B8D8]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] shrink-0" aria-hidden="true" />
               {item.label}
             </li>

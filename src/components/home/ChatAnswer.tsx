@@ -116,7 +116,7 @@ export function ChatAnswer({ query, goalId, actorId }: ChatAnswerProps) {
         <div className="max-w-[760px] mx-auto">
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 text-[13px] text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors"
+            className="inline-flex items-center gap-1.5 text-[14.5px] text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Back to homepage
@@ -147,7 +147,7 @@ export function ChatAnswer({ query, goalId, actorId }: ChatAnswerProps) {
               value={followUp}
               onChange={e => setFollowUp(e.target.value)}
               placeholder="Ask a follow-up question…"
-              className="flex-1 rounded-[12px] bg-[#0F1525] border border-white/[0.08] px-4 py-3 text-[14px] text-[#E8F0FF] placeholder:text-[#5A6A8A] focus:outline-none focus:ring-2 focus:ring-blue-500/40"
+              className="flex-1 rounded-[12px] bg-[#0F1525] border border-white/[0.08] px-4 py-3 text-[15.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] focus:outline-none focus:ring-2 focus:ring-blue-500/40"
             />
             <button
               type="submit"
@@ -158,7 +158,7 @@ export function ChatAnswer({ query, goalId, actorId }: ChatAnswerProps) {
               <Send className="h-4 w-4" />
             </button>
           </form>
-          <p className="mt-2 text-[11.5px] text-[#5A6A8A]">
+          <p className="mt-2 text-[13px] text-[#5A6A8A]">
             Ask anything — you'll only need to log in once you're ready to check a specific project or address.
           </p>
         </div>
@@ -170,7 +170,7 @@ export function ChatAnswer({ query, goalId, actorId }: ChatAnswerProps) {
 function UserBubble({ text }: { text: string }) {
   return (
     <div className="flex items-start gap-3 justify-end">
-      <div className="max-w-[80%] rounded-2xl rounded-tr-sm bg-[#135BEC] text-white px-4 py-3 text-[14.5px] leading-relaxed">
+      <div className="max-w-[80%] rounded-2xl rounded-tr-sm bg-[#135BEC] text-white px-4 py-3 text-[16px] leading-relaxed">
         {text}
       </div>
       <span className="shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-[#A8B8D8] mt-0.5">
@@ -219,10 +219,10 @@ function AssistantBubble({
         {answer.kind === 'services' ? (
           <ServicesAnswer />
         ) : (
-          <div className="rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[14.5px] leading-relaxed text-[#E8F0FF]">
+          <div className="rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[16px] leading-relaxed text-[#E8F0FF]">
             {answer.text}
             {answer.kind === 'howto' && answer.goal && (
-              <p className="mt-2 text-[12.5px] text-[#5A6A8A]">
+              <p className="mt-2 text-[14px] text-[#5A6A8A]">
                 Matched goal: <span className="text-[#A8B8D8]">{answer.goal.title}</span>
               </p>
             )}
@@ -233,14 +233,14 @@ function AssistantBubble({
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-[#00D4FF]">
                     <Lock className="h-3.5 w-3.5" />
                   </span>
-                  <p className="text-[12.5px] text-[#A8B8D8]">
+                  <p className="text-[14px] text-[#A8B8D8]">
                     That's the free-text answer — the real, address-specific process is behind login.
                   </p>
                 </div>
                 <button
                   type="button"
                   onClick={() => goToApp(actorId)}
-                  className="shrink-0 rounded-full bg-[#135BEC] px-4 py-2 text-[12.5px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
+                  className="shrink-0 rounded-full bg-[#135BEC] px-4 py-2 text-[14px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
                 >
                   Log in
                 </button>
@@ -256,7 +256,7 @@ function AssistantBubble({
 function ServicesAnswer() {
   return (
     <div className="rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] p-4">
-      <p className="text-[14.5px] leading-relaxed text-[#E8F0FF] mb-4">
+      <p className="text-[16px] leading-relaxed text-[#E8F0FF] mb-4">
         Here's what we help with — pick whichever's closest to your situation:
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -270,10 +270,10 @@ function ServicesAnswer() {
                 : 'border-white/[0.05] bg-white/[0.015] opacity-60 cursor-not-allowed pointer-events-none'
             }`}
           >
-            <p className="text-[11px] font-bold text-blue-400 mb-1">{service.label}</p>
-            <p className="text-[13px] font-semibold text-[#E8F0FF]">{service.subtitle}</p>
+            <p className="text-[12.5px] font-bold text-blue-400 mb-1">{service.label}</p>
+            <p className="text-[14.5px] font-semibold text-[#E8F0FF]">{service.subtitle}</p>
             {service.status !== 'active' && (
-              <p className="mt-1 text-[10.5px] font-medium text-amber-300/80">Coming soon</p>
+              <p className="mt-1 text-[12px] font-medium text-amber-300/80">Coming soon</p>
             )}
           </Link>
         ))}

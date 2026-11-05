@@ -70,7 +70,7 @@
 //               aria-label={`${BRAND_NAME} — Home`}
 //             >
 //               <Logo />
-//               <span className="font-semibold text-[15px] text-[#E8F0FF] tracking-tight group-hover:text-white transition-colors duration-150">
+//               <span className="font-semibold text-[17px] text-[#E8F0FF] tracking-tight group-hover:text-white transition-colors duration-150">
 //                 {BRAND_NAME}
 //               </span>
 //             </a>
@@ -116,7 +116,7 @@
 //             aria-expanded={mobileOpen}
 //             aria-controls="mobile-nav"
 //             className={cn(
-//               'md:hidden ml-auto flex flex-col items-center justify-center gap-[5px]',
+//               'md:hidden flex flex-col items-center justify-center gap-[5px]',
 //               'w-9 h-9 rounded-md shrink-0',
 //               'border border-white/[0.08] hover:border-white/[0.18]',
 //               'text-[#A8B8D8] hover:text-[#E8F0FF]',
@@ -174,7 +174,7 @@ import { NavDesktop }   from './NavDesktop'
 import { NavMobile }    from './NavMobile'
 import { UserMenu }     from './UserMenu'
 import type { NavItem, NavCTA } from '@/types'
-
+import { CartButton } from './CartButton'
 // ── Config ──────────────────────────────────────────────────────
 const BRAND_NAME = 'AI4Planning'
 
@@ -218,7 +218,7 @@ export function Navbar() {
           // Hero-sized header: taller than a typical SaaS bar on purpose —
           // this audience (UK, older users) reads a bigger, calmer strip
           // as more trustworthy than a cramped 60px bar.
-          'fixed top-0 inset-x-0 z-30 h-24', // was h-[76px] (~96px now)
+          'fixed top-0 inset-x-0 z-30 h-20 sm:h-24 xl:h-[132px]', // responsive: compact on phones, large logo on wide screens
           'flex items-center',
           'border-b border-white/[0.08]',
           'transition-all duration-300',
@@ -227,7 +227,7 @@ export function Navbar() {
             : 'bg-[rgba(10,14,26,0.6)]' // slight tint even unscrolled — pure transparent read as "broken" to some testers over pale hero art
         )}
       >
-        <div className="relative w-full px-6 sm:px-10 flex items-center gap-4">
+        <div className="relative w-full px-4 sm:px-8 xl:px-10 flex items-center gap-3 xl:gap-4">
 
           {/* Brand — the whole lockup is one link back to "/" so the mark,
               the wordmark, and the empty space between them are all a
@@ -247,7 +247,7 @@ export function Navbar() {
               <line x1="17" y1="17" x2="24" y2="22" stroke="#C9A227" strokeWidth="1.5" strokeLinecap="round" />
               <circle cx="17" cy="17" r="2" fill="#C9A227" />
             </svg> */}
-            <span className="font-serif text-[20px] font-semibold text-[#E8F0FF] tracking-tight group-hover:text-white transition-colors duration-150">
+            <span className="font-serif text-[31.5px] font-semibold text-[#E8F0FF] tracking-tight group-hover:text-white transition-colors duration-150">
               {BRAND_NAME}
             </span>
           </a>
@@ -257,15 +257,16 @@ export function Navbar() {
               are different widths, so flex-1/justify-center alone would
               visually skew the nav off-center). Larger type + taller hit
               targets (48px+) than the previous pass. */}
-          <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="hidden lg:flex flex-1 justify-center min-w-0">
             <NavDesktop items={NAV_ITEMS} currentPath={currentPath} />
           </div>
 
           {/* Spacer — keeps brand pinned left and pushes CTAs/hamburger right */}
-          <div className="flex-1" />
+          <div className="flex-1 lg:hidden" />
 
           {/* Desktop CTAs */}
-          <div className="hidden md:flex items-center gap-2 shrink-0">
+          <div className="hidden lg:flex items-center gap-2 shrink-0">
+            <CartButton />
             {isLoading ? (
               <div className="w-11 h-11 rounded-full bg-white/[0.05] animate-pulse" />
             ) : isLoggedIn ? (
@@ -285,6 +286,8 @@ export function Navbar() {
             )}
           </div>
 
+          <div className="lg:hidden shrink-0"><CartButton compact /></div>
+
           {/* Mobile hamburger — bumped to a full 48px target */}
           <button
             type="button"
@@ -293,7 +296,7 @@ export function Navbar() {
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav"
             className={cn(
-              'md:hidden ml-auto flex flex-col items-center justify-center gap-[6px]',
+              'lg:hidden flex flex-col items-center justify-center gap-[6px]',
               'w-12 h-12 rounded-md shrink-0',
               'border border-white/[0.08] hover:border-white/[0.18]',
               'text-[#A8B8D8] hover:text-[#E8F0FF]',

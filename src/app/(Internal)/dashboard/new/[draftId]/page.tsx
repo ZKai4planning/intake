@@ -37,7 +37,7 @@
 //   }, [draftId])
 
 //   if (existing === undefined) {
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading application…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading application…</p>
 //   }
 
 //   const actorFromQuery = searchParams.get('actor') as ActorId | null
@@ -46,7 +46,7 @@
 
 //   if (!actorId || !workspace) {
 //     if (typeof window !== 'undefined') router.replace('/dashboard/new/intent')
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 //   }
 
 //   function handleBack() {
@@ -57,7 +57,7 @@
 //     <div className="max-w-[640px] mx-auto">
 //       <button
 //         onClick={handleBack}
-//         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+//         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 //       >
 //         ← Back to dashboard
 //       </button>
@@ -127,7 +127,7 @@ export default function DraftApplicationPage() {
   }, [draftId])
 
   if (existing === undefined) {
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading application…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading application…</p>
   }
 
   const actorFromQuery = searchParams.get('actor') as ActorId | null
@@ -136,7 +136,7 @@ export default function DraftApplicationPage() {
 
   if (!actorId || !workspace) {
     if (typeof window !== 'undefined') router.replace('/dashboard/new/intent')
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
   }
 
   function handleBack() {
@@ -147,7 +147,7 @@ export default function DraftApplicationPage() {
     <div className="max-w-[640px] mx-auto">
       <button
         onClick={handleBack}
-        className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+        className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
       >
         ← Back to dashboard
       </button>

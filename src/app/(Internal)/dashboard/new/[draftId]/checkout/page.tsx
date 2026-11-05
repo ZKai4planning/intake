@@ -57,12 +57,12 @@
 // // //   }, [addOnIds, reportItem])
 
 // // //   if (project === undefined) {
-// // //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+// // //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 // // //   }
 
 // // //   if (!project || !project.address || !project.constraints) {
 // // //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-// // //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+// // //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 // // //   }
 
 // // //   function toggleAddOn(id: string) {
@@ -107,25 +107,25 @@
 // // //     <div className="max-w-[560px] mx-auto">
 // // //       <button
 // // //         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-// // //         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+// // //         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 // // //       >
 // // //         ← Back to snapshot
 // // //       </button>
 
-// // //       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+// // //       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
 // // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
 // // //         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
 // // //           <div>
-// // //             <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-// // //             <p className="text-[12px] text-[#5A6A8A] mt-1">
+// // //             <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+// // //             <p className="text-[13.5px] text-[#5A6A8A] mt-1">
 // // //               {project.address.line1} · {project.title} · {project.address.council}
 // // //             </p>
 // // //           </div>
-// // //           <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+// // //           <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
 // // //         </div>
 
-// // //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+// // //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
 // // //           Recommended add-ons
 // // //         </p>
 // // //         <div className="space-y-3">
@@ -134,16 +134,16 @@
 // // //             return (
 // // //               <div key={a.id} className="flex items-center justify-between gap-3">
 // // //                 <div>
-// // //                   <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-// // //                   <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+// // //                   <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+// // //                   <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
 // // //                 </div>
 // // //                 <div className="flex items-center gap-2.5 shrink-0">
-// // //                   <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+// // //                   <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
 // // //                   <button
 // // //                     type="button"
 // // //                     onClick={() => toggleAddOn(a.id)}
 // // //                     className={cn(
-// // //                       'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+// // //                       'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
 // // //                       added
 // // //                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
 // // //                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -158,13 +158,13 @@
 // // //         </div>
 
 // // //         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-// // //           <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-// // //           <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+// // //           <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+// // //           <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
 // // //         </div>
 // // //       </div>
 
 // // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-// // //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+// // //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
 // // //           Payment details
 // // //         </p>
 // // //         <div className="space-y-3.5">
@@ -206,11 +206,11 @@
 // // //         type="button"
 // // //         onClick={handlePay}
 // // //         disabled={isPaying}
-// // //         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
+// // //         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
 // // //       >
 // // //         {isPaying ? 'Processing…' : `🔒 Pay and generate report · £${total}`}
 // // //       </button>
-// // //       <p className="text-center text-[12px] text-[#5A6A8A]">
+// // //       <p className="text-center text-[13.5px] text-[#5A6A8A]">
 // // //         Payment taken before report is released · Secured by Stripe
 // // //       </p>
 // // //     </div>
@@ -218,7 +218,7 @@
 // // // }
 
 // // // const inputClass = cn(
-// // //   'w-full rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+// // //   'w-full rounded-[10px] px-3.5 py-2.5 text-[15px]',
 // // //   'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
 // // //   'border border-white/[0.12] outline-none transition-all',
 // // //   'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -227,7 +227,7 @@
 // // // function Field({ label, children }: { label: string; children: React.ReactNode }) {
 // // //   return (
 // // //     <label className="block">
-// // //       <span className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
+// // //       <span className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
 // // //       {children}
 // // //     </label>
 // // //   )
@@ -388,12 +388,12 @@
 // //   }, [project, total])
 
 // //   if (project === undefined) {
-// //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+// //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 // //   }
 
 // //   if (!project || !project.address || !project.constraints) {
 // //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-// //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+// //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 // //   }
 
 // //   function toggleAddOn(id: string) {
@@ -409,25 +409,25 @@
 // //     <div className="max-w-[560px] mx-auto">
 // //       <button
 // //         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-// //         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+// //         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 // //       >
 // //         ← Back to snapshot
 // //       </button>
 
-// //       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+// //       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
 // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
 // //         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
 // //           <div>
-// //             <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-// //             <p className="text-[12px] text-[#5A6A8A] mt-1">
+// //             <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+// //             <p className="text-[13.5px] text-[#5A6A8A] mt-1">
 // //               {project.address.line1} · {project.title} · {project.address.council}
 // //             </p>
 // //           </div>
-// //           <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+// //           <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
 // //         </div>
 
-// //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+// //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
 // //           Recommended add-ons
 // //         </p>
 // //         <div className="space-y-3">
@@ -436,16 +436,16 @@
 // //             return (
 // //               <div key={a.id} className="flex items-center justify-between gap-3">
 // //                 <div>
-// //                   <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-// //                   <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+// //                   <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+// //                   <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
 // //                 </div>
 // //                 <div className="flex items-center gap-2.5 shrink-0">
-// //                   <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+// //                   <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
 // //                   <button
 // //                     type="button"
 // //                     onClick={() => toggleAddOn(a.id)}
 // //                     className={cn(
-// //                       'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+// //                       'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
 // //                       added
 // //                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
 // //                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -460,18 +460,18 @@
 // //         </div>
 
 // //         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-// //           <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-// //           <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+// //           <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+// //           <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
 // //         </div>
 // //       </div>
 
 // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-// //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+// //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
 // //           Payment details
 // //         </p>
 
 // //         {widgetError && (
-// //           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[12.5px] text-red-300">
+// //           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[14px] text-red-300">
 // //             {widgetError}
 // //           </p>
 // //         )}
@@ -481,7 +481,7 @@
 // //         <div ref={widgetContainerRef} className="min-h-[220px]" />
 // //       </div>
 
-// //       <p className="text-center text-[12px] text-[#5A6A8A]">
+// //       <p className="text-center text-[13.5px] text-[#5A6A8A]">
 // //         Payment taken before report is released · Secured by Revolut
 // //       </p>
 // //     </div>
@@ -547,12 +547,12 @@
 // //   }, [addOnIds, reportItem])
 
 // //   if (project === undefined) {
-// //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+// //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 // //   }
 
 // //   if (!project || !project.address || !project.constraints) {
 // //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-// //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+// //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 // //   }
 
 // //   function toggleAddOn(id: string) {
@@ -597,25 +597,25 @@
 // //     <div className="max-w-[560px] mx-auto">
 // //       <button
 // //         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-// //         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+// //         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 // //       >
 // //         ← Back to snapshot
 // //       </button>
 
-// //       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+// //       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
 // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
 // //         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
 // //           <div>
-// //             <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-// //             <p className="text-[12px] text-[#5A6A8A] mt-1">
+// //             <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+// //             <p className="text-[13.5px] text-[#5A6A8A] mt-1">
 // //               {project.address.line1} · {project.title} · {project.address.council}
 // //             </p>
 // //           </div>
-// //           <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+// //           <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
 // //         </div>
 
-// //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+// //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
 // //           Recommended add-ons
 // //         </p>
 // //         <div className="space-y-3">
@@ -624,16 +624,16 @@
 // //             return (
 // //               <div key={a.id} className="flex items-center justify-between gap-3">
 // //                 <div>
-// //                   <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-// //                   <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+// //                   <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+// //                   <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
 // //                 </div>
 // //                 <div className="flex items-center gap-2.5 shrink-0">
-// //                   <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+// //                   <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
 // //                   <button
 // //                     type="button"
 // //                     onClick={() => toggleAddOn(a.id)}
 // //                     className={cn(
-// //                       'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+// //                       'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
 // //                       added
 // //                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
 // //                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -648,13 +648,13 @@
 // //         </div>
 
 // //         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-// //           <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-// //           <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+// //           <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+// //           <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
 // //         </div>
 // //       </div>
 
 // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-// //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+// //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
 // //           Payment details
 // //         </p>
 // //         <div className="space-y-3.5">
@@ -696,11 +696,11 @@
 // //         type="button"
 // //         onClick={handlePay}
 // //         disabled={isPaying}
-// //         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
+// //         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
 // //       >
 // //         {isPaying ? 'Processing…' : `🔒 Pay and generate report · £${total}`}
 // //       </button>
-// //       <p className="text-center text-[12px] text-[#5A6A8A]">
+// //       <p className="text-center text-[13.5px] text-[#5A6A8A]">
 // //         Payment taken before report is released · Secured by Stripe
 // //       </p>
 // //     </div>
@@ -708,7 +708,7 @@
 // // }
 
 // // const inputClass = cn(
-// //   'w-full rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+// //   'w-full rounded-[10px] px-3.5 py-2.5 text-[15px]',
 // //   'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
 // //   'border border-white/[0.12] outline-none transition-all',
 // //   'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -717,7 +717,7 @@
 // // function Field({ label, children }: { label: string; children: React.ReactNode }) {
 // //   return (
 // //     <label className="block">
-// //       <span className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
+// //       <span className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
 // //       {children}
 // //     </label>
 // //   )
@@ -878,12 +878,12 @@
 //   }, [project, total])
 
 //   if (project === undefined) {
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 //   }
 
 //   if (!project || !project.address || !project.constraints) {
 //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 //   }
 
 //   function toggleAddOn(id: string) {
@@ -899,25 +899,25 @@
 //     <div className="max-w-[560px] mx-auto">
 //       <button
 //         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-//         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+//         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 //       >
 //         ← Back to snapshot
 //       </button>
 
-//       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+//       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
 //       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
 //         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
 //           <div>
-//             <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-//             <p className="text-[12px] text-[#5A6A8A] mt-1">
+//             <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+//             <p className="text-[13.5px] text-[#5A6A8A] mt-1">
 //               {project.address.line1} · {project.title} · {project.address.council}
 //             </p>
 //           </div>
-//           <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+//           <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
 //         </div>
 
-//         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+//         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
 //           Recommended add-ons
 //         </p>
 //         <div className="space-y-3">
@@ -926,16 +926,16 @@
 //             return (
 //               <div key={a.id} className="flex items-center justify-between gap-3">
 //                 <div>
-//                   <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-//                   <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+//                   <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+//                   <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
 //                 </div>
 //                 <div className="flex items-center gap-2.5 shrink-0">
-//                   <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+//                   <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
 //                   <button
 //                     type="button"
 //                     onClick={() => toggleAddOn(a.id)}
 //                     className={cn(
-//                       'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+//                       'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
 //                       added
 //                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
 //                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -950,18 +950,18 @@
 //         </div>
 
 //         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-//           <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-//           <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+//           <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+//           <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
 //         </div>
 //       </div>
 
 //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-//         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+//         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
 //           Payment details
 //         </p>
 
 //         {widgetError && (
-//           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[12.5px] text-red-300">
+//           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[14px] text-red-300">
 //             {widgetError}
 //           </p>
 //         )}
@@ -971,7 +971,7 @@
 //         <div ref={widgetContainerRef} className="min-h-[220px]" />
 //       </div>
 
-//       <p className="text-center text-[12px] text-[#5A6A8A]">
+//       <p className="text-center text-[13.5px] text-[#5A6A8A]">
 //         Payment taken before report is released · Secured by Revolut
 //       </p>
 //     </div>
@@ -1146,12 +1146,12 @@
 //   }, [project, total])
 
 //   if (project === undefined) {
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 //   }
 
 //   if (!project || !project.address || !project.constraints) {
 //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 //   }
 
 //   function toggleAddOn(id: string) {
@@ -1180,25 +1180,25 @@
 //     <div className="max-w-[560px] mx-auto">
 //       <button
 //         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-//         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+//         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 //       >
 //         ← Back to snapshot
 //       </button>
 
-//       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+//       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
 //       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
 //         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
 //           <div>
-//             <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-//             <p className="text-[12px] text-[#5A6A8A] mt-1">
+//             <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+//             <p className="text-[13.5px] text-[#5A6A8A] mt-1">
 //               {project.address.line1} · {project.title} · {project.address.council}
 //             </p>
 //           </div>
-//           <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+//           <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
 //         </div>
 
-//         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+//         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
 //           Recommended add-ons
 //         </p>
 //         <div className="space-y-3">
@@ -1207,16 +1207,16 @@
 //             return (
 //               <div key={a.id} className="flex items-center justify-between gap-3">
 //                 <div>
-//                   <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-//                   <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+//                   <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+//                   <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
 //                 </div>
 //                 <div className="flex items-center gap-2.5 shrink-0">
-//                   <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+//                   <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
 //                   <button
 //                     type="button"
 //                     onClick={() => toggleAddOn(a.id)}
 //                     className={cn(
-//                       'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+//                       'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
 //                       added
 //                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
 //                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -1231,18 +1231,18 @@
 //         </div>
 
 //         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-//           <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-//           <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+//           <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+//           <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
 //         </div>
 //       </div>
 
 //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-//         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+//         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
 //           Payment details
 //         </p>
 
 //         {widgetError && (
-//           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[12.5px] text-red-300">
+//           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[14px] text-red-300">
 //             {widgetError}
 //           </p>
 //         )}
@@ -1293,13 +1293,13 @@
 //           type="button"
 //           onClick={handleMockPay}
 //           disabled={isPaying}
-//           className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
+//           className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
 //         >
 //           {isPaying ? 'Processing…' : `🔒 Pay and generate report · £${total}`}
 //         </button>
 //       )}
 
-//       <p className="text-center text-[12px] text-[#5A6A8A]">
+//       <p className="text-center text-[13.5px] text-[#5A6A8A]">
 //         Payment taken before report is released
 //       </p>
 //     </div>
@@ -1307,7 +1307,7 @@
 // }
 
 // const inputClass = cn(
-//   'w-full rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+//   'w-full rounded-[10px] px-3.5 py-2.5 text-[15px]',
 //   'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
 //   'border border-white/[0.12] outline-none transition-all',
 //   'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -1316,7 +1316,7 @@
 // function Field({ label, children }: { label: string; children: React.ReactNode }) {
 //   return (
 //     <label className="block">
-//       <span className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
+//       <span className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
 //       {children}
 //     </label>
 //   )
@@ -1383,12 +1383,12 @@
 // // //   }, [addOnIds, reportItem])
 
 // // //   if (project === undefined) {
-// // //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+// // //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 // // //   }
 
 // // //   if (!project || !project.address || !project.constraints) {
 // // //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-// // //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+// // //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 // // //   }
 
 // // //   function toggleAddOn(id: string) {
@@ -1433,25 +1433,25 @@
 // // //     <div className="max-w-[560px] mx-auto">
 // // //       <button
 // // //         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-// // //         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+// // //         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 // // //       >
 // // //         ← Back to snapshot
 // // //       </button>
 
-// // //       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+// // //       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
 // // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
 // // //         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
 // // //           <div>
-// // //             <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-// // //             <p className="text-[12px] text-[#5A6A8A] mt-1">
+// // //             <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+// // //             <p className="text-[13.5px] text-[#5A6A8A] mt-1">
 // // //               {project.address.line1} · {project.title} · {project.address.council}
 // // //             </p>
 // // //           </div>
-// // //           <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+// // //           <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
 // // //         </div>
 
-// // //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+// // //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
 // // //           Recommended add-ons
 // // //         </p>
 // // //         <div className="space-y-3">
@@ -1460,16 +1460,16 @@
 // // //             return (
 // // //               <div key={a.id} className="flex items-center justify-between gap-3">
 // // //                 <div>
-// // //                   <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-// // //                   <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+// // //                   <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+// // //                   <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
 // // //                 </div>
 // // //                 <div className="flex items-center gap-2.5 shrink-0">
-// // //                   <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+// // //                   <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
 // // //                   <button
 // // //                     type="button"
 // // //                     onClick={() => toggleAddOn(a.id)}
 // // //                     className={cn(
-// // //                       'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+// // //                       'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
 // // //                       added
 // // //                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
 // // //                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -1484,13 +1484,13 @@
 // // //         </div>
 
 // // //         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-// // //           <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-// // //           <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+// // //           <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+// // //           <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
 // // //         </div>
 // // //       </div>
 
 // // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-// // //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+// // //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
 // // //           Payment details
 // // //         </p>
 // // //         <div className="space-y-3.5">
@@ -1532,11 +1532,11 @@
 // // //         type="button"
 // // //         onClick={handlePay}
 // // //         disabled={isPaying}
-// // //         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
+// // //         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
 // // //       >
 // // //         {isPaying ? 'Processing…' : `🔒 Pay and generate report · £${total}`}
 // // //       </button>
-// // //       <p className="text-center text-[12px] text-[#5A6A8A]">
+// // //       <p className="text-center text-[13.5px] text-[#5A6A8A]">
 // // //         Payment taken before report is released · Secured by Stripe
 // // //       </p>
 // // //     </div>
@@ -1544,7 +1544,7 @@
 // // // }
 
 // // // const inputClass = cn(
-// // //   'w-full rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+// // //   'w-full rounded-[10px] px-3.5 py-2.5 text-[15px]',
 // // //   'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
 // // //   'border border-white/[0.12] outline-none transition-all',
 // // //   'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -1553,7 +1553,7 @@
 // // // function Field({ label, children }: { label: string; children: React.ReactNode }) {
 // // //   return (
 // // //     <label className="block">
-// // //       <span className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
+// // //       <span className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
 // // //       {children}
 // // //     </label>
 // // //   )
@@ -1714,12 +1714,12 @@
 // //   }, [project, total])
 
 // //   if (project === undefined) {
-// //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+// //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 // //   }
 
 // //   if (!project || !project.address || !project.constraints) {
 // //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-// //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+// //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 // //   }
 
 // //   function toggleAddOn(id: string) {
@@ -1735,25 +1735,25 @@
 // //     <div className="max-w-[560px] mx-auto">
 // //       <button
 // //         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-// //         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+// //         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 // //       >
 // //         ← Back to snapshot
 // //       </button>
 
-// //       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+// //       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
 // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
 // //         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
 // //           <div>
-// //             <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-// //             <p className="text-[12px] text-[#5A6A8A] mt-1">
+// //             <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+// //             <p className="text-[13.5px] text-[#5A6A8A] mt-1">
 // //               {project.address.line1} · {project.title} · {project.address.council}
 // //             </p>
 // //           </div>
-// //           <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+// //           <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
 // //         </div>
 
-// //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+// //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
 // //           Recommended add-ons
 // //         </p>
 // //         <div className="space-y-3">
@@ -1762,16 +1762,16 @@
 // //             return (
 // //               <div key={a.id} className="flex items-center justify-between gap-3">
 // //                 <div>
-// //                   <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-// //                   <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+// //                   <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+// //                   <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
 // //                 </div>
 // //                 <div className="flex items-center gap-2.5 shrink-0">
-// //                   <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+// //                   <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
 // //                   <button
 // //                     type="button"
 // //                     onClick={() => toggleAddOn(a.id)}
 // //                     className={cn(
-// //                       'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+// //                       'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
 // //                       added
 // //                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
 // //                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -1786,18 +1786,18 @@
 // //         </div>
 
 // //         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-// //           <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-// //           <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+// //           <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+// //           <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
 // //         </div>
 // //       </div>
 
 // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-// //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+// //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
 // //           Payment details
 // //         </p>
 
 // //         {widgetError && (
-// //           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[12.5px] text-red-300">
+// //           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[14px] text-red-300">
 // //             {widgetError}
 // //           </p>
 // //         )}
@@ -1807,7 +1807,7 @@
 // //         <div ref={widgetContainerRef} className="min-h-[220px]" />
 // //       </div>
 
-// //       <p className="text-center text-[12px] text-[#5A6A8A]">
+// //       <p className="text-center text-[13.5px] text-[#5A6A8A]">
 // //         Payment taken before report is released · Secured by Revolut
 // //       </p>
 // //     </div>
@@ -1873,12 +1873,12 @@
 // //   }, [addOnIds, reportItem])
 
 // //   if (project === undefined) {
-// //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+// //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 // //   }
 
 // //   if (!project || !project.address || !project.constraints) {
 // //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-// //     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+// //     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 // //   }
 
 // //   function toggleAddOn(id: string) {
@@ -1923,25 +1923,25 @@
 // //     <div className="max-w-[560px] mx-auto">
 // //       <button
 // //         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-// //         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+// //         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 // //       >
 // //         ← Back to snapshot
 // //       </button>
 
-// //       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+// //       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
 // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
 // //         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
 // //           <div>
-// //             <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-// //             <p className="text-[12px] text-[#5A6A8A] mt-1">
+// //             <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+// //             <p className="text-[13.5px] text-[#5A6A8A] mt-1">
 // //               {project.address.line1} · {project.title} · {project.address.council}
 // //             </p>
 // //           </div>
-// //           <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+// //           <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
 // //         </div>
 
-// //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+// //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
 // //           Recommended add-ons
 // //         </p>
 // //         <div className="space-y-3">
@@ -1950,16 +1950,16 @@
 // //             return (
 // //               <div key={a.id} className="flex items-center justify-between gap-3">
 // //                 <div>
-// //                   <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-// //                   <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+// //                   <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+// //                   <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
 // //                 </div>
 // //                 <div className="flex items-center gap-2.5 shrink-0">
-// //                   <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+// //                   <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
 // //                   <button
 // //                     type="button"
 // //                     onClick={() => toggleAddOn(a.id)}
 // //                     className={cn(
-// //                       'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+// //                       'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
 // //                       added
 // //                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
 // //                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -1974,13 +1974,13 @@
 // //         </div>
 
 // //         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-// //           <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-// //           <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+// //           <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+// //           <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
 // //         </div>
 // //       </div>
 
 // //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-// //         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+// //         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
 // //           Payment details
 // //         </p>
 // //         <div className="space-y-3.5">
@@ -2022,11 +2022,11 @@
 // //         type="button"
 // //         onClick={handlePay}
 // //         disabled={isPaying}
-// //         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
+// //         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
 // //       >
 // //         {isPaying ? 'Processing…' : `🔒 Pay and generate report · £${total}`}
 // //       </button>
-// //       <p className="text-center text-[12px] text-[#5A6A8A]">
+// //       <p className="text-center text-[13.5px] text-[#5A6A8A]">
 // //         Payment taken before report is released · Secured by Stripe
 // //       </p>
 // //     </div>
@@ -2034,7 +2034,7 @@
 // // }
 
 // // const inputClass = cn(
-// //   'w-full rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+// //   'w-full rounded-[10px] px-3.5 py-2.5 text-[15px]',
 // //   'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
 // //   'border border-white/[0.12] outline-none transition-all',
 // //   'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -2043,7 +2043,7 @@
 // // function Field({ label, children }: { label: string; children: React.ReactNode }) {
 // //   return (
 // //     <label className="block">
-// //       <span className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
+// //       <span className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
 // //       {children}
 // //     </label>
 // //   )
@@ -2204,12 +2204,12 @@
 //   }, [project, total])
 
 //   if (project === undefined) {
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 //   }
 
 //   if (!project || !project.address || !project.constraints) {
 //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 //   }
 
 //   function toggleAddOn(id: string) {
@@ -2225,25 +2225,25 @@
 //     <div className="max-w-[560px] mx-auto">
 //       <button
 //         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-//         className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+//         className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
 //       >
 //         ← Back to snapshot
 //       </button>
 
-//       <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+//       <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
 //       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
 //         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
 //           <div>
-//             <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-//             <p className="text-[12px] text-[#5A6A8A] mt-1">
+//             <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+//             <p className="text-[13.5px] text-[#5A6A8A] mt-1">
 //               {project.address.line1} · {project.title} · {project.address.council}
 //             </p>
 //           </div>
-//           <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+//           <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
 //         </div>
 
-//         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+//         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
 //           Recommended add-ons
 //         </p>
 //         <div className="space-y-3">
@@ -2252,16 +2252,16 @@
 //             return (
 //               <div key={a.id} className="flex items-center justify-between gap-3">
 //                 <div>
-//                   <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-//                   <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+//                   <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+//                   <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
 //                 </div>
 //                 <div className="flex items-center gap-2.5 shrink-0">
-//                   <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+//                   <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
 //                   <button
 //                     type="button"
 //                     onClick={() => toggleAddOn(a.id)}
 //                     className={cn(
-//                       'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+//                       'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
 //                       added
 //                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
 //                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -2276,18 +2276,18 @@
 //         </div>
 
 //         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-//           <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-//           <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+//           <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+//           <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
 //         </div>
 //       </div>
 
 //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-//         <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+//         <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
 //           Payment details
 //         </p>
 
 //         {widgetError && (
-//           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[12.5px] text-red-300">
+//           <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[14px] text-red-300">
 //             {widgetError}
 //           </p>
 //         )}
@@ -2297,7 +2297,7 @@
 //         <div ref={widgetContainerRef} className="min-h-[220px]" />
 //       </div>
 
-//       <p className="text-center text-[12px] text-[#5A6A8A]">
+//       <p className="text-center text-[13.5px] text-[#5A6A8A]">
 //         Payment taken before report is released · Secured by Revolut
 //       </p>
 //     </div>
@@ -2475,12 +2475,12 @@ export default function CheckoutPage() {
   }, [project, total])
 
   if (project === undefined) {
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
   }
 
   if (!project || !project.address || !project.constraints) {
     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
   }
 
   function toggleAddOn(id: string) {
@@ -2509,25 +2509,25 @@ export default function CheckoutPage() {
     <div className="max-w-[560px] mx-auto">
       <button
         onClick={() => router.push(`/dashboard/new/${draftId}/snapshot`)}
-        className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+        className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
       >
         ← Back to snapshot
       </button>
 
-      <h1 className="font-display text-[26px] text-[#E8F0FF] mb-6">Review your order</h1>
+      <h1 className="font-display text-[29px] text-[#E8F0FF] mb-6">Review your order</h1>
 
       <div className="rounded-[14px] border border-white/[0.08] bg-[#141C30] p-4 mb-6">
         <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/[0.08]">
           <div>
-            <p className="text-[13.5px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
-            <p className="text-[12px] text-[#5A6A8A] mt-1">
+            <p className="text-[15px] font-semibold text-[#E8F0FF]">{reportItem.label}</p>
+            <p className="text-[13.5px] text-[#5A6A8A] mt-1">
               {project.address.line1} · {project.title} · {project.address.council}
             </p>
           </div>
-          <p className="text-[15px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
+          <p className="text-[17px] font-semibold text-[#E8F0FF] shrink-0">£{reportItem.price}</p>
         </div>
 
-        <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
+        <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mt-4 mb-3">
           Recommended add-ons
         </p>
         <div className="space-y-3">
@@ -2536,16 +2536,16 @@ export default function CheckoutPage() {
             return (
               <div key={a.id} className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-[13px] font-medium text-[#E8F0FF]">{a.label}</p>
-                  <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
+                  <p className="text-[14.5px] font-medium text-[#E8F0FF]">{a.label}</p>
+                  <p className="text-[13px] text-[#5A6A8A] mt-0.5">{a.detail}</p>
                 </div>
                 <div className="flex items-center gap-2.5 shrink-0">
-                  <span className="text-[13px] font-semibold text-[#E8F0FF]">£{a.price}</span>
+                  <span className="text-[14.5px] font-semibold text-[#E8F0FF]">£{a.price}</span>
                   <button
                     type="button"
                     onClick={() => toggleAddOn(a.id)}
                     className={cn(
-                      'px-2.5 py-1 rounded-full text-[11.5px] font-semibold border transition-colors',
+                      'px-2.5 py-1 rounded-full text-[13px] font-semibold border transition-colors',
                       added
                         ? 'border-[#135BEC]/40 bg-[rgba(19,91,236,0.1)] text-[#135BEC]'
                         : 'border-white/[0.14] text-[#A8B8D8] hover:border-white/[0.28] hover:text-[#E8F0FF]'
@@ -2560,18 +2560,18 @@ export default function CheckoutPage() {
         </div>
 
         <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
-          <p className="text-[13px] font-semibold text-[#E8F0FF]">Total</p>
-          <p className="font-display text-[20px] text-[#135BEC]">£{total}</p>
+          <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Total</p>
+          <p className="font-display text-[22.5px] text-[#135BEC]">£{total}</p>
         </div>
       </div>
 
       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-        <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
+        <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3.5">
           Payment details
         </p>
 
         {widgetError && (
-          <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[12.5px] text-red-300">
+          <p className="mb-3 rounded-[10px] border border-red-500/30 bg-red-500/10 px-3 py-2 text-[14px] text-red-300">
             {widgetError}
           </p>
         )}
@@ -2622,13 +2622,13 @@ export default function CheckoutPage() {
           type="button"
           onClick={handleMockPay}
           disabled={isPaying}
-          className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
+          className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)] disabled:opacity-60 disabled:cursor-not-allowed mb-3"
         >
           {isPaying ? 'Processing…' : `🔒 Pay and generate report · £${total}`}
         </button>
       )}
 
-      <p className="text-center text-[12px] text-[#5A6A8A]">
+      <p className="text-center text-[13.5px] text-[#5A6A8A]">
         Payment taken before report is released
       </p>
     </div>
@@ -2636,7 +2636,7 @@ export default function CheckoutPage() {
 }
 
 const inputClass = cn(
-  'w-full rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+  'w-full rounded-[10px] px-3.5 py-2.5 text-[15px]',
   'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
   'border border-white/[0.12] outline-none transition-all',
   'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -2645,7 +2645,7 @@ const inputClass = cn(
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <label className="block">
-      <span className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
+      <span className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">{label}</span>
       {children}
     </label>
   )

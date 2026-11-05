@@ -129,7 +129,7 @@ export function ActivityLogWidget() {
 
   return (
     <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5">
-      <h3 className="text-[14px] font-semibold text-[#E8F0FF] mb-4">Recent activity</h3>
+      <h3 className="text-[15.5px] font-semibold text-[#E8F0FF] mb-4">Recent activity</h3>
 
       {events === null ? (
         <div className="space-y-2.5">
@@ -150,10 +150,10 @@ export function ActivityLogWidget() {
                   <Icon className="h-3.5 w-3.5" />
                 </span>
                 <div className="min-w-0 flex-1">
-                  <p className="text-[12.5px] font-medium text-[#E8F0FF] truncate">{e.label}</p>
-                  <p className="text-[11.5px] text-[#5A6A8A] truncate">{e.detail}</p>
+                  <p className="text-[14px] font-medium text-[#E8F0FF] truncate">{e.label}</p>
+                  <p className="text-[13px] text-[#5A6A8A] truncate">{e.detail}</p>
                 </div>
-                <span className="shrink-0 text-[11px] text-[#5A6A8A] mt-1">{formatRelativeDate(e.at)}</span>
+                <span className="shrink-0 text-[12.5px] text-[#5A6A8A] mt-1">{formatRelativeDate(e.at)}</span>
               </li>
             )
           })}

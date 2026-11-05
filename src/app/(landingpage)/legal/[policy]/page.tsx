@@ -34,13 +34,13 @@ export default function PolicyPage({ params }: Props) {
 
       {/* ── Page header ── */}
       <div className="mb-10">
-        <span className="inline-block text-[11px] font-semibold tracking-[0.08em] uppercase text-[#135BEC] bg-[rgba(19,91,236,0.1)] border border-[rgba(19,91,236,0.2)] rounded-[6px] px-2.5 py-1 mb-4">
+        <span className="inline-block text-[12.5px] font-semibold tracking-[0.08em] uppercase text-[#135BEC] bg-[rgba(19,91,236,0.1)] border border-[rgba(19,91,236,0.2)] rounded-[6px] px-2.5 py-1 mb-4">
           {doc.eyebrow}
         </span>
         <h1 className="text-[clamp(26px,5vw,36px)] font-light tracking-[-0.02em] text-[#E8F0FF] leading-tight mb-3">
           {doc.title}
         </h1>
-        <p className="text-[12px] text-[#5A6A8A] pb-8 border-b border-white/[0.08]">
+        <p className="text-[13.5px] text-[#5A6A8A] pb-8 border-b border-white/[0.08]">
           {doc.meta}
         </p>
       </div>
@@ -55,7 +55,7 @@ export default function PolicyPage({ params }: Props) {
 
         {/* Mobile inline TOC */}
         <div className="lg:hidden mb-8 rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5">
-          <p className="text-[10px] font-bold tracking-[0.1em] uppercase text-[#5A6A8A] mb-3">
+          <p className="text-[11px] font-bold tracking-[0.1em] uppercase text-[#5A6A8A] mb-3">
             Contents
           </p>
           <ul className="space-y-1">
@@ -63,7 +63,7 @@ export default function PolicyPage({ params }: Props) {
               <li key={s.id}>
                 <a
                   href={`#${s.id}`}
-                  className="flex items-center gap-2.5 py-1 text-[12.5px] text-[#5A6A8A] hover:text-[#135BEC] transition-colors"
+                  className="flex items-center gap-2.5 py-1 text-[14px] text-[#5A6A8A] hover:text-[#135BEC] transition-colors"
                 >
                   <span className="h-[4px] w-[4px] shrink-0 rounded-full bg-[#5A6A8A]" />
                   {s.title}

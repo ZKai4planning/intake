@@ -60,7 +60,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
             )}
           >
             <span className={cn('mt-1.5 w-1.5 h-1.5 rounded-full shrink-0', VARIANT_STYLES[t.variant].dot)} />
-            <p className="text-[12.5px] text-[#E8F0FF] leading-snug">{t.message}</p>
+            <p className="text-[14px] text-[#E8F0FF] leading-snug">{t.message}</p>
           </div>
         ))}
       </div>

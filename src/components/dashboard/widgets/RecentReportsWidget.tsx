@@ -33,10 +33,10 @@ export function RecentReportsWidget({ className }: { className?: string }) {
   return (
     <div className={cn('rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5', className)}>
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-[14px] font-semibold text-[#E8F0FF]">Recent reports</h3>
+        <h3 className="text-[15.5px] font-semibold text-[#E8F0FF]">Recent reports</h3>
         <button
           onClick={() => guardedNavigate('/dashboard/reports')}
-          className="text-[12px] text-[#135BEC] hover:text-[#2A6BF0] font-medium"
+          className="text-[13.5px] text-[#135BEC] hover:text-[#2A6BF0] font-medium"
         >
           View all
         </button>
@@ -47,7 +47,7 @@ export function RecentReportsWidget({ className }: { className?: string }) {
           {[0, 1].map(i => <div key={i} className="h-[44px] rounded-[8px] bg-white/[0.03] animate-pulse" />)}
         </div>
       ) : reports.length === 0 ? (
-        <p className="text-[12.5px] text-[#5A6A8A] text-center py-4">
+        <p className="text-[14px] text-[#5A6A8A] text-center py-4">
           Submitted applications will appear here as reports.
         </p>
       ) : (
@@ -60,10 +60,10 @@ export function RecentReportsWidget({ className }: { className?: string }) {
             >
               <span className="text-[#135BEC] shrink-0" aria-hidden="true">📄</span>
               <div className="flex-1 min-w-0">
-                <p className="text-[12.5px] text-[#E8F0FF] truncate">{r.title}</p>
-                <p className="text-[11px] text-[#5A6A8A] truncate">{r.tier} application</p>
+                <p className="text-[14px] text-[#E8F0FF] truncate">{r.title}</p>
+                <p className="text-[12.5px] text-[#5A6A8A] truncate">{r.tier} application</p>
               </div>
-              <span className="text-[10.5px] text-[#5A6A8A] shrink-0">{formatRelativeDate(r.submittedAt ?? r.updatedAt)}</span>
+              <span className="text-[12px] text-[#5A6A8A] shrink-0">{formatRelativeDate(r.submittedAt ?? r.updatedAt)}</span>
             </div>
           ))}
         </div>

@@ -64,7 +64,7 @@ export function PasswordStrength({ password, className }: PasswordStrengthProps)
           />
         ))}
         {result.label && (
-          <span className="ml-1 text-[11px] font-medium text-[#5A6A8A] shrink-0 leading-none self-center">
+          <span className="ml-1 text-[12.5px] font-medium text-[#5A6A8A] shrink-0 leading-none self-center">
             {result.label}
           </span>
         )}
@@ -76,7 +76,7 @@ export function PasswordStrength({ password, className }: PasswordStrengthProps)
           <li
             key={c.label}
             className={cn(
-              'flex items-center gap-2 text-[12px] transition-colors duration-150',
+              'flex items-center gap-2 text-[13.5px] transition-colors duration-150',
               c.passed ? 'text-[#135BEC]' : 'text-[#5A6A8A]'
             )}
           >

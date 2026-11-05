@@ -29,7 +29,7 @@ export function ThinkingBubble() {
 
 export function AssistantText({ children }: { children: React.ReactNode }) {
   return (
-    <div className="rounded-2xl rounded-tl-sm border border-white/[0.08] bg-[#0F1525] px-4 py-3 text-[14.5px] leading-relaxed text-[#E8F0FF] animate-fade-in">
+    <div className="rounded-2xl rounded-tl-sm border border-white/[0.08] bg-[#0F1525] px-4 py-3 text-[16px] leading-relaxed text-[#E8F0FF] animate-fade-in">
       {children}
     </div>
   )
@@ -48,9 +48,9 @@ export function UserBubble({
     <div className="flex animate-fade-in items-start justify-end gap-3">
       <div className="flex max-w-[82%] flex-col items-end gap-1">
         <div className="rounded-2xl rounded-tr-sm bg-[#135BEC] px-4 py-3 text-left text-white">
-          <p className="text-[14.5px] font-medium leading-snug">{title}</p>
+          <p className="text-[16px] font-medium leading-snug">{title}</p>
           {lines?.map((l, i) => (
-            <p key={i} className="mt-0.5 text-[12.5px] leading-snug text-white/75">
+            <p key={i} className="mt-0.5 text-[14px] leading-snug text-white/75">
               {l}
             </p>
           ))}
@@ -59,7 +59,7 @@ export function UserBubble({
           <button
             type="button"
             onClick={onChange}
-            className="inline-flex items-center gap-1 pr-1 text-[11.5px] font-medium text-[#5A6A8A] transition-colors hover:text-[#00D4FF]"
+            className="inline-flex items-center gap-1 pr-1 text-[13px] font-medium text-[#5A6A8A] transition-colors hover:text-[#00D4FF]"
           >
             <Pencil className="h-3 w-3" />
             Change

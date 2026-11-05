@@ -66,9 +66,9 @@ export function NumberedCard({
   return (
     <div className="rounded-2xl rounded-tl-sm border border-white/[0.08] bg-[#0F1525] overflow-hidden">
       <div className="flex items-center justify-between gap-3 px-4 py-3 border-b border-white/[0.06]">
-        <p className="text-[13.5px] font-medium text-[#E8F0FF] leading-snug">{title}</p>
+        <p className="text-[15px] font-medium text-[#E8F0FF] leading-snug">{title}</p>
         <div className="flex items-center gap-2.5 shrink-0">
-          {stepLabel && <span className="text-[11.5px] text-[#5A6A8A]">{stepLabel}</span>}
+          {stepLabel && <span className="text-[13px] text-[#5A6A8A]">{stepLabel}</span>}
           {onClose && (
             <button
               type="button"
@@ -106,16 +106,16 @@ export function NumberedCard({
                 }`}
               >
                 <span
-                  className={`shrink-0 flex h-5 w-5 items-center justify-center rounded-full text-[11px] font-semibold ${
+                  className={`shrink-0 flex h-5 w-5 items-center justify-center rounded-full text-[12.5px] font-semibold ${
                     chosen ? 'bg-[#135BEC] text-white' : 'bg-white/[0.06] text-[#5A6A8A]'
                   }`}
                 >
                   {i + 1}
                 </span>
                 <span className="flex-1 min-w-0">
-                  <span className="block text-[13.5px] font-medium text-[#E8F0FF]">{item.label}</span>
+                  <span className="block text-[15px] font-medium text-[#E8F0FF]">{item.label}</span>
                   {item.sublabel && (
-                    <span className="block mt-0.5 text-[11.5px] text-[#A8B8D8] leading-relaxed">{item.sublabel}</span>
+                    <span className="block mt-0.5 text-[13px] text-[#A8B8D8] leading-relaxed">{item.sublabel}</span>
                   )}
                 </span>
                 <ChevronRight
@@ -125,12 +125,12 @@ export function NumberedCard({
 
               {item.detail && expanded && !chosen && (
                 <div className="px-4 pb-3.5 pl-[44px]">
-                  <p className="text-[12px] text-[#A8B8D8] leading-relaxed">{item.detail}</p>
+                  <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed">{item.detail}</p>
                   <button
                     type="button"
                     disabled={!active || item.disabled}
                     onClick={item.onSelect}
-                    className="mt-2.5 rounded-full bg-[#135BEC] px-4 py-1.5 text-[12px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors disabled:opacity-40 disabled:pointer-events-none"
+                    className="mt-2.5 rounded-full bg-[#135BEC] px-4 py-1.5 text-[13.5px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors disabled:opacity-40 disabled:pointer-events-none"
                   >
                     Choose this report
                   </button>
@@ -157,12 +157,12 @@ export function NumberedCard({
                   value={customValue}
                   onChange={e => setCustomValue(e.target.value)}
                   placeholder="Type your own answer…"
-                  className="flex-1 bg-transparent text-[13px] text-[#E8F0FF] placeholder:text-[#5A6A8A] focus:outline-none"
+                  className="flex-1 bg-transparent text-[14.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] focus:outline-none"
                 />
                 <button
                   type="submit"
                   disabled={!customValue.trim()}
-                  className="text-[11.5px] font-semibold text-[#00D4FF] disabled:opacity-40 disabled:pointer-events-none"
+                  className="text-[13px] font-semibold text-[#00D4FF] disabled:opacity-40 disabled:pointer-events-none"
                 >
                   Use this
                 </button>
@@ -175,7 +175,7 @@ export function NumberedCard({
                 className="w-full flex items-center gap-3 px-4 py-2.5 text-left text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors disabled:opacity-40 disabled:pointer-events-none"
               >
                 <Pencil className="h-3.5 w-3.5 shrink-0" />
-                <span className="text-[13px]">Something else</span>
+                <span className="text-[14.5px]">Something else</span>
               </button>
             )}
           </div>
@@ -188,7 +188,7 @@ export function NumberedCard({
             type="button"
             disabled={!active}
             onClick={onSkip}
-            className="text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors disabled:opacity-40 disabled:pointer-events-none"
+            className="text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors disabled:opacity-40 disabled:pointer-events-none"
           >
             Skip
           </button>

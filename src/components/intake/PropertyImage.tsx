@@ -66,7 +66,7 @@ export function PropertyImage({ applicationId, label, view, onViewChange, lat, l
               className="absolute inset-0 h-full w-full object-cover"
             />
             {noStreet && (
-              <p className="absolute left-2.5 top-2.5 rounded-full bg-[#0A0E1A]/80 px-2.5 py-1 text-[11px] text-[#A8B8D8]">
+              <p className="absolute left-2.5 top-2.5 rounded-full bg-[#0A0E1A]/80 px-2.5 py-1 text-[12.5px] text-[#A8B8D8]">
                 No street photo for this address – map shown instead
               </p>
             )}
@@ -76,11 +76,11 @@ export function PropertyImage({ applicationId, label, view, onViewChange, lat, l
         {!tilesOn && (noStreet || state === 'error') && (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-6 text-center">
             <ImageOff className="h-6 w-6 text-[#5A6A8A]" />
-            <p className="text-[13px] text-[#A8B8D8]">
+            <p className="text-[14.5px] text-[#A8B8D8]">
               {noStreet ? 'No street photo is available for this address.' : 'We couldn’t load this image.'}
             </p>
             {noStreet && (
-              <button type="button" onClick={() => onViewChange('aerial')} className="text-[12.5px] font-medium text-[#00D4FF] hover:underline">
+              <button type="button" onClick={() => onViewChange('aerial')} className="text-[14px] font-medium text-[#00D4FF] hover:underline">
                 Show the aerial view instead
               </button>
             )}
@@ -99,7 +99,7 @@ export function PropertyImage({ applicationId, label, view, onViewChange, lat, l
               onClick={() => onViewChange(k)}
               aria-pressed={view === k}
               className={cn(
-                'inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[12px] font-medium transition-colors',
+                'inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[13.5px] font-medium transition-colors',
                 view === k ? 'bg-[#135BEC] text-white' : 'text-[#A8B8D8] hover:text-white',
               )}
             >
@@ -109,7 +109,7 @@ export function PropertyImage({ applicationId, label, view, onViewChange, lat, l
           ))}
         </div>
       </div>
-      {attribution && !tilesOn && <p className="mt-1.5 text-[11px] text-[#5A6A8A]">{attribution}</p>}
+      {attribution && !tilesOn && <p className="mt-1.5 text-[12.5px] text-[#5A6A8A]">{attribution}</p>}
     </div>
   )
 }

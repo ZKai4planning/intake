@@ -38,8 +38,8 @@ export function DetailsCard({ value, onChange, onBack, onNext }: Props) {
   return (
     <StepCard icon={<User className="h-[18px] w-[18px]" />} title="Your details">
       <form onSubmit={submit} noValidate>
-        <h3 className="text-[19px] font-semibold text-[#E8F0FF]">Who are you?</h3>
-        <p className="mb-4 mt-1 text-[13.5px] text-[#A8B8D8]">We&apos;ll use this to set up your project.</p>
+        <h3 className="text-[21.5px] font-semibold text-[#E8F0FF]">Who are you?</h3>
+        <p className="mb-4 mt-1 text-[15px] text-[#A8B8D8]">We&apos;ll use this to set up your project.</p>
 
         <div className="space-y-3">
           <IconField
@@ -75,7 +75,7 @@ export function DetailsCard({ value, onChange, onBack, onNext }: Props) {
           />
         </div>
 
-        <p className="mb-1.5 mt-5 text-[14px] font-medium text-[#E8F0FF]">I am a:</p>
+        <p className="mb-1.5 mt-5 text-[15.5px] font-medium text-[#E8F0FF]">I am a:</p>
         <div role="radiogroup" aria-label="I am a" className="grid grid-cols-1 gap-x-4 sm:grid-cols-2">
           {INTAKE_ROLES.map(r => (
             <RadioRow key={r.id} selected={value.role === r.id} onClick={() => set({ role: r.id })}>

@@ -38,7 +38,7 @@ export function HeroEyebrow({
       </span>
 
       <span
-        className="text-[11px] font-semibold tracking-[0.1em] uppercase"
+        className="text-[12.5px] font-semibold tracking-[0.1em] uppercase"
         style={{ color: '#00D4FF', textShadow: '0 0 16px rgba(0,212,255,0.5)' }}
       >
         {text}

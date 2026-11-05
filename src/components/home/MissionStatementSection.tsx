@@ -71,19 +71,19 @@ export function MissionStatementSection() {
       <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#050912] to-transparent" />
 
       <motion.div
-        className="relative z-10 flex items-center justify-center min-h-[52vh] sm:min-h-[60vh] px-5 sm:px-8 py-20"
+        className="relative z-10 flex items-center justify-center min-h-[280px] sm:min-h-[340px] px-5 sm:px-8 py-14 sm:py-16"
         initial="hidden"
         whileInView="visible"
         viewport={viewportOnce}
         variants={fadeUp}
       >
         <div className="max-w-[820px] text-center">
-          <p className="font-display text-[24px] sm:text-[34px] lg:text-[38px] font-normal leading-[1.35] tracking-tight text-[#E8F0FF]">
+          <p className="font-display text-[27px] sm:text-[38px] lg:text-[42.5px] font-normal leading-[1.35] tracking-tight text-[#E8F0FF]">
             The intelligence layer for UK planning: from instant eligibility
             checks to AI-guided applications — AI4Planning is changing how
             homeowners understand, prepare, and submit planning applications.
           </p>
-          <p className="mt-6 text-[14px] sm:text-[15px] font-semibold tracking-wide text-[#00D4FF]">
+          <p className="mt-6 text-[15.5px] sm:text-[17px] font-semibold tracking-wide text-[#00D4FF]">
             Built on real council data, not guesswork
           </p>
         </div>

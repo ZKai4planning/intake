@@ -66,7 +66,7 @@ export function UtilitiesConsentsStepContent({
       {isSectionVisible('Safety & Compliance') && (
         <>
       <SectionHeading>Safety & Compliance</SectionHeading>
-      <p className="mb-4 text-[12.5px] text-[#5A6A8A]">
+      <p className="mb-4 text-[14px] text-[#5A6A8A]">
         Selecting <span className="font-semibold text-[#A8B8D8]">No</span> adds the related support
         item to your cart automatically.
       </p>

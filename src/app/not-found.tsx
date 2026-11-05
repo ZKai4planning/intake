@@ -5,7 +5,7 @@
 //     <main className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
 //       <div className="text-center">
 //         <p
-//           className="font-display text-[96px] font-normal leading-none mb-4"
+//           className="font-display text-[107.5px] font-normal leading-none mb-4"
 //           style={{ color: '#135BEC', textShadow: '0 0 40px rgba(19,91,236,0.4)' }}
 //         >
 //           404
@@ -144,17 +144,17 @@ export default function NotFound() {
         </div>
 
         {/* Eyebrow */}
-        <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#5A6A8A] mb-3">
+        <p className="text-[12.5px] font-semibold tracking-[0.12em] uppercase text-[#5A6A8A] mb-3">
           Coordinates not found
         </p>
 
         {/* Title */}
-        <h1 className="font-display text-[36px] sm:text-[44px] font-normal leading-[1.1] tracking-tight text-[#E8F0FF] mb-4">
+        <h1 className="font-display text-[40.5px] sm:text-[49.5px] font-normal leading-[1.1] tracking-tight text-[#E8F0FF] mb-4">
           This site isn't<br />on the record.
         </h1>
 
         {/* Body */}
-        <p className="text-[14px] text-[#5A6A8A] leading-relaxed mb-8">
+        <p className="text-[15.5px] text-[#5A6A8A] leading-relaxed mb-8">
           The page you requested has no planning reference,
           no application number, and no site boundary.
           It may have been moved, demolished, or never existed.
@@ -163,7 +163,7 @@ export default function NotFound() {
         {/* Status chip */}
         <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#141C30] border border-white/[0.08] mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-[#F87171] animate-pulse" />
-          <span className="text-[11px] font-mono text-[#5A6A8A] tracking-widest">
+          <span className="text-[12.5px] font-mono text-[#5A6A8A] tracking-widest">
             REF: 404 · STATUS: NOT FOUND
           </span>
         </div>
@@ -172,13 +172,13 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-3 w-full">
           <Link
             href="/"
-            className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#135BEC] text-white text-[13px] font-semibold tracking-wide hover:bg-[#2A6BF0] active:scale-[0.97] transition-all duration-150"
+            className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#135BEC] text-white text-[14.5px] font-semibold tracking-wide hover:bg-[#2A6BF0] active:scale-[0.97] transition-all duration-150"
           >
             ← Back to homepage
           </Link>
           {/* <Link
             href="/dashboard"
-            className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-transparent border border-white/[0.12] text-[#A8B8D8] text-[13px] font-semibold tracking-wide hover:border-white/[0.25] hover:text-[#E8F0FF] active:scale-[0.97] transition-all duration-150"
+            className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-transparent border border-white/[0.12] text-[#A8B8D8] text-[14.5px] font-semibold tracking-wide hover:border-white/[0.25] hover:text-[#E8F0FF] active:scale-[0.97] transition-all duration-150"
           >
             Go to dashboard
           </Link> */}
@@ -187,10 +187,10 @@ export default function NotFound() {
 
       {/* ── Bottom corner grid ref ────────────────────────────── */}
       <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between pointer-events-none" aria-hidden="true">
-        <p className="font-mono text-[10px] text-[#1E2A42] tracking-widest">
+        <p className="font-mono text-[11px] text-[#1E2A42] tracking-widest">
           AI4PLANNING · GRID REF: 404/NF
         </p>
-        <p className="font-mono text-[10px] text-[#1E2A42] tracking-widest">
+        <p className="font-mono text-[11px] text-[#1E2A42] tracking-widest">
           {new Date().getFullYear()} · SITE INTELLIGENCE
         </p>
       </div>

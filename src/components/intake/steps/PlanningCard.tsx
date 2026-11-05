@@ -39,8 +39,8 @@ export function CategoryTile({ category, selected, onClick, className }: { categ
         {!category.image && <Icon className="h-6 w-6" />}
       </span>
       <span className="min-w-0 flex-1">
-        <span className="block text-[13.5px] font-medium leading-snug text-[#E8F0FF]">{category.label}</span>
-        {category.note && <span className="block text-[11px] text-[#5A6A8A]">{category.note}</span>}
+        <span className="block text-[15px] font-medium leading-snug text-[#E8F0FF]">{category.label}</span>
+        {category.note && <span className="block text-[12.5px] text-[#5A6A8A]">{category.note}</span>}
       </span>
       {selected && (
         <span className="absolute right-2.5 top-2.5 flex h-[18px] w-[18px] items-center justify-center rounded-full bg-[#00D4FF] text-[#0A0E1A]">
@@ -77,7 +77,7 @@ export function PlanningCard({ value, onChange, onBack, onNext }: Props) {
   return (
     <StepCard icon={<Pencil className="h-[18px] w-[18px]" />} title="What are you planning?">
       <form onSubmit={submit} noValidate>
-        <p className="mb-4 text-[13.5px] text-[#A8B8D8]">Tell us what you would like to do.</p>
+        <p className="mb-4 text-[15px] text-[#A8B8D8]">Tell us what you would like to do.</p>
 
         <div role="radiogroup" aria-label="What are you planning?" className="grid grid-cols-1 gap-2.5 min-[520px]:grid-cols-2">
           {CATEGORIES.map(c => (
@@ -107,7 +107,7 @@ export function PlanningCard({ value, onChange, onBack, onNext }: Props) {
 
         <div className="mt-6">
           <div className="mb-2.5 flex items-center gap-2">
-            <p className="text-[14px] font-semibold text-[#F59E0B]">
+            <p className="text-[15.5px] font-semibold text-[#F59E0B]">
               Already know the planning route? <span className="font-normal text-[#5A6A8A]">(Optional)</span>
             </p>
             <button type="button" onClick={() => setShowInfo(s => !s)} aria-label="What is a planning route?" aria-expanded={showInfo} className="text-[#5A6A8A] hover:text-[#00D4FF]">
@@ -115,7 +115,7 @@ export function PlanningCard({ value, onChange, onBack, onNext }: Props) {
             </button>
           </div>
           {showInfo && (
-            <p className="mb-3 rounded-lg bg-white/[0.04] px-3 py-2.5 text-[12.5px] leading-relaxed text-[#A8B8D8] animate-fade-in">
+            <p className="mb-3 rounded-lg bg-white/[0.04] px-3 py-2.5 text-[14px] leading-relaxed text-[#A8B8D8] animate-fade-in">
               A planning route is the type of application or check your project needs — for example householder planning
               permission (HHP), permitted development (PD) or a Lawful Development Certificate (LDC). Not sure? Leave it on
               &quot;You decide for me&quot; and we&apos;ll work it out from your answers.
@@ -136,8 +136,8 @@ export function PlanningCard({ value, onChange, onBack, onNext }: Props) {
                   onClick={() => set({ routeKnown: v })}
                   className={cn('rounded-[12px] border px-3.5 py-3 text-center transition-all', sel ? SELECTED : IDLE)}
                 >
-                  <span className="block text-[13.5px] font-medium text-[#E8F0FF]">{title}</span>
-                  <span className={cn('block text-[11.5px]', sel ? 'text-[#00D4FF]' : 'text-[#5A6A8A]')}>{sub}</span>
+                  <span className="block text-[15px] font-medium text-[#E8F0FF]">{title}</span>
+                  <span className={cn('block text-[13px]', sel ? 'text-[#00D4FF]' : 'text-[#5A6A8A]')}>{sub}</span>
                 </button>
               )
             })}

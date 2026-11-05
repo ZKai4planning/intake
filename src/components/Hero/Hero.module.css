@@ -1,0 +1,17 @@
+.hero{position:relative;background-size:cover;background-position:right center;min-height:520px;border-bottom:1px solid var(--line)}
+.shade{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(4,20,31,.85) 35%,rgba(4,20,31,0) 70%)}
+.inner{position:relative;padding:28px 0 36px;min-height:520px}
+.eyebrow{font-size:12.5px;letter-spacing:.2em;font-weight:600}
+h1{font-size:clamp(40px,5vw,56px);line-height:1.08;margin:28px 0 18px;font-weight:700}
+h1 span{color:var(--cyan)}
+.sub{color:#d6e3ec;font-size:18px;max-width:430px}
+.search{display:flex;align-items:center;gap:10px;margin-top:28px;background:#fff;border-radius:12px;padding:4px 4px 4px 18px;max-width:495px}
+.search input{flex:1;border:0;outline:0;font-size:13.5px;padding:12px 0;color:#123;min-width:0}
+.go{display:flex;gap:8px;align-items:center;background:var(--cyan);color:#021019;font-weight:700;padding:16px 22px;border-radius:10px;white-space:nowrap;font-size:15.5px}
+.points{display:flex;gap:36px;list-style:none;margin-top:28px}
+.points li{display:flex;gap:12px;align-items:center;font-size:13.5px;white-space:pre-line}
+.popular{position:absolute;right:0;bottom:36px;width:150px;background:rgba(4,20,31,.82);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:13.5px;backdrop-filter:blur(6px);display:flex;flex-direction:column;gap:12px}
+.popular a{display:flex;align-items:center;gap:10px}
+.popular a svg:last-child{margin-left:auto;opacity:.6}
+.script{position:absolute;right:40px;top:50px;font-family:"Caveat","Brush Script MT",cursive;font-size:38px;font-style:italic;transform:rotate(-6deg);text-align:left}
+@media(max-width:900px){.shade{background:rgba(4,20,31,.8)}.popular,.script{display:none}.points{gap:18px;flex-wrap:wrap}}

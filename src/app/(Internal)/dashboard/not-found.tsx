@@ -41,7 +41,7 @@
 //       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
 //         <div className="text-center max-w-[360px]">
 //           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-//           <p className="text-[13px] text-[#5A6A8A] mb-6">
+//           <p className="text-[14.5px] text-[#5A6A8A] mb-6">
 //             Please log in to access your workspace.
 //           </p>
 //           <button
@@ -59,16 +59,16 @@
 //     <DashboardShell workspace={workspace} firstName={firstName} email={session.email}>
 //       <div className="flex flex-col items-center justify-center text-center py-16 px-5">
 //         <div className="w-14 h-14 rounded-full bg-[rgba(19,91,236,0.08)] border border-[rgba(19,91,236,0.25)] flex items-center justify-center mb-5">
-//           <span className="text-[22px]" aria-hidden="true">🔍</span>
+//           <span className="text-[24.5px]" aria-hidden="true">🔍</span>
 //         </div>
 
-//         <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#5A6A8A] mb-2">
+//         <p className="text-[12.5px] font-semibold tracking-[0.12em] uppercase text-[#5A6A8A] mb-2">
 //           404
 //         </p>
-//         <h1 className="font-display text-[24px] sm:text-[28px] font-normal text-[#E8F0FF] tracking-tight mb-2">
+//         <h1 className="font-display text-[27px] sm:text-[31.5px] font-normal text-[#E8F0FF] tracking-tight mb-2">
 //           We couldn&rsquo;t find that page
 //         </h1>
-//         <p className="text-[13.5px] text-[#A8B8D8] max-w-[380px] mb-8">
+//         <p className="text-[15px] text-[#A8B8D8] max-w-[380px] mb-8">
 //           The page you were looking for doesn&rsquo;t exist, may have moved, or the link may be
 //           out of date. Your workspace is still right here.
 //         </p>
@@ -76,13 +76,13 @@
 //         <div className="flex flex-col sm:flex-row gap-3">
 //           <GuardedNavLink
 //             href="/dashboard"
-//             className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[13px] font-semibold hover:bg-[#2A6BF0] transition-colors"
+//             className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14.5px] font-semibold hover:bg-[#2A6BF0] transition-colors"
 //           >
 //             ← Back to dashboard
 //           </GuardedNavLink>
 //           <GuardedNavLink
 //             href="/dashboard/reports"
-//             className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[10px] bg-transparent border border-white/[0.12] text-[#A8B8D8] text-[13px] font-semibold hover:border-white/[0.25] hover:text-[#E8F0FF] transition-colors"
+//             className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[10px] bg-transparent border border-white/[0.12] text-[#A8B8D8] text-[14.5px] font-semibold hover:border-white/[0.25] hover:text-[#E8F0FF] transition-colors"
 //           >
 //             View reports
 //           </GuardedNavLink>
@@ -140,7 +140,7 @@ export default function DashboardNotFound() {
       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
         <div className="text-center max-w-[360px]">
           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-          <p className="text-[13px] text-[#5A6A8A] mb-6">
+          <p className="text-[14.5px] text-[#5A6A8A] mb-6">
             Please log in to access your workspace.
           </p>
           <button
@@ -158,16 +158,16 @@ export default function DashboardNotFound() {
     <DashboardShell workspace={workspace} firstName={firstName} email={session.email}>
       <div className="flex flex-col items-center justify-center text-center py-16 px-5">
         <div className="w-14 h-14 rounded-full bg-[rgba(19,91,236,0.08)] border border-[rgba(19,91,236,0.25)] flex items-center justify-center mb-5">
-          <span className="text-[22px]" aria-hidden="true">🔍</span>
+          <span className="text-[24.5px]" aria-hidden="true">🔍</span>
         </div>
 
-        <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#5A6A8A] mb-2">
+        <p className="text-[12.5px] font-semibold tracking-[0.12em] uppercase text-[#5A6A8A] mb-2">
           404
         </p>
-        <h1 className="font-display text-[24px] sm:text-[28px] font-normal text-[#E8F0FF] tracking-tight mb-2">
+        <h1 className="font-display text-[27px] sm:text-[31.5px] font-normal text-[#E8F0FF] tracking-tight mb-2">
           We couldn&rsquo;t find that page
         </h1>
-        <p className="text-[13.5px] text-[#A8B8D8] max-w-[380px] mb-8">
+        <p className="text-[15px] text-[#A8B8D8] max-w-[380px] mb-8">
           The page you were looking for doesn&rsquo;t exist, may have moved, or the link may be
           out of date. Your workspace is still right here.
         </p>
@@ -175,13 +175,13 @@ export default function DashboardNotFound() {
         <div className="flex flex-col sm:flex-row gap-3">
           <GuardedNavLink
             href="/dashboard"
-            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[13px] font-semibold hover:bg-[#2A6BF0] transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14.5px] font-semibold hover:bg-[#2A6BF0] transition-colors"
           >
             ← Back to dashboard
           </GuardedNavLink>
           <GuardedNavLink
             href="/dashboard/reports"
-            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[10px] bg-transparent border border-white/[0.12] text-[#A8B8D8] text-[13px] font-semibold hover:border-white/[0.25] hover:text-[#E8F0FF] transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[10px] bg-transparent border border-white/[0.12] text-[#A8B8D8] text-[14.5px] font-semibold hover:border-white/[0.25] hover:text-[#E8F0FF] transition-colors"
           >
             View reports
           </GuardedNavLink>

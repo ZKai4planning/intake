@@ -1,0 +1,11 @@
+.section{padding:20px 0 40px}
+.banner{display:flex;align-items:center;gap:32px;background:linear-gradient(90deg,#071f31,#0a2b42);border:1px solid var(--line);border-radius:var(--radius);padding:20px 32px}
+.phones{width:100px;margin-top:-30px;flex:none}
+.text{flex:1}
+.text h2{font-size:20px;margin-bottom:4px}
+.text p{font-size:13.5px;color:var(--muted)}
+.cta{display:inline-flex;gap:8px;align-items:center;background:#fff;color:#04141f;font-weight:700;padding:16px 28px;border-radius:999px;font-size:15.5px;white-space:nowrap;transition:.2s}
+.cta:hover{background:var(--cyan)}
+.perks{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:13.5px}
+.perks li{display:flex;gap:10px;align-items:center}
+@media(max-width:900px){.banner{flex-wrap:wrap}.phones{display:none}}

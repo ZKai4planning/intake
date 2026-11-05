@@ -75,13 +75,13 @@
 //       <div className="max-w-[1740px] mx-auto px-5 sm:px-6 md:px-10">
 
 //         <div className="text-center max-w-[560px] mx-auto mb-10">
-//           <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+//           <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
 //             Services
 //           </p>
-//           <h2 id="services-heading" className="font-display text-[28px] sm:text-[34px] font-normal text-[#E8F0FF] tracking-tight">
+//           <h2 id="services-heading" className="font-display text-[31.5px] sm:text-[38px] font-normal text-[#E8F0FF] tracking-tight">
 //             What can we help you with?
 //           </h2>
-//           <p className="mt-3 text-[14.5px] text-[#A8B8D8] leading-relaxed max-w-[520px] mx-auto">
+//           <p className="mt-3 text-[16px] text-[#A8B8D8] leading-relaxed max-w-[520px] mx-auto">
 //             Pick what&apos;s closest to your situation to see what&apos;s on offer. Locked
 //             services are launching soon.
 //           </p>
@@ -122,31 +122,31 @@
 //   const cardBody = (
 //     <>
 //       <div className="flex items-start justify-between gap-3 mb-3">
-//         <p className="text-[11px] font-bold uppercase tracking-[0.06em] text-blue-400">
+//         <p className="text-[12.5px] font-bold uppercase tracking-[0.06em] text-blue-400">
 //           {service.label}
 //         </p>
 //         {!isActive && (
-//           <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-amber-400/10 border border-amber-400/30 px-2 py-0.5 text-[9.5px] font-bold uppercase tracking-wide text-amber-300">
+//           <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-amber-400/10 border border-amber-400/30 px-2 py-0.5 text-[10.5px] font-bold uppercase tracking-wide text-amber-300">
 //             <Lock className="h-2.5 w-2.5" />
 //             Inactive
 //           </span>
 //         )}
 //       </div>
 
-//       <h3 className="text-[15.5px] font-bold mb-2.5 leading-snug text-[#E8F0FF]">
+//       <h3 className="text-[17.5px] font-bold mb-2.5 leading-snug text-[#E8F0FF]">
 //         {service.shortTitle}
 //       </h3>
 
-//       <p className="text-[13px] text-white/60 italic leading-relaxed mb-5">
+//       <p className="text-[14.5px] text-white/60 italic leading-relaxed mb-5">
 //         &quot;{service.description.length > 110 ? `${service.description.slice(0, 110)}…` : service.description}&quot;
 //       </p>
 
 //       {isActive ? (
-//         <span className="text-[13px] font-semibold text-blue-400 group-hover:text-blue-300 transition-colors">
+//         <span className="text-[14.5px] font-semibold text-blue-400 group-hover:text-blue-300 transition-colors">
 //           {service.cta} →
 //         </span>
 //       ) : (
-//         <span className="text-[12px] font-medium text-white/35">
+//         <span className="text-[13.5px] font-medium text-white/35">
 //           Currently unavailable
 //         </span>
 //       )}
@@ -260,13 +260,13 @@ export function ServicesSection() {
           viewport={viewportOnce}
           variants={fadeUp}
         >
-          <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+          <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
             Services
           </p>
-          <h2 id="services-heading" className="font-display text-[28px] sm:text-[34px] font-normal text-[#E8F0FF] tracking-tight">
+          <h2 id="services-heading" className="font-display text-[31.5px] sm:text-[38px] font-normal text-[#E8F0FF] tracking-tight">
             What can we help you with?
           </h2>
-          <p className="mt-3 text-[14.5px] text-[#A8B8D8] leading-relaxed max-w-[520px] mx-auto">
+          <p className="mt-3 text-[16px] text-[#A8B8D8] leading-relaxed max-w-[520px] mx-auto">
             Pick what&apos;s closest to your situation to see what&apos;s on offer. Locked
             services are launching soon.
           </p>
@@ -318,31 +318,31 @@ function ServiceCard({ service, onOpen }: { service: Service; onOpen: () => void
   const cardBody = (
     <>
       <div className="flex items-start justify-between gap-3 mb-3">
-        <p className="text-[11px] font-bold uppercase tracking-[0.06em] text-blue-400">
+        <p className="text-[12.5px] font-bold uppercase tracking-[0.06em] text-blue-400">
           {service.label}
         </p>
         {!isActive && (
-          <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-amber-400/10 border border-amber-400/30 px-2 py-0.5 text-[9.5px] font-bold uppercase tracking-wide text-amber-300">
+          <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-amber-400/10 border border-amber-400/30 px-2 py-0.5 text-[10.5px] font-bold uppercase tracking-wide text-amber-300">
             <Lock className="h-2.5 w-2.5" />
             Inactive
           </span>
         )}
       </div>
 
-      <h3 className="text-[15.5px] font-bold mb-2.5 leading-snug text-[#E8F0FF]">
+      <h3 className="text-[17.5px] font-bold mb-2.5 leading-snug text-[#E8F0FF]">
         {service.shortTitle}
       </h3>
 
-      <p className="text-[13px] text-white/60 italic leading-relaxed mb-5">
+      <p className="text-[14.5px] text-white/60 italic leading-relaxed mb-5">
         &quot;{service.description.length > 110 ? `${service.description.slice(0, 110)}…` : service.description}&quot;
       </p>
 
       {isActive ? (
-        <span className="text-[13px] font-semibold text-blue-400 group-hover:text-blue-300 transition-colors">
+        <span className="text-[14.5px] font-semibold text-blue-400 group-hover:text-blue-300 transition-colors">
           {service.cta} →
         </span>
       ) : (
-        <span className="text-[12px] font-medium text-white/35">
+        <span className="text-[13.5px] font-medium text-white/35">
           Currently unavailable
         </span>
       )}

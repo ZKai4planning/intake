@@ -9,21 +9,21 @@ const POINTS = ['Simple guided questions', 'We analyse the rules for you', 'Work
 export function WelcomeCard({ onStart }: { onStart?: () => void }) {
   return (
     <StepCard icon="1" title="Welcome">
-      <h3 className="text-[26px] font-semibold leading-tight tracking-tight">
+      <h3 className="text-[29px] font-semibold leading-tight tracking-tight">
         <span className="bg-gradient-to-r from-[#135BEC] to-[#00D4FF] bg-clip-text text-transparent">Let&apos;s get started</span>
       </h3>
-      <p className="mt-2 max-w-[460px] text-[15px] leading-relaxed text-[#E8F0FF]">
+      <p className="mt-2 max-w-[460px] text-[17px] leading-relaxed text-[#E8F0FF]">
         Tell us about your property and what you would like to do.
       </p>
 
-      <p className="mt-5 inline-flex items-center gap-2 text-[13px] text-[#A8B8D8]">
+      <p className="mt-5 inline-flex items-center gap-2 text-[14.5px] text-[#A8B8D8]">
         <Clock className="h-4 w-4 text-[#5A6A8A]" />
         Takes about 5 minutes
       </p>
 
       <ul className="mt-3 space-y-2.5">
         {POINTS.map(p => (
-          <li key={p} className="flex items-center gap-2.5 text-[14px] text-[#E8F0FF]">
+          <li key={p} className="flex items-center gap-2.5 text-[15.5px] text-[#E8F0FF]">
             <CheckCircle2 className="h-[18px] w-[18px] shrink-0 text-[#00D4FF]" />
             {p}
           </li>

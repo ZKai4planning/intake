@@ -6,6 +6,7 @@ import { UnsavedChangesGuardProvider } from '@/hooks/useUnsavedChangesGuard'
 
 import type { Metadata } from "next";
 import ConditionalWhatsAppButton from '@/components/ConditionalWhatsAppButton';
+import OfflineGate from '@/components/OfflineGate';
 
 export const metadata: Metadata = {
   title: {
@@ -39,6 +40,7 @@ export default function RootLayout({
           </UnsavedChangesGuardProvider>
         </ToastProvider>
         <ConditionalWhatsAppButton />
+        <OfflineGate />
       </body>
     </html>
   );

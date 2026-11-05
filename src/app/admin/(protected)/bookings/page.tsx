@@ -43,23 +43,23 @@ export default function AdminBookingsPage() {
 
   return (
     <div>
-      <h1 className="font-display text-[22px] text-[#E8F0FF] mb-1">Bookings</h1>
-      <p className="text-[13px] text-[#5A6A8A] mb-5">{total.toLocaleString()} total</p>
+      <h1 className="font-display text-[24.5px] text-[#E8F0FF] mb-1">Bookings</h1>
+      <p className="text-[14.5px] text-[#5A6A8A] mb-5">{total.toLocaleString()} total</p>
 
       <select
         value={status}
         onChange={e => { setStatus(e.target.value); setPage(1) }}
-        className="rounded-[10px] border border-white/[0.08] bg-[#0F1525] px-3.5 py-2 text-[13.5px] text-[#E8F0FF] focus:outline-none focus:border-[#135BEC] transition-colors mb-4"
+        className="rounded-[10px] border border-white/[0.08] bg-[#0F1525] px-3.5 py-2 text-[15px] text-[#E8F0FF] focus:outline-none focus:border-[#135BEC] transition-colors mb-4"
       >
         {STATUSES.map(s => <option key={s} value={s}>{s || 'All statuses'}</option>)}
       </select>
 
-      {error && <p className="text-[13px] text-[#F87171] mb-4">{error}</p>}
+      {error && <p className="text-[14.5px] text-[#F87171] mb-4">{error}</p>}
 
       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] overflow-hidden">
         <table className="w-full text-left">
           <thead>
-            <tr className="border-b border-white/[0.08] text-[11.5px] uppercase tracking-wide text-[#5A6A8A]">
+            <tr className="border-b border-white/[0.08] text-[13px] uppercase tracking-wide text-[#5A6A8A]">
               <th className="px-4 py-3 font-medium">Type</th>
               <th className="px-4 py-3 font-medium">Date / slot</th>
               <th className="px-4 py-3 font-medium">Price</th>
@@ -70,26 +70,26 @@ export default function AdminBookingsPage() {
           <tbody>
             {bookings.map(b => (
               <tr key={b.id} className="border-b border-white/[0.05] last:border-0 hover:bg-white/[0.02]">
-                <td className="px-4 py-3 text-[13.5px] text-[#E8F0FF] font-medium capitalize">{b.type}</td>
-                <td className="px-4 py-3 text-[13.5px] text-[#A8B8D8]">{b.date ?? '—'} · {b.timeSlot}</td>
-                <td className="px-4 py-3 text-[13.5px] text-[#A8B8D8]">{b.priceGBP > 0 ? `£${b.priceGBP}` : 'Free'}</td>
+                <td className="px-4 py-3 text-[15px] text-[#E8F0FF] font-medium capitalize">{b.type}</td>
+                <td className="px-4 py-3 text-[15px] text-[#A8B8D8]">{b.date ?? '—'} · {b.timeSlot}</td>
+                <td className="px-4 py-3 text-[15px] text-[#A8B8D8]">{b.priceGBP > 0 ? `£${b.priceGBP}` : 'Free'}</td>
                 <td className="px-4 py-3">
                   <select
                     value={b.status}
                     disabled={updatingId === b.id}
                     onChange={e => handleStatusChange(b.id, e.target.value as 'confirmed' | 'cancelled' | 'completed')}
-                    className="rounded-[8px] border border-white/[0.08] bg-[#0A0E1A] px-2.5 py-1 text-[12.5px] text-[#E8F0FF] focus:outline-none focus:border-[#135BEC] transition-colors disabled:opacity-50"
+                    className="rounded-[8px] border border-white/[0.08] bg-[#0A0E1A] px-2.5 py-1 text-[14px] text-[#E8F0FF] focus:outline-none focus:border-[#135BEC] transition-colors disabled:opacity-50"
                   >
                     <option value="confirmed">confirmed</option>
                     <option value="cancelled">cancelled</option>
                     <option value="completed">completed</option>
                   </select>
                 </td>
-                <td className="px-4 py-3 text-[13px] text-[#5A6A8A]">{new Date(b.bookedAt).toLocaleDateString()}</td>
+                <td className="px-4 py-3 text-[14.5px] text-[#5A6A8A]">{new Date(b.bookedAt).toLocaleDateString()}</td>
               </tr>
             ))}
             {bookings.length === 0 && (
-              <tr><td colSpan={5} className="px-4 py-8 text-center text-[13px] text-[#5A6A8A]">No bookings found.</td></tr>
+              <tr><td colSpan={5} className="px-4 py-8 text-center text-[14.5px] text-[#5A6A8A]">No bookings found.</td></tr>
             )}
           </tbody>
         </table>
@@ -97,9 +97,9 @@ export default function AdminBookingsPage() {
 
       {totalPages > 1 && (
         <div className="flex items-center gap-3 mt-4">
-          <button onClick={() => setPage(p => Math.max(p - 1, 1))} disabled={page <= 1} className="px-3 py-1.5 rounded-[8px] text-[13px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] disabled:opacity-30 disabled:cursor-not-allowed transition-colors">← Prev</button>
-          <span className="text-[13px] text-[#5A6A8A]">Page {page} of {totalPages}</span>
-          <button onClick={() => setPage(p => Math.min(p + 1, totalPages))} disabled={page >= totalPages} className="px-3 py-1.5 rounded-[8px] text-[13px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] disabled:opacity-30 disabled:cursor-not-allowed transition-colors">Next →</button>
+          <button onClick={() => setPage(p => Math.max(p - 1, 1))} disabled={page <= 1} className="px-3 py-1.5 rounded-[8px] text-[14.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] disabled:opacity-30 disabled:cursor-not-allowed transition-colors">← Prev</button>
+          <span className="text-[14.5px] text-[#5A6A8A]">Page {page} of {totalPages}</span>
+          <button onClick={() => setPage(p => Math.min(p + 1, totalPages))} disabled={page >= totalPages} className="px-3 py-1.5 rounded-[8px] text-[14.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] disabled:opacity-30 disabled:cursor-not-allowed transition-colors">Next →</button>
         </div>
       )}
     </div>

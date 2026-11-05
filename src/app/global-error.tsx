@@ -29,8 +29,8 @@ export default function GlobalError({
       <body style={{ margin: 0, fontFamily: 'system-ui, sans-serif' }}>
         <div style={{ display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
           <div style={{ textAlign: 'center', maxWidth: 420 }}>
-            <h1 style={{ fontSize: 20, fontWeight: 600, marginBottom: 8 }}>Something went wrong</h1>
-            <p style={{ color: '#5A6A8A', fontSize: 14, marginBottom: 20 }}>
+            <h1 style={{ fontSize: 22.5, fontWeight: 600, marginBottom: 8 }}>Something went wrong</h1>
+            <p style={{ color: '#5A6A8A', fontSize: 15.5, marginBottom: 20 }}>
               We've been notified and are looking into it. Try refreshing the page.
             </p>
             <button
@@ -41,7 +41,7 @@ export default function GlobalError({
                 border: 'none',
                 borderRadius: 8,
                 padding: '10px 20px',
-                fontSize: 14,
+                fontSize: 15.5,
                 fontWeight: 600,
                 cursor: 'pointer',
               }}

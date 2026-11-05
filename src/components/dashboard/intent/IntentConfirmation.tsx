@@ -70,16 +70,16 @@
 //           />
 //         ))}
 //       </div>
-//       <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
+//       <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
 //         Question {stepIndex} of ~{totalStepsEstimate}
 //       </p>
 
 //       {/* ── Prompt ─────────────────────────────────────────── */}
-//       <h2 className="font-display text-[22px] sm:text-[24px] font-normal text-[#E8F0FF] tracking-tight mb-2">
+//       <h2 className="font-display text-[24.5px] sm:text-[27px] font-normal text-[#E8F0FF] tracking-tight mb-2">
 //         {currentQuestion.prompt}
 //       </h2>
 //       {currentQuestion.helper && (
-//         <p className="text-[13px] text-[#5A6A8A] mb-6 leading-relaxed">{currentQuestion.helper}</p>
+//         <p className="text-[14.5px] text-[#5A6A8A] mb-6 leading-relaxed">{currentQuestion.helper}</p>
 //       )}
 
 //       {/* ── Options ────────────────────────────────────────── */}
@@ -97,8 +97,8 @@
 //                 : 'bg-[#0F1525] border-white/[0.08] hover:border-white/[0.24]'
 //             )}
 //           >
-//             {opt.emoji && <span className="text-[19px] shrink-0" aria-hidden="true">{opt.emoji}</span>}
-//             <span className="text-[14px] font-medium text-[#E8F0FF]">{opt.label}</span>
+//             {opt.emoji && <span className="text-[21.5px] shrink-0" aria-hidden="true">{opt.emoji}</span>}
+//             <span className="text-[15.5px] font-medium text-[#E8F0FF]">{opt.label}</span>
 //           </button>
 //         ))}
 //       </div>
@@ -109,7 +109,7 @@
 //           <button
 //             type="button"
 //             onClick={goBack}
-//             className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] inline-flex items-center gap-1.5"
+//             className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] inline-flex items-center gap-1.5"
 //           >
 //             ← Back
 //           </button>
@@ -118,7 +118,7 @@
 //         <button
 //           type="button"
 //           onClick={() => setShowManualOverride(true)}
-//           className="text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] underline underline-offset-2"
+//           className="text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] underline underline-offset-2"
 //         >
 //           I&rsquo;d rather just pick directly
 //         </button>
@@ -143,15 +143,15 @@
 //   return (
 //     <div className="max-w-[440px] mx-auto text-center">
 //       <span className="text-5xl mb-4 block" aria-hidden="true">{actor.emoji}</span>
-//       <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
+//       <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
 //         Based on your answers
 //       </p>
-//       <h2 className="font-display text-[24px] font-normal text-[#E8F0FF] tracking-tight mb-2">
+//       <h2 className="font-display text-[27px] font-normal text-[#E8F0FF] tracking-tight mb-2">
 //         We&rsquo;ll set this up as a {actor.label.toLowerCase()}
 //       </h2>
-//       <p className="text-[13.5px] text-[#A8B8D8] mb-1 leading-relaxed">{actor.description}</p>
+//       <p className="text-[15px] text-[#A8B8D8] mb-1 leading-relaxed">{actor.description}</p>
 //       {confidence < 0.7 && (
-//         <p className="text-[12px] text-[#F59E0B] mb-2">
+//         <p className="text-[13.5px] text-[#F59E0B] mb-2">
 //           We're not fully certain — if this looks wrong, change it below.
 //         </p>
 //       )}
@@ -160,14 +160,14 @@
 //         <button
 //           type="button"
 //           onClick={onConfirm}
-//           className="px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[13.5px] font-semibold hover:bg-[#2A6BF0] transition-colors shadow-[0_0_16px_rgba(19,91,236,0.3)]"
+//           className="px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[15px] font-semibold hover:bg-[#2A6BF0] transition-colors shadow-[0_0_16px_rgba(19,91,236,0.3)]"
 //         >
 //           Yes, that&rsquo;s right →
 //         </button>
 //         <button
 //           type="button"
 //           onClick={onChange}
-//           className="px-5 py-2.5 rounded-[10px] border border-white/[0.16] bg-white/[0.04] text-[#A8B8D8] text-[13.5px] font-medium hover:text-[#E8F0FF] hover:bg-white/[0.08] transition-colors"
+//           className="px-5 py-2.5 rounded-[10px] border border-white/[0.16] bg-white/[0.04] text-[#A8B8D8] text-[15px] font-medium hover:text-[#E8F0FF] hover:bg-white/[0.08] transition-colors"
 //         >
 //           Change it
 //         </button>
@@ -188,10 +188,10 @@
 // }) {
 //   return (
 //     <div className="max-w-[480px] mx-auto text-center">
-//       <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
+//       <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
 //         Pick directly
 //       </p>
-//       <h2 className="font-display text-[22px] font-normal text-[#E8F0FF] tracking-tight mb-6">
+//       <h2 className="font-display text-[24.5px] font-normal text-[#E8F0FF] tracking-tight mb-6">
 //         Which one describes you best?
 //       </h2>
 
@@ -208,10 +208,10 @@
 //                 : 'border-white/[0.08] bg-[#0F1525] hover:border-white/[0.24]'
 //             )}
 //           >
-//             <span className="text-[19px] shrink-0" aria-hidden="true">{actor.emoji}</span>
+//             <span className="text-[21.5px] shrink-0" aria-hidden="true">{actor.emoji}</span>
 //             <span>
-//               <span className="block text-[13.5px] font-semibold text-[#E8F0FF]">{actor.label}</span>
-//               <span className="block text-[11.5px] text-[#5A6A8A]">{actor.description}</span>
+//               <span className="block text-[15px] font-semibold text-[#E8F0FF]">{actor.label}</span>
+//               <span className="block text-[13px] text-[#5A6A8A]">{actor.description}</span>
 //             </span>
 //           </button>
 //         ))}
@@ -221,7 +221,7 @@
 //         <button
 //           type="button"
 //           onClick={onBack}
-//           className="mt-5 text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8]"
+//           className="mt-5 text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8]"
 //         >
 //           ← Back to questions
 //         </button>
@@ -305,16 +305,16 @@ export function IntentConfirmation({ onResolved }: IntentConfirmationProps) {
           />
         ))}
       </div>
-      <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
+      <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
         Question {stepIndex} of ~{totalStepsEstimate}
       </p>
 
       {/* ── Prompt ─────────────────────────────────────────── */}
-      <h2 className="font-display text-[22px] sm:text-[24px] font-normal text-[#E8F0FF] tracking-tight mb-2">
+      <h2 className="font-display text-[24.5px] sm:text-[27px] font-normal text-[#E8F0FF] tracking-tight mb-2">
         {currentQuestion.prompt}
       </h2>
       {currentQuestion.helper && (
-        <p className="text-[13px] text-[#5A6A8A] mb-6 leading-relaxed">{currentQuestion.helper}</p>
+        <p className="text-[14.5px] text-[#5A6A8A] mb-6 leading-relaxed">{currentQuestion.helper}</p>
       )}
 
       {/* ── Options ────────────────────────────────────────── */}
@@ -332,8 +332,8 @@ export function IntentConfirmation({ onResolved }: IntentConfirmationProps) {
                 : 'bg-[#0F1525] border-white/[0.08] hover:border-white/[0.24]'
             )}
           >
-            {opt.emoji && <span className="text-[19px] shrink-0" aria-hidden="true">{opt.emoji}</span>}
-            <span className="text-[14px] font-medium text-[#E8F0FF]">{opt.label}</span>
+            {opt.emoji && <span className="text-[21.5px] shrink-0" aria-hidden="true">{opt.emoji}</span>}
+            <span className="text-[15.5px] font-medium text-[#E8F0FF]">{opt.label}</span>
           </button>
         ))}
       </div>
@@ -344,7 +344,7 @@ export function IntentConfirmation({ onResolved }: IntentConfirmationProps) {
           <button
             type="button"
             onClick={goBack}
-            className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] inline-flex items-center gap-1.5"
+            className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] inline-flex items-center gap-1.5"
           >
             ← Back
           </button>
@@ -353,7 +353,7 @@ export function IntentConfirmation({ onResolved }: IntentConfirmationProps) {
         <button
           type="button"
           onClick={() => setShowManualOverride(true)}
-          className="text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] underline underline-offset-2"
+          className="text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] underline underline-offset-2"
         >
           I&rsquo;d rather just pick directly
         </button>
@@ -383,18 +383,18 @@ function ResolutionConfirm({
   return (
     <div className="max-w-[440px] mx-auto text-center">
       <span className="text-5xl mb-4 block" aria-hidden="true">{actor.emoji}</span>
-      <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
+      <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
         Based on your answers
       </p>
-      <h2 className="font-display text-[24px] font-normal text-[#E8F0FF] tracking-tight mb-2">
+      <h2 className="font-display text-[27px] font-normal text-[#E8F0FF] tracking-tight mb-2">
         We&rsquo;ll set this up as a {actor.label.toLowerCase()}
       </h2>
-      <p className="text-[13.5px] text-[#A8B8D8] mb-1 leading-relaxed">{actor.description}</p>
+      <p className="text-[15px] text-[#A8B8D8] mb-1 leading-relaxed">{actor.description}</p>
       {subRoleLabel && (
-        <p className="text-[12.5px] text-[#5A6A8A] mb-1">{subRoleLabel}</p>
+        <p className="text-[14px] text-[#5A6A8A] mb-1">{subRoleLabel}</p>
       )}
       {confidence < 0.7 && (
-        <p className="text-[12px] text-[#F59E0B] mb-2">
+        <p className="text-[13.5px] text-[#F59E0B] mb-2">
           We're not fully certain — if this looks wrong, change it below.
         </p>
       )}
@@ -403,14 +403,14 @@ function ResolutionConfirm({
         <button
           type="button"
           onClick={onConfirm}
-          className="px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[13.5px] font-semibold hover:bg-[#2A6BF0] transition-colors shadow-[0_0_16px_rgba(19,91,236,0.3)]"
+          className="px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[15px] font-semibold hover:bg-[#2A6BF0] transition-colors shadow-[0_0_16px_rgba(19,91,236,0.3)]"
         >
           Yes, that&rsquo;s right →
         </button>
         <button
           type="button"
           onClick={onChange}
-          className="px-5 py-2.5 rounded-[10px] border border-white/[0.16] bg-white/[0.04] text-[#A8B8D8] text-[13.5px] font-medium hover:text-[#E8F0FF] hover:bg-white/[0.08] transition-colors"
+          className="px-5 py-2.5 rounded-[10px] border border-white/[0.16] bg-white/[0.04] text-[#A8B8D8] text-[15px] font-medium hover:text-[#E8F0FF] hover:bg-white/[0.08] transition-colors"
         >
           Change it
         </button>
@@ -431,10 +431,10 @@ function ManualActorPicker({
 }) {
   return (
     <div className="max-w-[480px] mx-auto text-center">
-      <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
+      <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A] mb-2">
         Pick directly
       </p>
-      <h2 className="font-display text-[22px] font-normal text-[#E8F0FF] tracking-tight mb-6">
+      <h2 className="font-display text-[24.5px] font-normal text-[#E8F0FF] tracking-tight mb-6">
         Which one describes you best?
       </h2>
 
@@ -451,10 +451,10 @@ function ManualActorPicker({
                 : 'border-white/[0.08] bg-[#0F1525] hover:border-white/[0.24]'
             )}
           >
-            <span className="text-[19px] shrink-0" aria-hidden="true">{actor.emoji}</span>
+            <span className="text-[21.5px] shrink-0" aria-hidden="true">{actor.emoji}</span>
             <span>
-              <span className="block text-[13.5px] font-semibold text-[#E8F0FF]">{actor.label}</span>
-              <span className="block text-[11.5px] text-[#5A6A8A]">{actor.description}</span>
+              <span className="block text-[15px] font-semibold text-[#E8F0FF]">{actor.label}</span>
+              <span className="block text-[13px] text-[#5A6A8A]">{actor.description}</span>
             </span>
           </button>
         ))}
@@ -464,7 +464,7 @@ function ManualActorPicker({
         <button
           type="button"
           onClick={onBack}
-          className="mt-5 text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8]"
+          className="mt-5 text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8]"
         >
           ← Back to questions
         </button>

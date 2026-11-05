@@ -31,13 +31,13 @@ export default function AdminReportsPage() {
 
   return (
     <div>
-      <h1 className="font-display text-[22px] text-[#E8F0FF] mb-1">Reports</h1>
-      <p className="text-[13px] text-[#5A6A8A] mb-5">
+      <h1 className="font-display text-[24.5px] text-[#E8F0FF] mb-1">Reports</h1>
+      <p className="text-[14.5px] text-[#5A6A8A] mb-5">
         {total.toLocaleString()} {followUpOnly ? 'needing follow-up' : 'total'}
         {total === 0 && !followUpOnly && ' — nothing here yet; the report-generation module that creates these rows hasn\'t been ported.'}
       </p>
 
-      <label className="mb-4 inline-flex items-center gap-2 text-[13px] text-[#A8B8D8] cursor-pointer select-none">
+      <label className="mb-4 inline-flex items-center gap-2 text-[14.5px] text-[#A8B8D8] cursor-pointer select-none">
         <input
           type="checkbox"
           checked={followUpOnly}
@@ -47,12 +47,12 @@ export default function AdminReportsPage() {
         Only show stalled checkouts (paid report generated, never unlocked)
       </label>
 
-      {error && <p className="text-[13px] text-[#F87171] mb-4">{error}</p>}
+      {error && <p className="text-[14.5px] text-[#F87171] mb-4">{error}</p>}
 
       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] overflow-hidden">
         <table className="w-full text-left">
           <thead>
-            <tr className="border-b border-white/[0.08] text-[11.5px] uppercase tracking-wide text-[#5A6A8A]">
+            <tr className="border-b border-white/[0.08] text-[13px] uppercase tracking-wide text-[#5A6A8A]">
               <th className="px-4 py-3 font-medium">Report ID</th>
               <th className="px-4 py-3 font-medium">Tier</th>
               <th className="px-4 py-3 font-medium">Owner</th>
@@ -63,9 +63,9 @@ export default function AdminReportsPage() {
           <tbody>
             {reports.map(r => (
               <tr key={r.id} className="border-b border-white/[0.05] last:border-0 hover:bg-white/[0.02]">
-                <td className="px-4 py-3 text-[12.5px] text-[#E8F0FF] font-mono">{r.id}</td>
-                <td className="px-4 py-3 text-[13.5px] text-[#A8B8D8]">{r.tier}</td>
-                <td className="px-4 py-3 text-[13.5px]">
+                <td className="px-4 py-3 text-[14px] text-[#E8F0FF] font-mono">{r.id}</td>
+                <td className="px-4 py-3 text-[15px] text-[#A8B8D8]">{r.tier}</td>
+                <td className="px-4 py-3 text-[15px]">
                   {r.userId ? (
                     <Link href={`/admin/users/${r.userId}`} className="text-[#E8F0FF] hover:text-[#135BEC] font-medium">
                       {r.ownerName || '(no name)'}
@@ -73,24 +73,24 @@ export default function AdminReportsPage() {
                   ) : (
                     <span className="text-[#A8B8D8]">{r.ownerName ?? '—'}</span>
                   )}
-                  {r.ownerEmail && <p className="text-[11.5px] text-[#5A6A8A]">{r.ownerEmail}</p>}
+                  {r.ownerEmail && <p className="text-[13px] text-[#5A6A8A]">{r.ownerEmail}</p>}
                 </td>
                 <td className="px-4 py-3">
                   {r.unlockedAt ? (
-                    <span className="text-[11.5px] font-medium px-2 py-0.5 rounded-full bg-[rgba(52,211,153,0.12)] text-[#34D399]">unlocked</span>
+                    <span className="text-[13px] font-medium px-2 py-0.5 rounded-full bg-[rgba(52,211,153,0.12)] text-[#34D399]">unlocked</span>
                   ) : r.needsFollowUp ? (
-                    <span className="text-[11.5px] font-medium px-2 py-0.5 rounded-full bg-[rgba(251,191,36,0.12)] text-[#FBBF24]" title="Paid tier report generated, checkout never completed">
+                    <span className="text-[13px] font-medium px-2 py-0.5 rounded-full bg-[rgba(251,191,36,0.12)] text-[#FBBF24]" title="Paid tier report generated, checkout never completed">
                       needs follow-up
                     </span>
                   ) : (
-                    <span className="text-[11.5px] font-medium px-2 py-0.5 rounded-full bg-white/[0.06] text-[#A8B8D8]">free tier</span>
+                    <span className="text-[13px] font-medium px-2 py-0.5 rounded-full bg-white/[0.06] text-[#A8B8D8]">free tier</span>
                   )}
                 </td>
-                <td className="px-4 py-3 text-[13px] text-[#5A6A8A]">{new Date(r.createdAt).toLocaleString()}</td>
+                <td className="px-4 py-3 text-[14.5px] text-[#5A6A8A]">{new Date(r.createdAt).toLocaleString()}</td>
               </tr>
             ))}
             {reports.length === 0 && (
-              <tr><td colSpan={5} className="px-4 py-8 text-center text-[13px] text-[#5A6A8A]">No reports found.</td></tr>
+              <tr><td colSpan={5} className="px-4 py-8 text-center text-[14.5px] text-[#5A6A8A]">No reports found.</td></tr>
             )}
           </tbody>
         </table>
@@ -98,9 +98,9 @@ export default function AdminReportsPage() {
 
       {totalPages > 1 && (
         <div className="flex items-center gap-3 mt-4">
-          <button onClick={() => setPage(p => Math.max(p - 1, 1))} disabled={page <= 1} className="px-3 py-1.5 rounded-[8px] text-[13px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] disabled:opacity-30 disabled:cursor-not-allowed transition-colors">← Prev</button>
-          <span className="text-[13px] text-[#5A6A8A]">Page {page} of {totalPages}</span>
-          <button onClick={() => setPage(p => Math.min(p + 1, totalPages))} disabled={page >= totalPages} className="px-3 py-1.5 rounded-[8px] text-[13px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] disabled:opacity-30 disabled:cursor-not-allowed transition-colors">Next →</button>
+          <button onClick={() => setPage(p => Math.max(p - 1, 1))} disabled={page <= 1} className="px-3 py-1.5 rounded-[8px] text-[14.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] disabled:opacity-30 disabled:cursor-not-allowed transition-colors">← Prev</button>
+          <span className="text-[14.5px] text-[#5A6A8A]">Page {page} of {totalPages}</span>
+          <button onClick={() => setPage(p => Math.min(p + 1, totalPages))} disabled={page >= totalPages} className="px-3 py-1.5 rounded-[8px] text-[14.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] disabled:opacity-30 disabled:cursor-not-allowed transition-colors">Next →</button>
         </div>
       )}
     </div>

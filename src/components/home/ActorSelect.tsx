@@ -55,7 +55,7 @@
 //             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
 //           </span>
 
-//           <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+//           <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
 //             {actorSuggestion.wasCorrected ? (
 //               <>
 //                 Did you mean{' '}
@@ -85,7 +85,7 @@
 //               type="button"
 //               onClick={onAcceptSuggestion}
 //               className={cn(
-//                 'px-2.5 py-1 rounded-[6px] text-[12px] font-semibold',
+//                 'px-2.5 py-1 rounded-[6px] text-[13.5px] font-semibold',
 //                 'bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors'
 //               )}
 //             >
@@ -95,7 +95,7 @@
 //               type="button"
 //               onClick={() => onSelect(null)}
 //               className={cn(
-//                 'px-2.5 py-1 rounded-[6px] text-[12px] font-medium',
+//                 'px-2.5 py-1 rounded-[6px] text-[13.5px] font-medium',
 //                 'text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors'
 //               )}
 //             >
@@ -107,7 +107,7 @@
 
 //       {/* ── Manual pill row ───────────────────────────────────── */}
 //       <div className="flex flex-col items-center gap-2.5">
-//         <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A]">
+//         <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A]">
 //           I am a…
 //         </p>
 
@@ -127,7 +127,7 @@
 //                 onClick={() => onSelect(isSelected ? null : actor.id)}
 //                 className={cn(
 //                   'inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full',
-//                   'text-[12.5px] font-medium transition-all duration-150',
+//                   'text-[14px] font-medium transition-all duration-150',
 //                   'border select-none',
 //                   isSelected
 //                     ? 'bg-[rgba(0,212,255,0.12)] border-[#00D4FF] text-[#00D4FF] shadow-[0_0_12px_rgba(0,212,255,0.2)]'
@@ -188,7 +188,7 @@
 //             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
 //           </span>
 
-//           <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+//           <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
 //             {actorSuggestion.wasCorrected ? (
 //               <>
 //                 Did you mean{' '}
@@ -218,7 +218,7 @@
 //               type="button"
 //               onClick={onAcceptSuggestion}
 //               className={cn(
-//                 'px-2.5 py-1 rounded-[6px] text-[12px] font-semibold',
+//                 'px-2.5 py-1 rounded-[6px] text-[13.5px] font-semibold',
 //                 'bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors'
 //               )}
 //             >
@@ -228,7 +228,7 @@
 //               type="button"
 //               onClick={() => onSelect(null)}
 //               className={cn(
-//                 'px-2.5 py-1 rounded-[6px] text-[12px] font-medium',
+//                 'px-2.5 py-1 rounded-[6px] text-[13.5px] font-medium',
 //                 'text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors'
 //               )}
 //             >
@@ -240,7 +240,7 @@
 
 //       {/* ── Manual pill row ───────────────────────────────────── */}
 //       <div className="flex flex-col items-center gap-2.5">
-//         <p className="text-[11px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A]">
+//         <p className="text-[12.5px] font-semibold tracking-[0.06em] uppercase text-[#5A6A8A]">
 //           I am a…
 //         </p>
 
@@ -267,7 +267,7 @@
 //                 onClick={() => onSelect(isSelected ? null : actor.id)}
 //                 className={cn(
 //                   'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full shrink-0',
-//                   'text-[12px] font-medium transition-all duration-150 whitespace-nowrap',
+//                   'text-[13.5px] font-medium transition-all duration-150 whitespace-nowrap',
 //                   'border select-none',
 //                   isSelected
 //                     ? 'bg-[rgba(0,212,255,0.12)] border-[#00D4FF] text-[#00D4FF] shadow-[0_0_12px_rgba(0,212,255,0.2)]'
@@ -354,7 +354,7 @@ export function ActorSelect({
             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
           </span>
 
-          <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+          <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
             {actorSuggestion.wasCorrected ? (
               <>
                 Did you mean{' '}
@@ -384,7 +384,7 @@ export function ActorSelect({
               type="button"
               onClick={onAcceptSuggestion}
               className={cn(
-                'px-2.5 py-1 rounded-[6px] text-[12px] font-semibold',
+                'px-2.5 py-1 rounded-[6px] text-[13.5px] font-semibold',
                 'bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors'
               )}
             >
@@ -394,7 +394,7 @@ export function ActorSelect({
               type="button"
               onClick={() => onSelect(null)}
               className={cn(
-                'px-2.5 py-1 rounded-[6px] text-[12px] font-medium',
+                'px-2.5 py-1 rounded-[6px] text-[13.5px] font-medium',
                 'text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors'
               )}
             >
@@ -413,7 +413,7 @@ export function ActorSelect({
           aria-expanded={isOpen}
           className={cn(
             'inline-flex items-center gap-2 px-4 py-2 rounded-full',
-            'text-[13px] font-medium transition-all duration-150',
+            'text-[14.5px] font-medium transition-all duration-150',
             'border select-none',
             selectedActorMeta
               ? 'bg-[rgba(0,212,255,0.12)] border-[#00D4FF] text-[#00D4FF] shadow-[0_0_12px_rgba(0,212,255,0.2)]'
@@ -462,7 +462,7 @@ export function ActorSelect({
                 onClick={() => handlePillClick(actor.id)}
                 className={cn(
                   'inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full shrink-0',
-                  'text-[12.5px] font-medium transition-all duration-150 whitespace-nowrap',
+                  'text-[14px] font-medium transition-all duration-150 whitespace-nowrap',
                   'border select-none',
                   isSelected
                     ? 'bg-[rgba(0,212,255,0.12)] border-[#00D4FF] text-[#00D4FF]'

@@ -36,19 +36,19 @@ export function GoalCard({ goal, className }: GoalCardProps) {
     >
       {/* Emoji icon */}
       <span
-        className="text-[26px] mb-2.5 block leading-none transition-transform duration-200 group-hover:scale-110"
+        className="text-[29px] mb-2.5 block leading-none transition-transform duration-200 group-hover:scale-110"
         aria-hidden="true"
       >
         {goal.emoji}
       </span>
 
       {/* Title */}
-      <span className="text-[13px] font-semibold text-[#E8F0FF] leading-snug">
+      <span className="text-[14.5px] font-semibold text-[#E8F0FF] leading-snug">
         {goal.title}
       </span>
 
       {/* Subtitle */}
-      <span className="mt-1 text-[11px] text-[#5A6A8A] leading-snug">
+      <span className="mt-1 text-[12.5px] text-[#5A6A8A] leading-snug">
         {goal.subtitle}
       </span>
 

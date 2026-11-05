@@ -38,7 +38,7 @@ export function CategoryRow({ category, checked, onChange }: CategoryRowProps) {
           onClick={() => setOpen(v => !v)}
           className="flex-1 flex items-center justify-between text-left group"
         >
-          <span className="text-[13px] font-medium text-[#E8F0FF]">
+          <span className="text-[14.5px] font-medium text-[#E8F0FF]">
             {category.label}{' '}
             <span className="text-[#5A6A8A] font-normal">({category.count})</span>
           </span>
@@ -66,7 +66,7 @@ export function CategoryRow({ category, checked, onChange }: CategoryRowProps) {
 
       {/* Description */}
       {open && (
-        <p className="mt-2.5 ml-[52px] text-[12px] text-[#5A6A8A] leading-relaxed">
+        <p className="mt-2.5 ml-[52px] text-[13.5px] text-[#5A6A8A] leading-relaxed">
           {category.description}
         </p>
       )}

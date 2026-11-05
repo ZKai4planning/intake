@@ -19,8 +19,12 @@ import type { ReportTierId } from '@/types/reportTiers'
 const STORAGE_KEY = 'report_cart'
 
 export interface CartItem {
+  /** Report id for reports; `svc-<slug>` for services added from the landing page. */
   reportId: string
-  tier: ReportTierId
+  /** Report tier — only set for reports (services have none). */
+  tier?: ReportTierId
+  /** Missing on older stored items → treated as a report. */
+  kind?: 'report' | 'service'
   label: string
   priceGBP: number
   addedAt: string
@@ -57,6 +61,7 @@ export function addToCart(reportId: string, tier: ReportTierId): CartItem {
   const item: CartItem = {
     reportId,
     tier,
+    kind: 'report',
     label: tierDef.name,
     priceGBP: tierDef.priceGBP ?? 0,
     addedAt: new Date().toISOString(),
@@ -72,4 +77,17 @@ export function removeFromCart(reportId: string) {
 
 export function cartTotal(): number {
   return readAll().reduce((sum, item) => sum + item.priceGBP, 0)
+}
+
+/** Landing-page services ("Add to project") — same cart, kind: 'service'. */
+export function serviceCartId(slug: string): string {
+  return `svc-${slug}`
+}
+
+export function addServiceToCart(slug: string, label: string, priceGBP: number): CartItem {
+  const reportId = serviceCartId(slug)
+  const item: CartItem = { reportId, kind: 'service', label, priceGBP, addedAt: new Date().toISOString() }
+  const existing = readAll().filter(i => i.reportId !== reportId)
+  writeAll([...existing, item])
+  return item
 }

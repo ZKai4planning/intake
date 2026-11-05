@@ -12,10 +12,10 @@ export function DashboardFooter() {
   return (
     <footer className="shrink-0 border-t border-white/[0.06] bg-[#0F1525] px-5 sm:px-8 py-4">
       <div className=" mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
-        <p className="text-[11.5px] text-[#5A6A8A]">
+        <p className="text-[13px] text-[#5A6A8A]">
           © {year} AI4Planning. All rights reserved.
         </p>
-        <div className="flex items-center gap-4 text-[11.5px] text-[#5A6A8A]">
+        <div className="flex items-center gap-4 text-[13px] text-[#5A6A8A]">
           <Link href="/legal/privacy-policy" className="hover:text-[#A8B8D8] transition-colors">
             Privacy Policy
           </Link>

@@ -49,7 +49,7 @@
 //       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
 //         <div className="text-center max-w-[360px]">
 //           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-//           <p className="text-[13px] text-[#5A6A8A] mb-6">
+//           <p className="text-[14.5px] text-[#5A6A8A] mb-6">
 //             Please log in to access your workspace.
 //           </p>
 //           <button
@@ -69,17 +69,17 @@
 //       {/* ── Greeting ──────────────────────────────────────────── */}
 //       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7">
 //         <div>
-//           <h1 className="font-display text-[26px] sm:text-[30px] font-normal text-[#E8F0FF] tracking-tight">
+//           <h1 className="font-display text-[29px] sm:text-[33.5px] font-normal text-[#E8F0FF] tracking-tight">
 //             Welcome back, {firstName}
 //           </h1>
-//           <p className="text-[13.5px] text-[#A8B8D8] mt-1">
+//           <p className="text-[15px] text-[#A8B8D8] mt-1">
 //             Here&rsquo;s an overview of your {workspace.greetingNoun}.
 //           </p>
 //         </div>
 
 //         <GuardedNavLink
 //           href="/dashboard/new/intent"
-//           className="shrink-0 px-4 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[13px] font-semibold hover:bg-[#2A6BF0] transition-colors inline-block"
+//           className="shrink-0 px-4 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14.5px] font-semibold hover:bg-[#2A6BF0] transition-colors inline-block"
 //         >
 //           Start new application →
 //         </GuardedNavLink>
@@ -156,7 +156,7 @@ export default function DashboardPage() {
       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
         <div className="text-center max-w-[360px]">
           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-          <p className="text-[13px] text-[#5A6A8A] mb-6">
+          <p className="text-[14.5px] text-[#5A6A8A] mb-6">
             Please log in to access your workspace.
           </p>
           <button
@@ -176,17 +176,17 @@ export default function DashboardPage() {
       {/* ── Greeting ──────────────────────────────────────────── */}
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7">
         <div>
-          <h1 className="font-display text-[26px] sm:text-[30px] font-normal text-[#E8F0FF] tracking-tight">
+          <h1 className="font-display text-[29px] sm:text-[33.5px] font-normal text-[#E8F0FF] tracking-tight">
             Welcome back, {firstName}
           </h1>
-          <p className="text-[13.5px] text-[#A8B8D8] mt-1">
+          <p className="text-[15px] text-[#A8B8D8] mt-1">
             Here&rsquo;s an overview of your {workspace.greetingNoun}.
           </p>
         </div>
 
         <GuardedNavLink
           href="/dashboard/new/intent"
-          className="shrink-0 px-4 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[13px] font-semibold hover:bg-[#2A6BF0] transition-colors inline-block"
+          className="shrink-0 px-4 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14.5px] font-semibold hover:bg-[#2A6BF0] transition-colors inline-block"
         >
           Start new application →
         </GuardedNavLink>

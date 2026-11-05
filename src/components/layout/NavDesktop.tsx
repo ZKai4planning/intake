@@ -15,7 +15,7 @@ interface NavDesktopProps {
  */
 export function NavDesktop({ items, currentPath }: NavDesktopProps) {
   return (
-    <nav aria-label="Main navigation" className="hidden md:flex items-center gap-1">
+    <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-0.5 xl:gap-1">
       {items.map(item => (
         <Link
           key={item.href}
@@ -24,7 +24,7 @@ export function NavDesktop({ items, currentPath }: NavDesktopProps) {
           rel={item.isExternal ? 'noopener noreferrer' : undefined}
           aria-current={currentPath === item.href ? 'page' : undefined}
           className={cn(
-            'relative px-3 py-2 text-sm font-medium rounded-md',
+            'relative px-3 xl:px-4 py-2.5 text-[15px] xl:text-[17px] font-medium rounded-md whitespace-nowrap',
             'text-[#A8B8D8] transition-colors duration-150',
             'hover:text-[#E8F0FF]',
             'nav-link-underline',
@@ -34,7 +34,7 @@ export function NavDesktop({ items, currentPath }: NavDesktopProps) {
         >
           {item.label}
           {item.isExternal && (
-            <span className="ml-1 text-[10px] opacity-60" aria-hidden="true">↗</span>
+            <span className="ml-1 text-[11px] opacity-60" aria-hidden="true">↗</span>
           )}
         </Link>
       ))}

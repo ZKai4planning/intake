@@ -32,20 +32,20 @@ export function UpsellBanner({ events, onBookConsultation, className }: UpsellBa
       <div className="flex items-start gap-3">
         <span className="text-[#F59E0B] text-lg shrink-0" aria-hidden="true">💡</span>
         <div className="flex-1">
-          <p className="text-[13px] font-semibold text-[#F59E0B] mb-1">
+          <p className="text-[14.5px] font-semibold text-[#F59E0B] mb-1">
             {events.length === 1
               ? 'One area could use expert input'
               : `${events.length} areas could use expert input`}
           </p>
-          <p className="text-[12px] text-[#A8B8D8] leading-relaxed mb-3">
+          <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed mb-3">
             A planning consultant can resolve these quickly so your application
             isn&rsquo;t delayed at submission.
           </p>
 
           <ul className="space-y-1.5 mb-3">
             {events.map(e => (
-              <li key={e.rowId} className="flex items-start gap-2 text-[12px] text-[#A8B8D8]">
-                <span className="text-[#5A6A8A] shrink-0 font-mono text-[10px] mt-0.5">{e.rowId}</span>
+              <li key={e.rowId} className="flex items-start gap-2 text-[13.5px] text-[#A8B8D8]">
+                <span className="text-[#5A6A8A] shrink-0 font-mono text-[11px] mt-0.5">{e.rowId}</span>
                 <span>
                   <span className="text-[#E8F0FF] font-medium">{e.field}</span>
                   {' — '}{e.suggestedAction}
@@ -57,7 +57,7 @@ export function UpsellBanner({ events, onBookConsultation, className }: UpsellBa
           <button
             type="button"
             onClick={onBookConsultation}
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-[8px] bg-[#F59E0B] text-[#1A1206] text-[12.5px] font-semibold hover:bg-[#FBAF2E] transition-colors"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-[8px] bg-[#F59E0B] text-[#1A1206] text-[14px] font-semibold hover:bg-[#FBAF2E] transition-colors"
           >
             Book a quick consultation →
           </button>

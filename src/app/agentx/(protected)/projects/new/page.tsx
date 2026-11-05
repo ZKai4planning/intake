@@ -35,7 +35,7 @@ export default function AgentxNewProjectPage() {
 
   if (!userId) {
     return (
-      <p className="text-[13px] text-[#F87171]">
+      <p className="text-[14.5px] text-[#F87171]">
         Missing userId — start from a user's page instead of navigating here directly.
       </p>
     )
@@ -61,41 +61,41 @@ export default function AgentxNewProjectPage() {
 
   return (
     <div className="max-w-[480px]">
-      <Link href={`/agentx/users/${userId}`} className="text-[13px] text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors">← Back</Link>
+      <Link href={`/agentx/users/${userId}`} className="text-[14.5px] text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors">← Back</Link>
 
-      <h1 className="font-display text-[22px] text-[#E8F0FF] mt-3 mb-1">New project</h1>
-      <p className="text-[13.5px] text-[#5A6A8A] mb-6">Pick a starting point — you can fill in the actual eligibility form on the next screen.</p>
+      <h1 className="font-display text-[24.5px] text-[#E8F0FF] mt-3 mb-1">New project</h1>
+      <p className="text-[15px] text-[#5A6A8A] mb-6">Pick a starting point — you can fill in the actual eligibility form on the next screen.</p>
 
       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 space-y-4">
         <div>
-          <label className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">Who is this for</label>
+          <label className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">Who is this for</label>
           <select
             value={actorId}
             onChange={e => setActorId(e.target.value)}
-            className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[14px] text-[#E8F0FF] focus:outline-none focus:border-[#135BEC] transition-colors"
+            className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[15.5px] text-[#E8F0FF] focus:outline-none focus:border-[#135BEC] transition-colors"
           >
             {ACTORS.map(a => <option key={a.id} value={a.id}>{a.label}</option>)}
           </select>
         </div>
 
         <div>
-          <label className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">Tier</label>
+          <label className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">Tier</label>
           <select
             value={tier}
             onChange={e => setTier(e.target.value)}
-            className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[14px] text-[#E8F0FF] focus:outline-none focus:border-[#135BEC] transition-colors"
+            className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[15.5px] text-[#E8F0FF] focus:outline-none focus:border-[#135BEC] transition-colors"
           >
             {TIERS.map(t => <option key={t.id} value={t.id}>{t.label}</option>)}
           </select>
-          <p className="text-[12px] text-[#5A6A8A] mt-1.5">Determines which eligibility questions apply.</p>
+          <p className="text-[13.5px] text-[#5A6A8A] mt-1.5">Determines which eligibility questions apply.</p>
         </div>
 
-        {error && <p className="text-[13px] text-[#F87171]" role="alert">{error}</p>}
+        {error && <p className="text-[14.5px] text-[#F87171]" role="alert">{error}</p>}
 
         <button
           onClick={handleCreate}
           disabled={isPending}
-          className="w-full py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 transition-colors"
+          className="w-full py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[15.5px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 transition-colors"
         >
           {isPending ? 'Creating…' : 'Create & continue →'}
         </button>

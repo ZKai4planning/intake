@@ -87,13 +87,13 @@ export function AudienceSplitSection() {
             >
               <p
                 className={cn(
-                  'text-[11px] font-bold tracking-[0.08em] uppercase mb-2',
+                  'text-[12.5px] font-bold tracking-[0.08em] uppercase mb-2',
                   col.accent === 'purple' ? 'text-[#8B5CF6]' : 'text-[#00D4FF]'
                 )}
               >
                 {col.eyebrow}
               </p>
-              <p className="text-[13px] text-[#A8B8D8] leading-relaxed mb-6">
+              <p className="text-[14.5px] text-[#A8B8D8] leading-relaxed mb-6">
                 {col.body}
               </p>
 
@@ -102,13 +102,13 @@ export function AudienceSplitSection() {
                   <li key={point.title}>
                     <p
                       className={cn(
-                        'text-[13.5px] font-semibold mb-0.5',
+                        'text-[15px] font-semibold mb-0.5',
                         col.accent === 'purple' ? 'text-[#B9A9F5]' : 'text-[#7FE0FF]'
                       )}
                     >
                       {point.title}
                     </p>
-                    <p className="text-[12.5px] text-[#8A96B8] leading-relaxed">
+                    <p className="text-[14px] text-[#8A96B8] leading-relaxed">
                       {point.body}
                     </p>
                   </li>
@@ -119,7 +119,7 @@ export function AudienceSplitSection() {
                 type="button"
                 onClick={() => router.push(`/check/unsure?actor=${col.actorId}`)}
                 className={cn(
-                  'w-full py-3 rounded-[10px] text-[13.5px] font-semibold transition-colors',
+                  'w-full py-3 rounded-[10px] text-[15px] font-semibold transition-colors',
                   col.accent === 'purple'
                     ? 'bg-transparent border border-[rgba(139,92,246,0.5)] text-[#B9A9F5] hover:bg-[rgba(139,92,246,0.1)]'
                     : 'bg-[#00D4FF] text-[#042C53] hover:bg-[#2A6BF0] hover:text-white'

@@ -97,7 +97,7 @@ import ForgotPasswordClient from "./ForgotPasswordClient"
 //               <polyline points="22,6 12,13 2,6"/>
 //             </svg>
 //           </div>
-//           <p className="text-[14px] text-[#A8B8D8]">Sending your reset code…</p>
+//           <p className="text-[15.5px] text-[#A8B8D8]">Sending your reset code…</p>
 //         </div>
 //       ) : (
 //         <form onSubmit={handleSubmit} noValidate className="space-y-5">
@@ -127,7 +127,7 @@ import ForgotPasswordClient from "./ForgotPasswordClient"
 //             {isPending ? 'Sending code…' : 'Send reset code →'}
 //           </Button>
 
-//           <p className="text-center text-[11px] text-[#5A6A8A] leading-relaxed">
+//           <p className="text-center text-[12.5px] text-[#5A6A8A] leading-relaxed">
 //             🔒 We'll send a 6-digit code to your inbox. It expires in 10 minutes.
 //           </p>
 //         </form>

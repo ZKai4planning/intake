@@ -56,7 +56,7 @@ export default function ResetPasswordPage() {
             <CheckIcon />
           </div>
           <p className="font-display text-2xl text-[#E8F0FF] mb-2">Password updated</p>
-          <p className="text-[13px] text-[#5A6A8A] mb-6">
+          <p className="text-[14.5px] text-[#5A6A8A] mb-6">
             Your password has been reset. You can now log in with your new password.
           </p>
           <button
@@ -74,7 +74,7 @@ export default function ResetPasswordPage() {
     <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
       <div className="w-full max-w-[380px]">
         <p className="font-display text-2xl text-[#E8F0FF] mb-1 text-center">Reset your password</p>
-        <p className="text-[13px] text-[#5A6A8A] mb-7 text-center">
+        <p className="text-[14.5px] text-[#5A6A8A] mb-7 text-center">
           Choose a new password for your account.
         </p>
 
@@ -94,18 +94,18 @@ export default function ResetPasswordPage() {
             <button
               type="button"
               onClick={() => setShowPassword(v => !v)}
-              className="absolute right-3 top-[34px] text-[11.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8]"
+              className="absolute right-3 top-[34px] text-[13px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8]"
               tabIndex={-1}
             >
               {showPassword ? 'Hide' : 'Show'}
             </button>
           </div>
 
-          <p className="text-[11.5px] text-[#5A6A8A] mt-2">
+          <p className="text-[13px] text-[#5A6A8A] mt-2">
             Must be at least {MIN_LENGTH} characters.
           </p>
 
-          {error && <p className="text-[12px] text-[#FF6B6B] mt-3">{error}</p>}
+          {error && <p className="text-[13.5px] text-[#FF6B6B] mt-3">{error}</p>}
 
           <button
             type="submit"

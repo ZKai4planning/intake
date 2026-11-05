@@ -60,20 +60,20 @@
 //     >
 //       <div className="space-y-6">
 //         <div className="flex justify-center">
-//           <span className="text-[48px]" aria-hidden="true">🔐</span>
+//           <span className="text-[54px]" aria-hidden="true">🔐</span>
 //         </div>
 
 //         <OtpBoxes onComplete={handleComplete} hasError={hasError} disabled={isPending} />
 
 //         {error && (
-//           <p className="text-center text-[13px] text-[#F87171]" role="alert">{error}</p>
+//           <p className="text-center text-[14.5px] text-[#F87171]" role="alert">{error}</p>
 //         )}
 
 //         <Button type="button" variant="primary" size="lg" fullWidth isLoading={isPending} disabled={isPending}>
 //           {isPending ? 'Verifying…' : 'Verify'}
 //         </Button>
 
-//         <p className="text-center text-[12px] text-[#5A6A8A]">
+//         <p className="text-center text-[13.5px] text-[#5A6A8A]">
 //           Lost access to your app?{' '}
 //           <button
 //             type="button"
@@ -85,7 +85,7 @@
 //         </p>
 //       </div>
 
-//       <p className={cn('mt-7 pt-5 border-t border-white/[0.06]', 'text-[11px] text-[#5A6A8A] text-center')}>
+//       <p className={cn('mt-7 pt-5 border-t border-white/[0.06]', 'text-[12.5px] text-[#5A6A8A] text-center')}>
 //         🛠 Mock mode — any valid 6-digit number works
 //       </p>
 //     </AuthShell>

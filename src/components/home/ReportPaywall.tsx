@@ -42,7 +42,7 @@ export function ReportPaywall({ reportId, tier }: ReportPaywallProps) {
           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-[#00D4FF]">
             <Lock className="h-3.5 w-3.5" />
           </span>
-          <p className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+          <p className="text-[14px] text-[#A8B8D8] leading-relaxed">
             The risks, document checklist and recommendation are ready — this is a paid report
             (<span className="text-[#E8F0FF] font-semibold">{tierDef.priceLabel}</span>). Add it to your
             cart to unlock the full version.
@@ -54,11 +54,14 @@ export function ReportPaywall({ reportId, tier }: ReportPaywallProps) {
             addToCart(reportId, tier)
             setInCart(true)
           }}
-          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#135BEC] px-4 py-2.5 sm:py-2 text-[12.5px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#135BEC] px-4 py-2.5 sm:py-2 text-[14px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
         >
           <ShoppingCart className="h-3.5 w-3.5" />
           Add to cart — {tierDef.priceLabel}
         </button>
+        <p className="mt-2 text-[13px] text-[#5A6A8A]">
+          {tierDef.name} · one-off payment · you can review it in your cart before paying.
+        </p>
       </div>
     )
   }
@@ -69,14 +72,17 @@ export function ReportPaywall({ reportId, tier }: ReportPaywallProps) {
         <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300">
           <CheckCircle2 className="h-3.5 w-3.5" />
         </span>
-        <p className="text-[12.5px] text-[#A8B8D8]">
-          In your cart — <span className="text-[#E8F0FF] font-semibold">{tierDef.priceLabel}</span>. Checkout to unlock
+        <p className="text-[14px] text-[#A8B8D8]">
+          Added to cart: <span className="text-[#E8F0FF] font-semibold">{tierDef.name} — {tierDef.priceLabel}</span>. Checkout to unlock
           the full report.
         </p>
       </div>
+      <a href="/cart" className="shrink-0 text-[13.5px] text-[#A8B8D8] underline underline-offset-2 hover:text-[#E8F0FF]">
+        View cart
+      </a>
       <a
         href={checkoutHref}
-        className="shrink-0 w-full sm:w-auto text-center rounded-full bg-[#135BEC] px-4 py-2.5 sm:py-2 text-[12.5px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
+        className="shrink-0 w-full sm:w-auto text-center rounded-full bg-[#135BEC] px-4 py-2.5 sm:py-2 text-[14px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
       >
         Checkout
       </a>

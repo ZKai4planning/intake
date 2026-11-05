@@ -95,35 +95,35 @@ export default function AgentxProjectPage() {
     router.push(`/agentx/users/${project.userId}`)
   }
 
-  if (error && !project) return <p className="text-[13px] text-[#F87171]">{error}</p>
-  if (!project) return <p className="text-[13px] text-[#5A6A8A]">Loading…</p>
+  if (error && !project) return <p className="text-[14.5px] text-[#F87171]">{error}</p>
+  if (!project) return <p className="text-[14.5px] text-[#5A6A8A]">Loading…</p>
 
   const answeredCount = Object.values(answers).filter(a => a.value !== null && a.value !== '' && !(Array.isArray(a.value) && a.value.length === 0)).length
 
   return (
     <div className="max-w-[640px]">
-      <Link href={`/agentx/users/${project.userId}`} className="text-[13px] text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors">← Back to user</Link>
+      <Link href={`/agentx/users/${project.userId}`} className="text-[14.5px] text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors">← Back to user</Link>
 
       <div className="flex items-start justify-between mt-3 mb-1">
-        <h1 className="font-display text-[22px] text-[#E8F0FF]">{project.title}</h1>
+        <h1 className="font-display text-[24.5px] text-[#E8F0FF]">{project.title}</h1>
         <span className={
           project.status === 'submitted'
-            ? 'text-[11.5px] font-medium px-2 py-0.5 rounded-full bg-[rgba(52,211,153,0.12)] text-[#34D399] shrink-0 ml-3'
-            : 'text-[11.5px] font-medium px-2 py-0.5 rounded-full bg-white/[0.06] text-[#A8B8D8] shrink-0 ml-3'
+            ? 'text-[13px] font-medium px-2 py-0.5 rounded-full bg-[rgba(52,211,153,0.12)] text-[#34D399] shrink-0 ml-3'
+            : 'text-[13px] font-medium px-2 py-0.5 rounded-full bg-white/[0.06] text-[#A8B8D8] shrink-0 ml-3'
         }>
           {project.status}
         </span>
       </div>
-      <p className="text-[13px] text-[#5A6A8A] mb-1">
+      <p className="text-[14.5px] text-[#5A6A8A] mb-1">
         {project.ownerName} · {project.ownerEmail} · {project.tier} tier
       </p>
-      <p className="text-[13px] text-[#5A6A8A] mb-6">
+      <p className="text-[14.5px] text-[#5A6A8A] mb-6">
         {answeredCount} of {questions.length} answered
         {saveState === 'saving' && ' · saving…'}
         {saveState === 'saved' && ' · saved'}
       </p>
 
-      {error && <p className="text-[13px] text-[#F87171] mb-4" role="alert">{error}</p>}
+      {error && <p className="text-[14.5px] text-[#F87171] mb-4" role="alert">{error}</p>}
 
       <div className="space-y-5">
         {questions.map(q => (
@@ -141,7 +141,7 @@ export default function AgentxProjectPage() {
         {project.status !== 'submitted' && (
           <button
             onClick={handleSubmit}
-            className="px-4 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14px] font-semibold hover:bg-[#2A6BF0] transition-colors"
+            className="px-4 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[15.5px] font-semibold hover:bg-[#2A6BF0] transition-colors"
           >
             Mark as submitted
           </button>
@@ -150,7 +150,7 @@ export default function AgentxProjectPage() {
         {!confirmDelete ? (
           <button
             onClick={() => setConfirmDelete(true)}
-            className="px-4 py-2.5 rounded-[10px] border border-[rgba(255,107,107,0.3)] text-[#F87171] text-[13.5px] font-semibold hover:bg-[rgba(255,107,107,0.08)] transition-colors"
+            className="px-4 py-2.5 rounded-[10px] border border-[rgba(255,107,107,0.3)] text-[#F87171] text-[15px] font-semibold hover:bg-[rgba(255,107,107,0.08)] transition-colors"
           >
             Delete project
           </button>
@@ -158,13 +158,13 @@ export default function AgentxProjectPage() {
           <>
             <button
               onClick={handleDelete}
-              className="px-4 py-2.5 rounded-[10px] bg-[#F87171] text-white text-[13.5px] font-semibold hover:bg-[#EF5555] transition-colors"
+              className="px-4 py-2.5 rounded-[10px] bg-[#F87171] text-white text-[15px] font-semibold hover:bg-[#EF5555] transition-colors"
             >
               Confirm delete
             </button>
             <button
               onClick={() => setConfirmDelete(false)}
-              className="text-[13.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] transition-colors"
+              className="text-[15px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] transition-colors"
             >
               Cancel
             </button>

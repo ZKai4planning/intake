@@ -40,7 +40,7 @@ export default function SingleReportPage() {
   if (isLoading || report === undefined) {
     return (
       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center">
-        <p className="text-[13px] text-[#5A6A8A]">Loading your report…</p>
+        <p className="text-[14.5px] text-[#5A6A8A]">Loading your report…</p>
       </div>
     )
   }
@@ -51,7 +51,7 @@ export default function SingleReportPage() {
       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
         <div className="text-center max-w-[360px]">
           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-          <p className="text-[13px] text-[#5A6A8A] mb-6">Please log in to view this report.</p>
+          <p className="text-[14.5px] text-[#5A6A8A] mb-6">Please log in to view this report.</p>
           <button
             onClick={() =>
               router.push(`/login?report=${params.reportId}&returnTo=${encodeURIComponent(returnTo)}`)
@@ -72,13 +72,13 @@ export default function SingleReportPage() {
           <span className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-[#00D4FF] mb-4">
             <FileText className="h-5 w-5" />
           </span>
-          <p className="text-[15px] font-semibold text-[#E8F0FF] mb-1.5">Report not found</p>
-          <p className="text-[13px] text-[#5A6A8A] max-w-[380px] mb-6">
+          <p className="text-[17px] font-semibold text-[#E8F0FF] mb-1.5">Report not found</p>
+          <p className="text-[14.5px] text-[#5A6A8A] max-w-[380px] mb-6">
             This report isn't in this browser, or it belongs to a different account.
           </p>
           <button
             onClick={() => router.push('/dashboard/reports')}
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[13px] font-semibold hover:bg-[#2A6BF0] transition-colors"
+            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14.5px] font-semibold hover:bg-[#2A6BF0] transition-colors"
           >
             Back to reports
           </button>
@@ -93,17 +93,17 @@ export default function SingleReportPage() {
     <DashboardShell workspace={workspace} firstName={firstName} email={session.email}>
       <button
         onClick={() => router.push('/dashboard/reports')}
-        className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+        className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
       >
         <ArrowLeft className="h-3.5 w-3.5" />
         Back to reports
       </button>
 
       <div className="mb-6">
-        <h1 className="font-display text-[26px] sm:text-[30px] font-normal text-[#E8F0FF] tracking-tight">
+        <h1 className="font-display text-[29px] sm:text-[33.5px] font-normal text-[#E8F0FF] tracking-tight">
           {tierDef.name}
         </h1>
-        <p className="text-[13.5px] text-[#A8B8D8] mt-1">
+        <p className="text-[15px] text-[#A8B8D8] mt-1">
           Generated {new Date(report.createdAt).toLocaleString()}
         </p>
       </div>

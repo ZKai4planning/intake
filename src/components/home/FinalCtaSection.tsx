@@ -21,17 +21,17 @@
 //         style={{ background: 'radial-gradient(ellipse, rgba(0,212,255,0.10) 0%, transparent 70%)' }}
 //       />
 //       <div className="relative max-w-[640px] mx-auto px-5 sm:px-8 text-center">
-//         <h2 className="font-display text-[28px] sm:text-[36px] font-normal text-[#E8F0FF] tracking-tight mb-3">
+//         <h2 className="font-display text-[31.5px] sm:text-[40.5px] font-normal text-[#E8F0FF] tracking-tight mb-3">
 //           Find out what you can build — for free
 //         </h2>
-//         <p className="text-[14.5px] text-[#A8B8D8] leading-relaxed mb-7 max-w-[440px] mx-auto">
+//         <p className="text-[16px] text-[#A8B8D8] leading-relaxed mb-7 max-w-[440px] mx-auto">
 //           No planning knowledge needed, no commitment, and your first result
 //           is free.
 //         </p>
 //         <button
 //           type="button"
 //           onClick={() => router.push('/check/unsure')}
-//           className="px-7 py-3.5 rounded-[12px] bg-[#00D4FF] text-[#050A12] font-semibold text-[14.5px] hover:bg-[#2A6BF0] hover:shadow-[0_0_24px_rgba(0,212,255,0.4)] transition-all"
+//           className="px-7 py-3.5 rounded-[12px] bg-[#00D4FF] text-[#050A12] font-semibold text-[16px] hover:bg-[#2A6BF0] hover:shadow-[0_0_24px_rgba(0,212,255,0.4)] transition-all"
 //         >
 //           Check my planning route →
 //         </button>
@@ -75,10 +75,10 @@ export function FinalCtaSection() {
         viewport={viewportOnce}
         variants={fadeUp}
       >
-        <h2 className="font-display text-[28px] sm:text-[36px] font-normal text-[#E8F0FF] tracking-tight mb-3">
+        <h2 className="font-display text-[31.5px] sm:text-[40.5px] font-normal text-[#E8F0FF] tracking-tight mb-3">
           Find out what you can build — for free
         </h2>
-        <p className="text-[14.5px] text-[#A8B8D8] leading-relaxed mb-7 max-w-[440px] mx-auto">
+        <p className="text-[16px] text-[#A8B8D8] leading-relaxed mb-7 max-w-[440px] mx-auto">
           No planning knowledge needed, no commitment, and your first result
           is free.
         </p>
@@ -88,7 +88,7 @@ export function FinalCtaSection() {
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
           transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-          className="px-7 py-3.5 rounded-[12px] bg-[#00D4FF] text-[#050A12] font-semibold text-[14.5px] hover:bg-[#2A6BF0] hover:shadow-[0_0_24px_rgba(0,212,255,0.4)] transition-colors"
+          className="px-7 py-3.5 rounded-[12px] bg-[#00D4FF] text-[#050A12] font-semibold text-[16px] hover:bg-[#2A6BF0] hover:shadow-[0_0_24px_rgba(0,212,255,0.4)] transition-colors"
         >
           Check my planning route →
         </motion.button>

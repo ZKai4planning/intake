@@ -72,10 +72,10 @@
 //         <div className="mx-auto max-w-[920px]">
 //           <div className="mb-3 flex items-center justify-between gap-3">
 //             <div className="min-w-0">
-//               <h1 className="text-[17px] font-semibold text-[#E8F0FF] sm:text-[19px]">Project Intake</h1>
-//               <p className="hidden text-[12.5px] text-[#A8B8D8] sm:block">Tell us what you&apos;re planning. We&apos;ll work out the appropriate planning route.</p>
+//               <h1 className="text-[19px] font-semibold text-[#E8F0FF] sm:text-[21.5px]">Project Intake</h1>
+//               <p className="hidden text-[14px] text-[#A8B8D8] sm:block">Tell us what you&apos;re planning. We&apos;ll work out the appropriate planning route.</p>
 //             </div>
-//             <Link href="/contact" className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1.5 text-[12px] text-[#A8B8D8] transition-colors hover:text-[#E8F0FF]">
+//             <Link href="/contact" className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1.5 text-[13.5px] text-[#A8B8D8] transition-colors hover:text-[#E8F0FF]">
 //               <HelpCircle className="h-3.5 w-3.5 text-[#00D4FF]" />
 //               Need help?
 //             </Link>
@@ -89,12 +89,12 @@
 //         <div className="mx-auto max-w-[720px] space-y-5">
 //           {resumable && (
 //             <div className="flex items-center justify-between gap-3 rounded-xl border border-blue-400/25 bg-blue-500/[0.06] px-4 py-3">
-//               <p className="text-[12.5px] text-[#A8B8D8]">Welcome back — continue where you left off?</p>
+//               <p className="text-[14px] text-[#A8B8D8]">Welcome back — continue where you left off?</p>
 //               <div className="flex shrink-0 items-center gap-2">
-//                 <button type="button" onClick={startFresh} className="px-2 py-1 text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8]">
+//                 <button type="button" onClick={startFresh} className="px-2 py-1 text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8]">
 //                   Start fresh
 //                 </button>
-//                 <button type="button" onClick={resume} className="rounded-full bg-[#135BEC] px-3.5 py-1.5 text-[12px] font-semibold text-white hover:bg-[#2A6BF0]">
+//                 <button type="button" onClick={resume} className="rounded-full bg-[#135BEC] px-3.5 py-1.5 text-[13.5px] font-semibold text-white hover:bg-[#2A6BF0]">
 //                   Resume
 //                 </button>
 //               </div>
@@ -168,7 +168,7 @@
 //   return (
 //     <div className="space-y-2.5">
 //       <AssistantShell>
-//         <div className="inline-block animate-fade-in rounded-2xl rounded-tl-sm border border-white/[0.08] bg-[#0F1525] px-4 py-2.5 text-[13.5px] font-medium text-[#E8F0FF]">
+//         <div className="inline-block animate-fade-in rounded-2xl rounded-tl-sm border border-white/[0.08] bg-[#0F1525] px-4 py-2.5 text-[15px] font-medium text-[#E8F0FF]">
 //           {question}
 //         </div>
 //       </AssistantShell>
@@ -350,12 +350,12 @@
 //       <div className="shrink-0 border-b border-white/[0.06] px-4 py-2.5 sm:px-8">
 //         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-x-6 gap-y-2.5">
 //           <div className="order-1 min-w-0">
-//             <h1 className="text-[16px] font-semibold leading-tight text-[#E8F0FF] sm:text-[18px]">Project Intake</h1>
-//             <p className="hidden text-[11.5px] text-[#5A6A8A] sm:block">Your answers save automatically</p>
+//             <h1 className="text-[18px] font-semibold leading-tight text-[#E8F0FF] sm:text-[20px]">Project Intake</h1>
+//             <p className="hidden text-[13px] text-[#5A6A8A] sm:block">Your answers save automatically</p>
 //           </div>
 //           <Link
 //             href="/contact"
-//             className="order-2 ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1.5 text-[12px] text-[#A8B8D8] transition-colors hover:text-[#E8F0FF] lg:order-3 lg:ml-0"
+//             className="order-2 ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1.5 text-[13.5px] text-[#A8B8D8] transition-colors hover:text-[#E8F0FF] lg:order-3 lg:ml-0"
 //           >
 //             <HelpCircle className="h-3.5 w-3.5 text-[#00D4FF]" />
 //             Need help?
@@ -371,12 +371,12 @@
 //       {resumable && (
 //         <div className="shrink-0 px-4 pt-3 sm:px-8">
 //           <div className="mx-auto flex max-w-[720px] items-center justify-between gap-3 rounded-xl border border-blue-400/25 bg-blue-500/[0.06] px-4 py-3">
-//             <p className="text-[12.5px] text-[#A8B8D8]">Welcome back — continue where you left off?</p>
+//             <p className="text-[14px] text-[#A8B8D8]">Welcome back — continue where you left off?</p>
 //             <div className="flex shrink-0 items-center gap-2">
-//               <button type="button" onClick={() => { startFresh(); setStarted(false) }} className="px-2 py-1 text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8]">
+//               <button type="button" onClick={() => { startFresh(); setStarted(false) }} className="px-2 py-1 text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8]">
 //                 Start fresh
 //               </button>
-//               <button type="button" onClick={() => { resume(); setStarted(true) }} className="rounded-full bg-[#135BEC] px-3.5 py-1.5 text-[12px] font-semibold text-white hover:bg-[#2A6BF0]">
+//               <button type="button" onClick={() => { resume(); setStarted(true) }} className="rounded-full bg-[#135BEC] px-3.5 py-1.5 text-[13.5px] font-semibold text-white hover:bg-[#2A6BF0]">
 //                 Resume
 //               </button>
 //             </div>
@@ -443,11 +443,11 @@
 //           <aside className="hidden min-w-0 xl:block" aria-label="Tip">
 //             {started && HINTS[draft.step] && (
 //               <div key={draft.step} className="intake-in-fwd max-w-[300px] rounded-2xl border border-white/[0.08] bg-white/[0.02] p-4">
-//                 <p className="flex items-center gap-2 text-[12px] font-medium text-[#00D4FF]">
+//                 <p className="flex items-center gap-2 text-[13.5px] font-medium text-[#00D4FF]">
 //                   <Lightbulb className="h-4 w-4" />
 //                   Why we ask
 //                 </p>
-//                 <p className="mt-2 text-[13px] leading-relaxed text-[#A8B8D8]">{HINTS[draft.step]}</p>
+//                 <p className="mt-2 text-[14.5px] leading-relaxed text-[#A8B8D8]">{HINTS[draft.step]}</p>
 //               </div>
 //             )}
 //           </aside>
@@ -555,7 +555,7 @@
 //   const initials = id === 'details' ? draft.details.fullName.trim().split(/\s+/).slice(0, 2).map(w => w[0]?.toUpperCase()).join('') : ''
 //   return (
 //     <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#135BEC]/30 to-[#00D4FF]/15 text-[#00D4FF]">
-//       {initials ? <span className="text-[26px] font-semibold">{initials}</span> : id === 'property' ? <Home className="h-8 w-8" /> : id === 'details' ? <User className="h-8 w-8" /> : <Sparkles className="h-8 w-8" />}
+//       {initials ? <span className="text-[29px] font-semibold">{initials}</span> : id === 'property' ? <Home className="h-8 w-8" /> : id === 'details' ? <User className="h-8 w-8" /> : <Sparkles className="h-8 w-8" />}
 //     </div>
 //   )
 // }
@@ -584,7 +584,7 @@
 //         <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#00D4FF]/15 text-[#00D4FF]">
 //           <Check className="h-3 w-3" strokeWidth={3} />
 //         </span>
-//         <span className="flex-1 text-[12.5px] font-medium text-[#E8F0FF] [writing-mode:vertical-rl]" style={{ transform: 'rotate(180deg)' }}>
+//         <span className="flex-1 text-[14px] font-medium text-[#E8F0FF] [writing-mode:vertical-rl]" style={{ transform: 'rotate(180deg)' }}>
 //           {info.label}
 //         </span>
 //         {onEdit && <Pencil className="h-3.5 w-3.5 text-[#A8B8D8]" aria-hidden />}
@@ -599,16 +599,16 @@
 //             <Check className="h-3 w-3" strokeWidth={3} />
 //           </span>
 //           {onEdit && (
-//             <span className="absolute right-2 top-2 inline-flex items-center gap-1 rounded-full bg-[#0A0E1A]/80 px-2 py-1 text-[11px] font-medium text-[#E8F0FF] opacity-0 backdrop-blur transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100 [@media(hover:none)]:opacity-100">
+//             <span className="absolute right-2 top-2 inline-flex items-center gap-1 rounded-full bg-[#0A0E1A]/80 px-2 py-1 text-[12.5px] font-medium text-[#E8F0FF] opacity-0 backdrop-blur transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100 [@media(hover:none)]:opacity-100">
 //               <Pencil className="h-3 w-3" />
 //               Edit
 //             </span>
 //           )}
 //         </span>
 //         <span className="block px-3.5 pb-3.5 pt-3">
-//           <span className="block text-[10.5px] font-medium uppercase tracking-wider text-[#5A6A8A]">{info.label}</span>
-//           <span className="mt-1 block truncate text-[14.5px] font-semibold text-[#E8F0FF]">{info.title}</span>
-//           {info.lines[0] && <span className="mt-0.5 block truncate text-[12.5px] text-[#A8B8D8]">{info.lines[0]}</span>}
+//           <span className="block text-[12px] font-medium uppercase tracking-wider text-[#5A6A8A]">{info.label}</span>
+//           <span className="mt-1 block truncate text-[16px] font-semibold text-[#E8F0FF]">{info.title}</span>
+//           {info.lines[0] && <span className="mt-0.5 block truncate text-[14px] text-[#A8B8D8]">{info.lines[0]}</span>}
 //         </span>
 //       </span>
 //     </>
@@ -658,22 +658,22 @@
 //         className="w-full max-w-[420px] rounded-2xl border border-white/[0.10] bg-[#0F1525] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.5)]"
 //         onClick={e => e.stopPropagation()}
 //       >
-//         <h2 id="confirm-edit-title" className="text-[17px] font-semibold text-[#E8F0FF]">
+//         <h2 id="confirm-edit-title" className="text-[19px] font-semibold text-[#E8F0FF]">
 //           Change &ldquo;{stepLabel}&rdquo;?
 //         </h2>
-//         <p className="mt-2 text-[13.5px] leading-relaxed text-[#A8B8D8]">
+//         <p className="mt-2 text-[15px] leading-relaxed text-[#A8B8D8]">
 //           This may affect {laterLabels.length > 1 ? 'your later steps' : 'a later step'} ({laterLabels.join(', ')}). Your answers are kept, but you&apos;ll go
 //           through each of those steps again to check them.
 //         </p>
 //         <div className="mt-5 flex items-center justify-end gap-3">
-//           <button type="button" onClick={onCancel} className="px-3 py-2 text-[13.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF]">
+//           <button type="button" onClick={onCancel} className="px-3 py-2 text-[15px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF]">
 //             Keep my answers
 //           </button>
 //           <button
 //             ref={confirmRef}
 //             type="button"
 //             onClick={onConfirm}
-//             className="rounded-full bg-[#135BEC] px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-[#2A6BF0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00D4FF]"
+//             className="rounded-full bg-[#135BEC] px-5 py-2.5 text-[15px] font-semibold text-white hover:bg-[#2A6BF0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00D4FF]"
 //           >
 //             Yes, edit it
 //           </button>
@@ -703,8 +703,8 @@ import { TellMoreCard } from './steps/TellMoreCard'
 import { WelcomeCard } from './steps/WelcomeCard'
 import { useIntakeDraft } from './useIntakeDraft'
 
-/** The site Navbar is `h-24` (96px) — the intake sits directly under it. */
-const NAVBAR_HEIGHT = 96
+/** The site Navbar is `h-[132px]` — the intake sits directly under it. */
+const NAVBAR_HEIGHT = 'var(--nav-h)'
 
 const STEP_LABEL: Record<IntakeStepId, string> = {
   details: 'Your details',
@@ -824,12 +824,12 @@ export function ProjectIntakeChat() {
       <div className="shrink-0 border-b border-white/[0.06] px-4 py-2.5 sm:px-8">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-x-6 gap-y-2.5">
           <div className="order-1 min-w-0">
-            <h1 className="text-[16px] font-semibold leading-tight text-[#E8F0FF] sm:text-[18px]">Project Intake</h1>
-            <p className="hidden text-[11.5px] text-[#5A6A8A] sm:block">Your answers save automatically</p>
+            <h1 className="text-[18px] font-semibold leading-tight text-[#E8F0FF] sm:text-[20px]">Project Intake</h1>
+            <p className="hidden text-[13px] text-[#5A6A8A] sm:block">Your answers save automatically</p>
           </div>
           <Link
             href="/contact"
-            className="order-2 ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1.5 text-[12px] text-[#A8B8D8] transition-colors hover:text-[#E8F0FF] lg:order-3 lg:ml-0"
+            className="order-2 ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/[0.10] bg-white/[0.03] px-3 py-1.5 text-[13.5px] text-[#A8B8D8] transition-colors hover:text-[#E8F0FF] lg:order-3 lg:ml-0"
           >
             <HelpCircle className="h-3.5 w-3.5 text-[#00D4FF]" />
             Need help?
@@ -845,12 +845,12 @@ export function ProjectIntakeChat() {
       {resumable && (
         <div className="shrink-0 px-4 pt-3 sm:px-8">
           <div className="mx-auto flex max-w-[720px] items-center justify-between gap-3 rounded-xl border border-blue-400/25 bg-blue-500/[0.06] px-4 py-3">
-            <p className="text-[12.5px] text-[#A8B8D8]">Welcome back — continue where you left off?</p>
+            <p className="text-[14px] text-[#A8B8D8]">Welcome back — continue where you left off?</p>
             <div className="flex shrink-0 items-center gap-2">
-              <button type="button" onClick={() => { startFresh(); setStarted(false) }} className="px-2 py-1 text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8]">
+              <button type="button" onClick={() => { startFresh(); setStarted(false) }} className="px-2 py-1 text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8]">
                 Start fresh
               </button>
-              <button type="button" onClick={() => { resume(); setStarted(true) }} className="rounded-full bg-[#135BEC] px-3.5 py-1.5 text-[12px] font-semibold text-white hover:bg-[#2A6BF0]">
+              <button type="button" onClick={() => { resume(); setStarted(true) }} className="rounded-full bg-[#135BEC] px-3.5 py-1.5 text-[13.5px] font-semibold text-white hover:bg-[#2A6BF0]">
                 Resume
               </button>
             </div>
@@ -881,11 +881,11 @@ export function ProjectIntakeChat() {
           <aside className="hidden min-w-0 xl:block" aria-label="Tip">
             {started && HINTS[draft.step] && (
               <div key={draft.step} className="intake-in-fwd max-w-[300px] rounded-2xl border border-white/[0.08] bg-white/[0.02] p-4">
-                <p className="flex items-center gap-2 text-[12px] font-medium text-[#00D4FF]">
+                <p className="flex items-center gap-2 text-[13.5px] font-medium text-[#00D4FF]">
                   <Lightbulb className="h-4 w-4" />
                   Why we ask
                 </p>
-                <p className="mt-2 text-[13px] leading-relaxed text-[#A8B8D8]">{HINTS[draft.step]}</p>
+                <p className="mt-2 text-[14.5px] leading-relaxed text-[#A8B8D8]">{HINTS[draft.step]}</p>
               </div>
             )}
           </aside>
@@ -998,7 +998,7 @@ function TileMedia({ id, draft }: { id: TileId; draft: IntakeDraft }) {
   const initials = id === 'details' ? draft.details.fullName.trim().split(/\s+/).slice(0, 2).map(w => w[0]?.toUpperCase()).join('') : ''
   return (
     <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#135BEC]/30 to-[#00D4FF]/15 text-[#00D4FF]">
-      {initials ? <span className="text-[26px] font-semibold">{initials}</span> : id === 'property' ? <Home className="h-8 w-8" /> : id === 'details' ? <User className="h-8 w-8" /> : <Sparkles className="h-8 w-8" />}
+      {initials ? <span className="text-[29px] font-semibold">{initials}</span> : id === 'property' ? <Home className="h-8 w-8" /> : id === 'details' ? <User className="h-8 w-8" /> : <Sparkles className="h-8 w-8" />}
     </div>
   )
 }
@@ -1008,7 +1008,7 @@ function HistoryGrid({ tiles, draft, onEdit }: { tiles: TileId[]; draft: IntakeD
   if (tiles.length === 0) return null
   return (
     <div>
-      <h2 className="mb-2.5 px-1 text-[11px] font-medium uppercase tracking-wider text-[#5A6A8A]">So far</h2>
+      <h2 className="mb-2.5 px-1 text-[12.5px] font-medium uppercase tracking-wider text-[#5A6A8A]">So far</h2>
       <div className="grid gap-2.5 [grid-template-columns:repeat(auto-fill,minmax(220px,1fr))]">
         {tiles.map(t => (
           <Tile key={t} id={t} draft={draft} onEdit={t === 'welcome' ? undefined : () => onEdit(t)} />
@@ -1036,14 +1036,14 @@ function Tile({ id, draft, onEdit }: { id: TileId; draft: IntakeDraft; onEdit?: 
         <TileMedia id={id} draft={draft} />
       </span>
       <span className="min-w-0 flex-1">
-        <span className="flex items-center gap-1.5 text-[10.5px] font-medium uppercase tracking-wider text-[#5A6A8A]">
+        <span className="flex items-center gap-1.5 text-[12px] font-medium uppercase tracking-wider text-[#5A6A8A]">
           <Check className="h-3 w-3 text-[#00D4FF]" strokeWidth={3} />
           {info.label}
         </span>
-        <span className="mt-0.5 block truncate text-[14px] font-semibold text-[#E8F0FF]" title={info.title}>
+        <span className="mt-0.5 block truncate text-[15.5px] font-semibold text-[#E8F0FF]" title={info.title}>
           {info.title}
         </span>
-        {info.lines[0] && <span className="block truncate text-[12.5px] text-[#A8B8D8]">{info.lines[0]}</span>}
+        {info.lines[0] && <span className="block truncate text-[14px] text-[#A8B8D8]">{info.lines[0]}</span>}
       </span>
       {onEdit && (
         <span className="shrink-0 text-[#5A6A8A] transition-colors group-hover:text-[#00D4FF] group-focus-visible:text-[#00D4FF]" aria-hidden>
@@ -1095,22 +1095,22 @@ function ConfirmEditDialog({
         className="w-full max-w-[420px] rounded-2xl border border-white/[0.10] bg-[#0F1525] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.5)]"
         onClick={e => e.stopPropagation()}
       >
-        <h2 id="confirm-edit-title" className="text-[17px] font-semibold text-[#E8F0FF]">
+        <h2 id="confirm-edit-title" className="text-[19px] font-semibold text-[#E8F0FF]">
           Change &ldquo;{stepLabel}&rdquo;?
         </h2>
-        <p className="mt-2 text-[13.5px] leading-relaxed text-[#A8B8D8]">
+        <p className="mt-2 text-[15px] leading-relaxed text-[#A8B8D8]">
           This may affect {laterLabels.length > 1 ? 'your later steps' : 'a later step'} ({laterLabels.join(', ')}). Your answers are kept, but you&apos;ll go
           through each of those steps again to check them.
         </p>
         <div className="mt-5 flex items-center justify-end gap-3">
-          <button type="button" onClick={onCancel} className="px-3 py-2 text-[13.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF]">
+          <button type="button" onClick={onCancel} className="px-3 py-2 text-[15px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF]">
             Keep my answers
           </button>
           <button
             ref={confirmRef}
             type="button"
             onClick={onConfirm}
-            className="rounded-full bg-[#135BEC] px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-[#2A6BF0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00D4FF]"
+            className="rounded-full bg-[#135BEC] px-5 py-2.5 text-[15px] font-semibold text-white hover:bg-[#2A6BF0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00D4FF]"
           >
             Yes, edit it
           </button>

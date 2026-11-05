@@ -95,7 +95,7 @@ export function DashboardLoading({ label, cards = 4 }: DashboardLoadingProps) {
           </div>
 
           {label && (
-            <p className="mt-8 text-center text-[12px] text-[#5A6A8A]">{label}</p>
+            <p className="mt-8 text-center text-[13.5px] text-[#5A6A8A]">{label}</p>
           )}
         </main>
       </div>

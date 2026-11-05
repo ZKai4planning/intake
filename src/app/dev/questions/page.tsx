@@ -38,12 +38,12 @@ export default function QuestionTestPage() {
       <div className="sticky top-0 z-20 bg-[#0F1525] border-b border-white/[0.08] px-5 sm:px-8 py-4">
         <div className="max-w-[1100px] mx-auto flex flex-wrap items-center justify-between gap-4">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-wide text-[#F59E0B] mb-1">
+            <p className="text-[12.5px] font-semibold uppercase tracking-wide text-[#F59E0B] mb-1">
               ⚠ Internal test page — not for production
             </p>
             <h1 className="font-display text-xl font-normal">Question bank by actor</h1>
           </div>
-          <Link href="/dashboard" className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8]">
+          <Link href="/dashboard" className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8]">
             ← Back to dashboard
           </Link>
         </div>
@@ -69,10 +69,10 @@ export default function QuestionTestPage() {
               >
                 <span>{actor.emoji}</span>
                 <div>
-                  <p className={cn('text-[12.5px] font-semibold', isSelected ? 'text-[#135BEC]' : 'text-[#E8F0FF]')}>
+                  <p className={cn('text-[14px] font-semibold', isSelected ? 'text-[#135BEC]' : 'text-[#E8F0FF]')}>
                     {actor.label}
                   </p>
-                  <p className="text-[10.5px] text-[#5A6A8A]">{cfg.tier} tier</p>
+                  <p className="text-[12px] text-[#5A6A8A]">{cfg.tier} tier</p>
                 </div>
               </button>
             )
@@ -83,10 +83,10 @@ export default function QuestionTestPage() {
         <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 mb-6">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
-              <p className="text-[11px] font-semibold uppercase tracking-wide text-[#5A6A8A] mb-1">
+              <p className="text-[12.5px] font-semibold uppercase tracking-wide text-[#5A6A8A] mb-1">
                 {workspace.internalLabel} (backend only — never shown to user)
               </p>
-              <p className="text-[14px] text-[#E8F0FF]">
+              <p className="text-[15.5px] text-[#E8F0FF]">
                 <strong>{visibleQuestions.length}</strong> of {QUESTION_BANK.length} questions visible &middot;{' '}
                 <strong>{workspace.availableAgents.length}</strong> AI agents &middot;{' '}
                 project limit: <strong>{workspace.projectLimit}</strong>
@@ -95,19 +95,19 @@ export default function QuestionTestPage() {
             <div className="flex gap-2">
               <button
                 onClick={() => setView('matrix')}
-                className={cn('px-3 py-1.5 rounded-[8px] text-[12px] font-medium', view === 'matrix' ? 'bg-[#135BEC] text-white' : 'bg-white/[0.06] text-[#A8B8D8]')}
+                className={cn('px-3 py-1.5 rounded-[8px] text-[13.5px] font-medium', view === 'matrix' ? 'bg-[#135BEC] text-white' : 'bg-white/[0.06] text-[#A8B8D8]')}
               >
                 Matrix view
               </button>
               <button
                 onClick={() => setView('live')}
-                className={cn('px-3 py-1.5 rounded-[8px] text-[12px] font-medium', view === 'live' ? 'bg-[#135BEC] text-white' : 'bg-white/[0.06] text-[#A8B8D8]')}
+                className={cn('px-3 py-1.5 rounded-[8px] text-[13.5px] font-medium', view === 'live' ? 'bg-[#135BEC] text-white' : 'bg-white/[0.06] text-[#A8B8D8]')}
               >
                 Live form
               </button>
               <button
                 onClick={() => { setIntentResult(null); setView('intent') }}
-                className={cn('px-3 py-1.5 rounded-[8px] text-[12px] font-medium', view === 'intent' ? 'bg-[#135BEC] text-white' : 'bg-white/[0.06] text-[#A8B8D8]')}
+                className={cn('px-3 py-1.5 rounded-[8px] text-[13.5px] font-medium', view === 'intent' ? 'bg-[#135BEC] text-white' : 'bg-white/[0.06] text-[#A8B8D8]')}
               >
                 Intent flow
               </button>
@@ -120,7 +120,7 @@ export default function QuestionTestPage() {
               const agent = AGENT_CATALOGUE[id]
               if (!agent) return null
               return (
-                <span key={id} className="text-[11px] px-2.5 py-1 rounded-full bg-[rgba(0,212,255,0.08)] text-[#00D4FF] border border-[rgba(0,212,255,0.2)]">
+                <span key={id} className="text-[12.5px] px-2.5 py-1 rounded-full bg-[rgba(0,212,255,0.08)] text-[#00D4FF] border border-[rgba(0,212,255,0.2)]">
                   ✦ {agent.name}
                 </span>
               )
@@ -134,11 +134,11 @@ export default function QuestionTestPage() {
             <table className="w-full text-left">
               <thead>
                 <tr className="border-b border-white/[0.08]">
-                  <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-[#5A6A8A] sticky left-0 bg-[#0F1525]">Row</th>
-                  <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-[#5A6A8A] min-w-[220px]">Field</th>
+                  <th className="px-4 py-3 text-[12.5px] font-semibold uppercase tracking-wide text-[#5A6A8A] sticky left-0 bg-[#0F1525]">Row</th>
+                  <th className="px-4 py-3 text-[12.5px] font-semibold uppercase tracking-wide text-[#5A6A8A] min-w-[220px]">Field</th>
                   {ACTORS.map(a => (
-                    <th key={a.id} className="px-3 py-3 text-center text-[11px] font-medium text-[#5A6A8A]">
-                      <span className="block text-[15px]">{a.emoji}</span>
+                    <th key={a.id} className="px-3 py-3 text-center text-[12.5px] font-medium text-[#5A6A8A]">
+                      <span className="block text-[17px]">{a.emoji}</span>
                       {a.label.split(' ')[0]}
                     </th>
                   ))}
@@ -147,12 +147,12 @@ export default function QuestionTestPage() {
               <tbody>
                 {QUESTION_BANK.map(q => (
                   <tr key={q.rowId} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
-                    <td className="px-4 py-3 font-mono text-[11px] text-[#5A6A8A] sticky left-0 bg-[#0F1525]">{q.rowId}</td>
-                    <td className="px-4 py-3 text-[12.5px] text-[#E8F0FF]">
+                    <td className="px-4 py-3 font-mono text-[12.5px] text-[#5A6A8A] sticky left-0 bg-[#0F1525]">{q.rowId}</td>
+                    <td className="px-4 py-3 text-[14px] text-[#E8F0FF]">
                       {q.field}
                       {q.required && <span className="text-[#F87171] ml-1">*</span>}
                       {q.upsellTrigger && (
-                        <span className="block text-[10.5px] text-[#F59E0B] mt-0.5">💡 has consultation trigger</span>
+                        <span className="block text-[12px] text-[#F59E0B] mt-0.5">💡 has consultation trigger</span>
                       )}
                     </td>
                     {ACTORS.map(a => {
@@ -189,12 +189,12 @@ export default function QuestionTestPage() {
             {intentResult ? (
               <>
                 <div className="flex items-center justify-between mb-5">
-                  <p className="text-[12.5px] text-[#A8B8D8]">
+                  <p className="text-[14px] text-[#A8B8D8]">
                     Resolved actor: <strong className="text-[#135BEC]">{intentResult}</strong>
                   </p>
                   <button
                     onClick={() => setIntentResult(null)}
-                    className="text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8]"
+                    className="text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8]"
                   >
                     ↺ Restart intent flow
                   </button>

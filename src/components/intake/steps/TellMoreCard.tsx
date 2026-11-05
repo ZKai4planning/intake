@@ -85,7 +85,7 @@ export function TellMoreCard({ property, planning, value, onChange, onBack, onNe
   return (
     <StepCard icon={<List className="h-[18px] w-[18px]" />} title="Tell us more">
       <form onSubmit={submit} noValidate>
-        <p className="text-[13.5px] leading-relaxed text-[#A8B8D8]">
+        <p className="text-[15px] leading-relaxed text-[#A8B8D8]">
           A few questions based on your selection.
           <br />
           The questions will change to match your project.
@@ -98,17 +98,17 @@ export function TellMoreCard({ property, planning, value, onChange, onBack, onNe
               <Home className="h-5 w-5" />
             </span>
             <div className="min-w-0 flex-1">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.06em] text-[#5A6A8A]">Your selection</p>
-              <p className="text-[14.5px] font-medium leading-snug text-[#E8F0FF]">{category?.label}</p>
+              <p className="text-[12.5px] font-semibold uppercase tracking-[0.06em] text-[#5A6A8A]">Your selection</p>
+              <p className="text-[16px] font-medium leading-snug text-[#E8F0FF]">{category?.label}</p>
               {(subtype || planning.routeKnown === 'yes') && (
-                <p className="text-[13px] text-[#00D4FF]">→ {planning.routeKnown === 'yes' ? 'I know my planning route' : subtype?.label}</p>
+                <p className="text-[14.5px] text-[#00D4FF]">→ {planning.routeKnown === 'yes' ? 'I know my planning route' : subtype?.label}</p>
               )}
             </div>
           </div>
 
           {category && category.subtypes.length > 1 && (
             <div className="mt-3.5 border-t border-white/[0.07] pt-3">
-              <p className="mb-2 text-[12.5px] text-[#A8B8D8]">{category.subtypeLabel ?? 'Type of work'}</p>
+              <p className="mb-2 text-[14px] text-[#A8B8D8]">{category.subtypeLabel ?? 'Type of work'}</p>
               <div role="radiogroup" className="flex flex-wrap gap-2">
                 {category.subtypes.map(s => {
                   const sel = s.id === validSubtype
@@ -122,7 +122,7 @@ export function TellMoreCard({ property, planning, value, onChange, onBack, onNe
                         setTried(false)
                         onChange({ ...value, subtypeId: s.id })
                       }}
-                      className={cn('rounded-full border px-3.5 py-1.5 text-[12.5px] font-medium transition-all', sel ? SELECTED : IDLE)}
+                      className={cn('rounded-full border px-3.5 py-1.5 text-[14px] font-medium transition-all', sel ? SELECTED : IDLE)}
                     >
                       {s.label}
                     </button>
@@ -151,10 +151,10 @@ export function TellMoreCard({ property, planning, value, onChange, onBack, onNe
         </div>
 
         {askProceed && value.fit?.status === 'collision' && (
-          <div role="alert" className="mt-5 rounded-xl border border-[#EF4444]/40 bg-[#EF4444]/10 p-3.5 text-[13px] text-[#FCA5A5]">
+          <div role="alert" className="mt-5 rounded-xl border border-[#EF4444]/40 bg-[#EF4444]/10 p-3.5 text-[14.5px] text-[#FCA5A5]">
             <p className="font-semibold">Your plan appears to clash with a neighbouring building.</p>
             <p className="mt-1 text-[#FCA5A5]/90">Change the size above, or carry on if you think the map is wrong — we’ll flag it for a planning check.</p>
-            <button type="button" onClick={onNext} className="mt-2.5 rounded-full border border-[#EF4444]/50 px-4 py-1.5 text-[12.5px] font-semibold text-[#FCA5A5] hover:bg-[#EF4444]/15">
+            <button type="button" onClick={onNext} className="mt-2.5 rounded-full border border-[#EF4444]/50 px-4 py-1.5 text-[14px] font-semibold text-[#FCA5A5] hover:bg-[#EF4444]/15">
               Continue anyway
             </button>
           </div>

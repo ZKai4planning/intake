@@ -50,10 +50,10 @@
 //       <div className="max-w-[760px] mx-auto px-5 sm:px-8">
 
 //         <div className="text-center mb-10">
-//           <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+//           <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
 //             Questions
 //           </p>
-//           <h2 id="faq-heading" className="font-display text-[28px] sm:text-[34px] font-normal text-[#E8F0FF] tracking-tight">
+//           <h2 id="faq-heading" className="font-display text-[31.5px] sm:text-[38px] font-normal text-[#E8F0FF] tracking-tight">
 //             Before you get started
 //           </h2>
 //         </div>
@@ -74,7 +74,7 @@
 //                     onClick={() => setOpenIndex(isOpen ? null : i)}
 //                     className="w-full flex items-center justify-between gap-4 text-left px-5 py-4 hover:bg-white/[0.02] transition-colors"
 //                   >
-//                     <span className="text-[14px] font-medium text-[#E8F0FF]">{item.question}</span>
+//                     <span className="text-[15.5px] font-medium text-[#E8F0FF]">{item.question}</span>
 //                     <ChevronGlyph className={cn('shrink-0 text-[#5A6A8A] transition-transform duration-200', isOpen && 'rotate-180')} />
 //                   </button>
 //                 </h3>
@@ -85,7 +85,7 @@
 //                   className={cn('grid transition-all duration-200 ease-out', isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]')}
 //                 >
 //                   <div className="overflow-hidden">
-//                     <p className="px-5 pb-4 text-[13px] text-[#A8B8D8] leading-relaxed">
+//                     <p className="px-5 pb-4 text-[14.5px] text-[#A8B8D8] leading-relaxed">
 //                       {item.answer}
 //                     </p>
 //                   </div>
@@ -168,10 +168,10 @@ export function FaqSection() {
           viewport={viewportOnce}
           variants={fadeUp}
         >
-          <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+          <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
             Questions
           </p>
-          <h2 id="faq-heading" className="font-display text-[28px] sm:text-[34px] font-normal text-[#E8F0FF] tracking-tight">
+          <h2 id="faq-heading" className="font-display text-[31.5px] sm:text-[38px] font-normal text-[#E8F0FF] tracking-tight">
             Before you get started
           </h2>
         </motion.div>
@@ -198,7 +198,7 @@ export function FaqSection() {
                     onClick={() => setOpenIndex(isOpen ? null : i)}
                     className="w-full flex items-center justify-between gap-4 text-left px-5 py-4 hover:bg-white/[0.02] transition-colors"
                   >
-                    <span className="text-[14px] font-medium text-[#E8F0FF]">{item.question}</span>
+                    <span className="text-[15.5px] font-medium text-[#E8F0FF]">{item.question}</span>
                     <motion.span
                       className="shrink-0 text-[#5A6A8A]"
                       animate={{ rotate: isOpen ? 180 : 0 }}
@@ -220,7 +220,7 @@ export function FaqSection() {
                       transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="px-5 pb-4 text-[13px] text-[#A8B8D8] leading-relaxed">
+                      <p className="px-5 pb-4 text-[14.5px] text-[#A8B8D8] leading-relaxed">
                         {item.answer}
                       </p>
                     </motion.div>

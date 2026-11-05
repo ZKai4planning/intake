@@ -173,10 +173,10 @@ export function IntakeForm({ tier, resolvedActorId, onActorRevised, onSubmit, on
 
       {/* ── Progress header ───────────────────────────────────── */}
       <div className="flex items-center justify-between mb-1">
-        <p className="text-[12px] font-medium text-[#A8B8D8]">
+        <p className="text-[13.5px] font-medium text-[#A8B8D8]">
           {answeredCount} of {totalCount} answered
         </p>
-        <p className="text-[12px] font-semibold text-[#135BEC]">{progress}%</p>
+        <p className="text-[13.5px] font-semibold text-[#135BEC]">{progress}%</p>
       </div>
       <div className="h-1.5 rounded-full bg-white/[0.06] overflow-hidden -mt-4">
         <div
@@ -242,7 +242,7 @@ export function IntakeForm({ tier, resolvedActorId, onActorRevised, onSubmit, on
         <button
           type="button"
           onClick={onBack}
-          className="px-4 py-3 rounded-[12px] text-[13.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] transition-colors inline-flex items-center gap-1.5"
+          className="px-4 py-3 rounded-[12px] text-[15px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] transition-colors inline-flex items-center gap-1.5"
         >
           ← Previous
         </button>
@@ -250,7 +250,7 @@ export function IntakeForm({ tier, resolvedActorId, onActorRevised, onSubmit, on
         <div className="flex items-center gap-3">
           {autosaveStatus !== 'idle' && !isSaving && !draftSaved && (
             <span
-              className="text-[12px] text-[#5A6A8A] select-none"
+              className="text-[13.5px] text-[#5A6A8A] select-none"
               role="status"
               aria-live="polite"
             >
@@ -266,7 +266,7 @@ export function IntakeForm({ tier, resolvedActorId, onActorRevised, onSubmit, on
             type="button"
             onClick={handleSaveDraft}
             disabled={isSaving}
-            className="px-4 py-3 rounded-[12px] text-[13.5px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+            className="px-4 py-3 rounded-[12px] text-[15px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {isSaving ? 'Saving…' : draftSaved ? 'Draft saved ✓' : 'Save Draft'}
           </button>
@@ -276,8 +276,8 @@ export function IntakeForm({ tier, resolvedActorId, onActorRevised, onSubmit, on
             disabled={!canSubmit}
             className={
               canSubmit
-                ? 'px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)]'
-                : 'px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-white/[0.06] text-[#5A6A8A] cursor-not-allowed'
+                ? 'px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)]'
+                : 'px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-white/[0.06] text-[#5A6A8A] cursor-not-allowed'
             }
           >
             {canSubmit ? 'Next →' : 'Complete required fields'}

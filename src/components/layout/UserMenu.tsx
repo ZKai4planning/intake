@@ -59,10 +59,10 @@
 //           onClick={() => setOpen(o => !o)}
 //           className="flex items-center gap-2 h-9 pl-1.5 pr-2.5 rounded-full border border-white/20 bg-white/[0.04] hover:bg-white/[0.08] hover:border-white/30 transition-colors"
 //         >
-//           <span className="w-6 h-6 rounded-full bg-[rgba(0,212,255,0.14)] border border-[rgba(0,212,255,0.35)] text-[#00D4FF] text-[11px] font-semibold flex items-center justify-center">
+//           <span className="w-6 h-6 rounded-full bg-[rgba(0,212,255,0.14)] border border-[rgba(0,212,255,0.35)] text-[#00D4FF] text-[12.5px] font-semibold flex items-center justify-center">
 //             {initials}
 //           </span>
-//           <span className="hidden md:inline text-[13px] font-medium text-[#E8F0FF] max-w-[120px] truncate">
+//           <span className="hidden xl:inline text-[14.5px] font-medium text-[#E8F0FF] max-w-[120px] truncate">
 //             {firstName}
 //           </span>
 //         </button>
@@ -75,15 +75,15 @@
 //             className="absolute right-0 mt-2 w-[220px] rounded-[12px] border border-white/[0.08] bg-[#0F1525] shadow-[0_12px_32px_rgba(0,0,0,0.4)] overflow-hidden z-40"
 //           >
 //             <div className="px-4 py-3 border-b border-white/[0.06]">
-//               <p className="text-[13px] font-semibold text-[#E8F0FF] truncate">{firstName}</p>
-//               {email && <p className="text-[11.5px] text-[#5A6A8A] truncate mt-0.5">{email}</p>}
+//               <p className="text-[14.5px] font-semibold text-[#E8F0FF] truncate">{firstName}</p>
+//               {email && <p className="text-[13px] text-[#5A6A8A] truncate mt-0.5">{email}</p>}
 //             </div>
 
 //             <a
 //               href="/dashboard/profile"
 //               role="menuitem"
 //               onClick={() => setOpen(false)}
-//               className="flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors"
+//               className="flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors"
 //             >
 //               Profile
 //             </a>
@@ -92,7 +92,7 @@
 //               href="/dashboard"
 //               role="menuitem"
 //               onClick={() => setOpen(false)}
-//               className="flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors sm:hidden"
+//               className="flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors sm:hidden"
 //             >
 //               Go to dashboard
 //             </a>
@@ -106,7 +106,7 @@
 //               }}
 //               disabled={isLoggingOut}
 //               className={cn(
-//                 'w-full flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-left transition-colors',
+//                 'w-full flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-left transition-colors',
 //                 isLoggingOut ? 'text-[#5A6A8A] cursor-not-allowed' : 'text-[#FF6B6B] hover:bg-[rgba(255,107,107,0.08)]'
 //               )}
 //             >
@@ -182,7 +182,7 @@ export function UserMenu({ firstName, email, avatarUrl }: UserMenuProps) {
           onClick={() => setOpen(o => !o)}
           className="flex items-center gap-2 h-9 pl-1.5 pr-2.5 rounded-full border border-white/20 bg-white/[0.04] hover:bg-white/[0.08] hover:border-white/30 transition-colors"
         >
-          <span className="w-6 h-6 rounded-full overflow-hidden bg-[rgba(0,212,255,0.14)] border border-[rgba(0,212,255,0.35)] text-[#00D4FF] text-[11px] font-semibold flex items-center justify-center">
+          <span className="w-6 h-6 rounded-full overflow-hidden bg-[rgba(0,212,255,0.14)] border border-[rgba(0,212,255,0.35)] text-[#00D4FF] text-[12.5px] font-semibold flex items-center justify-center">
             {avatarUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={avatarUrl} alt="" className="w-full h-full object-cover" />
@@ -190,7 +190,7 @@ export function UserMenu({ firstName, email, avatarUrl }: UserMenuProps) {
               initials
             )}
           </span>
-          <span className="hidden md:inline text-[13px] font-medium text-[#E8F0FF] max-w-[120px] truncate">
+          <span className="hidden xl:inline text-[14.5px] font-medium text-[#E8F0FF] max-w-[120px] truncate">
             {firstName}
           </span>
         </button>
@@ -203,15 +203,15 @@ export function UserMenu({ firstName, email, avatarUrl }: UserMenuProps) {
             className="absolute right-0 mt-2 w-[220px] rounded-[12px] border border-white/[0.08] bg-[#0F1525] shadow-[0_12px_32px_rgba(0,0,0,0.4)] overflow-hidden z-40"
           >
             <div className="px-4 py-3 border-b border-white/[0.06]">
-              <p className="text-[13px] font-semibold text-[#E8F0FF] truncate">{firstName}</p>
-              {email && <p className="text-[11.5px] text-[#5A6A8A] truncate mt-0.5">{email}</p>}
+              <p className="text-[14.5px] font-semibold text-[#E8F0FF] truncate">{firstName}</p>
+              {email && <p className="text-[13px] text-[#5A6A8A] truncate mt-0.5">{email}</p>}
             </div>
 
             <a
               href="/dashboard/profile"
               role="menuitem"
               onClick={() => setOpen(false)}
-              className="flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors"
+              className="flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors"
             >
               Profile
             </a>
@@ -220,7 +220,7 @@ export function UserMenu({ firstName, email, avatarUrl }: UserMenuProps) {
               href="/dashboard"
               role="menuitem"
               onClick={() => setOpen(false)}
-              className="flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors sm:hidden"
+              className="flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors sm:hidden"
             >
               Go to dashboard
             </a>
@@ -234,7 +234,7 @@ export function UserMenu({ firstName, email, avatarUrl }: UserMenuProps) {
               }}
               disabled={isLoggingOut}
               className={cn(
-                'w-full flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-left transition-colors',
+                'w-full flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-left transition-colors',
                 isLoggingOut ? 'text-[#5A6A8A] cursor-not-allowed' : 'text-[#FF6B6B] hover:bg-[rgba(255,107,107,0.08)]'
               )}
             >

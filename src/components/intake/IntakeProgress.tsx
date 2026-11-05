@@ -28,7 +28,7 @@
 //           const circle = (
 //             <span
 //               className={cn(
-//                 'relative z-10 flex h-[26px] w-[26px] items-center justify-center rounded-full border text-[11.5px] font-semibold transition-all',
+//                 'relative z-10 flex h-[26px] w-[26px] items-center justify-center rounded-full border text-[13px] font-semibold transition-all',
 //                 done && 'border-[#00D4FF]/60 bg-[#00D4FF]/15 text-[#00D4FF]',
 //                 active && 'border-[#00D4FF] bg-[#135BEC] text-white shadow-[0_0_14px_rgba(0,212,255,0.45)]',
 //                 !done && !active && 'border-white/15 bg-[#0A0E1A] text-[#5A6A8A]',
@@ -60,7 +60,7 @@
 
 //       {/* Mobile */}
 //       <div className="md:hidden">
-//         <p className="mb-2 text-[12px] text-[#A8B8D8]">
+//         <p className="mb-2 text-[13.5px] text-[#A8B8D8]">
 //           Step {idx + 1} of {INTAKE_STEPS.length} · <span className="font-semibold text-[#E8F0FF]">{currentLabel}</span>
 //         </p>
 //         <div className="flex gap-1.5" aria-hidden>
@@ -75,9 +75,9 @@
 
 // function Label({ item, className }: { item: { label: string; sublabel?: string }; className?: string }) {
 //   return (
-//     <span className={cn('mt-1.5 block max-w-[92px] text-[11.5px] leading-tight transition-colors', className)}>
+//     <span className={cn('mt-1.5 block max-w-[92px] text-[13px] leading-tight transition-colors', className)}>
 //       {item.label}
-//       {item.sublabel && <span className="block text-[10px] opacity-70">{item.sublabel}</span>}
+//       {item.sublabel && <span className="block text-[11px] opacity-70">{item.sublabel}</span>}
 //     </span>
 //   )
 // }
@@ -116,7 +116,7 @@ export function IntakeProgress({ current, onJump }: { current: IntakeStepId; onJ
               <span
                 aria-hidden
                 className={cn(
-                  'flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-[11.5px] font-semibold transition-all',
+                  'flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-[13px] font-semibold transition-all',
                   done && 'border-[#00D4FF]/60 bg-[#00D4FF]/15 text-[#00D4FF]',
                   active && 'border-[#00D4FF] bg-[#135BEC] text-white shadow-[0_0_12px_rgba(0,212,255,0.45)]',
                   !done && !active && 'border-white/15 text-[#5A6A8A]',
@@ -124,7 +124,7 @@ export function IntakeProgress({ current, onJump }: { current: IntakeStepId; onJ
               >
                 {done ? <Check className="h-3.5 w-3.5" strokeWidth={3} /> : i + 1}
               </span>
-              <span className={cn('whitespace-nowrap text-[12.5px]', active ? 'font-semibold text-[#E8F0FF]' : done ? 'text-[#A8B8D8]' : 'text-[#5A6A8A]')}>{item.label}</span>
+              <span className={cn('whitespace-nowrap text-[14px]', active ? 'font-semibold text-[#E8F0FF]' : done ? 'text-[#A8B8D8]' : 'text-[#5A6A8A]')}>{item.label}</span>
             </>
           )
 
@@ -152,7 +152,7 @@ export function IntakeProgress({ current, onJump }: { current: IntakeStepId; onJ
 
         {later.length > 0 && (
           <li
-            className="ml-3 hidden items-center gap-1.5 whitespace-nowrap rounded-full border border-dashed border-white/10 px-2.5 py-1 text-[11.5px] text-[#5A6A8A] xl:flex"
+            className="ml-3 hidden items-center gap-1.5 whitespace-nowrap rounded-full border border-dashed border-white/10 px-2.5 py-1 text-[13px] text-[#5A6A8A] xl:flex"
             title={`After you verify your email: ${later.map(l => l.label).join(', ')}`}
           >
             <Lock className="h-3 w-3" aria-hidden />
@@ -163,7 +163,7 @@ export function IntakeProgress({ current, onJump }: { current: IntakeStepId; onJ
 
       {/* Mobile */}
       <div className="md:hidden">
-        <p className="mb-1.5 text-[12px] text-[#A8B8D8]">
+        <p className="mb-1.5 text-[13.5px] text-[#A8B8D8]">
           Step {idx + 1} of {INTAKE_STEPS.length} · <span className="font-semibold text-[#E8F0FF]">{currentLabel}</span>
         </p>
         <div className="flex gap-1.5" aria-hidden>

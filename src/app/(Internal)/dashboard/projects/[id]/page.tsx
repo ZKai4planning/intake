@@ -61,7 +61,7 @@ export default function ProjectDetailPage() {
       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
         <div className="text-center max-w-[360px]">
           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-          <p className="text-[13px] text-[#5A6A8A] mb-6">Please log in to view this project.</p>
+          <p className="text-[14.5px] text-[#5A6A8A] mb-6">Please log in to view this project.</p>
           <button
             onClick={() => router.push('/login')}
             className="px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-sm font-semibold hover:bg-[#2A6BF0] transition-colors"
@@ -77,13 +77,13 @@ export default function ProjectDetailPage() {
     return (
       <DashboardShell workspace={workspace} firstName={firstName} email={session.email}>
         <div className="text-center py-20">
-          <p className="text-[14px] text-[#E8F0FF] font-medium mb-1.5">Project not found</p>
-          <p className="text-[12.5px] text-[#5A6A8A] mb-5">
+          <p className="text-[15.5px] text-[#E8F0FF] font-medium mb-1.5">Project not found</p>
+          <p className="text-[14px] text-[#5A6A8A] mb-5">
             It may have been deleted, or the link is out of date.
           </p>
           <button
             onClick={() => router.push('/dashboard')}
-            className="text-[12.5px] px-4 py-2.5 rounded-[8px] bg-[#135BEC] text-white font-semibold hover:bg-[#2A6BF0] transition-colors"
+            className="text-[14px] px-4 py-2.5 rounded-[8px] bg-[#135BEC] text-white font-semibold hover:bg-[#2A6BF0] transition-colors"
           >
             Back to dashboard
           </button>
@@ -95,7 +95,7 @@ export default function ProjectDetailPage() {
   // A draft has no next-step detail to show yet — send it back into the form.
   if (project.status === 'draft') {
     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${project.id}`)
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
   }
 
   const hasAddress = Boolean(project.address && project.constraints)
@@ -208,21 +208,21 @@ export default function ProjectDetailPage() {
     <DashboardShell workspace={workspace} firstName={firstName} email={session.email}>
       <button
         onClick={() => router.push('/dashboard')}
-        className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
+        className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8] mb-5 inline-flex items-center gap-1.5"
       >
         ← Back to dashboard
       </button>
 
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-7">
         <div className="min-w-0">
-          <h1 className="font-display text-[24px] sm:text-[28px] font-normal text-[#E8F0FF] tracking-tight truncate">
+          <h1 className="font-display text-[27px] sm:text-[31.5px] font-normal text-[#E8F0FF] tracking-tight truncate">
             {project.title}
           </h1>
-          <p className="text-[13px] text-[#A8B8D8] mt-1">
+          <p className="text-[14.5px] text-[#A8B8D8] mt-1">
             {capitalize(project.tier)} application · Ref RPT-{project.id.slice(-6).toUpperCase()} · submitted {formatDate(project.submittedAt ?? project.createdAt)}
           </p>
         </div>
-        <span className="shrink-0 text-[11px] font-medium px-2.5 py-1.5 rounded-full bg-[rgba(19,91,236,0.1)] text-[#135BEC]">
+        <span className="shrink-0 text-[12.5px] font-medium px-2.5 py-1.5 rounded-full bg-[rgba(19,91,236,0.1)] text-[#135BEC]">
           {hasBooking ? 'Consultation booked' : 'Submitted'}
         </span>
       </div>
@@ -232,13 +232,13 @@ export default function ProjectDetailPage() {
         <div className="rounded-[14px] border border-[#00D4FF]/30 bg-[rgba(0,212,255,0.06)] p-4 mb-6 flex items-start gap-3.5">
           <span className="text-[#00D4FF] shrink-0 mt-0.5" aria-hidden="true">ℹ</span>
           <div className="flex-1 min-w-0">
-            <p className="text-[13px] font-semibold text-[#E8F0FF]">Next step: {nextStep.label}</p>
-            <p className="text-[12.5px] text-[#A8B8D8] mt-0.5 leading-relaxed">{nextStep.detail}</p>
+            <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Next step: {nextStep.label}</p>
+            <p className="text-[14px] text-[#A8B8D8] mt-0.5 leading-relaxed">{nextStep.detail}</p>
           </div>
           {nextStep.cta && (
             <button
               onClick={() => router.push(nextStep.cta!.href)}
-              className="shrink-0 text-[12px] font-semibold px-3.5 py-2 rounded-[8px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] transition-colors whitespace-nowrap"
+              className="shrink-0 text-[13.5px] font-semibold px-3.5 py-2 rounded-[8px] bg-[#135BEC] text-white hover:bg-[#2A6BF0] transition-colors whitespace-nowrap"
             >
               {nextStep.cta.label}
             </button>
@@ -248,8 +248,8 @@ export default function ProjectDetailPage() {
         <div className="rounded-[14px] border border-[#135BEC]/30 bg-[rgba(19,91,236,0.06)] p-4 mb-6 flex items-start gap-3.5">
           <span className="text-[#135BEC] shrink-0 mt-0.5" aria-hidden="true">✓</span>
           <div>
-            <p className="text-[13px] font-semibold text-[#E8F0FF]">You&rsquo;re all set</p>
-            <p className="text-[12.5px] text-[#A8B8D8] mt-0.5 leading-relaxed">
+            <p className="text-[14.5px] font-semibold text-[#E8F0FF]">You&rsquo;re all set</p>
+            <p className="text-[14px] text-[#A8B8D8] mt-0.5 leading-relaxed">
               Every step is complete — your consultant has your report and will be in touch ahead of the call.
             </p>
           </div>
@@ -259,7 +259,7 @@ export default function ProjectDetailPage() {
       <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-4">
         {/* ── Timeline ─────────────────────────────────────────── */}
         <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5">
-          <h2 className="text-[13.5px] font-semibold text-[#E8F0FF] mb-4">Status</h2>
+          <h2 className="text-[15px] font-semibold text-[#E8F0FF] mb-4">Status</h2>
           <ol className="space-y-0">
             {steps.map((step, i) => (
               <li key={step.label} className="relative pl-7 pb-6 last:pb-0">
@@ -273,7 +273,7 @@ export default function ProjectDetailPage() {
                 )}
                 <span
                   className={cn(
-                    'absolute left-0 top-0.5 w-[18px] h-[18px] rounded-full border-2 flex items-center justify-center text-[10px]',
+                    'absolute left-0 top-0.5 w-[18px] h-[18px] rounded-full border-2 flex items-center justify-center text-[11px]',
                     step.done
                       ? 'bg-[#135BEC] border-[#135BEC] text-white'
                       : nextStep === step
@@ -283,19 +283,19 @@ export default function ProjectDetailPage() {
                 >
                   {step.done ? '✓' : ''}
                 </span>
-                <p className={cn('text-[13px] font-medium', step.done ? 'text-[#E8F0FF]' : 'text-[#A8B8D8]')}>
+                <p className={cn('text-[14.5px] font-medium', step.done ? 'text-[#E8F0FF]' : 'text-[#A8B8D8]')}>
                   {step.label}
                 </p>
-                <p className="text-[12px] text-[#5A6A8A] mt-0.5 leading-relaxed">{step.detail}</p>
+                <p className="text-[13.5px] text-[#5A6A8A] mt-0.5 leading-relaxed">{step.detail}</p>
                 {step.date && (
-                  <p className="text-[11px] text-[#5A6A8A]/80 mt-1">{formatDate(step.date)}</p>
+                  <p className="text-[12.5px] text-[#5A6A8A]/80 mt-1">{formatDate(step.date)}</p>
                 )}
                 {step.cta && (
                   <button
                     type="button"
                     onClick={() => router.push(step.cta!.href)}
                     className={cn(
-                      'mt-2 text-[12px] font-semibold px-3 py-1.5 rounded-[8px] transition-colors',
+                      'mt-2 text-[13.5px] font-semibold px-3 py-1.5 rounded-[8px] transition-colors',
                       step.done
                         ? 'text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
                         : 'bg-[#135BEC] text-white hover:bg-[#2A6BF0]'
@@ -313,24 +313,24 @@ export default function ProjectDetailPage() {
         <div className="space-y-4">
           {hasBooking && (
             <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5">
-              <h2 className="text-[13.5px] font-semibold text-[#E8F0FF] mb-3">Consultation</h2>
-              <p className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+              <h2 className="text-[15px] font-semibold text-[#E8F0FF] mb-3">Consultation</h2>
+              <p className="text-[14px] text-[#A8B8D8] leading-relaxed">
                 {project.consultantBooking!.date
                   ? `${formatDate(project.consultantBooking!.date)} · ${project.consultantBooking!.time}`
                   : project.consultantBooking!.time}
               </p>
               {project.consultantBooking!.notes && (
-                <p className="text-[12px] text-[#5A6A8A] mt-2 leading-relaxed">
+                <p className="text-[13.5px] text-[#5A6A8A] mt-2 leading-relaxed">
                   &ldquo;{project.consultantBooking!.notes}&rdquo;
                 </p>
               )}
-              <p className="text-[11px] text-[#5A6A8A]/80 mt-2">
+              <p className="text-[12.5px] text-[#5A6A8A]/80 mt-2">
                 Booked {formatDate(project.consultantBooking!.bookedAt)} · confirmation &amp; video link sent by email
               </p>
               <button
                 type="button"
                 onClick={() => router.push(consultantHref)}
-                className="mt-3 text-[12px] font-medium px-3.5 py-2 rounded-[8px] border border-white/[0.12] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors"
+                className="mt-3 text-[13.5px] font-medium px-3.5 py-2 rounded-[8px] border border-white/[0.12] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors"
               >
                 Change booking →
               </button>
@@ -339,8 +339,8 @@ export default function ProjectDetailPage() {
 
           {(hasAddress || hasPurchase) && (
             <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5">
-              <h2 className="text-[13.5px] font-semibold text-[#E8F0FF] mb-3">Report</h2>
-              <p className="text-[12.5px] text-[#A8B8D8] mb-3 leading-relaxed">
+              <h2 className="text-[15px] font-semibold text-[#E8F0FF] mb-3">Report</h2>
+              <p className="text-[14px] text-[#A8B8D8] mb-3 leading-relaxed">
                 {hasPurchase
                   ? 'Your eligibility report is ready to download.'
                   : 'A summary of your submission is available to download.'}
@@ -350,7 +350,7 @@ export default function ProjectDetailPage() {
                 onClick={handleDownload}
                 disabled={downloading}
                 className={cn(
-                  'text-[12px] font-medium px-3.5 py-2 rounded-[8px] border transition-colors',
+                  'text-[13.5px] font-medium px-3.5 py-2 rounded-[8px] border transition-colors',
                   downloading
                     ? 'text-[#5A6A8A] border-white/[0.08] cursor-not-allowed'
                     : 'text-[#A8B8D8] border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -362,17 +362,17 @@ export default function ProjectDetailPage() {
           )}
 
           <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5">
-            <h2 className="text-[13.5px] font-semibold text-[#E8F0FF] mb-3">Updates</h2>
+            <h2 className="text-[15px] font-semibold text-[#E8F0FF] mb-3">Updates</h2>
             {updates.length === 0 ? (
-              <p className="text-[12px] text-[#5A6A8A]">No updates yet.</p>
+              <p className="text-[13.5px] text-[#5A6A8A]">No updates yet.</p>
             ) : (
               <ul className="space-y-3">
                 {updates.map(u => (
                   <li key={u.label} className="flex items-start gap-2.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#135BEC] mt-1.5 shrink-0" />
                     <div className="min-w-0">
-                      <p className="text-[12.5px] text-[#E8F0FF]">{u.label}</p>
-                      <p className="text-[11px] text-[#5A6A8A]">{formatDate(u.date)}</p>
+                      <p className="text-[14px] text-[#E8F0FF]">{u.label}</p>
+                      <p className="text-[12.5px] text-[#5A6A8A]">{formatDate(u.date)}</p>
                     </div>
                   </li>
                 ))}

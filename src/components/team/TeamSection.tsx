@@ -45,10 +45,10 @@ export function TeamSection() {
           viewport={viewportOnce}
           variants={fadeUp}
         >
-          <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+          <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
             Our team
           </p>
-          <h2 id="team-heading" className="font-display text-[28px] sm:text-[34px] font-normal text-[#E8F0FF] tracking-tight">
+          <h2 id="team-heading" className="font-display text-[31.5px] sm:text-[38px] font-normal text-[#E8F0FF] tracking-tight">
             The people behind AI4Planning
           </h2>
         </motion.div>

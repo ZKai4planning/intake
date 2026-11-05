@@ -72,16 +72,16 @@ export default function AgentxResetPasswordPage() {
     <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
       <div className="w-full max-w-[380px]">
         <div className="mb-8 text-center">
-          <p className="text-[13px] font-semibold tracking-wide text-[#5A6A8A] uppercase">AI4Planning</p>
-          <h1 className="font-display text-[26px] text-[#E8F0FF] mt-1">Set your password</h1>
-          <p className="text-[13px] text-[#5A6A8A] mt-2">
+          <p className="text-[14.5px] font-semibold tracking-wide text-[#5A6A8A] uppercase">AI4Planning</p>
+          <h1 className="font-display text-[29px] text-[#E8F0FF] mt-1">Set your password</h1>
+          <p className="text-[14.5px] text-[#5A6A8A] mt-2">
             You're signing in with a temporary password. Choose your own to continue.
           </p>
         </div>
 
         <form onSubmit={handleSubmit} className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-6 space-y-4">
           <div>
-            <label className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">Temporary password</label>
+            <label className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">Temporary password</label>
             <div className="relative">
               <input
                 type={showPasswords ? 'text' : 'password'}
@@ -89,7 +89,7 @@ export default function AgentxResetPasswordPage() {
                 value={currentPassword}
                 onChange={e => setCurrentPassword(e.target.value)}
                 disabled={isSubmitting}
-                className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 pr-10 text-[14px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
+                className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 pr-10 text-[15.5px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
                 placeholder="From your invite email"
               />
               <button
@@ -105,37 +105,37 @@ export default function AgentxResetPasswordPage() {
           </div>
 
           <div>
-            <label className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">New password</label>
+            <label className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">New password</label>
             <input
               type={showPasswords ? 'text' : 'password'}
               autoComplete="new-password"
               value={newPassword}
               onChange={e => setNewPassword(e.target.value)}
               disabled={isSubmitting}
-              className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[14px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
+              className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[15.5px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
               placeholder="At least 8 characters"
             />
           </div>
 
           <div>
-            <label className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">Confirm new password</label>
+            <label className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">Confirm new password</label>
             <input
               type={showPasswords ? 'text' : 'password'}
               autoComplete="new-password"
               value={confirmPassword}
               onChange={e => setConfirmPassword(e.target.value)}
               disabled={isSubmitting}
-              className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[14px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
+              className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[15.5px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
               placeholder="Repeat new password"
             />
           </div>
 
-          {error && <p className="text-[13px] text-[#F87171]" role="alert">{error}</p>}
+          {error && <p className="text-[14.5px] text-[#F87171]" role="alert">{error}</p>}
 
           <button
             type="submit"
             disabled={!currentPassword || !newPassword || !confirmPassword || isSubmitting}
-            className="w-full py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="w-full py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[15.5px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {isSubmitting ? 'Saving…' : 'Set password and continue'}
           </button>

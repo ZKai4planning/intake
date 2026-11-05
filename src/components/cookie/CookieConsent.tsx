@@ -73,13 +73,13 @@
 //         {!customise && (
 //           <div className="px-6 pt-6 pb-5">
 //             <div className="flex items-start justify-between mb-3">
-//               <h2 className="font-display text-[18px] font-normal text-[#E8F0FF] leading-snug">
+//               <h2 className="font-display text-[20px] font-normal text-[#E8F0FF] leading-snug">
 //                 We value your privacy
 //               </h2>
 //               {/* Cookie icon */}
-//               <span className="text-[22px] mt-0.5" role="img" aria-label="cookie">🍪</span>
+//               <span className="text-[24.5px] mt-0.5" role="img" aria-label="cookie">🍪</span>
 //             </div>
-//             <p className="text-[13px] text-[#5A6A8A] leading-relaxed">
+//             <p className="text-[14.5px] text-[#5A6A8A] leading-relaxed">
 //               By clicking "Accept all cookies", you agree to the storing of cookies on your device
 //               to enhance site navigation, analyse site usage, and assist in our marketing efforts.
 //               Click "Customise" to personalise the types of cookies you'd like to allow.
@@ -98,7 +98,7 @@
 //                   type="button"
 //                   onClick={() => setActiveTab(tab)}
 //                   className={cn(
-//                     'py-3.5 px-1 mr-5 text-[13px] font-medium border-b-2 -mb-px transition-colors',
+//                     'py-3.5 px-1 mr-5 text-[14.5px] font-medium border-b-2 -mb-px transition-colors',
 //                     activeTab === tab
 //                       ? 'border-[#135BEC] text-[#E8F0FF]'
 //                       : 'border-transparent text-[#5A6A8A] hover:text-[#A8B8D8]'
@@ -126,7 +126,7 @@
 //             {/* About tab */}
 //             {activeTab === 'about' && (
 //               <div className="px-5 py-5">
-//                 <p className="text-[13px] text-[#5A6A8A] leading-relaxed">
+//                 <p className="text-[14.5px] text-[#5A6A8A] leading-relaxed">
 //                   Cookies are small text files placed on your device by websites you visit. They
 //                   are widely used to make websites work efficiently and to provide information to
 //                   website owners. See our{' '}
@@ -182,7 +182,7 @@
 //       onClick={onClick}
 //       className={cn(
 //         'w-full rounded-full py-2.5 px-3',
-//         'text-[11px] font-semibold tracking-[0.06em] uppercase',
+//         'text-[12.5px] font-semibold tracking-[0.06em] uppercase',
 //         'transition-all duration-150 outline-none',
 //         'focus-visible:ring-2 focus-visible:ring-[#135BEC] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F1525]',
 //         variant === 'ghost' && [
@@ -293,13 +293,13 @@ export function CookieConsent({ onConsent }: CookieConsentProps) {
         {!customise && (
           <div className="px-6 pt-6 pb-5">
             <div className="flex items-start justify-between mb-3">
-              <h2 className="font-display text-[18px] font-normal text-[#E8F0FF] leading-snug">
+              <h2 className="font-display text-[20px] font-normal text-[#E8F0FF] leading-snug">
                 We value your privacy
               </h2>
               {/* Cookie icon */}
-              <span className="text-[22px] mt-0.5" role="img" aria-label="cookie">🍪</span>
+              <span className="text-[24.5px] mt-0.5" role="img" aria-label="cookie">🍪</span>
             </div>
-            <p className="text-[13px] text-[#5A6A8A] leading-relaxed">
+            <p className="text-[14.5px] text-[#5A6A8A] leading-relaxed">
               By clicking "Accept all cookies", you agree to the storing of cookies on your device
               to enhance site navigation, analyse site usage, and assist in our marketing efforts.
               Click "Customise" to personalise the types of cookies you'd like to allow.
@@ -318,7 +318,7 @@ export function CookieConsent({ onConsent }: CookieConsentProps) {
                   type="button"
                   onClick={() => setActiveTab(tab)}
                   className={cn(
-                    'py-3.5 px-1 mr-5 text-[13px] font-medium border-b-2 -mb-px transition-colors',
+                    'py-3.5 px-1 mr-5 text-[14.5px] font-medium border-b-2 -mb-px transition-colors',
                     activeTab === tab
                       ? 'border-[#135BEC] text-[#E8F0FF]'
                       : 'border-transparent text-[#5A6A8A] hover:text-[#A8B8D8]'
@@ -346,7 +346,7 @@ export function CookieConsent({ onConsent }: CookieConsentProps) {
             {/* About tab */}
             {activeTab === 'about' && (
               <div className="px-5 py-5">
-                <p className="text-[13px] text-[#5A6A8A] leading-relaxed">
+                <p className="text-[14.5px] text-[#5A6A8A] leading-relaxed">
                   Cookies are small text files placed on your device by websites you visit. They
                   are widely used to make websites work efficiently and to provide information to
                   website owners. See our{' '}
@@ -402,7 +402,7 @@ function ActionButton({ variant, onClick, children }: ActionButtonProps) {
       onClick={onClick}
       className={cn(
         'w-full rounded-full py-2.5 px-3',
-        'text-[11px] font-semibold tracking-[0.06em] uppercase',
+        'text-[12.5px] font-semibold tracking-[0.06em] uppercase',
         'transition-all duration-150 outline-none',
         'focus-visible:ring-2 focus-visible:ring-[#135BEC] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F1525]',
         variant === 'ghost' && [

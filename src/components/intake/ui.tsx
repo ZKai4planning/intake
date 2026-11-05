@@ -40,10 +40,10 @@ export function StepCard({
       )}
     >
       <header className="flex items-center gap-3 px-4 pt-4 sm:px-5 sm:pt-5">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#00D4FF]/30 bg-gradient-to-br from-[#135BEC]/25 to-[#00D4FF]/15 text-[15px] font-semibold text-[#00D4FF]">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#00D4FF]/30 bg-gradient-to-br from-[#135BEC]/25 to-[#00D4FF]/15 text-[17px] font-semibold text-[#00D4FF]">
           {icon}
         </span>
-        <h2 className="flex-1 rounded-[10px] bg-white/[0.03] px-3.5 py-2 text-[15px] font-semibold text-[#E8F0FF]">{title}</h2>
+        <h2 className="flex-1 rounded-[10px] bg-white/[0.03] px-3.5 py-2 text-[17px] font-semibold text-[#E8F0FF]">{title}</h2>
       </header>
       <div className="px-4 pb-4 pt-4 sm:px-5 sm:pb-5">{children}</div>
     </section>
@@ -68,13 +68,13 @@ export function StepActions({
 }) {
   return (
     <div className="mt-6">
-      {hint && <p className="mb-3 text-right text-[12px] text-[#5A6A8A]">{hint}</p>}
+      {hint && <p className="mb-3 text-right text-[13.5px] text-[#5A6A8A]">{hint}</p>}
       <div className="flex items-center justify-between gap-3">
         {onBack ? (
           <button
             type="button"
             onClick={onBack}
-            className="inline-flex items-center gap-1.5 px-1 py-2 text-[13.5px] font-medium text-[#A8B8D8] transition-colors hover:text-[#E8F0FF]"
+            className="inline-flex items-center gap-1.5 px-1 py-2 text-[15px] font-medium text-[#A8B8D8] transition-colors hover:text-[#E8F0FF]"
           >
             <ArrowLeft className="h-4 w-4" />
             Back
@@ -101,7 +101,7 @@ export function StepActions({
 export function FieldError({ children }: { children?: React.ReactNode }) {
   if (!children) return null
   return (
-    <p className="mt-1.5 text-[12px] leading-snug text-[#F87171]" role="alert">
+    <p className="mt-1.5 text-[13.5px] leading-snug text-[#F87171]" role="alert">
       {children}
     </p>
   )
@@ -110,7 +110,7 @@ export function FieldError({ children }: { children?: React.ReactNode }) {
 // ── Inputs ────────────────────────────────────────────────────────────
 
 const INPUT_TEXT =
-  'w-full bg-transparent text-[16px] sm:text-[14.5px] text-[#E8F0FF] placeholder:text-[#55648A] outline-none focus-visible:outline-none'
+  'w-full bg-transparent text-[18px] sm:text-[16px] text-[#E8F0FF] placeholder:text-[#55648A] outline-none focus-visible:outline-none'
 
 /** Icon + small label + value, as in the design's "Your details" card. */
 export function IconField({
@@ -130,7 +130,7 @@ export function IconField({
       >
         <span className="shrink-0 text-[#5A6A8A]">{icon}</span>
         <span className="min-w-0 flex-1">
-          <span className="mb-0.5 block text-[11px] leading-none text-[#5A6A8A]">{label}</span>
+          <span className="mb-0.5 block text-[12.5px] leading-none text-[#5A6A8A]">{label}</span>
           <input {...input} className={cn(INPUT_TEXT, input.className)} />
         </span>
       </label>
@@ -149,7 +149,7 @@ export function TextArea({
       {...props}
       className={cn(
         'w-full resize-none rounded-[12px] border bg-[#141C30] px-3.5 py-3',
-        'text-[16px] sm:text-[14px] text-[#E8F0FF] placeholder:text-[#55648A] outline-none focus-visible:outline-none',
+        'text-[18px] sm:text-[15.5px] text-[#E8F0FF] placeholder:text-[#55648A] outline-none focus-visible:outline-none',
         'transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.15)]',
         invalid ? INVALID : 'border-white/[0.10]',
         props.className,
@@ -178,7 +178,7 @@ export function SelectBox({
         onChange={e => onChange(e.target.value)}
         className={cn(
           'w-full appearance-none rounded-[12px] border bg-[#141C30] py-3 pl-3.5 pr-10',
-          'text-[16px] sm:text-[14px] outline-none focus-visible:outline-none transition-all',
+          'text-[18px] sm:text-[15.5px] outline-none focus-visible:outline-none transition-all',
           'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.15)]',
           value ? 'text-[#E8F0FF]' : 'text-[#5A6A8A]',
           invalid ? INVALID : 'border-white/[0.10]',
@@ -231,7 +231,7 @@ export function ChoicePill({
       role="radio"
       aria-checked={selected}
       onClick={onClick}
-      className={cn('flex items-center gap-2.5 rounded-[10px] border px-3.5 py-2.5 text-left text-[13.5px] transition-all', selected ? SELECTED : IDLE)}
+      className={cn('flex items-center gap-2.5 rounded-[10px] border px-3.5 py-2.5 text-left text-[15px] transition-all', selected ? SELECTED : IDLE)}
     >
       <RadioDot selected={selected} />
       <span className="min-w-0 flex-1">{children}</span>
@@ -260,7 +260,7 @@ export function Segmented({
             role="radio"
             aria-checked={selected}
             onClick={() => onChange(o.value)}
-            className={cn('flex items-center justify-center gap-2 rounded-[10px] border px-2 py-2.5 text-[13px] font-medium transition-all', selected ? SELECTED : IDLE)}
+            className={cn('flex items-center justify-center gap-2 rounded-[10px] border px-2 py-2.5 text-[14.5px] font-medium transition-all', selected ? SELECTED : IDLE)}
           >
             {o.label}
             {selected && (
@@ -292,7 +292,7 @@ export function RadioRow({
       aria-checked={selected}
       onClick={onClick}
       className={cn(
-        'flex w-full items-center gap-3 rounded-lg px-2.5 py-2 text-left text-[14px] transition-colors hover:bg-white/[0.04]',
+        'flex w-full items-center gap-3 rounded-lg px-2.5 py-2 text-left text-[15.5px] transition-colors hover:bg-white/[0.04]',
         selected ? 'text-[#E8F0FF]' : 'text-[#A8B8D8]',
       )}
     >
@@ -319,7 +319,7 @@ export function CheckboxRow({
   children: React.ReactNode
 }) {
   return (
-    <label className="inline-flex cursor-pointer select-none items-center gap-2 text-[13px] text-[#A8B8D8]">
+    <label className="inline-flex cursor-pointer select-none items-center gap-2 text-[14.5px] text-[#A8B8D8]">
       <input type="checkbox" checked={checked} onChange={e => onChange(e.target.checked)} className="peer sr-only" />
       <span
         className={cn(
@@ -338,7 +338,7 @@ export function CheckboxRow({
 // ── Numbers ───────────────────────────────────────────────────────────
 
 const NUM_INPUT =
-  'h-11 w-[104px] rounded-[10px] border bg-[#141C30] px-3 text-[16px] sm:text-[14.5px] text-[#E8F0FF] placeholder:text-[#55648A] outline-none focus-visible:outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.15)] disabled:opacity-40'
+  'h-11 w-[104px] rounded-[10px] border bg-[#141C30] px-3 text-[18px] sm:text-[16px] text-[#E8F0FF] placeholder:text-[#55648A] outline-none focus-visible:outline-none transition-all focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.15)] disabled:opacity-40'
 
 export function cleanNumber(raw: string): string {
   const v = raw.replace(',', '.').replace(/[^0-9.]/g, '')
@@ -371,7 +371,7 @@ export function NumberInput({
           onChange={e => onChange(cleanNumber(e.target.value))}
           className={cn(NUM_INPUT, invalid ? INVALID : 'border-white/[0.10]')}
         />
-        {unit && <span className="text-[13px] text-[#A8B8D8]">{unit}</span>}
+        {unit && <span className="text-[14.5px] text-[#A8B8D8]">{unit}</span>}
       </div>
       {allowUnknown && (
         <CheckboxRow checked={unknown} onChange={c => onChange(c ? 'unknown' : '')}>
@@ -414,7 +414,7 @@ export function DimensionsInput({
         onChange={e => set(length, cleanNumber(e.target.value))}
         className={cn(NUM_INPUT, invalid ? INVALID : 'border-white/[0.10]')}
       />
-      {unit && <span className="text-[13px] text-[#A8B8D8]">{unit}</span>}
+      {unit && <span className="text-[14.5px] text-[#A8B8D8]">{unit}</span>}
     </div>
   )
 }

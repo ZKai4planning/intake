@@ -96,21 +96,21 @@
 //           {/* Left — Newsletter */}
 //           <div className="max-w-[340px]">
 //             <Link href="/" className="inline-block mb-8" aria-label="AI4Planning home">
-//               <span className="font-display text-[20px] font-normal tracking-tight text-[#E8F0FF]">
+//               <span className="font-display text-[22.5px] font-normal tracking-tight text-[#E8F0FF]">
 //                 AI<span className="text-[#00D4FF]">4</span>Planning
 //               </span>
 //             </Link>
 
-//             <p className="text-[15px] font-medium text-[#E8F0FF] mb-1.5">
+//             <p className="text-[17px] font-medium text-[#E8F0FF] mb-1.5">
 //               Stay ahead of planning policy
 //             </p>
-//             <p className="text-[13px] text-[#5A6A8A] mb-5 leading-relaxed">
+//             <p className="text-[14.5px] text-[#5A6A8A] mb-5 leading-relaxed">
 //               Get weekly AI-curated planning intelligence, policy updates, and appeal decisions — straight to your inbox.
 //             </p>
 
 //             <NewsletterForm />
 
-//             <p className="mt-3 text-[11px] text-[#3A4A60] leading-relaxed">
+//             <p className="mt-3 text-[12.5px] text-[#3A4A60] leading-relaxed">
 //               By subscribing you agree to receive planning intelligence emails from AI4Planning. Unsubscribe any time.
 //             </p>
 //           </div>
@@ -119,7 +119,7 @@
 //           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-10">
 //             {NAV.map(col => (
 //               <div key={col.heading}>
-//                 <p className="text-[12px] font-semibold tracking-[0.08em] uppercase text-[#E8F0FF] mb-4">
+//                 <p className="text-[13.5px] font-semibold tracking-[0.08em] uppercase text-[#E8F0FF] mb-4">
 //                   {col.heading}
 //                 </p>
 //                 <ul className="space-y-2.5">
@@ -127,7 +127,7 @@
 //                     <li key={link.label}>
 //                       <Link
 //                         href={link.href}
-//                         className="text-[13px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors duration-150"
+//                         className="text-[14.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors duration-150"
 //                       >
 //                         {link.label}
 //                       </Link>
@@ -143,7 +143,7 @@
 //       {/* ── Divider + bottom bar ───────────────────────────────── */}
 //       <div className="border-t border-white/[0.06]">
 //         <div className="max-w-[1200px] mx-auto px-5 sm:px-8 xl:px-10 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-//           <p className="text-[12px] text-[#3A4A60]">
+//           <p className="text-[13.5px] text-[#3A4A60]">
 //             © {year} AI4Planning Ltd. All rights reserved.
 //           </p>
 
@@ -166,10 +166,10 @@
 
 //         {/* Legal small print */}
 //         <div className="max-w-[1200px] mx-auto px-5 sm:px-8 xl:px-10 pb-8 space-y-2">
-//           <p className="text-[11px] text-[#2A3A50] leading-relaxed">
+//           <p className="text-[12.5px] text-[#2A3A50] leading-relaxed">
 //             * AI4Planning provides planning intelligence tools for informational purposes only. Nothing on this platform constitutes formal planning advice. Always consult a qualified planning consultant or local planning authority before submitting applications.
 //           </p>
-//           <p className="text-[11px] text-[#2A3A50] leading-relaxed">
+//           <p className="text-[12.5px] text-[#2A3A50] leading-relaxed">
 //             ** Planning decisions, policies, and designations are subject to change. AI4Planning uses publicly available data sources and accepts no liability for decisions made on the basis of information provided herein.
 //           </p>
 //         </div>
@@ -271,27 +271,27 @@ export function Footer() {
     <footer className="bg-[#070B14] border-t border-white/[0.06] mt-auto">
 
       {/* ── Main grid ──────────────────────────────────────────── */}
-      <div className="w-full px-5 sm:px-8 xl:px-16 py-16 sm:py-20">
+      <div className="container py-16 sm:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-14 lg:gap-10">
 
           {/* Left — Newsletter */}
           <div className="max-w-[340px]">
             <Link href="/" className="inline-block mb-8" aria-label="AI4Planning home">
-              <span className="font-display text-[20px] font-normal tracking-tight text-[#E8F0FF]">
+              <span className="font-display text-[22.5px] font-normal tracking-tight text-[#E8F0FF]">
                 AI<span className="text-[#00D4FF]">4</span>Planning
               </span>
             </Link>
 
-            <p className="text-[15px] font-medium text-[#E8F0FF] mb-1.5">
+            <p className="text-[17px] font-medium text-[#E8F0FF] mb-1.5">
               Stay ahead of planning policy
             </p>
-            <p className="text-[13px] text-[#5A6A8A] mb-5 leading-relaxed">
+            <p className="text-[14.5px] text-[#5A6A8A] mb-5 leading-relaxed">
               Get weekly AI-curated planning intelligence, policy updates, and appeal decisions — straight to your inbox.
             </p>
 
             <NewsletterForm />
 
-            <p className="mt-3 text-[11px] text-[#3A4A60] leading-relaxed">
+            <p className="mt-3 text-[12.5px] text-[#3A4A60] leading-relaxed">
               By subscribing you agree to receive planning intelligence emails from AI4Planning. Unsubscribe any time.
             </p>
           </div>
@@ -300,7 +300,7 @@ export function Footer() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-10">
             {NAV.map(col => (
               <div key={col.heading}>
-                <p className="text-[12px] font-semibold tracking-[0.08em] uppercase text-[#E8F0FF] mb-4">
+                <p className="text-[13.5px] font-semibold tracking-[0.08em] uppercase text-[#E8F0FF] mb-4">
                   {col.heading}
                 </p>
                 <ul className="space-y-2.5">
@@ -308,7 +308,7 @@ export function Footer() {
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="text-[13px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors duration-150"
+                        className="text-[14.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors duration-150"
                       >
                         {link.label}
                       </Link>
@@ -323,8 +323,8 @@ export function Footer() {
 
       {/* ── Divider + bottom bar ───────────────────────────────── */}
       <div className="border-t border-white/[0.06]">
-        <div className="w-full px-5 sm:px-8 xl:px-16 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="text-[12px] text-[#3A4A60]">
+        <div className="container py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <p className="text-[13.5px] text-[#3A4A60]">
             © {year} AI4Planning Ltd. All rights reserved.
           </p>
 
@@ -346,11 +346,11 @@ export function Footer() {
         </div>
 
         {/* Legal small print */}
-        <div className="w-full px-5 sm:px-8 xl:px-16 pb-8 space-y-2">
-          <p className="text-[11px] text-[#2A3A50] leading-relaxed">
+        <div className="container pb-8 space-y-2">
+          <p className="text-[12.5px] text-[#2A3A50] leading-relaxed">
             * AI4Planning provides planning intelligence tools for informational purposes only. Nothing on this platform constitutes formal planning advice. Always consult a qualified planning consultant or local planning authority before submitting applications.
           </p>
-          <p className="text-[11px] text-[#2A3A50] leading-relaxed">
+          <p className="text-[12.5px] text-[#2A3A50] leading-relaxed">
             ** Planning decisions, policies, and designations are subject to change. AI4Planning uses publicly available data sources and accepts no liability for decisions made on the basis of information provided herein.
           </p>
         </div>

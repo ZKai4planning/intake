@@ -51,7 +51,7 @@ export function InlineAgentPanel({ messages, isThinking, onSend }: InlineAgentPa
           onChange={e => setDraft(e.target.value)}
           placeholder="Ask about this question…"
           className={cn(
-            'flex-1 rounded-[8px] px-3 py-2 text-[13px]',
+            'flex-1 rounded-[8px] px-3 py-2 text-[14.5px]',
             'bg-[#0A0E1A] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
             'border border-white/[0.10] outline-none transition-all',
             'focus:border-[#00D4FF] focus:shadow-[0_0_0_3px_rgba(0,212,255,0.12)]'
@@ -61,7 +61,7 @@ export function InlineAgentPanel({ messages, isThinking, onSend }: InlineAgentPa
           type="submit"
           disabled={!draft.trim()}
           className={cn(
-            'shrink-0 px-3 py-2 rounded-[8px] text-[12.5px] font-semibold transition-colors',
+            'shrink-0 px-3 py-2 rounded-[8px] text-[14px] font-semibold transition-colors',
             draft.trim()
               ? 'bg-[#00D4FF] text-[#050A12] hover:bg-[#33DFFF]'
               : 'bg-white/[0.06] text-[#5A6A8A] cursor-not-allowed'
@@ -80,14 +80,14 @@ function AgentBubble({ message }: { message: AgentMessage }) {
     <div className={cn('flex', isAgent ? 'justify-start' : 'justify-end')}>
       <div
         className={cn(
-          'max-w-[85%] px-3 py-2 rounded-[10px] text-[12.5px] leading-relaxed',
+          'max-w-[85%] px-3 py-2 rounded-[10px] text-[14px] leading-relaxed',
           isAgent
             ? 'bg-[#0F1525] text-[#A8B8D8] border border-white/[0.08]'
             : 'bg-[rgba(19,91,236,0.1)] text-[#E8F0FF] border border-[rgba(19,91,236,0.2)]'
         )}
       >
         {isAgent && (
-          <span className="block text-[10px] font-semibold uppercase tracking-wide text-[#00D4FF] mb-1">
+          <span className="block text-[11px] font-semibold uppercase tracking-wide text-[#00D4FF] mb-1">
             ✦ Agent
           </span>
         )}

@@ -197,7 +197,7 @@
 // //           <span className="text-[#00D4FF] text-sm shrink-0" aria-hidden="true">
 // //             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
 // //           </span>
-// //           <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+// //           <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
 // //             {actorSuggestion.wasCorrected ? (
 // //               <>
 // //                 Did you mean{' '}
@@ -219,14 +219,14 @@
 // //             <button
 // //               type="button"
 // //               onClick={onAcceptActorSuggestion}
-// //               className="px-2.5 py-1 rounded-md text-[12px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
+// //               className="px-2.5 py-1 rounded-md text-[13.5px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
 // //             >
 // //               ✓ Yes
 // //             </button>
 // //             <button
 // //               type="button"
 // //               onClick={() => onSelectActor?.(null)}
-// //               className="px-2.5 py-1 rounded-md text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
+// //               className="px-2.5 py-1 rounded-md text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
 // //             >
 // //               No
 // //             </button>
@@ -254,7 +254,7 @@
 // //               aria-expanded={actorMenuOpen}
 // //               className={cn(
 // //                 'flex items-center gap-1 pl-3 pr-2.5 py-1.5 rounded-full shrink-0',
-// //                 'text-[12.5px] font-medium transition-colors border',
+// //                 'text-[14px] font-medium transition-colors border',
 // //                 selectedActorMeta
 // //                   ? 'bg-[rgba(0,212,255,0.10)] border-[rgba(0,212,255,0.28)] text-[#00D4FF]'
 // //                   : 'bg-[#151D33] border-white/[0.10] text-[#8A96B8] hover:border-white/[0.2]'
@@ -298,7 +298,7 @@
 // //               title={value || undefined}
 // //               className={cn(
 // //                 'flex-1 min-w-0 py-1.5 bg-transparent',
-// //                 'font-sans text-[17px] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
+// //                 'font-sans text-[19px] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
 // //                 'focus:outline-none',
 // //                 isListening && 'placeholder:text-[#00D4FF]'
 // //               )}
@@ -341,7 +341,7 @@
 
 // //           {/* ── Footer bar: hint left, solid CTA button right ──── */}
 // //           <div className="flex items-center justify-end gap-3 px-4 sm:px-5 py-3 border-t border-white/[0.06]">
-// //             {/* <p aria-live="polite" aria-atomic="true" className="text-[12.5px] text-[#E6B905] truncate">
+// //             {/* <p aria-live="polite" aria-atomic="true" className="text-[14px] text-[#E6B905] truncate">
 // //               {isListening ? (
 // //                 <span className="text-[#00D4FF] font-medium">Listening… tap the mic again to stop</span>
 // //               ) : (
@@ -358,7 +358,7 @@
 // //                 aria-describedby={needsActor ? `${id ?? inputId}-arrow-tooltip` : undefined}
 // //                 className={cn(
 // //                   'flex items-center gap-1.5 px-4 py-2 rounded-lg shrink-0',
-// //                   'text-[13.5px] font-semibold transition-colors duration-150',
+// //                   'text-[15px] font-semibold transition-colors duration-150',
 // //                   canSubmit
 // //                     ? 'bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] hover:text-white'
 // //                     : needsActor
@@ -376,7 +376,7 @@
 // //                   role="tooltip"
 // //                   className={cn(
 // //                     'pointer-events-none absolute bottom-full right-0 mb-2 z-20',
-// //                     'whitespace-nowrap rounded-md px-2.5 py-1.5 text-[11.5px] font-medium',
+// //                     'whitespace-nowrap rounded-md px-2.5 py-1.5 text-[13px] font-medium',
 // //                     'bg-[#131A2C] text-[#00D4FF] border border-[rgba(0,212,255,0.32)]',
 // //                     'shadow-[0_10px_24px_rgba(0,0,0,0.45)]',
 // //                     'opacity-0 translate-y-1 scale-95 origin-bottom-right',
@@ -447,7 +447,7 @@
 // //                   >
 // //                     <span
 // //                       className={cn(
-// //                         'flex items-center justify-center w-8 h-8 rounded-full text-[15px] shrink-0',
+// //                         'flex items-center justify-center w-8 h-8 rounded-full text-[17px] shrink-0',
 // //                         isSelected ? 'bg-[#00D4FF]/15' : 'bg-white/[0.06]'
 // //                       )}
 // //                       aria-hidden="true"
@@ -456,11 +456,11 @@
 // //                     </span>
 
 // //                     <span className="flex-1 min-w-0">
-// //                       <span className={cn('block text-[13.5px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
+// //                       <span className={cn('block text-[15px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
 // //                         {actor.label}
 // //                       </span>
 // //                       {actor.description && (
-// //                         <span className="block text-[11.5px] text-[#5A6A8A] truncate">
+// //                         <span className="block text-[13px] text-[#5A6A8A] truncate">
 // //                           {actor.description}
 // //                         </span>
 // //                       )}
@@ -770,7 +770,7 @@
 // //           <span className="text-[#00D4FF] text-sm shrink-0" aria-hidden="true">
 // //             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
 // //           </span>
-// //           <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+// //           <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
 // //             {actorSuggestion.wasCorrected ? (
 // //               <>
 // //                 Did you mean{' '}
@@ -792,14 +792,14 @@
 // //             <button
 // //               type="button"
 // //               onClick={onAcceptActorSuggestion}
-// //               className="px-2.5 py-1 rounded-[6px] text-[12px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
+// //               className="px-2.5 py-1 rounded-[6px] text-[13.5px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
 // //             >
 // //               ✓ Yes
 // //             </button>
 // //             <button
 // //               type="button"
 // //               onClick={() => onSelectActor?.(null)}
-// //               className="px-2.5 py-1 rounded-[6px] text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
+// //               className="px-2.5 py-1 rounded-[6px] text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
 // //             >
 // //               No
 // //             </button>
@@ -835,7 +835,7 @@
 // //               aria-expanded={actorMenuOpen}
 // //               className={cn(
 // //                 'flex items-center gap-1 pl-3.5 pr-3 py-2 rounded-full shrink-0',
-// //                 'text-[13.5px] font-medium transition-colors border',
+// //                 'text-[15px] font-medium transition-colors border',
 // //                 selectedActorMeta
 // //                   ? 'bg-[rgba(0,212,255,0.10)] border-[rgba(0,212,255,0.28)] text-[#00D4FF]'
 // //                   : 'bg-white/[0.05] border-white/[0.12] text-[#A8B8D8] hover:bg-white/[0.09] hover:border-white/[0.2]'
@@ -889,7 +889,7 @@
 // //                 'font-sans text-[#E8F0FF] placeholder:text-[#7C88A6]',
 // //                 'focus:outline-none',
 // //                 'transition-[font-size] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]',
-// //                 isExpanded ? 'text-[17px] sm:text-[18px]' : 'text-[16px]',
+// //                 isExpanded ? 'text-[19px] sm:text-[20px]' : 'text-[18px]',
 // //                 isListening && 'placeholder:text-[#00D4FF]'
 // //               )}
 // //             />
@@ -999,7 +999,7 @@
 // //         >
 // //           <span
 // //             className={cn(
-// //               'flex items-center justify-center w-8 h-8 rounded-full text-[15px] shrink-0',
+// //               'flex items-center justify-center w-8 h-8 rounded-full text-[17px] shrink-0',
 // //               isSelected ? 'bg-[#00D4FF]/15' : 'bg-white/[0.06]'
 // //             )}
 // //             aria-hidden="true"
@@ -1008,11 +1008,11 @@
 // //           </span>
 
 // //           <span className="flex-1 min-w-0">
-// //             <span className={cn('block text-[13.5px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
+// //             <span className={cn('block text-[15px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
 // //               {actor.label}
 // //             </span>
 // //             {actor.description && (
-// //               <span className="block text-[11.5px] text-[#5A6A8A] truncate">
+// //               <span className="block text-[13px] text-[#5A6A8A] truncate">
 // //                 {actor.description}
 // //               </span>
 // //             )}
@@ -1064,10 +1064,10 @@
 // //               </span>
 // //             ) : (
 // //               <>
-// //                 <span className="block sm:whitespace-nowrap text-[15px] sm:text-[16px] text-[#A8B8D8] leading-relaxed">
+// //                 <span className="block sm:whitespace-nowrap text-[17px] sm:text-[18px] text-[#A8B8D8] leading-relaxed">
 // //                   {hintDefault.split('·').slice(0, -1).join('·').trim()}
 // //                 </span>
-// //                 <span className="block sm:whitespace-nowrap text-[15px] sm:text-[16px] text-[#A8B8D8] leading-relaxed">
+// //                 <span className="block sm:whitespace-nowrap text-[17px] sm:text-[18px] text-[#A8B8D8] leading-relaxed">
 // //                   {highlightFreeReport(hintDefault.split('·').slice(-1)[0].trim())}
 // //                 </span>
 // //               </>
@@ -1372,7 +1372,7 @@
 // //           <span className="text-[#00D4FF] text-sm shrink-0" aria-hidden="true">
 // //             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
 // //           </span>
-// //           <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+// //           <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
 // //             {actorSuggestion.wasCorrected ? (
 // //               <>
 // //                 Did you mean{' '}
@@ -1394,14 +1394,14 @@
 // //             <button
 // //               type="button"
 // //               onClick={onAcceptActorSuggestion}
-// //               className="px-2.5 py-1 rounded-[6px] text-[12px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
+// //               className="px-2.5 py-1 rounded-[6px] text-[13.5px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
 // //             >
 // //               ✓ Yes
 // //             </button>
 // //             <button
 // //               type="button"
 // //               onClick={() => onSelectActor?.(null)}
-// //               className="px-2.5 py-1 rounded-[6px] text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
+// //               className="px-2.5 py-1 rounded-[6px] text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
 // //             >
 // //               No
 // //             </button>
@@ -1440,7 +1440,7 @@
 // //                 aria-expanded={actorMenuOpen}
 // //                 className={cn(
 // //                   'flex items-center gap-1 pl-3.5 pr-3 py-2 rounded-full shrink-0',
-// //                   'text-[13.5px] font-medium transition-colors border',
+// //                   'text-[15px] font-medium transition-colors border',
 // //                   selectedActorMeta
 // //                     ? 'bg-[rgba(0,212,255,0.10)] border-[rgba(0,212,255,0.28)] text-[#00D4FF]'
 // //                     : 'bg-white/[0.05] border-white/[0.12] text-[#A8B8D8] hover:bg-white/[0.09] hover:border-white/[0.2]'
@@ -1497,7 +1497,7 @@
 // //                   'font-sans text-[#E8F0FF] placeholder:text-[#7C88A6]',
 // //                   'focus:outline-none',
 // //                   'transition-[font-size] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]',
-// //                   isExpanded ? 'text-[17px] sm:text-[18px]' : 'text-[16px]',
+// //                   isExpanded ? 'text-[19px] sm:text-[20px]' : 'text-[18px]',
 // //                   isListening && 'placeholder:text-[#00D4FF]'
 // //                 )}
 // //               />
@@ -1627,7 +1627,7 @@
 // //         >
 // //           <span
 // //             className={cn(
-// //               'flex items-center justify-center w-8 h-8 rounded-full text-[15px] shrink-0',
+// //               'flex items-center justify-center w-8 h-8 rounded-full text-[17px] shrink-0',
 // //               isSelected ? 'bg-[#00D4FF]/15' : 'bg-white/[0.06]'
 // //             )}
 // //             aria-hidden="true"
@@ -1636,11 +1636,11 @@
 // //           </span>
 
 // //           <span className="flex-1 min-w-0">
-// //             <span className={cn('block text-[13.5px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
+// //             <span className={cn('block text-[15px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
 // //               {actor.label}
 // //             </span>
 // //             {actor.description && (
-// //               <span className="block text-[11.5px] text-[#5A6A8A] truncate">
+// //               <span className="block text-[13px] text-[#5A6A8A] truncate">
 // //                 {actor.description}
 // //               </span>
 // //             )}
@@ -1692,10 +1692,10 @@
 // //               </span>
 // //             ) : (
 // //               <>
-// //                 <span className="block sm:whitespace-nowrap text-[15px] sm:text-[16px] text-[#A8B8D8] leading-relaxed">
+// //                 <span className="block sm:whitespace-nowrap text-[17px] sm:text-[18px] text-[#A8B8D8] leading-relaxed">
 // //                   {hintDefault.split('·').slice(0, -1).join('·').trim()}
 // //                 </span>
-// //                 <span className="block sm:whitespace-nowrap text-[15px] sm:text-[16px] text-[#A8B8D8] leading-relaxed">
+// //                 <span className="block sm:whitespace-nowrap text-[17px] sm:text-[18px] text-[#A8B8D8] leading-relaxed">
 // //                   {highlightFreeReport(hintDefault.split('·').slice(-1)[0].trim())}
 // //                 </span>
 // //               </>
@@ -1994,7 +1994,7 @@
 // //           <span className="text-[#00D4FF] text-sm shrink-0" aria-hidden="true">
 // //             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
 // //           </span>
-// //           <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+// //           <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
 // //             {actorSuggestion.wasCorrected ? (
 // //               <>
 // //                 Did you mean{' '}
@@ -2016,14 +2016,14 @@
 // //             <button
 // //               type="button"
 // //               onClick={onAcceptActorSuggestion}
-// //               className="px-2.5 py-1 rounded-[6px] text-[12px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
+// //               className="px-2.5 py-1 rounded-[6px] text-[13.5px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
 // //             >
 // //               ✓ Yes
 // //             </button>
 // //             <button
 // //               type="button"
 // //               onClick={() => onSelectActor?.(null)}
-// //               className="px-2.5 py-1 rounded-[6px] text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
+// //               className="px-2.5 py-1 rounded-[6px] text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
 // //             >
 // //               No
 // //             </button>
@@ -2062,7 +2062,7 @@
 // //                 aria-expanded={actorMenuOpen}
 // //                 className={cn(
 // //                   'flex items-center gap-1 pl-3.5 pr-3 py-2 rounded-full shrink-0',
-// //                   'text-[13.5px] font-medium transition-colors border',
+// //                   'text-[15px] font-medium transition-colors border',
 // //                   selectedActorMeta
 // //                     ? 'bg-[rgba(0,212,255,0.10)] border-[rgba(0,212,255,0.28)] text-[#00D4FF]'
 // //                     : 'bg-white/[0.05] border-white/[0.12] text-[#A8B8D8] hover:bg-white/[0.09] hover:border-white/[0.2]'
@@ -2124,7 +2124,7 @@
 // //                   'font-sans text-[#E8F0FF] placeholder:text-[#7C88A6]',
 // //                   'focus:outline-none',
 // //                   'transition-[font-size] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]',
-// //                   isExpanded ? 'text-[17px] sm:text-[18px]' : 'text-[16px]',
+// //                   isExpanded ? 'text-[19px] sm:text-[20px]' : 'text-[18px]',
 // //                   isListening && 'placeholder:text-[#00D4FF]'
 // //                 )}
 // //               />
@@ -2212,7 +2212,7 @@
 // //                         role="tooltip"
 // //                         className={cn(
 // //                           'pointer-events-none absolute bottom-full right-0 mb-2 z-20',
-// //                           'whitespace-nowrap rounded-[8px] px-2.5 py-1.5 text-[11.5px] font-medium',
+// //                           'whitespace-nowrap rounded-[8px] px-2.5 py-1.5 text-[13px] font-medium',
 // //                           'bg-[#131A2C] text-[#F2C94C] border border-[rgba(242,201,76,0.32)]',
 // //                           'shadow-[0_10px_24px_rgba(0,0,0,0.45)]',
 // //                           'opacity-0 translate-y-1 scale-95 origin-bottom-right',
@@ -2286,7 +2286,7 @@
 // //         >
 // //           <span
 // //             className={cn(
-// //               'flex items-center justify-center w-8 h-8 rounded-full text-[15px] shrink-0',
+// //               'flex items-center justify-center w-8 h-8 rounded-full text-[17px] shrink-0',
 // //               isSelected ? 'bg-[#00D4FF]/15' : 'bg-white/[0.06]'
 // //             )}
 // //             aria-hidden="true"
@@ -2295,11 +2295,11 @@
 // //           </span>
 
 // //           <span className="flex-1 min-w-0">
-// //             <span className={cn('block text-[13.5px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
+// //             <span className={cn('block text-[15px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
 // //               {actor.label}
 // //             </span>
 // //             {actor.description && (
-// //               <span className="block text-[11.5px] text-[#5A6A8A] truncate">
+// //               <span className="block text-[13px] text-[#5A6A8A] truncate">
 // //                 {actor.description}
 // //               </span>
 // //             )}
@@ -2338,10 +2338,10 @@
 // //               <span className="text-[#00D4FF] font-medium">Listening… tap the mic again to stop</span>
 // //             ) : (
 // //               <>
-// //                 <span className="block sm:whitespace-nowrap text-[15px] sm:text-[16px] font-medium text-[#F2C94C]">
+// //                 <span className="block sm:whitespace-nowrap text-[17px] sm:text-[18px] font-medium text-[#F2C94C]">
 // //                   {hintDefault.split('·')[0].trim()}
 // //                 </span>
-// //                 <span className="block sm:whitespace-nowrap text-[13px] sm:text-[14px] text-[#5A6A8A] mt-0.5">
+// //                 <span className="block sm:whitespace-nowrap text-[14.5px] sm:text-[15.5px] text-[#5A6A8A] mt-0.5">
 // //                   {hintDefault.split('·').slice(1).join('·').trim()}
 // //                 </span>
 // //               </>
@@ -2663,7 +2663,7 @@
 //           <span className="text-[#00D4FF] text-sm shrink-0" aria-hidden="true">
 //             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
 //           </span>
-//           <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+//           <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
 //             {actorSuggestion.wasCorrected ? (
 //               <>
 //                 Did you mean{' '}
@@ -2685,14 +2685,14 @@
 //             <button
 //               type="button"
 //               onClick={onAcceptActorSuggestion}
-//               className="px-2.5 py-1 rounded-md text-[12px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
+//               className="px-2.5 py-1 rounded-md text-[13.5px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
 //             >
 //               ✓ Yes
 //             </button>
 //             <button
 //               type="button"
 //               onClick={() => onSelectActor?.(null)}
-//               className="px-2.5 py-1 rounded-md text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
+//               className="px-2.5 py-1 rounded-md text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
 //             >
 //               No
 //             </button>
@@ -2720,7 +2720,7 @@
 //               aria-expanded={actorMenuOpen}
 //               className={cn(
 //                 'flex items-center gap-1 pl-3 pr-2.5 py-1.5 rounded-full shrink-0',
-//                 'text-[12.5px] font-medium transition-colors border',
+//                 'text-[14px] font-medium transition-colors border',
 //                 selectedActorMeta
 //                   ? 'bg-[rgba(0,212,255,0.10)] border-[rgba(0,212,255,0.28)] text-[#00D4FF]'
 //                   : 'bg-[#151D33] border-white/[0.10] text-[#8A96B8] hover:border-white/[0.2]'
@@ -2764,7 +2764,7 @@
 //               title={value || undefined}
 //               className={cn(
 //                 'flex-1 min-w-0 py-1.5 bg-transparent',
-//                 'font-sans text-[17px] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
+//                 'font-sans text-[19px] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
 //                 'focus:outline-none',
 //                 isListening && 'placeholder:text-[#00D4FF]'
 //               )}
@@ -2814,7 +2814,7 @@
 
 //           {/* ── Footer bar: hint left, solid CTA button right ──── */}
 //           <div className="flex items-center justify-end gap-3 px-4 sm:px-5 py-3 border-t border-white/[0.06]">
-//             {/* <p aria-live="polite" aria-atomic="true" className="text-[12.5px] text-[#E6B905] truncate">
+//             {/* <p aria-live="polite" aria-atomic="true" className="text-[14px] text-[#E6B905] truncate">
 //               {isListening ? (
 //                 <span className="text-[#00D4FF] font-medium">Listening… tap the mic again to stop</span>
 //               ) : (
@@ -2831,7 +2831,7 @@
 //                 aria-describedby={needsActor ? `${id ?? inputId}-arrow-tooltip` : undefined}
 //                 className={cn(
 //                   'flex items-center gap-1.5 px-4 py-2 rounded-lg shrink-0',
-//                   'text-[13.5px] font-semibold transition-colors duration-150',
+//                   'text-[15px] font-semibold transition-colors duration-150',
 //                   canSubmit
 //                     ? 'bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] hover:text-white'
 //                     : needsActor
@@ -2849,7 +2849,7 @@
 //                   role="tooltip"
 //                   className={cn(
 //                     'pointer-events-none absolute bottom-full right-0 mb-2 z-20',
-//                     'whitespace-nowrap rounded-md px-2.5 py-1.5 text-[11.5px] font-medium',
+//                     'whitespace-nowrap rounded-md px-2.5 py-1.5 text-[13px] font-medium',
 //                     'bg-[#131A2C] text-[#00D4FF] border border-[rgba(0,212,255,0.32)]',
 //                     'shadow-[0_10px_24px_rgba(0,0,0,0.45)]',
 //                     'opacity-0 translate-y-1 scale-95 origin-bottom-right',
@@ -2920,7 +2920,7 @@
 //                   >
 //                     <span
 //                       className={cn(
-//                         'flex items-center justify-center w-8 h-8 rounded-full text-[15px] shrink-0',
+//                         'flex items-center justify-center w-8 h-8 rounded-full text-[17px] shrink-0',
 //                         isSelected ? 'bg-[#00D4FF]/15' : 'bg-white/[0.06]'
 //                       )}
 //                       aria-hidden="true"
@@ -2929,11 +2929,11 @@
 //                     </span>
 
 //                     <span className="flex-1 min-w-0">
-//                       <span className={cn('block text-[13.5px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
+//                       <span className={cn('block text-[15px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
 //                         {actor.label}
 //                       </span>
 //                       {actor.description && (
-//                         <span className="block text-[11.5px] text-[#5A6A8A] truncate">
+//                         <span className="block text-[13px] text-[#5A6A8A] truncate">
 //                           {actor.description}
 //                         </span>
 //                       )}
@@ -3203,7 +3203,7 @@ export function SearchBar({
           <span className="text-[#00D4FF] text-sm shrink-0" aria-hidden="true">
             {actorSuggestion.wasCorrected ? '✏️' : '👋'}
           </span>
-          <p className="flex-1 text-[12.5px] text-[#A8B8D8] leading-snug">
+          <p className="flex-1 text-[14px] text-[#A8B8D8] leading-snug">
             {actorSuggestion.wasCorrected ? (
               <>
                 Did you mean{' '}
@@ -3225,14 +3225,14 @@ export function SearchBar({
             <button
               type="button"
               onClick={onAcceptActorSuggestion}
-              className="px-2.5 py-1 rounded-md text-[12px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
+              className="px-2.5 py-1 rounded-md text-[13.5px] font-semibold bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] transition-colors"
             >
               ✓ Yes
             </button>
             <button
               type="button"
               onClick={() => onSelectActor?.(null)}
-              className="px-2.5 py-1 rounded-md text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
+              className="px-2.5 py-1 rounded-md text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.06] transition-colors"
             >
               No
             </button>
@@ -3260,7 +3260,7 @@ export function SearchBar({
               aria-expanded={actorMenuOpen}
               className={cn(
                 'flex items-center gap-1 pl-3 pr-2.5 py-1.5 rounded-full shrink-0',
-                'text-[12.5px] font-medium transition-colors border',
+                'text-[14px] font-medium transition-colors border',
                 selectedActorMeta
                   ? 'bg-[rgba(0,212,255,0.10)] border-[rgba(0,212,255,0.28)] text-[#00D4FF]'
                   : 'bg-[#151D33] border-white/[0.10] text-[#8A96B8] hover:border-white/[0.2]'
@@ -3304,7 +3304,7 @@ export function SearchBar({
               title={value || undefined}
               className={cn(
                 'flex-1 min-w-0 py-1.5 bg-transparent',
-                'font-sans text-[17px] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
+                'font-sans text-[19px] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
                 'focus:outline-none',
                 isListening && 'placeholder:text-[#00D4FF]'
               )}
@@ -3321,7 +3321,7 @@ export function SearchBar({
 
           {/* ── Footer bar: hint left, solid CTA button right ──── */}
           <div className="flex items-center justify-end gap-3 px-4 sm:px-5 py-3 border-t border-white/[0.06]">
-            {/* <p aria-live="polite" aria-atomic="true" className="text-[12.5px] text-[#E6B905] truncate">
+            {/* <p aria-live="polite" aria-atomic="true" className="text-[14px] text-[#E6B905] truncate">
               {isListening ? (
                 <span className="text-[#00D4FF] font-medium">Listening… tap the mic again to stop</span>
               ) : (
@@ -3338,7 +3338,7 @@ export function SearchBar({
                 aria-describedby={needsActor ? `${id ?? inputId}-arrow-tooltip` : undefined}
                 className={cn(
                   'flex items-center gap-1.5 px-4 py-2 rounded-lg shrink-0',
-                  'text-[13.5px] font-semibold transition-colors duration-150',
+                  'text-[15px] font-semibold transition-colors duration-150',
                   canSubmit
                     ? 'bg-[#00D4FF] text-[#050A12] hover:bg-[#2A6BF0] hover:text-white'
                     : needsActor
@@ -3356,7 +3356,7 @@ export function SearchBar({
                   role="tooltip"
                   className={cn(
                     'pointer-events-none absolute bottom-full right-0 mb-2 z-20',
-                    'whitespace-nowrap rounded-md px-2.5 py-1.5 text-[11.5px] font-medium',
+                    'whitespace-nowrap rounded-md px-2.5 py-1.5 text-[13px] font-medium',
                     'bg-[#131A2C] text-[#00D4FF] border border-[rgba(0,212,255,0.32)]',
                     'shadow-[0_10px_24px_rgba(0,0,0,0.45)]',
                     'opacity-0 translate-y-1 scale-95 origin-bottom-right',
@@ -3427,7 +3427,7 @@ export function SearchBar({
                   >
                     <span
                       className={cn(
-                        'flex items-center justify-center w-8 h-8 rounded-full text-[15px] shrink-0',
+                        'flex items-center justify-center w-8 h-8 rounded-full text-[17px] shrink-0',
                         isSelected ? 'bg-[#00D4FF]/15' : 'bg-white/[0.06]'
                       )}
                       aria-hidden="true"
@@ -3436,11 +3436,11 @@ export function SearchBar({
                     </span>
 
                     <span className="flex-1 min-w-0">
-                      <span className={cn('block text-[13.5px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
+                      <span className={cn('block text-[15px] font-medium', isSelected ? 'text-[#00D4FF]' : 'text-[#E8F0FF]')}>
                         {actor.label}
                       </span>
                       {actor.description && (
-                        <span className="block text-[11.5px] text-[#5A6A8A] truncate">
+                        <span className="block text-[13px] text-[#5A6A8A] truncate">
                           {actor.description}
                         </span>
                       )}

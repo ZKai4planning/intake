@@ -171,7 +171,7 @@
 //           />
 
 //           {codeError && (
-//             <p className="text-center text-[13px] text-[#F87171]" role="alert">
+//             <p className="text-center text-[14.5px] text-[#F87171]" role="alert">
 //               {codeError}
 //             </p>
 //           )}
@@ -188,7 +188,7 @@
 
 //           {/* Resend */}
 //           <div className="flex items-center justify-center gap-1.5">
-//             <p className="text-[13px] text-[#5A6A8A]">
+//             <p className="text-[14.5px] text-[#5A6A8A]">
 //               {canResend ? "Didn't get it?" : `Resend in ${formatted}`}
 //             </p>
 //             {canResend && (
@@ -196,7 +196,7 @@
 //                 type="button"
 //                 onClick={handleResend}
 //                 disabled={isResending}
-//                 className="text-[13px] font-medium text-[#135BEC] hover:text-[#2A6BF0] transition-colors disabled:opacity-50"
+//                 className="text-[14.5px] font-medium text-[#135BEC] hover:text-[#2A6BF0] transition-colors disabled:opacity-50"
 //               >
 //                 {isResending ? 'Sending…' : 'Resend code'}
 //               </button>
@@ -210,11 +210,11 @@
 //           {/* Code confirmed badge */}
 //           <div className="flex items-center gap-2 px-3 py-2 rounded-[8px] bg-[rgba(19,91,236,0.07)] border border-[rgba(19,91,236,0.2)]">
 //             <span className="text-[#135BEC] text-sm">✓</span>
-//             <p className="text-[12px] text-[#A8B8D8]">Code verified — now set your new password.</p>
+//             <p className="text-[13.5px] text-[#A8B8D8]">Code verified — now set your new password.</p>
 //             <button
 //               type="button"
 //               onClick={() => { setCodeConfirmed(false); setCode('') }}
-//               className="ml-auto text-[11px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
+//               className="ml-auto text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
 //             >
 //               Change
 //             </button>

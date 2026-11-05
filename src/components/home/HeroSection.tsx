@@ -21,7 +21,7 @@ export function HeroSection() {
   </div>
 
   {/* Foreground content */}
-  <div className="relative z-10 flex-1 flex items-center justify-center px-4 pt-24 sm:pt-28 md:pt-32 pb-12">
+  <div className="relative z-10 flex-1 flex items-center justify-center px-4 pt-28 sm:pt-32 md:pt-36 xl:pt-44 pb-12">
     {/* Outer column */}
     <div className="max-w-[720px] w-full mx-auto flex flex-col items-center">
       <HeroEyebrow className="mb-5" />
@@ -33,7 +33,7 @@ export function HeroSection() {
           className="mb-4"
         />
 
-        <p className="text-[15px] sm:text-[16px] text-[#8A96B8] leading-relaxed mb-9">
+        <p className="text-[17px] sm:text-[18px] text-[#8A96B8] leading-relaxed mb-9">
           Describe your project and we'll check it against local planning
           policy, then connect you with the right next step.
         </p>

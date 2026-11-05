@@ -157,12 +157,12 @@
 //           <div className="flex items-center justify-between px-4 py-3 border-b border-white/[0.06] shrink-0">
 //             <div className="flex items-center gap-2.5">
 //               <AssistantOrb size={22} state={thinking ?? 'idle'} />
-//               <p className="text-[13.5px] font-semibold text-[#E8F0FF]">AI4Planning Assistant</p>
+//               <p className="text-[15px] font-semibold text-[#E8F0FF]">AI4Planning Assistant</p>
 //             </div>
 //             <button
 //               onClick={closeWithAnimation}
 //               aria-label="Close assistant"
-//               className="text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors text-[18px] leading-none"
+//               className="text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors text-[20px] leading-none"
 //             >
 //               ×
 //             </button>
@@ -170,15 +170,15 @@
 
 //           <div ref={scrollRef} className="flex-1 min-h-0 overflow-y-auto px-4 py-3 space-y-2.5">
 //             {messages.length === 0 && (
-//               <p className="text-[12.5px] text-[#5A6A8A]">Try “{EXAMPLE_BY_SURFACE[surface]}”.</p>
+//               <p className="text-[14px] text-[#5A6A8A]">Try “{EXAMPLE_BY_SURFACE[surface]}”.</p>
 //             )}
 //             {messages.map((m, i) => (
 //               <div key={i}>
 //                 <div
 //                   className={
 //                     m.role === 'user'
-//                       ? 'ml-auto max-w-[85%] rounded-[12px] rounded-br-[4px] bg-[#135BEC] text-white text-[13px] px-3 py-2'
-//                       : 'mr-auto max-w-[85%] rounded-[12px] rounded-bl-[4px] bg-white/[0.06] text-[#E8F0FF] text-[13px] px-3 py-2'
+//                       ? 'ml-auto max-w-[85%] rounded-[12px] rounded-br-[4px] bg-[#135BEC] text-white text-[14.5px] px-3 py-2'
+//                       : 'mr-auto max-w-[85%] rounded-[12px] rounded-bl-[4px] bg-white/[0.06] text-[#E8F0FF] text-[14.5px] px-3 py-2'
 //                   }
 //                 >
 //                   {m.text}
@@ -186,26 +186,26 @@
 
 //                 {m.confirmation && (
 //                   <div className="mr-auto max-w-[92%] mt-1.5 rounded-[12px] border border-[rgba(251,191,36,0.3)] bg-[rgba(251,191,36,0.06)] px-3 py-2.5">
-//                     <p className="text-[12.5px] text-[#FBBF24] mb-2" dangerouslySetInnerHTML={{ __html: escapeThenBold(m.confirmation.summary) }} />
+//                     <p className="text-[14px] text-[#FBBF24] mb-2" dangerouslySetInnerHTML={{ __html: escapeThenBold(m.confirmation.summary) }} />
 //                     {!m.confirmation.resolved ? (
 //                       <div className="flex items-center gap-2">
 //                         <button
 //                           onClick={() => handleConfirm(i)}
 //                           disabled={!!thinking}
-//                           className="px-3 py-1.5 rounded-[8px] bg-[#135BEC] text-white text-[12px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 transition-colors"
+//                           className="px-3 py-1.5 rounded-[8px] bg-[#135BEC] text-white text-[13.5px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 transition-colors"
 //                         >
 //                           Confirm
 //                         </button>
 //                         <button
 //                           onClick={() => handleCancel(i)}
 //                           disabled={!!thinking}
-//                           className="px-3 py-1.5 rounded-[8px] text-[#A8B8D8] text-[12px] font-medium hover:text-[#E8F0FF] disabled:opacity-50 transition-colors"
+//                           className="px-3 py-1.5 rounded-[8px] text-[#A8B8D8] text-[13.5px] font-medium hover:text-[#E8F0FF] disabled:opacity-50 transition-colors"
 //                         >
 //                           Cancel
 //                         </button>
 //                       </div>
 //                     ) : (
-//                       <p className="text-[11.5px] text-[#5A6A8A] flex items-center gap-1.5">
+//                       <p className="text-[13px] text-[#5A6A8A] flex items-center gap-1.5">
 //                         {m.confirmation.resolved === 'confirmed' ? (
 //                           <>
 //                             <CheckIcon /> Confirmed
@@ -223,7 +223,7 @@
 //             {thinking && (
 //               <div className="inline-flex items-center gap-2.5 rounded-full bg-[#161C2E] border border-white/[0.06] pl-1.5 pr-4 py-1.5">
 //                 <AssistantOrb size={26} state={thinking} />
-//                 <span className="text-[13px] text-[#C7D2E8]">{thinkingLabel}</span>
+//                 <span className="text-[14.5px] text-[#C7D2E8]">{thinkingLabel}</span>
 //               </div>
 //             )}
 //           </div>
@@ -234,12 +234,12 @@
 //               onChange={e => setInput(e.target.value)}
 //               disabled={!!thinking}
 //               placeholder={PLACEHOLDER_BY_SURFACE[surface]}
-//               className="flex-1 rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3 py-2 text-[13px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
+//               className="flex-1 rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3 py-2 text-[14.5px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
 //             />
 //             <button
 //               type="submit"
 //               disabled={!input.trim() || !!thinking}
-//               className="px-3 py-2 rounded-[10px] bg-[#135BEC] text-white text-[13px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+//               className="px-3 py-2 rounded-[10px] bg-[#135BEC] text-white text-[14.5px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
 //             >
 //               Send
 //             </button>
@@ -254,7 +254,7 @@
 //       >
 //         {open ? (
 //           <span className="w-14 h-14 rounded-full bg-[#135BEC] hover:bg-[#2A6BF0] text-white flex items-center justify-center transition-colors">
-//             <span className="text-[24px] leading-none">×</span>
+//             <span className="text-[27px] leading-none">×</span>
 //           </span>
 //         ) : (
 //           <AssistantOrb size={56} state="idle" />
@@ -476,12 +476,12 @@ export function AgentAssistantWidget({ surface, context = {} }: AgentAssistantWi
           <div className="flex items-center justify-between px-4 py-3 border-b border-white/[0.06] shrink-0">
             <div className="flex items-center gap-2.5">
               <AssistantOrb size={22} state={thinking ?? 'idle'} />
-              <p className="text-[13.5px] font-semibold text-[#E8F0FF]">AI4Planning Assistant</p>
+              <p className="text-[15px] font-semibold text-[#E8F0FF]">AI4Planning Assistant</p>
             </div>
             <button
               onClick={closeWithAnimation}
               aria-label="Close assistant"
-              className="text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors text-[18px] leading-none"
+              className="text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors text-[20px] leading-none"
             >
               ×
             </button>
@@ -489,15 +489,15 @@ export function AgentAssistantWidget({ surface, context = {} }: AgentAssistantWi
 
           <div ref={scrollRef} className="flex-1 min-h-0 overflow-y-auto px-4 py-3 space-y-2.5">
             {messages.length === 0 && (
-              <p className="text-[12.5px] text-[#5A6A8A]">Try “{EXAMPLE_BY_SURFACE[surface]}”.</p>
+              <p className="text-[14px] text-[#5A6A8A]">Try “{EXAMPLE_BY_SURFACE[surface]}”.</p>
             )}
             {messages.map((m, i) => (
               <div key={i}>
                 <div
                   className={
                     m.role === 'user'
-                      ? 'ml-auto max-w-[85%] rounded-[12px] rounded-br-[4px] bg-[#135BEC] text-white text-[13px] px-3 py-2'
-                      : 'mr-auto max-w-[85%] rounded-[12px] rounded-bl-[4px] bg-white/[0.06] text-[#E8F0FF] text-[13px] px-3 py-2'
+                      ? 'ml-auto max-w-[85%] rounded-[12px] rounded-br-[4px] bg-[#135BEC] text-white text-[14.5px] px-3 py-2'
+                      : 'mr-auto max-w-[85%] rounded-[12px] rounded-bl-[4px] bg-white/[0.06] text-[#E8F0FF] text-[14.5px] px-3 py-2'
                   }
                 >
                   {m.text}
@@ -505,26 +505,26 @@ export function AgentAssistantWidget({ surface, context = {} }: AgentAssistantWi
 
                 {m.confirmation && (
                   <div className="mr-auto max-w-[92%] mt-1.5 rounded-[12px] border border-[rgba(251,191,36,0.3)] bg-[rgba(251,191,36,0.06)] px-3 py-2.5">
-                    <p className="text-[12.5px] text-[#FBBF24] mb-2" dangerouslySetInnerHTML={{ __html: escapeThenBold(m.confirmation.summary) }} />
+                    <p className="text-[14px] text-[#FBBF24] mb-2" dangerouslySetInnerHTML={{ __html: escapeThenBold(m.confirmation.summary) }} />
                     {!m.confirmation.resolved ? (
                       <div className="flex items-center gap-2">
                         <button
                           onClick={() => handleConfirm(i)}
                           disabled={!!thinking}
-                          className="px-3 py-1.5 rounded-[8px] bg-[#135BEC] text-white text-[12px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 transition-colors"
+                          className="px-3 py-1.5 rounded-[8px] bg-[#135BEC] text-white text-[13.5px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 transition-colors"
                         >
                           Confirm
                         </button>
                         <button
                           onClick={() => handleCancel(i)}
                           disabled={!!thinking}
-                          className="px-3 py-1.5 rounded-[8px] text-[#A8B8D8] text-[12px] font-medium hover:text-[#E8F0FF] disabled:opacity-50 transition-colors"
+                          className="px-3 py-1.5 rounded-[8px] text-[#A8B8D8] text-[13.5px] font-medium hover:text-[#E8F0FF] disabled:opacity-50 transition-colors"
                         >
                           Cancel
                         </button>
                       </div>
                     ) : (
-                      <p className="text-[11.5px] text-[#5A6A8A] flex items-center gap-1.5">
+                      <p className="text-[13px] text-[#5A6A8A] flex items-center gap-1.5">
                         {m.confirmation.resolved === 'confirmed' ? (
                           <>
                             <CheckIcon /> Confirmed
@@ -542,7 +542,7 @@ export function AgentAssistantWidget({ surface, context = {} }: AgentAssistantWi
             {thinking && (
               <div className="inline-flex items-center gap-2.5 rounded-full bg-[#161C2E] border border-white/[0.06] pl-1.5 pr-4 py-1.5">
                 <AssistantOrb size={26} state={thinking} />
-                <span className="text-[13px] text-[#C7D2E8]">{thinkingLabel}</span>
+                <span className="text-[14.5px] text-[#C7D2E8]">{thinkingLabel}</span>
               </div>
             )}
           </div>
@@ -553,12 +553,12 @@ export function AgentAssistantWidget({ surface, context = {} }: AgentAssistantWi
               onChange={e => setInput(e.target.value)}
               disabled={!!thinking}
               placeholder={PLACEHOLDER_BY_SURFACE[surface]}
-              className="flex-1 rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3 py-2 text-[13px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
+              className="flex-1 rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3 py-2 text-[14.5px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
             />
             <button
               type="submit"
               disabled={!input.trim() || !!thinking}
-              className="px-3 py-2 rounded-[10px] bg-[#135BEC] text-white text-[13px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="px-3 py-2 rounded-[10px] bg-[#135BEC] text-white text-[14.5px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
               Send
             </button>
@@ -573,7 +573,7 @@ export function AgentAssistantWidget({ surface, context = {} }: AgentAssistantWi
       >
         {open ? (
           <span className="w-14 h-14 rounded-full bg-[#135BEC] hover:bg-[#2A6BF0] text-white flex items-center justify-center transition-colors">
-            <span className="text-[24px] leading-none">×</span>
+            <span className="text-[27px] leading-none">×</span>
           </span>
         ) : (
           <AssistantOrb size={56} state="idle" />

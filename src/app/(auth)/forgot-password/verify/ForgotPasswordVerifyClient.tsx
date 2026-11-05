@@ -237,7 +237,7 @@ export default function ForgotPasswordVerifyClient({
 
           {codeError && (
             <p
-              className="text-center text-[13px] text-[#F87171]"
+              className="text-center text-[14.5px] text-[#F87171]"
               role="alert"
             >
               {codeError}
@@ -255,7 +255,7 @@ export default function ForgotPasswordVerifyClient({
           </Button>
 
           <div className="flex items-center justify-center gap-1.5">
-            <p className="text-[13px] text-[#5A6A8A]">
+            <p className="text-[14.5px] text-[#5A6A8A]">
               {canResend
                 ? "Didn't get it?"
                 : `Resend in ${formatted}`}
@@ -266,7 +266,7 @@ export default function ForgotPasswordVerifyClient({
                 type="button"
                 onClick={handleResend}
                 disabled={isResending}
-                className="text-[13px] font-medium text-[#135BEC] hover:text-[#2A6BF0] transition-colors disabled:opacity-50"
+                className="text-[14.5px] font-medium text-[#135BEC] hover:text-[#2A6BF0] transition-colors disabled:opacity-50"
               >
                 {isResending
                   ? 'Sending…'
@@ -286,7 +286,7 @@ export default function ForgotPasswordVerifyClient({
               ✓
             </span>
 
-            <p className="text-[12px] text-[#A8B8D8]">
+            <p className="text-[13.5px] text-[#A8B8D8]">
               Code verified — now set your new password.
             </p>
 
@@ -296,7 +296,7 @@ export default function ForgotPasswordVerifyClient({
                 setCodeConfirmed(false)
                 setCode('')
               }}
-              className="ml-auto text-[11px] text-[#5A6A8A] hover:text-[#A8B8D8]"
+              className="ml-auto text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8]"
             >
               Change
             </button>

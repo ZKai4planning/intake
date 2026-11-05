@@ -74,7 +74,7 @@
 //       {/* ── Workspace name ─────────────────────────────────── */}
 //       <div className="flex items-center gap-2 min-w-0">
 //         <span className="w-1.5 h-1.5 rounded-full bg-[#135BEC] shrink-0" />
-//         <p className="text-[13.5px] font-medium text-[#E8F0FF] truncate">{workspaceName}</p>
+//         <p className="text-[15px] font-medium text-[#E8F0FF] truncate">{workspaceName}</p>
 //       </div>
 
 //       {/* ── Right cluster ──────────────────────────────────── */}
@@ -108,10 +108,10 @@
 //               className="absolute right-0 mt-2 w-[280px] rounded-[12px] border border-white/[0.08] bg-[#0F1525] shadow-[0_12px_32px_rgba(0,0,0,0.4)] overflow-hidden"
 //             >
 //               <div className="px-4 py-3 border-b border-white/[0.06]">
-//                 <p className="text-[13px] font-semibold text-[#E8F0FF]">Notifications</p>
+//                 <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Notifications</p>
 //               </div>
 //               <div className="px-4 py-6 text-center">
-//                 <p className="text-[12.5px] text-[#5A6A8A]">You&rsquo;re all caught up.</p>
+//                 <p className="text-[14px] text-[#5A6A8A]">You&rsquo;re all caught up.</p>
 //               </div>
 //             </div>
 //           )}
@@ -129,7 +129,7 @@
 //               setMenuOpen(o => !o)
 //               setNotifOpen(false)
 //             }}
-//             className="w-9 h-9 rounded-full bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[13px] font-semibold flex items-center justify-center hover:bg-[rgba(19,91,236,0.2)] transition-colors"
+//             className="w-9 h-9 rounded-full bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[14.5px] font-semibold flex items-center justify-center hover:bg-[rgba(19,91,236,0.2)] transition-colors"
 //           >
 //             {initials}
 //           </button>
@@ -142,8 +142,8 @@
 //               className="absolute right-0 mt-2 w-[220px] rounded-[12px] border border-white/[0.08] bg-[#0F1525] shadow-[0_12px_32px_rgba(0,0,0,0.4)] overflow-hidden"
 //             >
 //               <div className="px-4 py-3 border-b border-white/[0.06]">
-//                 <p className="text-[13px] font-semibold text-[#E8F0FF] truncate">{firstName}</p>
-//                 {email && <p className="text-[11.5px] text-[#5A6A8A] truncate mt-0.5">{email}</p>}
+//                 <p className="text-[14.5px] font-semibold text-[#E8F0FF] truncate">{firstName}</p>
+//                 {email && <p className="text-[13px] text-[#5A6A8A] truncate mt-0.5">{email}</p>}
 //               </div>
 
 //               <a
@@ -154,7 +154,7 @@
 //                   setMenuOpen(false)
 //                   guardedNavigate('/dashboard/profile')
 //                 }}
-//                 className="flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors cursor-pointer"
+//                 className="flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors cursor-pointer"
 //               >
 //                 <UserIcon />
 //                 Profile
@@ -166,7 +166,7 @@
 //                 onClick={handleLogoutClick}
 //                 disabled={isLoggingOut}
 //                 className={cn(
-//                   'w-full flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-left transition-colors border-t border-white/[0.06]',
+//                   'w-full flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-left transition-colors border-t border-white/[0.06]',
 //                   isLoggingOut ? 'text-[#5A6A8A] cursor-not-allowed' : 'text-[#FF6B6B] hover:bg-[rgba(255,107,107,0.08)]'
 //                 )}
 //               >
@@ -289,7 +289,7 @@ export function DashboardHeader({ workspaceName, firstName, email, avatarUrl, ha
       {/* ── Workspace name ─────────────────────────────────── */}
       <div className="flex items-center gap-2 min-w-0">
         <span className="w-1.5 h-1.5 rounded-full bg-[#135BEC] shrink-0" />
-        <p className="text-[13.5px] font-medium text-[#E8F0FF] truncate">{workspaceName}</p>
+        <p className="text-[15px] font-medium text-[#E8F0FF] truncate">{workspaceName}</p>
       </div>
 
       {/* ── Right cluster ──────────────────────────────────── */}
@@ -323,10 +323,10 @@ export function DashboardHeader({ workspaceName, firstName, email, avatarUrl, ha
               className="absolute right-0 mt-2 w-[280px] rounded-[12px] border border-white/[0.08] bg-[#0F1525] shadow-[0_12px_32px_rgba(0,0,0,0.4)] overflow-hidden"
             >
               <div className="px-4 py-3 border-b border-white/[0.06]">
-                <p className="text-[13px] font-semibold text-[#E8F0FF]">Notifications</p>
+                <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Notifications</p>
               </div>
               <div className="px-4 py-6 text-center">
-                <p className="text-[12.5px] text-[#5A6A8A]">You&rsquo;re all caught up.</p>
+                <p className="text-[14px] text-[#5A6A8A]">You&rsquo;re all caught up.</p>
               </div>
             </div>
           )}
@@ -344,7 +344,7 @@ export function DashboardHeader({ workspaceName, firstName, email, avatarUrl, ha
               setMenuOpen(o => !o)
               setNotifOpen(false)
             }}
-            className="w-9 h-9 rounded-full overflow-hidden bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[13px] font-semibold flex items-center justify-center hover:bg-[rgba(19,91,236,0.2)] transition-colors"
+            className="w-9 h-9 rounded-full overflow-hidden bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[14.5px] font-semibold flex items-center justify-center hover:bg-[rgba(19,91,236,0.2)] transition-colors"
           >
             {avatarUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
@@ -362,8 +362,8 @@ export function DashboardHeader({ workspaceName, firstName, email, avatarUrl, ha
               className="absolute right-0 mt-2 w-[220px] rounded-[12px] border border-white/[0.08] bg-[#0F1525] shadow-[0_12px_32px_rgba(0,0,0,0.4)] overflow-hidden"
             >
               <div className="px-4 py-3 border-b border-white/[0.06]">
-                <p className="text-[13px] font-semibold text-[#E8F0FF] truncate">{firstName}</p>
-                {email && <p className="text-[11.5px] text-[#5A6A8A] truncate mt-0.5">{email}</p>}
+                <p className="text-[14.5px] font-semibold text-[#E8F0FF] truncate">{firstName}</p>
+                {email && <p className="text-[13px] text-[#5A6A8A] truncate mt-0.5">{email}</p>}
               </div>
 
               <a
@@ -374,7 +374,7 @@ export function DashboardHeader({ workspaceName, firstName, email, avatarUrl, ha
                   setMenuOpen(false)
                   guardedNavigate('/dashboard/profile')
                 }}
-                className="flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors cursor-pointer"
+                className="flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors cursor-pointer"
               >
                 <UserIcon />
                 Profile
@@ -386,7 +386,7 @@ export function DashboardHeader({ workspaceName, firstName, email, avatarUrl, ha
                 onClick={handleLogoutClick}
                 disabled={isLoggingOut}
                 className={cn(
-                  'w-full flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-left transition-colors border-t border-white/[0.06]',
+                  'w-full flex items-center gap-2.5 px-4 py-2.5 text-[14.5px] text-left transition-colors border-t border-white/[0.06]',
                   isLoggingOut ? 'text-[#5A6A8A] cursor-not-allowed' : 'text-[#FF6B6B] hover:bg-[rgba(255,107,107,0.08)]'
                 )}
               >

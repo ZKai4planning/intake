@@ -148,8 +148,12 @@ interface LogoProps {
 // sm  = sidebar / dense chrome
 // md  = general-purpose fallback
 // lg  = public site header — sized to fill most of the 96px header
-const iconSize  = { sm: 'w-9 h-6',   md: 'w-[108px] h-[72px]', lg: 'w-[132px] h-[88px]' }
-const textSize  = { sm: 'text-lg',   md: 'text-2xl',  lg: 'text-3xl'  }
+const iconSize  = {
+  sm: 'w-11 h-[30px]',
+  md: 'w-[84px] h-14 sm:w-[108px] sm:h-[72px] xl:w-[150px] xl:h-[100px]',
+  lg: 'w-[108px] h-[72px] xl:w-[180px] xl:h-[120px]',
+}
+const textSize  = { sm: 'text-xl',   md: 'text-2xl xl:text-3xl',  lg: 'text-3xl xl:text-4xl'  }
 
 /**
  * Logo

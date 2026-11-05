@@ -61,14 +61,14 @@ export function DeleteAccountSection({ accountName }: DeleteAccountSectionProps)
       <section className="rounded-[14px] border border-[rgba(255,107,107,0.2)] bg-[rgba(255,107,107,0.04)] p-5">
         <div className="flex items-center justify-between gap-4">
           <div>
-            <p className="text-[13px] font-medium text-[#E8F0FF]">Delete account</p>
-            <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">
+            <p className="text-[14.5px] font-medium text-[#E8F0FF]">Delete account</p>
+            <p className="text-[13px] text-[#5A6A8A] mt-0.5">
               Permanently delete your account and all associated data. This can&rsquo;t be undone.
             </p>
           </div>
           <button
             onClick={() => setIsOpen(true)}
-            className="shrink-0 px-4 py-2 rounded-[10px] text-[13px] font-semibold text-[#FF6B6B] bg-[rgba(255,107,107,0.08)] hover:bg-[rgba(255,107,107,0.14)] transition-colors"
+            className="shrink-0 px-4 py-2 rounded-[10px] text-[14.5px] font-semibold text-[#FF6B6B] bg-[rgba(255,107,107,0.08)] hover:bg-[rgba(255,107,107,0.14)] transition-colors"
           >
             Delete account
           </button>
@@ -88,23 +88,23 @@ export function DeleteAccountSection({ accountName }: DeleteAccountSectionProps)
             onClick={e => e.stopPropagation()}
           >
             <div className="w-11 h-11 rounded-full bg-[rgba(255,107,107,0.1)] border border-[rgba(255,107,107,0.3)] flex items-center justify-center mb-4">
-              <span className="text-[18px]" aria-hidden="true">⚠️</span>
+              <span className="text-[20px]" aria-hidden="true">⚠️</span>
             </div>
 
-            <h2 id="delete-account-title" className="font-display text-[19px] text-[#E8F0FF] mb-1.5">
+            <h2 id="delete-account-title" className="font-display text-[21.5px] text-[#E8F0FF] mb-1.5">
               Are you sure?
             </h2>
-            <p className="text-[13px] text-[#A8B8D8] leading-relaxed mb-5">
+            <p className="text-[14.5px] text-[#A8B8D8] leading-relaxed mb-5">
               This will permanently delete your account, workspace, and all data linked to it.
               There&rsquo;s no way to undo this.
             </p>
 
-            <p className="text-[11px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A] mb-1.5">
+            <p className="text-[12.5px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A] mb-1.5">
               Type your account name to confirm
             </p>
 
             <div className="flex items-center justify-between gap-2 rounded-[10px] bg-[#141C30] border border-white/[0.1] px-3.5 py-2.5 mb-3">
-              <code className="text-[13px] text-[#E8F0FF] font-mono truncate">{accountName}</code>
+              <code className="text-[14.5px] text-[#E8F0FF] font-mono truncate">{accountName}</code>
               <button
                 type="button"
                 onClick={async () => {
@@ -115,7 +115,7 @@ export function DeleteAccountSection({ accountName }: DeleteAccountSectionProps)
                     // clipboard access denied — user can still select/copy manually
                   }
                 }}
-                className="shrink-0 text-[11px] font-medium text-[#135BEC] hover:text-[#2A6BF0] transition-colors"
+                className="shrink-0 text-[12.5px] font-medium text-[#135BEC] hover:text-[#2A6BF0] transition-colors"
               >
                 Copy
               </button>
@@ -129,7 +129,7 @@ export function DeleteAccountSection({ accountName }: DeleteAccountSectionProps)
               autoFocus
               className={cn(
                 'w-full rounded-[10px] px-3.5 py-2.5 mb-5',
-                'bg-[#141C30] text-[#E8F0FF] text-[14px] font-sans',
+                'bg-[#141C30] text-[#E8F0FF] text-[15.5px] font-sans',
                 'placeholder:text-[#3A4560]',
                 'border outline-none transition-all duration-150',
                 confirmText && !isMatch
@@ -143,7 +143,7 @@ export function DeleteAccountSection({ accountName }: DeleteAccountSectionProps)
                 type="button"
                 onClick={closeModal}
                 disabled={isDeleting}
-                className="flex-1 px-4 py-2.5 rounded-[10px] text-[13px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:border-white/[0.25] hover:text-[#E8F0FF] transition-colors disabled:opacity-50"
+                className="flex-1 px-4 py-2.5 rounded-[10px] text-[14.5px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:border-white/[0.25] hover:text-[#E8F0FF] transition-colors disabled:opacity-50"
               >
                 Cancel
               </button>
@@ -152,7 +152,7 @@ export function DeleteAccountSection({ accountName }: DeleteAccountSectionProps)
                 onClick={handleConfirmDelete}
                 disabled={!isMatch || isDeleting}
                 className={cn(
-                  'flex-1 px-4 py-2.5 rounded-[10px] text-[13px] font-semibold transition-colors',
+                  'flex-1 px-4 py-2.5 rounded-[10px] text-[14.5px] font-semibold transition-colors',
                   !isMatch || isDeleting
                     ? 'bg-white/[0.06] text-[#5A6A8A] cursor-not-allowed'
                     : 'bg-[#FF6B6B] text-white hover:bg-[#ff5252]'

@@ -36,7 +36,7 @@ export const AuthInput = forwardRef<HTMLInputElement, AuthInputProps>(
       <div className="flex flex-col gap-1.5">
         <label
           htmlFor={inputId}
-          className="text-[11px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A]"
+          className="text-[12.5px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A]"
         >
           {label}
         </label>
@@ -47,7 +47,7 @@ export const AuthInput = forwardRef<HTMLInputElement, AuthInputProps>(
             id={inputId}
             className={cn(
               'w-full rounded-[10px] px-4 py-3',
-              'bg-[#141C30] text-[#E8F0FF] text-[14px] font-sans',
+              'bg-[#141C30] text-[#E8F0FF] text-[15.5px] font-sans',
               'placeholder:text-[#5A6A8A]',
               'border transition-all duration-150 outline-none',
               borderColor,
@@ -77,7 +77,7 @@ export const AuthInput = forwardRef<HTMLInputElement, AuthInputProps>(
         </div>
 
         {message && (
-          <p className={cn('text-[12px] leading-snug', messageColor)} role={fieldState === 'error' ? 'alert' : undefined}>
+          <p className={cn('text-[13.5px] leading-snug', messageColor)} role={fieldState === 'error' ? 'alert' : undefined}>
             {message}
           </p>
         )}

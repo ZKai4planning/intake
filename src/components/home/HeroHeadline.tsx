@@ -9,7 +9,7 @@
 //   return (
 //     <h1
 //       id={id}
-//       className={`font-sans text-[36px] sm:text-[46px] leading-[1.15] text-white ${className ?? ''}`}
+//       className={`font-sans text-[40.5px] sm:text-[51.5px] leading-[1.15] text-white ${className ?? ''}`}
 //     >
 //       Here when you need us with{' '}
 //       <span
@@ -34,7 +34,7 @@
 //     <h1
 //       id={id}
 //       className={cn(
-//         'font-sans text-[38px] sm:text-[52px] font-normal leading-[1.1] tracking-tight text-white',
+//         'font-sans text-[42.5px] sm:text-[58px] font-normal leading-[1.1] tracking-tight text-white',
 //         className
 //       )}
 //     >
@@ -57,7 +57,7 @@ export function HeroHeadline({ id, className }: HeroHeadlineProps) {
     <h1
       id={id}
       className={cn(
-        'font-display text-[38px] sm:text-[52px] font-normal leading-[1.1] tracking-tight text-white',
+        'font-display text-[42.5px] sm:text-[58px] font-normal leading-[1.1] tracking-tight text-white',
         className
       )}
     >

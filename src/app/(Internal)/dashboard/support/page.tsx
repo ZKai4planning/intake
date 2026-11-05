@@ -53,7 +53,7 @@ export default function GetHelpPage() {
       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
         <div className="text-center max-w-[360px]">
           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-          <p className="text-[13px] text-[#5A6A8A] mb-6">Please log in to access Get Help.</p>
+          <p className="text-[14.5px] text-[#5A6A8A] mb-6">Please log in to access Get Help.</p>
           <button
             onClick={() => router.push('/login')}
             className="px-5 py-2.5 rounded-[10px] bg-[#135BEC] text-white text-sm font-semibold hover:bg-[#2A6BF0] transition-colors"
@@ -72,10 +72,10 @@ export default function GetHelpPage() {
   return (
     <DashboardShell workspace={workspace} firstName={firstName} email={session.email}>
       <div className="mb-7">
-        <h1 className="font-display text-[26px] sm:text-[30px] font-normal text-[#E8F0FF] tracking-tight">
+        <h1 className="font-display text-[29px] sm:text-[33.5px] font-normal text-[#E8F0FF] tracking-tight">
           Get help
         </h1>
-        <p className="text-[13px] text-[#5A6A8A] mt-1">
+        <p className="text-[14.5px] text-[#5A6A8A] mt-1">
           Search common questions below, or ask the assistant if you can&apos;t find what you need.
         </p>
       </div>
@@ -87,7 +87,7 @@ export default function GetHelpPage() {
           value={query}
           onChange={e => { setQuery(e.target.value); setOpenId(null) }}
           placeholder="Search for an answer — e.g. &quot;download report&quot;, &quot;refund&quot;, &quot;MFA&quot;…"
-          className="w-full rounded-[12px] border border-white/[0.08] bg-[#0F1525] pl-11 pr-4 py-3 text-[13.5px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
+          className="w-full rounded-[12px] border border-white/[0.08] bg-[#0F1525] pl-11 pr-4 py-3 text-[15px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
         />
       </div>
 
@@ -95,7 +95,7 @@ export default function GetHelpPage() {
         <div className="space-y-7">
           {grouped.map(({ category, articles }) => (
             <div key={category}>
-              <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#5A6A8A] mb-2.5">
+              <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#5A6A8A] mb-2.5">
                 {category}
               </p>
               <div className="rounded-[16px] border border-white/[0.08] bg-[#0F1525] overflow-hidden divide-y divide-white/[0.06]">
@@ -109,12 +109,12 @@ export default function GetHelpPage() {
                         onClick={() => setOpenId(isOpen ? null : article.id)}
                         className="w-full flex items-center justify-between gap-4 text-left px-5 py-4 hover:bg-white/[0.02] transition-colors"
                       >
-                        <span className="text-[13.5px] font-medium text-[#E8F0FF]">{article.question}</span>
+                        <span className="text-[15px] font-medium text-[#E8F0FF]">{article.question}</span>
                         <ChevronDown className={cn('h-4 w-4 shrink-0 text-[#5A6A8A] transition-transform', isOpen && 'rotate-180')} />
                       </button>
                       {isOpen && (
                         <div className="px-5 pb-4">
-                          <p className="text-[13px] text-[#A8B8D8] leading-relaxed">{article.answer}</p>
+                          <p className="text-[14.5px] text-[#A8B8D8] leading-relaxed">{article.answer}</p>
                         </div>
                       )}
                     </div>
@@ -126,10 +126,10 @@ export default function GetHelpPage() {
         </div>
       ) : (
         <div className="rounded-[16px] border border-white/[0.08] bg-[#0F1525] px-6 py-10 text-center">
-          <p className="text-[14px] font-medium text-[#E8F0FF] mb-1.5">
+          <p className="text-[15.5px] font-medium text-[#E8F0FF] mb-1.5">
             {isSearching ? `No answer found for "${query.trim()}"` : 'No help articles yet'}
           </p>
-          <p className="text-[13px] text-[#5A6A8A] mb-5 max-w-[420px] mx-auto">
+          <p className="text-[14.5px] text-[#5A6A8A] mb-5 max-w-[420px] mx-auto">
             Ask the assistant instead — it can look into your account and projects directly.
           </p>
           <button
@@ -145,10 +145,10 @@ export default function GetHelpPage() {
       {/* Always-available fallback, even when the search above found something */}
       {hasResults && (
         <div className="mt-8 flex items-center justify-between gap-4 rounded-[14px] border border-white/[0.06] bg-white/[0.02] px-5 py-4">
-          <p className="text-[13px] text-[#A8B8D8]">Still stuck? The assistant can dig into your specific account.</p>
+          <p className="text-[14.5px] text-[#A8B8D8]">Still stuck? The assistant can dig into your specific account.</p>
           <button
             onClick={handleAskAssistant}
-            className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-[8px] text-[12.5px] font-semibold text-[#135BEC] hover:bg-[#135BEC]/10 transition-colors"
+            className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-[8px] text-[14px] font-semibold text-[#135BEC] hover:bg-[#135BEC]/10 transition-colors"
           >
             <MessageCircle className="h-3.5 w-3.5" />
             Ask the assistant

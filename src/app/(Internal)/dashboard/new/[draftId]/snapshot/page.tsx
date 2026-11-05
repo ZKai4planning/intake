@@ -54,12 +54,12 @@
 //   }, [draftId])
 
 //   if (project === undefined) {
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
 //   }
 
 //   if (!project || !project.address || !project.constraints) {
 //     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-//     return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+//     return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
 //   }
 
 //   const snapshot = generateSnapshot({
@@ -115,24 +115,24 @@
 //     <div className="max-w-[640px] mx-auto">
 //       <div className="flex items-start gap-2.5 rounded-[10px] border border-[#00D4FF]/25 bg-[rgba(0,212,255,0.06)] p-3.5 mb-6">
 //         <span className="text-[#00D4FF] shrink-0" aria-hidden="true">ⓘ</span>
-//         <p className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+//         <p className="text-[14px] text-[#A8B8D8] leading-relaxed">
 //           This is general guidance based on the information provided. It is not a full planning
 //           assessment or legal advice.
 //         </p>
 //       </div>
 
 //       <div className="flex items-start justify-between gap-3 mb-2">
-//         <h1 className="font-display text-[26px] text-[#E8F0FF]">Your quick planning snapshot</h1>
+//         <h1 className="font-display text-[29px] text-[#E8F0FF]">Your quick planning snapshot</h1>
 //         <button
 //           type="button"
 //           onClick={handleDownload}
 //           disabled={isDownloading}
-//           className="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[12px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+//           className="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13.5px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
 //         >
 //           {isDownloading ? 'Preparing PDF…' : '⬇ Download PDF'}
 //         </button>
 //       </div>
-//       <p className="text-[13px] text-[#5A6A8A] mb-6">
+//       <p className="text-[14.5px] text-[#5A6A8A] mb-6">
 //         {project.address.line1}, {project.address.city} · {project.title} · Generated just now
 //       </p>
 
@@ -162,7 +162,7 @@
 //       {hasWarning && (
 //         <div className="flex items-start gap-2.5 rounded-[10px] border border-[#F87171]/25 bg-[rgba(248,113,113,0.06)] p-3.5 mb-6">
 //           <span className="text-[#F87171] shrink-0" aria-hidden="true">🔍</span>
-//           <p className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+//           <p className="text-[14px] text-[#A8B8D8] leading-relaxed">
 //             <strong className="text-[#E8F0FF]">Closer review recommended.</strong> The constraint found
 //             here adds complexity. A planning consultant can confirm the exact rules before you commit
 //             to a design or spend money on drawings.
@@ -172,12 +172,12 @@
 
 //       {/* ── Upsell ────────────────────────────────────────────────── */}
 //       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-//         <p className="text-[13.5px] font-semibold text-[#E8F0FF] mb-3">
+//         <p className="text-[15px] font-semibold text-[#E8F0FF] mb-3">
 //           Would you like a more tailored planning view?
 //         </p>
 //         <ul className="space-y-2">
 //           {snapshot.upsell.map(u => (
-//             <li key={u} className="flex items-start gap-2 text-[12.5px] text-[#A8B8D8] leading-relaxed">
+//             <li key={u} className="flex items-start gap-2 text-[14px] text-[#A8B8D8] leading-relaxed">
 //               <span className="text-[#135BEC] mt-0.5 shrink-0" aria-hidden="true">✓</span>
 //               {u}
 //             </li>
@@ -186,7 +186,7 @@
 //       </div>
 
 //       {/* ── Proceed choice ───────────────────────────────────────── */}
-//       <p className="text-[13.5px] font-semibold text-[#E8F0FF] mb-3">How would you like to proceed?</p>
+//       <p className="text-[15px] font-semibold text-[#E8F0FF] mb-3">How would you like to proceed?</p>
 //       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6">
 //         {CHOICES.map(c => (
 //           <button
@@ -201,9 +201,9 @@
 //             )}
 //           >
 //             <span className="text-lg" aria-hidden="true">{c.icon}</span>
-//             <p className="text-[13px] font-semibold text-[#E8F0FF] mt-1.5">{c.title}</p>
-//             <p className="text-[11.5px] text-[#5A6A8A] mt-0.5 leading-snug">{c.sub}</p>
-//             <p className="text-[12px] font-semibold text-[#135BEC] mt-2">{c.price}</p>
+//             <p className="text-[14.5px] font-semibold text-[#E8F0FF] mt-1.5">{c.title}</p>
+//             <p className="text-[13px] text-[#5A6A8A] mt-0.5 leading-snug">{c.sub}</p>
+//             <p className="text-[13.5px] font-semibold text-[#135BEC] mt-2">{c.price}</p>
 //           </button>
 //         ))}
 //       </div>
@@ -211,7 +211,7 @@
 //       <button
 //         type="button"
 //         onClick={handleProceed}
-//         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)]"
+//         className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)]"
 //       >
 //         {CTA_LABEL[choice]}
 //       </button>
@@ -222,7 +222,7 @@
 // function Section({ title, children }: { title: string; children: React.ReactNode }) {
 //   return (
 //     <div className="mb-6">
-//       <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3">{title}</p>
+//       <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3">{title}</p>
 //       <div className="space-y-3">{children}</div>
 //     </div>
 //   )
@@ -233,8 +233,8 @@
 //     <div className="flex items-start gap-3">
 //       <span className="text-base shrink-0" aria-hidden="true">{icon}</span>
 //       <div>
-//         <p className="text-[13.5px] font-medium text-[#E8F0FF] leading-snug">{title}</p>
-//         {detail && <p className="text-[12.5px] text-[#5A6A8A] leading-relaxed mt-0.5">{detail}</p>}
+//         <p className="text-[15px] font-medium text-[#E8F0FF] leading-snug">{title}</p>
+//         {detail && <p className="text-[14px] text-[#5A6A8A] leading-relaxed mt-0.5">{detail}</p>}
 //       </div>
 //     </div>
 //   )
@@ -307,12 +307,12 @@ export default function SnapshotPage() {
   }, [draftId])
 
   if (project === undefined) {
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Loading…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Loading…</p>
   }
 
   if (!project || !project.address || !project.constraints) {
     if (typeof window !== 'undefined') router.replace(`/dashboard/new/${draftId}/address`)
-    return <p className="text-[13px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
+    return <p className="text-[14.5px] text-[#5A6A8A] text-center py-16">Redirecting…</p>
   }
 
   // Report upgrade is only for free users — someone who already
@@ -398,24 +398,24 @@ export default function SnapshotPage() {
     <div className="max-w-[640px] mx-auto">
       <div className="flex items-start gap-2.5 rounded-[10px] border border-[#00D4FF]/25 bg-[rgba(0,212,255,0.06)] p-3.5 mb-6">
         <span className="text-[#00D4FF] shrink-0" aria-hidden="true">ⓘ</span>
-        <p className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+        <p className="text-[14px] text-[#A8B8D8] leading-relaxed">
           This is general guidance based on the information provided. It is not a full planning
           assessment or legal advice.
         </p>
       </div>
 
       <div className="flex items-start justify-between gap-3 mb-2">
-        <h1 className="font-display text-[26px] text-[#E8F0FF]">Your quick planning snapshot</h1>
+        <h1 className="font-display text-[29px] text-[#E8F0FF]">Your quick planning snapshot</h1>
         <button
           type="button"
           onClick={handleDownload}
           disabled={isDownloading}
-          className="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[12px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13.5px] font-semibold text-[#A8B8D8] border border-white/[0.12] hover:bg-white/[0.05] hover:text-[#E8F0FF] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isDownloading ? 'Preparing PDF…' : fromEligibilityCheck ? '⬇ Download eligibility report' : '⬇ Download PDF'}
         </button>
       </div>
-      <p className="text-[13px] text-[#5A6A8A] mb-6">
+      <p className="text-[14.5px] text-[#5A6A8A] mb-6">
         {project.address.line1}, {project.address.city} · {project.title} · Generated just now
       </p>
 
@@ -445,7 +445,7 @@ export default function SnapshotPage() {
       {hasWarning && (
         <div className="flex items-start gap-2.5 rounded-[10px] border border-[#F87171]/25 bg-[rgba(248,113,113,0.06)] p-3.5 mb-6">
           <span className="text-[#F87171] shrink-0" aria-hidden="true">🔍</span>
-          <p className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+          <p className="text-[14px] text-[#A8B8D8] leading-relaxed">
             <strong className="text-[#E8F0FF]">Closer review recommended.</strong> The constraint found
             here adds complexity. A planning consultant can confirm the exact rules before you commit
             to a design or spend money on drawings.
@@ -455,12 +455,12 @@ export default function SnapshotPage() {
 
       {/* ── Upsell ────────────────────────────────────────────────── */}
       <div className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-4 mb-6">
-        <p className="text-[13.5px] font-semibold text-[#E8F0FF] mb-3">
+        <p className="text-[15px] font-semibold text-[#E8F0FF] mb-3">
           Would you like a more tailored planning view?
         </p>
         <ul className="space-y-2">
           {snapshot.upsell.map(u => (
-            <li key={u} className="flex items-start gap-2 text-[12.5px] text-[#A8B8D8] leading-relaxed">
+            <li key={u} className="flex items-start gap-2 text-[14px] text-[#A8B8D8] leading-relaxed">
               <span className="text-[#135BEC] mt-0.5 shrink-0" aria-hidden="true">✓</span>
               {u}
             </li>
@@ -469,7 +469,7 @@ export default function SnapshotPage() {
       </div>
 
       {/* ── Proceed choice ───────────────────────────────────────── */}
-      <p className="text-[13.5px] font-semibold text-[#E8F0FF] mb-3">How would you like to proceed?</p>
+      <p className="text-[15px] font-semibold text-[#E8F0FF] mb-3">How would you like to proceed?</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6">
         {choices.map(c => (
           <button
@@ -484,9 +484,9 @@ export default function SnapshotPage() {
             )}
           >
             <span className="text-lg" aria-hidden="true">{c.icon}</span>
-            <p className="text-[13px] font-semibold text-[#E8F0FF] mt-1.5">{c.title}</p>
-            <p className="text-[11.5px] text-[#5A6A8A] mt-0.5 leading-snug">{c.sub}</p>
-            <p className="text-[12px] font-semibold text-[#135BEC] mt-2">{c.price}</p>
+            <p className="text-[14.5px] font-semibold text-[#E8F0FF] mt-1.5">{c.title}</p>
+            <p className="text-[13px] text-[#5A6A8A] mt-0.5 leading-snug">{c.sub}</p>
+            <p className="text-[13.5px] font-semibold text-[#135BEC] mt-2">{c.price}</p>
           </button>
         ))}
       </div>
@@ -494,7 +494,7 @@ export default function SnapshotPage() {
       <button
         type="button"
         onClick={handleProceed}
-        className="w-full px-6 py-3 rounded-[12px] font-semibold text-[13.5px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)]"
+        className="w-full px-6 py-3 rounded-[12px] font-semibold text-[15px] transition-all bg-[#135BEC] text-white hover:bg-[#2A6BF0] shadow-[0_0_16px_rgba(19,91,236,0.3)]"
       >
         {CTA_LABEL[choice]}
       </button>
@@ -505,7 +505,7 @@ export default function SnapshotPage() {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-6">
-      <p className="text-[11px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3">{title}</p>
+      <p className="text-[12.5px] font-bold uppercase tracking-[0.07em] text-[#5A6A8A] mb-3">{title}</p>
       <div className="space-y-3">{children}</div>
     </div>
   )
@@ -516,8 +516,8 @@ function Row({ icon, title, detail }: { icon: string; title: string; detail?: st
     <div className="flex items-start gap-3">
       <span className="text-base shrink-0" aria-hidden="true">{icon}</span>
       <div>
-        <p className="text-[13.5px] font-medium text-[#E8F0FF] leading-snug">{title}</p>
-        {detail && <p className="text-[12.5px] text-[#5A6A8A] leading-relaxed mt-0.5">{detail}</p>}
+        <p className="text-[15px] font-medium text-[#E8F0FF] leading-snug">{title}</p>
+        {detail && <p className="text-[14px] text-[#5A6A8A] leading-relaxed mt-0.5">{detail}</p>}
       </div>
     </div>
   )

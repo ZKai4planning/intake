@@ -70,7 +70,7 @@
 //       >
 //         <div className="space-y-5">
 //           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4">
-//             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A] mb-3">
+//             <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A] mb-3">
 //               Backup codes — save these somewhere safe
 //             </p>
 
@@ -78,14 +78,14 @@
 //               {backupCodes.map((c) => (
 //                 <code
 //                   key={c}
-//                   className="text-[13px] font-mono text-[#E8F0FF] bg-[#0A0E1A] rounded-[8px] px-3 py-1.5 text-center"
+//                   className="text-[14.5px] font-mono text-[#E8F0FF] bg-[#0A0E1A] rounded-[8px] px-3 py-1.5 text-center"
 //                 >
 //                   {c}
 //                 </code>
 //               ))}
 //             </div>
 
-//             <p className="mt-3 text-[11px] text-[#5A6A8A]">
+//             <p className="mt-3 text-[12.5px] text-[#5A6A8A]">
 //               Each code can be used once if you lose access to your
 //               authenticator app.
 //             </p>
@@ -121,7 +121,7 @@
 
 //           {error && (
 //             <p
-//               className="text-center text-[13px] text-[#F87171]"
+//               className="text-center text-[14.5px] text-[#F87171]"
 //               role="alert"
 //             >
 //               {error}
@@ -142,7 +142,7 @@
 //           <button
 //             type="button"
 //             onClick={() => setStep('scan')}
-//             className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
+//             className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
 //           >
 //             ← Back
 //           </button>
@@ -151,7 +151,7 @@
 //         <p
 //           className={cn(
 //             'mt-7 pt-5 border-t border-white/[0.06]',
-//             'text-[11px] text-[#5A6A8A] text-center'
+//             'text-[12.5px] text-[#5A6A8A] text-center'
 //           )}
 //         >
 //           🛠 Mock mode — any valid 6-digit number works
@@ -168,9 +168,9 @@
 //     >
 //       <div className="space-y-5">
 //         <div className="flex gap-3 p-3.5 rounded-[10px] bg-[rgba(19,91,236,0.06)] border border-[rgba(19,91,236,0.15)]">
-//           <span className="text-[18px] shrink-0">🛡️</span>
+//           <span className="text-[20px] shrink-0">🛡️</span>
 
-//           <p className="text-[12px] text-[#A8B8D8] leading-relaxed">
+//           <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed">
 //             Accounts with MFA are{' '}
 //             <strong className="text-[#E8F0FF]">
 //               99% less likely
@@ -183,21 +183,21 @@
 //           <div className="h-20 rounded-[12px] bg-[#141C30] border border-white/[0.08] animate-pulse" />
 //         ) : (
 //           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4 space-y-3">
-//             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A]">
+//             <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A]">
 //               1. Open your authenticator app
 //             </p>
 
-//             <p className="text-[12px] text-[#A8B8D8]">
+//             <p className="text-[13.5px] text-[#A8B8D8]">
 //               Google Authenticator, Authy, or 1Password —
 //               then add a new account manually.
 //             </p>
 
-//             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A] pt-1">
+//             <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A] pt-1">
 //               2. Enter this secret key
 //             </p>
 
 //             <div className="flex items-center gap-2">
-//               <code className="flex-1 font-mono text-[14px] text-[#135BEC] bg-[#0A0E1A] rounded-[8px] px-3 py-2 tracking-widest break-all">
+//               <code className="flex-1 font-mono text-[15.5px] text-[#135BEC] bg-[#0A0E1A] rounded-[8px] px-3 py-2 tracking-widest break-all">
 //                 {secret}
 //               </code>
 
@@ -213,7 +213,7 @@
 //               </button>
 //             </div>
 
-//             <p className="text-[11px] text-[#5A6A8A]">
+//             <p className="text-[12.5px] text-[#5A6A8A]">
 //               Select TOTP / Time-based when prompted.
 //             </p>
 //           </div>
@@ -233,7 +233,7 @@
 //         <button
 //           type="button"
 //           onClick={handleDone}
-//           className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-1"
+//           className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-1"
 //         >
 //           Skip for now (you'll be asked again next login)
 //         </button>
@@ -360,7 +360,7 @@
 //       >
 //         <div className="space-y-5">
 //           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4">
-//             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A] mb-3">
+//             <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A] mb-3">
 //               Backup codes — save these somewhere safe
 //             </p>
 
@@ -368,14 +368,14 @@
 //               {backupCodes.map((c) => (
 //                 <code
 //                   key={c}
-//                   className="text-[13px] font-mono text-[#E8F0FF] bg-[#0A0E1A] rounded-[8px] px-3 py-1.5 text-center"
+//                   className="text-[14.5px] font-mono text-[#E8F0FF] bg-[#0A0E1A] rounded-[8px] px-3 py-1.5 text-center"
 //                 >
 //                   {c}
 //                 </code>
 //               ))}
 //             </div>
 
-//             <p className="mt-3 text-[11px] text-[#5A6A8A]">
+//             <p className="mt-3 text-[12.5px] text-[#5A6A8A]">
 //               Each code can be used once if you lose access to your
 //               authenticator app.
 //             </p>
@@ -411,7 +411,7 @@
 
 //           {error && (
 //             <p
-//               className="text-center text-[13px] text-[#F87171]"
+//               className="text-center text-[14.5px] text-[#F87171]"
 //               role="alert"
 //             >
 //               {error}
@@ -432,7 +432,7 @@
 //           <button
 //             type="button"
 //             onClick={() => setStep('scan')}
-//             className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
+//             className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
 //           >
 //             ← Back
 //           </button>
@@ -441,7 +441,7 @@
 //         <p
 //           className={cn(
 //             'mt-7 pt-5 border-t border-white/[0.06]',
-//             'text-[11px] text-[#5A6A8A] text-center'
+//             'text-[12.5px] text-[#5A6A8A] text-center'
 //           )}
 //         >
 //           🛠 Mock mode — any valid 6-digit number works
@@ -458,9 +458,9 @@
 //     >
 //       <div className="space-y-5">
 //         <div className="flex gap-3 p-3.5 rounded-[10px] bg-[rgba(19,91,236,0.06)] border border-[rgba(19,91,236,0.15)]">
-//           <span className="text-[18px] shrink-0">🛡️</span>
+//           <span className="text-[20px] shrink-0">🛡️</span>
 
-//           <p className="text-[12px] text-[#A8B8D8] leading-relaxed">
+//           <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed">
 //             Accounts with MFA are{' '}
 //             <strong className="text-[#E8F0FF]">
 //               99% less likely
@@ -473,21 +473,21 @@
 //           <div className="h-20 rounded-[12px] bg-[#141C30] border border-white/[0.08] animate-pulse" />
 //         ) : (
 //           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4 space-y-3">
-//             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A]">
+//             <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A]">
 //               1. Open your authenticator app
 //             </p>
 
-//             <p className="text-[12px] text-[#A8B8D8]">
+//             <p className="text-[13.5px] text-[#A8B8D8]">
 //               Google Authenticator, Authy, or 1Password —
 //               then add a new account manually.
 //             </p>
 
-//             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A] pt-1">
+//             <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A] pt-1">
 //               2. Enter this secret key
 //             </p>
 
 //             <div className="flex items-center gap-2">
-//               <code className="flex-1 font-mono text-[14px] text-[#135BEC] bg-[#0A0E1A] rounded-[8px] px-3 py-2 tracking-widest break-all">
+//               <code className="flex-1 font-mono text-[15.5px] text-[#135BEC] bg-[#0A0E1A] rounded-[8px] px-3 py-2 tracking-widest break-all">
 //                 {secret}
 //               </code>
 
@@ -503,7 +503,7 @@
 //               </button>
 //             </div>
 
-//             <p className="text-[11px] text-[#5A6A8A]">
+//             <p className="text-[12.5px] text-[#5A6A8A]">
 //               Select TOTP / Time-based when prompted.
 //             </p>
 //           </div>
@@ -523,7 +523,7 @@
 //         <button
 //           type="button"
 //           onClick={handleDone}
-//           className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-1"
+//           className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-1"
 //         >
 //           Skip for now (you'll be asked again next login)
 //         </button>
@@ -623,7 +623,7 @@
 //       >
 //         <div className="space-y-5">
 //           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4">
-//             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A] mb-3">
+//             <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A] mb-3">
 //               Backup codes — save these somewhere safe
 //             </p>
 
@@ -631,14 +631,14 @@
 //               {backupCodes.map((c) => (
 //                 <code
 //                   key={c}
-//                   className="text-[13px] font-mono text-[#E8F0FF] bg-[#0A0E1A] rounded-[8px] px-3 py-1.5 text-center"
+//                   className="text-[14.5px] font-mono text-[#E8F0FF] bg-[#0A0E1A] rounded-[8px] px-3 py-1.5 text-center"
 //                 >
 //                   {c}
 //                 </code>
 //               ))}
 //             </div>
 
-//             <p className="mt-3 text-[11px] text-[#5A6A8A]">
+//             <p className="mt-3 text-[12.5px] text-[#5A6A8A]">
 //               Each code can be used once if you lose access to your
 //               authenticator app.
 //             </p>
@@ -674,7 +674,7 @@
 
 //           {error && (
 //             <p
-//               className="text-center text-[13px] text-[#F87171]"
+//               className="text-center text-[14.5px] text-[#F87171]"
 //               role="alert"
 //             >
 //               {error}
@@ -695,7 +695,7 @@
 //           <button
 //             type="button"
 //             onClick={() => setStep('scan')}
-//             className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
+//             className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
 //           >
 //             ← Back
 //           </button>
@@ -704,7 +704,7 @@
 //         <p
 //           className={cn(
 //             'mt-7 pt-5 border-t border-white/[0.06]',
-//             'text-[11px] text-[#5A6A8A] text-center'
+//             'text-[12.5px] text-[#5A6A8A] text-center'
 //           )}
 //         >
 //           🛠 Mock mode — any valid 6-digit number works
@@ -721,9 +721,9 @@
 //     >
 //       <div className="space-y-5">
 //         <div className="flex gap-3 p-3.5 rounded-[10px] bg-[rgba(19,91,236,0.06)] border border-[rgba(19,91,236,0.15)]">
-//           <span className="text-[18px] shrink-0">🛡️</span>
+//           <span className="text-[20px] shrink-0">🛡️</span>
 
-//           <p className="text-[12px] text-[#A8B8D8] leading-relaxed">
+//           <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed">
 //             Accounts with MFA are{' '}
 //             <strong className="text-[#E8F0FF]">
 //               99% less likely
@@ -736,21 +736,21 @@
 //           <div className="h-20 rounded-[12px] bg-[#141C30] border border-white/[0.08] animate-pulse" />
 //         ) : (
 //           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4 space-y-3">
-//             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A]">
+//             <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A]">
 //               1. Open your authenticator app
 //             </p>
 
-//             <p className="text-[12px] text-[#A8B8D8]">
+//             <p className="text-[13.5px] text-[#A8B8D8]">
 //               Google Authenticator, Authy, or 1Password —
 //               then add a new account manually.
 //             </p>
 
-//             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A] pt-1">
+//             <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A] pt-1">
 //               2. Enter this secret key
 //             </p>
 
 //             <div className="flex items-center gap-2">
-//               <code className="flex-1 font-mono text-[14px] text-[#135BEC] bg-[#0A0E1A] rounded-[8px] px-3 py-2 tracking-widest break-all">
+//               <code className="flex-1 font-mono text-[15.5px] text-[#135BEC] bg-[#0A0E1A] rounded-[8px] px-3 py-2 tracking-widest break-all">
 //                 {secret}
 //               </code>
 
@@ -766,7 +766,7 @@
 //               </button>
 //             </div>
 
-//             <p className="text-[11px] text-[#5A6A8A]">
+//             <p className="text-[12.5px] text-[#5A6A8A]">
 //               Select TOTP / Time-based when prompted.
 //             </p>
 //           </div>
@@ -786,7 +786,7 @@
 //         <button
 //           type="button"
 //           onClick={handleDone}
-//           className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-1"
+//           className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-1"
 //         >
 //           Skip for now (you'll be asked again next login)
 //         </button>
@@ -915,7 +915,7 @@ export default function MfaSetupContent() {
       >
         <div className="space-y-5">
           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A] mb-3">
+            <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A] mb-3">
               Backup codes — save these somewhere safe
             </p>
 
@@ -923,14 +923,14 @@ export default function MfaSetupContent() {
               {backupCodes.map((c) => (
                 <code
                   key={c}
-                  className="text-[13px] font-mono text-[#E8F0FF] bg-[#0A0E1A] rounded-[8px] px-3 py-1.5 text-center"
+                  className="text-[14.5px] font-mono text-[#E8F0FF] bg-[#0A0E1A] rounded-[8px] px-3 py-1.5 text-center"
                 >
                   {c}
                 </code>
               ))}
             </div>
 
-            <p className="mt-3 text-[11px] text-[#5A6A8A]">
+            <p className="mt-3 text-[12.5px] text-[#5A6A8A]">
               Each code can be used once if you lose access to your
               authenticator app.
             </p>
@@ -966,7 +966,7 @@ export default function MfaSetupContent() {
 
           {error && (
             <p
-              className="text-center text-[13px] text-[#F87171]"
+              className="text-center text-[14.5px] text-[#F87171]"
               role="alert"
             >
               {error}
@@ -987,7 +987,7 @@ export default function MfaSetupContent() {
           <button
             type="button"
             onClick={() => setStep('scan')}
-            className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
+            className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors"
           >
             ← Back
           </button>
@@ -996,7 +996,7 @@ export default function MfaSetupContent() {
         <p
           className={cn(
             'mt-7 pt-5 border-t border-white/[0.06]',
-            'text-[11px] text-[#5A6A8A] text-center'
+            'text-[12.5px] text-[#5A6A8A] text-center'
           )}
         >
           🛠 Mock mode — any valid 6-digit number works
@@ -1013,9 +1013,9 @@ export default function MfaSetupContent() {
     >
       <div className="space-y-5">
         <div className="flex gap-3 p-3.5 rounded-[10px] bg-[rgba(19,91,236,0.06)] border border-[rgba(19,91,236,0.15)]">
-          <span className="text-[18px] shrink-0">🛡️</span>
+          <span className="text-[20px] shrink-0">🛡️</span>
 
-          <p className="text-[12px] text-[#A8B8D8] leading-relaxed">
+          <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed">
             Accounts with MFA are{' '}
             <strong className="text-[#E8F0FF]">
               99% less likely
@@ -1028,21 +1028,21 @@ export default function MfaSetupContent() {
           <div className="h-20 rounded-[12px] bg-[#141C30] border border-white/[0.08] animate-pulse" />
         ) : (
           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4 space-y-3">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A]">
+            <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A]">
               1. Open your authenticator app
             </p>
 
-            <p className="text-[12px] text-[#A8B8D8]">
+            <p className="text-[13.5px] text-[#A8B8D8]">
               Google Authenticator, Authy, or 1Password —
               then add a new account manually.
             </p>
 
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#5A6A8A] pt-1">
+            <p className="text-[12.5px] font-semibold uppercase tracking-widest text-[#5A6A8A] pt-1">
               2. Enter this secret key
             </p>
 
             <div className="flex items-center gap-2">
-              <code className="flex-1 font-mono text-[14px] text-[#135BEC] bg-[#0A0E1A] rounded-[8px] px-3 py-2 tracking-widest break-all">
+              <code className="flex-1 font-mono text-[15.5px] text-[#135BEC] bg-[#0A0E1A] rounded-[8px] px-3 py-2 tracking-widest break-all">
                 {secret}
               </code>
 
@@ -1058,7 +1058,7 @@ export default function MfaSetupContent() {
               </button>
             </div>
 
-            <p className="text-[11px] text-[#5A6A8A]">
+            <p className="text-[12.5px] text-[#5A6A8A]">
               Select TOTP / Time-based when prompted.
             </p>
           </div>
@@ -1078,7 +1078,7 @@ export default function MfaSetupContent() {
         <button
           type="button"
           onClick={handleDone}
-          className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-1"
+          className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-1"
         >
           Skip for now (you'll be asked again next login)
         </button>

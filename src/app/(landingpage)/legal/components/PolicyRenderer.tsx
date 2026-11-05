@@ -35,7 +35,7 @@ const noticeStyles = {
 function Notice({ block }: { block: PolicyNotice }) {
   const s = noticeStyles[block.variant]
   return (
-    <div className={cn('rounded-[10px] px-4 py-3.5 my-4 text-[13px]', s.wrap)}>
+    <div className={cn('rounded-[10px] px-4 py-3.5 my-4 text-[14.5px]', s.wrap)}>
       <p className={cn('font-semibold mb-1', s.title)}>{block.title}</p>
       <p className={s.body}>{block.body}</p>
     </div>
@@ -46,13 +46,13 @@ function Notice({ block }: { block: PolicyNotice }) {
 function Table({ block }: { block: PolicyTable }) {
   return (
     <div className="overflow-x-auto my-4 rounded-[10px] border border-white/[0.08]">
-      <table className="w-full border-collapse text-[13px]">
+      <table className="w-full border-collapse text-[14.5px]">
         <thead>
           <tr>
             {block.headers.map((h) => (
               <th
                 key={h}
-                className="bg-[#141C30] px-3.5 py-2.5 text-left text-[11px] font-semibold uppercase tracking-[0.05em] text-[#5A6A8A] whitespace-nowrap border-b border-white/[0.08]"
+                className="bg-[#141C30] px-3.5 py-2.5 text-left text-[12.5px] font-semibold uppercase tracking-[0.05em] text-[#5A6A8A] whitespace-nowrap border-b border-white/[0.08]"
               >
                 {h}
               </th>
@@ -91,7 +91,7 @@ function List({ block }: { block: PolicyList }) {
       {block.items.map((item, i) => {
         const isObj = typeof item === 'object'
         return (
-          <li key={i} className="flex gap-3 text-[13.5px] text-[#A8B8D8]">
+          <li key={i} className="flex gap-3 text-[15px] text-[#A8B8D8]">
             <span className="mt-[7px] h-[5px] w-[5px] shrink-0 rounded-full bg-[#135BEC] opacity-60" />
             <span>
               {isObj ? (
@@ -114,7 +114,7 @@ function List({ block }: { block: PolicyList }) {
 function Paragraph({ block }: { block: PolicyParagraph }) {
   return (
     <p
-      className="text-[13.5px] text-[#A8B8D8] leading-relaxed mb-3 last:mb-0 [&_a]:text-[#135BEC] [&_a:hover]:text-[#2A6BF0] [&_strong]:text-[#E8F0FF] [&_strong]:font-semibold"
+      className="text-[15px] text-[#A8B8D8] leading-relaxed mb-3 last:mb-0 [&_a]:text-[#135BEC] [&_a:hover]:text-[#2A6BF0] [&_strong]:text-[#E8F0FF] [&_strong]:font-semibold"
       dangerouslySetInnerHTML={{ __html: block.text }}
     />
   )
@@ -127,9 +127,9 @@ function Contact({ block }: { block: PolicyContact }) {
       {block.rows.map((row, i) => (
         <div
           key={i}
-          className="flex items-center gap-4 px-5 py-3 border-b border-white/[0.06] last:border-0 text-[13px]"
+          className="flex items-center gap-4 px-5 py-3 border-b border-white/[0.06] last:border-0 text-[14.5px]"
         >
-          <span className="min-w-[70px] text-[11px] font-semibold uppercase tracking-[0.05em] text-[#5A6A8A]">
+          <span className="min-w-[70px] text-[12.5px] font-semibold uppercase tracking-[0.05em] text-[#5A6A8A]">
             {row.label}
           </span>
           {row.href ? (
@@ -193,7 +193,7 @@ function Block({ block }: { block: PolicyBlock }) {
 function Subsection({ block }: { block: PolicySubsection }) {
   return (
     <div id={block.id} className="mt-5 scroll-mt-20">
-      <h3 className="text-[14px] font-semibold text-[#E8F0FF] mb-3">{block.title}</h3>
+      <h3 className="text-[15.5px] font-semibold text-[#E8F0FF] mb-3">{block.title}</h3>
       {block.content.map((b, i) => (
         <Block key={i} block={b} />
       ))}
@@ -205,10 +205,10 @@ function Subsection({ block }: { block: PolicySubsection }) {
 export function PolicySection({ section }: { section: PolicySection }) {
   return (
     <section id={section.id} className="mt-10 scroll-mt-20">
-      <p className="text-[10px] font-bold tracking-[0.1em] uppercase text-[#135BEC] mb-1.5">
+      <p className="text-[11px] font-bold tracking-[0.1em] uppercase text-[#135BEC] mb-1.5">
         Section {section.num}
       </p>
-      <h2 className="text-[18px] font-semibold tracking-[-0.01em] text-[#E8F0FF] mb-4 pb-3 border-b border-white/[0.08]">
+      <h2 className="text-[20px] font-semibold tracking-[-0.01em] text-[#E8F0FF] mb-4 pb-3 border-b border-white/[0.08]">
         {section.title}
       </h2>
       {section.content.map((block, i) => (

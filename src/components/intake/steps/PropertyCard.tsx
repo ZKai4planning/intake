@@ -136,8 +136,8 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
   return (
     <StepCard icon={<Home className="h-[18px] w-[18px]" />} title="Property">
       <form onSubmit={submit} noValidate>
-        <h3 className="text-[19px] font-semibold text-[#E8F0FF]">Tell us the property</h3>
-        <p className="mb-4 mt-1 text-[13.5px] text-[#A8B8D8]">Enter the address or postcode.</p>
+        <h3 className="text-[21.5px] font-semibold text-[#E8F0FF]">Tell us the property</h3>
+        <p className="mb-4 mt-1 text-[15px] text-[#A8B8D8]">Enter the address or postcode.</p>
 
         {/* Search box + dropdown */}
         <div className="relative">
@@ -149,7 +149,7 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
               placeholder="e.g. 22 Example Road, London, E6 2AA"
               aria-label="Property address or postcode"
               autoComplete="off"
-              className="min-w-0 flex-1 bg-transparent text-[16px] text-[#E8F0FF] outline-none placeholder:text-[#55648A] focus-visible:outline-none sm:text-[14.5px]"
+              className="min-w-0 flex-1 bg-transparent text-[18px] text-[#E8F0FF] outline-none placeholder:text-[#55648A] focus-visible:outline-none sm:text-[16px]"
             />
             {(searching || confirming) && <Loader2 className="h-4 w-4 shrink-0 animate-spin text-[#00D4FF]" />}
             {!searching && !confirming && query && (
@@ -166,7 +166,7 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
             >
               {results.postcodes.map(pc => (
                 <li key={pc}>
-                  <button type="button" onClick={() => setQuery(pc)} className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left text-[13.5px] text-[#E8F0FF] hover:bg-white/[0.05]">
+                  <button type="button" onClick={() => setQuery(pc)} className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left text-[15px] text-[#E8F0FF] hover:bg-white/[0.05]">
                     <MapPin className="h-4 w-4 shrink-0 text-[#5A6A8A]" />
                     {pc}
                   </button>
@@ -176,8 +176,8 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
                 <li key={a.id}>
                   <button type="button" role="option" onClick={() => choose(a)} className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left hover:bg-white/[0.05]">
                     <MapPin className="h-4 w-4 shrink-0 text-[#5A6A8A]" />
-                    <span className="min-w-0 flex-1 truncate text-[13.5px] text-[#E8F0FF]">{a.fullAddress}</span>
-                    {a.propertyType && <span className="hidden shrink-0 text-[11.5px] text-[#5A6A8A] sm:inline">{a.propertyType}</span>}
+                    <span className="min-w-0 flex-1 truncate text-[15px] text-[#E8F0FF]">{a.fullAddress}</span>
+                    {a.propertyType && <span className="hidden shrink-0 text-[13px] text-[#5A6A8A] sm:inline">{a.propertyType}</span>}
                   </button>
                 </li>
               ))}
@@ -185,16 +185,16 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
           )}
         </div>
 
-        {searchNote && !value && <p className="mt-2 text-[12.5px] leading-snug text-[#F59E0B]">{searchNote}</p>}
-        {noResults && !searchNote && <p className="mt-2 text-[12.5px] text-[#A8B8D8]">No matching addresses. Check the spelling, or enter it manually below.</p>}
-        {confirming && <p className="mt-3 text-[13px] text-[#A8B8D8]">Checking the property and planning data — this can take a few seconds…</p>}
+        {searchNote && !value && <p className="mt-2 text-[14px] leading-snug text-[#F59E0B]">{searchNote}</p>}
+        {noResults && !searchNote && <p className="mt-2 text-[14px] text-[#A8B8D8]">No matching addresses. Check the spelling, or enter it manually below.</p>}
+        {confirming && <p className="mt-3 text-[14.5px] text-[#A8B8D8]">Checking the property and planning data — this can take a few seconds…</p>}
         <FieldError>{confirmError}</FieldError>
 
         {/* Manual entry */}
         {!value && !confirming && (
           <div className="mt-3">
             {!manualOpen ? (
-              <button type="button" onClick={() => setManualOpen(true)} className="text-[12.5px] font-medium text-[#00D4FF] hover:underline">
+              <button type="button" onClick={() => setManualOpen(true)} className="text-[14px] font-medium text-[#00D4FF] hover:underline">
                 Can&apos;t find it? Enter the address manually
               </button>
             ) : (
@@ -206,8 +206,8 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
                 </div>
                 <FieldError>{manualError}</FieldError>
                 <div className="flex items-center justify-between">
-                  <button type="button" onClick={() => setManualOpen(false)} className="text-[12.5px] text-[#5A6A8A] hover:text-[#A8B8D8]">Cancel</button>
-                  <button type="button" onClick={submitManual} className="rounded-full bg-[#135BEC] px-4 py-2 text-[12.5px] font-semibold text-white hover:bg-[#2A6BF0]">Use this address</button>
+                  <button type="button" onClick={() => setManualOpen(false)} className="text-[14px] text-[#5A6A8A] hover:text-[#A8B8D8]">Cancel</button>
+                  <button type="button" onClick={submitManual} className="rounded-full bg-[#135BEC] px-4 py-2 text-[14px] font-semibold text-white hover:bg-[#2A6BF0]">Use this address</button>
                 </div>
               </div>
             )}
@@ -225,18 +225,18 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
                 className="h-14 w-16 shrink-0 rounded-lg bg-[#1A2540] object-cover"
               />
               <div className="min-w-0 flex-1">
-                <p className="truncate text-[14.5px] font-semibold text-[#E8F0FF]">{value.line1}</p>
-                <p className="truncate text-[12.5px] text-[#A8B8D8]">{[value.town, value.postcode].filter(Boolean).join(' · ')}</p>
+                <p className="truncate text-[16px] font-semibold text-[#E8F0FF]">{value.line1}</p>
+                <p className="truncate text-[14px] text-[#A8B8D8]">{[value.town, value.postcode].filter(Boolean).join(' · ')}</p>
               </div>
               <CheckCircle2 className="h-6 w-6 shrink-0 text-[#00D4FF]" />
             </div>
-            <p className="-mt-3 text-[12.5px] text-[#5A6A8A]">
+            <p className="-mt-3 text-[14px] text-[#5A6A8A]">
               Not the right property?{' '}
               <button type="button" onClick={searchAgain} className="font-medium text-[#00D4FF] hover:underline">Search again</button>
             </p>
 
             <div>
-              <p className="mb-2.5 text-[14px] font-medium text-[#E8F0FF]">Is this the correct property?</p>
+              <p className="mb-2.5 text-[15.5px] font-medium text-[#E8F0FF]">Is this the correct property?</p>
               <PropertyImage
                 applicationId={value.applicationId}
                 label={value.fullAddress}
@@ -254,12 +254,12 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
                 type="button"
                 onClick={() => onChange({ ...value, confirmed: true })}
                 aria-pressed={value.confirmed}
-                className={cn('flex w-full items-center gap-3 rounded-[12px] border px-4 py-3 text-left text-[14px] font-medium transition-all', value.confirmed ? SELECTED : IDLE)}
+                className={cn('flex w-full items-center gap-3 rounded-[12px] border px-4 py-3 text-left text-[15.5px] font-medium transition-all', value.confirmed ? SELECTED : IDLE)}
               >
                 <CheckCircle2 className={cn('h-5 w-5', value.confirmed ? 'text-[#00D4FF]' : 'text-[#5A6A8A]')} />
                 Yes, that&apos;s my property
               </button>
-              <button type="button" onClick={searchAgain} className={cn('flex w-full items-center gap-3 rounded-[12px] border px-4 py-3 text-left text-[14px] font-medium transition-all', IDLE)}>
+              <button type="button" onClick={searchAgain} className={cn('flex w-full items-center gap-3 rounded-[12px] border px-4 py-3 text-left text-[15.5px] font-medium transition-all', IDLE)}>
                 <Search className="h-5 w-5 text-[#5A6A8A]" />
                 No, choose another
               </button>
@@ -267,8 +267,8 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
 
             {value.confirmed && (value.facts.length > 0 || value.constraintFlags.length > 0 || value.council) && (
               <div className="rounded-xl border border-[#00D4FF]/20 bg-[rgba(0,212,255,0.05)] p-3.5 animate-fade-in">
-                <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.06em] text-[#00D4FF]">What we found</p>
-                <dl className="grid grid-cols-1 gap-x-6 gap-y-1.5 text-[13px] sm:grid-cols-2">
+                <p className="mb-2 text-[12.5px] font-semibold uppercase tracking-[0.06em] text-[#00D4FF]">What we found</p>
+                <dl className="grid grid-cols-1 gap-x-6 gap-y-1.5 text-[14.5px] sm:grid-cols-2">
                   {value.council && (
                     <div className="flex justify-between gap-3"><dt className="text-[#5A6A8A]">Council</dt><dd className="text-right text-[#E8F0FF]">{value.council}</dd></div>
                   )}
@@ -279,7 +279,7 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
                 {value.constraintFlags.length > 0 && (
                   <div className="mt-2.5 flex flex-wrap gap-1.5">
                     {value.constraintFlags.map(f => (
-                      <span key={f} className="rounded-full border border-[#F59E0B]/30 bg-[#F59E0B]/10 px-2.5 py-1 text-[11.5px] font-medium text-[#F59E0B]">{f}</span>
+                      <span key={f} className="rounded-full border border-[#F59E0B]/30 bg-[#F59E0B]/10 px-2.5 py-1 text-[13px] font-medium text-[#F59E0B]">{f}</span>
                     ))}
                   </div>
                 )}
@@ -287,7 +287,7 @@ export function PropertyCard({ value, onChange, onBack, onNext }: Props) {
             )}
 
             {value.demo && (
-              <p className="text-[11.5px] text-[#F59E0B]/80">Demo data — connect the planning engine to see live property and planning information.</p>
+              <p className="text-[13px] text-[#F59E0B]/80">Demo data — connect the planning engine to see live property and planning information.</p>
             )}
           </div>
         )}

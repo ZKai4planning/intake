@@ -54,8 +54,8 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-[#0A0E1A] flex">
       <aside className="w-[220px] shrink-0 border-r border-white/[0.08] bg-[#0F1525] flex flex-col">
         <div className="px-5 py-5 border-b border-white/[0.08]">
-          <p className="text-[11px] font-semibold tracking-wide text-[#5A6A8A] uppercase">AI4Planning</p>
-          <p className="text-[15px] font-semibold text-[#E8F0FF] mt-0.5">Admin</p>
+          <p className="text-[12.5px] font-semibold tracking-wide text-[#5A6A8A] uppercase">AI4Planning</p>
+          <p className="text-[17px] font-semibold text-[#E8F0FF] mt-0.5">Admin</p>
         </div>
 
         <nav className="flex-1 px-3 py-4 space-y-0.5">
@@ -67,8 +67,8 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
                 href={item.href}
                 className={
                   active
-                    ? 'block px-3 py-2 rounded-[8px] text-[13.5px] font-medium bg-[rgba(19,91,236,0.12)] text-[#135BEC]'
-                    : 'block px-3 py-2 rounded-[8px] text-[13.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] transition-colors'
+                    ? 'block px-3 py-2 rounded-[8px] text-[15px] font-medium bg-[rgba(19,91,236,0.12)] text-[#135BEC]'
+                    : 'block px-3 py-2 rounded-[8px] text-[15px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] transition-colors'
                 }
               >
                 {item.label}
@@ -78,10 +78,10 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
         </nav>
 
         <div className="px-3 py-4 border-t border-white/[0.08]">
-          <p className="px-3 text-[12.5px] text-[#5A6A8A] truncate mb-2">{admin?.email}</p>
+          <p className="px-3 text-[14px] text-[#5A6A8A] truncate mb-2">{admin?.email}</p>
           <button
             onClick={handleLogout}
-            className="w-full text-left px-3 py-2 rounded-[8px] text-[13.5px] font-medium text-[#A8B8D8] hover:text-[#F87171] hover:bg-white/[0.05] transition-colors"
+            className="w-full text-left px-3 py-2 rounded-[8px] text-[15px] font-medium text-[#A8B8D8] hover:text-[#F87171] hover:bg-white/[0.05] transition-colors"
           >
             Sign out
           </button>

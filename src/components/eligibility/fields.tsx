@@ -24,7 +24,7 @@ import type { EligibilitySharedComponents, EligibilityOptionStyleOverride, Missi
  */
 
 const inputBase = cn(
-  'w-full rounded-[10px] px-3.5 py-2.5 text-[13.5px]',
+  'w-full rounded-[10px] px-3.5 py-2.5 text-[15px]',
   'bg-[#141C30] text-[#E8F0FF] placeholder:text-[#5A6A8A]',
   'border border-white/[0.12] outline-none transition-all',
   'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]'
@@ -46,9 +46,9 @@ const FieldLabel: EligibilitySharedComponents['FieldLabel'] = ({
 }) => (
   <div className={cn(inline ? 'inline-flex items-center gap-1.5' : 'flex items-center gap-1.5', wrapperClassName)}>
     {typeof questionNumber === 'number' && (
-      <span className="text-[10.5px] font-bold text-[#5A6A8A]">Q{questionNumber}.</span>
+      <span className="text-[12px] font-bold text-[#5A6A8A]">Q{questionNumber}.</span>
     )}
-    <span className={cn('text-[13px] font-semibold text-[#E8F0FF]', labelClassName)}>{label}</span>
+    <span className={cn('text-[14.5px] font-semibold text-[#E8F0FF]', labelClassName)}>{label}</span>
     {tooltip && (
       <span title={tooltip} className="cursor-help text-[#5A6A8A] hover:text-[#A8B8D8]">
         <Info className="h-3.5 w-3.5" />
@@ -59,7 +59,7 @@ const FieldLabel: EligibilitySharedComponents['FieldLabel'] = ({
 
 // ── SectionHeading ───────────────────────────────────────────────────
 const SectionHeading: EligibilitySharedComponents['SectionHeading'] = ({ children }) => (
-  <h3 className="mb-4 mt-2 text-[13px] font-bold uppercase tracking-[0.06em] text-[#00D4FF] first:mt-0">
+  <h3 className="mb-4 mt-2 text-[14.5px] font-bold uppercase tracking-[0.06em] text-[#00D4FF] first:mt-0">
     {children}
   </h3>
 )
@@ -69,14 +69,14 @@ function ConsultNote({ message, fieldLabel }: { message: string; fieldLabel?: st
   const { openAgent } = useAgentZ()
   return (
     <div className="mt-1.5 flex items-start justify-between gap-2">
-      <p className="flex items-start gap-1.5 text-[11.5px] text-[#A8B8D8]">
+      <p className="flex items-start gap-1.5 text-[13px] text-[#A8B8D8]">
         <Sparkles className="h-3 w-3 shrink-0 mt-0.5 text-[#00D4FF]" />
         {message}
       </p>
       <button
         type="button"
         onClick={() => openAgent({ fieldLabel, openingMessage: fieldLabel ? `I need help with: ${fieldLabel}` : message })}
-        className="shrink-0 text-[11px] font-semibold text-[#00D4FF] hover:text-[#3ee0ff]"
+        className="shrink-0 text-[12.5px] font-semibold text-[#00D4FF] hover:text-[#3ee0ff]"
       >
         Ask Agent Z →
       </button>
@@ -116,7 +116,7 @@ const Input: EligibilitySharedComponents['Input'] = ({
             type="button"
             onClick={() => onAction?.()}
             disabled={actionDisabled}
-            className="shrink-0 rounded-[10px] border border-white/[0.12] px-3.5 py-2.5 text-[12.5px] font-semibold text-[#A8B8D8] transition-colors hover:bg-white/[0.05] hover:text-[#E8F0FF] disabled:cursor-not-allowed disabled:opacity-50"
+            className="shrink-0 rounded-[10px] border border-white/[0.12] px-3.5 py-2.5 text-[14px] font-semibold text-[#A8B8D8] transition-colors hover:bg-white/[0.05] hover:text-[#E8F0FF] disabled:cursor-not-allowed disabled:opacity-50"
           >
             {actionLabel}
           </button>
@@ -171,7 +171,7 @@ const RadioGroupField: EligibilitySharedComponents['RadioGroupField'] = ({
               type="button"
               onClick={() => setValue(label, option)}
               className={cn(
-                'rounded-full border px-3.5 py-1.5 text-[12.5px] font-medium transition-colors',
+                'rounded-full border px-3.5 py-1.5 text-[14px] font-medium transition-colors',
                 active
                   ? 'border-transparent bg-[#135BEC] text-white'
                   : 'border-white/[0.12] text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -249,7 +249,7 @@ const CheckboxGroup: EligibilitySharedComponents['CheckboxGroup'] = ({
               type="button"
               onClick={() => toggle(option)}
               className={cn(
-                'flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[12.5px] font-medium transition-colors',
+                'flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[14px] font-medium transition-colors',
                 override.centerLabel && 'justify-center',
                 active
                   ? 'border-transparent bg-[#135BEC] text-white'
@@ -288,7 +288,7 @@ const AgentActionButton: EligibilitySharedComponents['AgentActionButton'] = ({
       }}
       disabled={disabled}
       className={cn(
-        'inline-flex shrink-0 items-center gap-1.5 rounded-full border border-[#00D4FF]/30 bg-[#00D4FF]/[0.08] px-3 py-1.5 text-[11.5px] font-semibold text-[#00D4FF] transition-colors hover:bg-[#00D4FF]/[0.14] disabled:cursor-not-allowed disabled:opacity-40',
+        'inline-flex shrink-0 items-center gap-1.5 rounded-full border border-[#00D4FF]/30 bg-[#00D4FF]/[0.08] px-3 py-1.5 text-[13px] font-semibold text-[#00D4FF] transition-colors hover:bg-[#00D4FF]/[0.14] disabled:cursor-not-allowed disabled:opacity-40',
         className
       )}
     >
@@ -335,7 +335,7 @@ const FileUploadArea: EligibilitySharedComponents['FileUploadArea'] = ({ label, 
         className="flex cursor-pointer flex-col items-center justify-center gap-1.5 rounded-[10px] border border-dashed border-white/[0.18] bg-[#141C30] px-4 py-6 text-center transition-colors hover:border-[#135BEC]/50"
       >
         <Upload className="h-4 w-4 text-[#5A6A8A]" />
-        <p className="text-[12px] text-[#A8B8D8]">Click to upload{hint ? ` — ${hint}` : ''}</p>
+        <p className="text-[13.5px] text-[#A8B8D8]">Click to upload{hint ? ` — ${hint}` : ''}</p>
         <input
           ref={inputRef}
           type="file"
@@ -349,7 +349,7 @@ const FileUploadArea: EligibilitySharedComponents['FileUploadArea'] = ({ label, 
       {files.length > 0 && (
         <ul className="mt-2 space-y-1">
           {files.map(name => (
-            <li key={name} className="flex items-center justify-between gap-2 rounded-lg bg-white/[0.03] px-3 py-1.5 text-[12px] text-[#A8B8D8]">
+            <li key={name} className="flex items-center justify-between gap-2 rounded-lg bg-white/[0.03] px-3 py-1.5 text-[13.5px] text-[#A8B8D8]">
               <span className="truncate">{name}</span>
               <button type="button" onClick={() => removeFile(name)} className="shrink-0 text-[#5A6A8A] hover:text-[#E8F0FF]">
                 <X className="h-3.5 w-3.5" />
@@ -361,10 +361,10 @@ const FileUploadArea: EligibilitySharedComponents['FileUploadArea'] = ({ label, 
 
       {missingBlock && trigger && (
         <div className="mt-2 rounded-[10px] border border-amber-400/20 bg-amber-500/[0.06] px-3.5 py-3">
-          <p className="text-[12px] text-[#A8B8D8]">{missingTriggerMessage(trigger)}</p>
+          <p className="text-[13.5px] text-[#A8B8D8]">{missingTriggerMessage(trigger)}</p>
           {missingTriggerDecision(trigger) && !decision && (
             <div className="mt-2 flex items-center gap-2">
-              <span className="text-[11.5px] text-[#5A6A8A]">{missingTriggerDecision(trigger)!.prompt}</span>
+              <span className="text-[13px] text-[#5A6A8A]">{missingTriggerDecision(trigger)!.prompt}</span>
               <button
                 type="button"
                 onClick={() => {
@@ -374,14 +374,14 @@ const FileUploadArea: EligibilitySharedComponents['FileUploadArea'] = ({ label, 
                     openingMessage: `I need help with: ${missingTriggerDecision(trigger)?.fieldLabel ?? label}`,
                   })
                 }}
-                className="rounded-full bg-[#135BEC] px-3 py-1 text-[11px] font-semibold text-white"
+                className="rounded-full bg-[#135BEC] px-3 py-1 text-[12.5px] font-semibold text-white"
               >
                 Yes
               </button>
               <button
                 type="button"
                 onClick={() => setValue(decisionKey, 'No')}
-                className="rounded-full border border-white/[0.12] px-3 py-1 text-[11px] font-semibold text-[#A8B8D8]"
+                className="rounded-full border border-white/[0.12] px-3 py-1 text-[12.5px] font-semibold text-[#A8B8D8]"
               >
                 No
               </button>
@@ -432,7 +432,7 @@ const StructuredFileUploadArea: EligibilitySharedComponents['StructuredFileUploa
   return (
     <div>
       <FieldLabel label={label} wrapperClassName="mb-1.5" />
-      {hint && <p className="mb-2 text-[11.5px] text-[#5A6A8A]">{hint}</p>}
+      {hint && <p className="mb-2 text-[13px] text-[#5A6A8A]">{hint}</p>}
 
       <div className="space-y-2">
         {slots.map(slot => {
@@ -441,21 +441,21 @@ const StructuredFileUploadArea: EligibilitySharedComponents['StructuredFileUploa
           return (
             <div key={slot} className="rounded-[10px] border border-white/[0.10] bg-[#141C30] px-3.5 py-2.5">
               <div className="flex items-center justify-between gap-3">
-                <span className="text-[12.5px] text-[#A8B8D8]">{slot}</span>
-                <label className="flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full border border-white/[0.12] px-3 py-1 text-[11.5px] font-semibold text-[#A8B8D8] hover:bg-white/[0.05]">
+                <span className="text-[14px] text-[#A8B8D8]">{slot}</span>
+                <label className="flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full border border-white/[0.12] px-3 py-1 text-[13px] font-semibold text-[#A8B8D8] hover:bg-white/[0.05]">
                   <Upload className="h-3 w-3" />
                   {fileName ? 'Replace' : 'Upload'}
                   <input type="file" accept={accept} className="hidden" onChange={e => handleSlotFile(slot, e.target.files)} />
                 </label>
               </div>
-              {fileName && <p className="mt-1.5 truncate text-[11.5px] text-emerald-300">{fileName}</p>}
+              {fileName && <p className="mt-1.5 truncate text-[13px] text-emerald-300">{fileName}</p>}
               {showDescriptionInput && (
                 <input
                   type="text"
                   value={asStringValue(getValue(descKey))}
                   onChange={e => setValue(descKey, e.target.value)}
                   placeholder={descriptionPlaceholder ?? 'Description (optional)'}
-                  className="mt-2 w-full rounded-lg border border-white/[0.10] bg-transparent px-2.5 py-1.5 text-[11.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC]"
+                  className="mt-2 w-full rounded-lg border border-white/[0.10] bg-transparent px-2.5 py-1.5 text-[13px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC]"
                 />
               )}
             </div>
@@ -467,7 +467,7 @@ const StructuredFileUploadArea: EligibilitySharedComponents['StructuredFileUploa
         <button
           type="button"
           onClick={() => setExtraSlots(n => n + 1)}
-          className="mt-2 inline-flex items-center gap-1.5 text-[11.5px] font-semibold text-[#00D4FF] hover:text-[#3ee0ff]"
+          className="mt-2 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#00D4FF] hover:text-[#3ee0ff]"
         >
           <Plus className="h-3.5 w-3.5" />
           Add another
@@ -475,7 +475,7 @@ const StructuredFileUploadArea: EligibilitySharedComponents['StructuredFileUploa
       )}
 
       {onMissingTrigger && !anyUploaded && (
-        <p className="mt-2 text-[11.5px] text-[#A8B8D8]">{missingTriggerMessage(onMissingTrigger)}</p>
+        <p className="mt-2 text-[13px] text-[#A8B8D8]">{missingTriggerMessage(onMissingTrigger)}</p>
       )}
     </div>
   )
@@ -494,7 +494,7 @@ const DeclarationCheckbox: EligibilitySharedComponents['DeclarationCheckbox'] = 
         onChange={e => setValue(fieldKey, e.target.checked ? 'Yes' : '')}
         className="mt-0.5 h-4 w-4 shrink-0 accent-[#135BEC]"
       />
-      <span className="text-[12.5px] leading-relaxed text-[#A8B8D8]">{label}</span>
+      <span className="text-[14px] leading-relaxed text-[#A8B8D8]">{label}</span>
     </label>
   )
 }
@@ -562,8 +562,8 @@ const SignaturePad: EligibilitySharedComponents['SignaturePad'] = ({ label, stro
         className="w-full touch-none rounded-[10px] border border-white/[0.12] bg-[#141C30]"
       />
       <div className="mt-1.5 flex items-center justify-between">
-        <span className="text-[11px] text-[#5A6A8A]">{hasSignature ? 'Signature captured' : 'Draw your signature above'}</span>
-        <button type="button" onClick={clear} className="inline-flex items-center gap-1 text-[11.5px] font-semibold text-[#A8B8D8] hover:text-[#E8F0FF]">
+        <span className="text-[12.5px] text-[#5A6A8A]">{hasSignature ? 'Signature captured' : 'Draw your signature above'}</span>
+        <button type="button" onClick={clear} className="inline-flex items-center gap-1 text-[13px] font-semibold text-[#A8B8D8] hover:text-[#E8F0FF]">
           <RotateCcw className="h-3 w-3" />
           Clear
         </button>

@@ -16,6 +16,14 @@ import { MissionStatementSection } from '@/components/home/MissionStatementSecti
 
 import { TeamSection } from '@/components/team/TeamSection'
 import { OurTeams } from '@/components/team/OurTeams'
+import TrustedBar from '@/components/TrustedBar/TrustedBar'
+import NewsTicker from '@/components/NewsTicker/NewsTicker'
+import TrustedData from '@/components/TrustedData/TrustedData'
+import Hero from '@/components/Hero/Hero'
+import Services from '@/components/Services/Services'
+import Audience from '@/components/Audience/Audience'
+import HowItWorks from '@/components/HowItWorks/HowItWorks'
+import CtaBanner from '@/components/CtaBanner/CtaBanner'
 
 export const metadata: Metadata = {
   title: 'AI4Planning — Smart Planning Permission Advisor',
@@ -52,18 +60,47 @@ export default function HomePage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
       {/* <Navbar /> */}
-      <HeroSection />
+
+      {/* 0. Live updates ticker sits directly under the (fixed) menu.
+          The wrapper's top padding clears the fixed navbar. */}
+      <div className="home-top">
+        <NewsTicker />
+      </div>
+
+      {/* 1. Promise + primary action */}
+      <Hero />
+
+      {/* 2. Proof straight after the promise: data partners */}
+      <TrustedBar />
+
+      {/* 3. Who is this for? Pick a path */}
+      <Audience />
+
+      {/* 4. How it works → what you can get */}
       <HowItWorksStripSection />
-      <AudienceSplitSection />
-      <PartnerModelsSection />
-      <ServicesSection />
+      <Services />
+
+      {/* 5. Why trust it */}
       <WhyUsSection />
-      <PlansSection />
-      {/* <TestimonialsSection /> */}
+      <TrustedData />
+
+      {/* 6. For professionals / partners (secondary audience) */}
+      <PartnerModelsSection />
+
+      {/* 7. Brand + people, then the closing ask */}
       <MissionStatementSection />
       <OurTeams />
-      <FaqSection />
-      <FinalCtaSection />
+      <CtaBanner />
+
+      {/* Unused for now — kept so they are easy to bring back */}
+      {/* <HowItWorks /> */}
+      {/* <HeroSection /> */}
+      {/* <AudienceSplitSection /> */}
+      {/* <ServicesSection /> */}
+      {/* <PlansSection /> */}
+      {/* <TestimonialsSection /> */}
+      {/* <FaqSection /> */}
+      {/* <FinalCtaSection /> */}
       {/* <Footer /> */}
     </main>
   )

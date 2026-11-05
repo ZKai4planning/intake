@@ -225,7 +225,7 @@
 
 //             {showDetail ? (
 //               <div className="flex-1">
-//                 <div className="mb-4 w-fit inline-flex items-center rounded-full bg-blue-500/15 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-blue-300">
+//                 <div className="mb-4 w-fit inline-flex items-center rounded-full bg-blue-500/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-300">
 //                   Service Selection
 //                 </div>
 //                 <h2 className="text-2xl xl:text-3xl font-bold mb-6">Detailed Service View</h2>
@@ -250,7 +250,7 @@
 //                           <Icon className={`h-5 w-5 shrink-0 ${isActive ? 'text-blue-300' : 'text-white/60'}`} />
 //                           <div className="flex flex-col">
 //                             {isActive && (
-//                               <span className="text-[10px] uppercase tracking-[0.18em] text-blue-300">
+//                               <span className="text-[11px] uppercase tracking-[0.18em] text-blue-300">
 //                                 Active Selection
 //                               </span>
 //                             )}
@@ -276,7 +276,7 @@
 //                       </div>
 //                     </div>
 //                     <div className="mt-6">
-//                       <p className="text-[11px] uppercase tracking-[0.2em] text-white/40">Service Overview</p>
+//                       <p className="text-[12.5px] uppercase tracking-[0.2em] text-white/40">Service Overview</p>
 //                       <p className="mt-3 leading-relaxed text-white/70 text-xs xl:text-sm">
 //                         {selectedFeature?.description ?? service.description}
 //                       </p>
@@ -568,7 +568,7 @@ export default function ServiceExpandPanel({
             {/* Header block — fixed height, doesn't grow */}
             <div className="shrink-0 pr-12">
               {/* Sets expectation up front: everything below leads to a Calendly booking, not another in-app step. */}
-              <div className="mb-3 inline-flex items-center gap-1.5 rounded-full bg-blue-500/10 border border-blue-400/20 px-3 py-1 text-[10.5px] font-semibold uppercase tracking-wide text-blue-300">
+              <div className="mb-3 inline-flex items-center gap-1.5 rounded-full bg-blue-500/10 border border-blue-400/20 px-3 py-1 text-[12px] font-semibold uppercase tracking-wide text-blue-300">
                 <CalendarClock className="h-3 w-3" />
                 Free 30-min call · via Calendly
               </div>
@@ -604,7 +604,7 @@ export default function ServiceExpandPanel({
                         <Icon className="h-5 w-5 shrink-0 text-blue-300" />
                         <span className="flex-1 text-sm font-semibold text-white/90">{feature.title}</span>
                         {/* Hidden until hover/focus so the grid stays clean, but always reachable via keyboard focus too */}
-                        <span className="flex shrink-0 items-center gap-1 text-[11px] font-semibold text-blue-300 opacity-0 transition-opacity duration-150 group-hover/feature:opacity-100 group-focus-visible/feature:opacity-100">
+                        <span className="flex shrink-0 items-center gap-1 text-[12.5px] font-semibold text-blue-300 opacity-0 transition-opacity duration-150 group-hover/feature:opacity-100 group-focus-visible/feature:opacity-100">
                           Book a free call
                           <ExternalLink className="h-3 w-3" />
                         </span>

@@ -28,10 +28,10 @@ export function QuestionField({
 
   return (
     <div data-qid={q.id} className="scroll-mt-24">
-      <p className="mb-2.5 text-[14px] font-medium leading-snug text-[#E8F0FF]">
+      <p className="mb-2.5 text-[15.5px] font-medium leading-snug text-[#E8F0FF]">
         <span className="mr-1.5 text-[#5A6A8A]">{n}.</span>
         {q.label}
-        {q.optional && <span className="ml-1.5 text-[12px] font-normal text-[#5A6A8A]">(optional)</span>}
+        {q.optional && <span className="ml-1.5 text-[13.5px] font-normal text-[#5A6A8A]">(optional)</span>}
       </p>
 
       {q.type === 'yesno' && <Segmented options={q.twoWay ? YESNO.slice(0, 2) : YESNO} value={value} onChange={onChange} />}
@@ -58,7 +58,7 @@ export function QuestionField({
           onChange={e => onChange(e.target.value)}
           placeholder={q.placeholder}
           className={cn(
-            'w-full rounded-[12px] border bg-[#141C30] px-3.5 py-3 text-[16px] text-[#E8F0FF] outline-none transition-all placeholder:text-[#55648A] focus:border-[#135BEC] sm:text-[14px]',
+            'w-full rounded-[12px] border bg-[#141C30] px-3.5 py-3 text-[18px] text-[#E8F0FF] outline-none transition-all placeholder:text-[#55648A] focus:border-[#135BEC] sm:text-[15.5px]',
             invalid ? 'border-[rgba(248,113,113,0.6)]' : 'border-white/[0.10]',
           )}
         />

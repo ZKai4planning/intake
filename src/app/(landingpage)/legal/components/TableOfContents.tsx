@@ -36,7 +36,7 @@ export function TableOfContents({ sections }: Props) {
       aria-label="Table of Contents"
       className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 sticky top-24"
     >
-      <p className="text-[10px] font-bold tracking-[0.1em] uppercase text-[#5A6A8A] mb-3">
+      <p className="text-[11px] font-bold tracking-[0.1em] uppercase text-[#5A6A8A] mb-3">
         Contents
       </p>
       <ul className="space-y-0.5">
@@ -45,7 +45,7 @@ export function TableOfContents({ sections }: Props) {
             <a
               href={`#${s.id}`}
               className={cn(
-                'flex items-center gap-2.5 py-1.5 px-2 rounded-[6px] text-[12.5px] transition-all duration-150',
+                'flex items-center gap-2.5 py-1.5 px-2 rounded-[6px] text-[14px] transition-all duration-150',
                 active === s.id
                   ? 'text-[#135BEC] bg-[rgba(19,91,236,0.08)]'
                   : 'text-[#5A6A8A] hover:text-[#A8B8D8] hover:bg-white/[0.03]'

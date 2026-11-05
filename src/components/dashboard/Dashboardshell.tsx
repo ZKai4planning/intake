@@ -57,7 +57,7 @@
 // //                 key={item.href}
 // //                 href={item.href}
 // //                 className={cn(
-// //                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[13.5px] font-medium transition-colors',
+// //                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[15px] font-medium transition-colors',
 // //                   isActive
 // //                     ? 'bg-[rgba(19,91,236,0.10)] text-[#135BEC]'
 // //                     : 'text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -105,7 +105,7 @@
 // //                 key={item.href}
 // //                 href={item.href}
 // //                 className={cn(
-// //                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[10px] font-medium',
+// //                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[11px] font-medium',
 // //                   isActive ? 'text-[#135BEC]' : 'text-[#5A6A8A]'
 // //                 )}
 // //               >
@@ -205,7 +205,7 @@
 // //                 key={item.href}
 // //                 href={item.href}
 // //                 className={cn(
-// //                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[13.5px] font-medium transition-colors',
+// //                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[15px] font-medium transition-colors',
 // //                   isActive
 // //                     ? 'bg-[rgba(19,91,236,0.10)] text-[#135BEC]'
 // //                     : 'text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -253,7 +253,7 @@
 // //                 key={item.href}
 // //                 href={item.href}
 // //                 className={cn(
-// //                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[10px] font-medium',
+// //                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[11px] font-medium',
 // //                   isActive ? 'text-[#135BEC]' : 'text-[#5A6A8A]'
 // //                 )}
 // //               >
@@ -348,7 +348,7 @@
 //           <GuardedNavLink
 //             href="/"
 //             className={cn(
-//               'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[13.5px] font-medium transition-colors',
+//               'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[15px] font-medium transition-colors',
 //               pathname === '/'
 //                 ? 'bg-[rgba(19,91,236,0.10)] text-[#135BEC]'
 //                 : 'text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -365,7 +365,7 @@
 //                 key={item.href}
 //                 href={item.href}
 //                 className={cn(
-//                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[13.5px] font-medium transition-colors',
+//                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[15px] font-medium transition-colors',
 //                   isActive
 //                     ? 'bg-[rgba(19,91,236,0.10)] text-[#135BEC]'
 //                     : 'text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -415,7 +415,7 @@
 //                 key={item.href}
 //                 href={item.href}
 //                 className={cn(
-//                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[10px] font-medium',
+//                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[11px] font-medium',
 //                   isActive ? 'text-[#135BEC]' : 'text-[#5A6A8A]'
 //                 )}
 //               >
@@ -515,7 +515,7 @@
 //                 key={item.href}
 //                 href={item.href}
 //                 className={cn(
-//                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[13.5px] font-medium transition-colors',
+//                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[15px] font-medium transition-colors',
 //                   isActive
 //                     ? 'bg-[rgba(19,91,236,0.10)] text-[#135BEC]'
 //                     : 'text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -563,7 +563,7 @@
 //                 key={item.href}
 //                 href={item.href}
 //                 className={cn(
-//                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[10px] font-medium',
+//                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[11px] font-medium',
 //                   isActive ? 'text-[#135BEC]' : 'text-[#5A6A8A]'
 //                 )}
 //               >
@@ -663,7 +663,7 @@
 //                 key={item.href}
 //                 href={item.href}
 //                 className={cn(
-//                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[13.5px] font-medium transition-colors',
+//                   'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[15px] font-medium transition-colors',
 //                   isActive
 //                     ? 'bg-[rgba(19,91,236,0.10)] text-[#135BEC]'
 //                     : 'text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -711,7 +711,7 @@
 //                 key={item.href}
 //                 href={item.href}
 //                 className={cn(
-//                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[10px] font-medium',
+//                   'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[11px] font-medium',
 //                   isActive ? 'text-[#135BEC]' : 'text-[#5A6A8A]'
 //                 )}
 //               >
@@ -807,7 +807,7 @@ export function DashboardShell({ workspace, firstName, email, children }: Dashbo
           <GuardedNavLink
             href="/"
             className={cn(
-              'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[13.5px] font-medium transition-colors',
+              'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[15px] font-medium transition-colors',
               pathname === '/'
                 ? 'bg-[rgba(19,91,236,0.10)] text-[#135BEC]'
                 : 'text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -824,7 +824,7 @@ export function DashboardShell({ workspace, firstName, email, children }: Dashbo
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[13.5px] font-medium transition-colors',
+                  'flex items-center gap-3 px-3 py-2.5 rounded-[10px] text-[15px] font-medium transition-colors',
                   isActive
                     ? 'bg-[rgba(19,91,236,0.10)] text-[#135BEC]'
                     : 'text-[#A8B8D8] hover:bg-white/[0.05] hover:text-[#E8F0FF]'
@@ -874,7 +874,7 @@ export function DashboardShell({ workspace, firstName, email, children }: Dashbo
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[10px] font-medium',
+                  'flex flex-col items-center gap-1 px-3 py-1.5 rounded-[8px] text-[11px] font-medium',
                   isActive ? 'text-[#135BEC]' : 'text-[#5A6A8A]'
                 )}
               >

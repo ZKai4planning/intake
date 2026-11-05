@@ -32,8 +32,8 @@ export default function AdminLoginPage() {
     <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
       <div className="w-full max-w-[380px]">
         <div className="mb-8 text-center">
-          <p className="text-[13px] font-semibold tracking-wide text-[#5A6A8A] uppercase">AI4Planning</p>
-          <h1 className="font-display text-[26px] text-[#E8F0FF] mt-1">Admin portal</h1>
+          <p className="text-[14.5px] font-semibold tracking-wide text-[#5A6A8A] uppercase">AI4Planning</p>
+          <h1 className="font-display text-[29px] text-[#E8F0FF] mt-1">Admin portal</h1>
         </div>
 
         <form
@@ -41,20 +41,20 @@ export default function AdminLoginPage() {
           className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-6 space-y-4"
         >
           <div>
-            <label className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">Email</label>
+            <label className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">Email</label>
             <input
               type="email"
               autoComplete="username"
               value={email}
               onChange={e => setEmail(e.target.value)}
               disabled={isPending}
-              className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[14px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
+              className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 text-[15.5px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
               placeholder="admin@ai4planning.com"
             />
           </div>
 
           <div>
-            <label className="block text-[12.5px] font-medium text-[#A8B8D8] mb-1.5">Password</label>
+            <label className="block text-[14px] font-medium text-[#A8B8D8] mb-1.5">Password</label>
             <div className="relative">
               <input
                 type={showPassword ? 'text' : 'password'}
@@ -62,7 +62,7 @@ export default function AdminLoginPage() {
                 value={password}
                 onChange={e => setPassword(e.target.value)}
                 disabled={isPending}
-                className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 pr-10 text-[14px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
+                className="w-full rounded-[10px] border border-white/[0.08] bg-[#0A0E1A] px-3.5 py-2.5 pr-10 text-[15.5px] text-[#E8F0FF] placeholder:text-[#3A4560] focus:outline-none focus:border-[#135BEC] transition-colors"
                 placeholder="••••••••"
               />
               <button
@@ -78,19 +78,19 @@ export default function AdminLoginPage() {
           </div>
 
           {error && (
-            <p className="text-[13px] text-[#F87171]" role="alert">{error}</p>
+            <p className="text-[14.5px] text-[#F87171]" role="alert">{error}</p>
           )}
 
           <button
             type="submit"
             disabled={!email || !password || isPending}
-            className="w-full py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[14px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="w-full py-2.5 rounded-[10px] bg-[#135BEC] text-white text-[15.5px] font-semibold hover:bg-[#2A6BF0] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {isPending ? 'Signing in…' : 'Sign in'}
           </button>
         </form>
 
-        <p className="mt-5 text-center text-[12px] text-[#3A4560]">
+        <p className="mt-5 text-center text-[13.5px] text-[#3A4560]">
           Separate from the regular customer login — this session is scoped to the admin portal only.
         </p>
       </div>

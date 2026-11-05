@@ -15,7 +15,7 @@ export function DeclarationsStepContent({ components }: EligibilityStepContentPr
       <SectionHeading>Review & Declarations</SectionHeading>
 
       <div className="rounded-xl border border-white/[0.10] bg-[#141C30] p-5 mb-6 space-y-4">
-        <p className="text-[13px] font-semibold text-[#E8F0FF]">Please read and confirm each declaration:</p>
+        <p className="text-[14.5px] font-semibold text-[#E8F0FF]">Please read and confirm each declaration:</p>
 
         {[
           "The information given in this application is correct and accurate to the best of my knowledge.",
@@ -29,7 +29,7 @@ export function DeclarationsStepContent({ components }: EligibilityStepContentPr
       </div>
 
       <SectionHeading>Digital Signature</SectionHeading>
-      <div className="mb-4 rounded-xl border border-[#00D4FF]/25 bg-[rgba(0,212,255,0.06)] px-4 py-3 text-[12.5px] text-[#A8B8D8]">
+      <div className="mb-4 rounded-xl border border-[#00D4FF]/25 bg-[rgba(0,212,255,0.06)] px-4 py-3 text-[14px] text-[#A8B8D8]">
         Draw your signature exactly as you normally sign. Use a mouse on desktop or your finger/stylus on touch
         devices, and if the signature is not clear, press Clear and draw it again.
       </div>

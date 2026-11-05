@@ -50,12 +50,12 @@ function Field({
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="text-[11px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A]">
+      <label className="text-[12.5px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A]">
         {label}
       </label>
       {children}
       {error && (
-        <p className="text-[12px] text-[#F87171] flex items-center gap-1.5" role="alert">
+        <p className="text-[13.5px] text-[#F87171] flex items-center gap-1.5" role="alert">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>
           </svg>
@@ -68,7 +68,7 @@ function Field({
 
 const inputBase = [
   'w-full rounded-[10px] px-4 py-3',
-  'bg-[#141C30] text-[#E8F0FF] text-[14px]',
+  'bg-[#141C30] text-[#E8F0FF] text-[15.5px]',
   'placeholder:text-[#5A6A8A]',
   'border transition-all duration-150 outline-none',
   'focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.15)]',
@@ -96,8 +96,8 @@ function SuccessMessage() {
         </svg>
       </div>
       <div>
-        <h3 className="text-[18px] font-semibold text-[#E8F0FF] mb-2">We'll be in touch soon</h3>
-        <p className="text-[14px] text-[#5A6A8A] max-w-[280px]">
+        <h3 className="text-[20px] font-semibold text-[#E8F0FF] mb-2">We'll be in touch soon</h3>
+        <p className="text-[15.5px] text-[#5A6A8A] max-w-[280px]">
           Thanks for reaching out. One of our team will get back to you within one business day.
         </p>
       </div>
@@ -159,13 +159,13 @@ export function ContactSection() {
 
         {/* ── Section eyebrow ── */}
         <div className="mb-10 text-center">
-          <span className="inline-block text-[11px] font-semibold tracking-[0.08em] uppercase text-[#135BEC] bg-[rgba(19,91,236,0.1)] border border-[rgba(19,91,236,0.2)] rounded-[6px] px-2.5 py-1 mb-4">
+          <span className="inline-block text-[12.5px] font-semibold tracking-[0.08em] uppercase text-[#135BEC] bg-[rgba(19,91,236,0.1)] border border-[rgba(19,91,236,0.2)] rounded-[6px] px-2.5 py-1 mb-4">
             Contact
           </span>
           <h2 className="text-[clamp(28px,5vw,40px)] font-light tracking-[-0.02em] text-[#E8F0FF]">
             Get in touch
           </h2>
-          <p className="mt-3 text-[15px] text-[#5A6A8A]">
+          <p className="mt-3 text-[17px] text-[#5A6A8A]">
             Fill in the form and one of our team will be in touch very soon.
           </p>
         </div>
@@ -273,7 +273,7 @@ export function ContactSection() {
                   onClick={handleSubmit}
                   disabled={loading}
                   className={cn(
-                    'relative w-full rounded-[10px] py-3.5 text-[14px] font-semibold tracking-[0.01em] transition-all duration-200',
+                    'relative w-full rounded-[10px] py-3.5 text-[15.5px] font-semibold tracking-[0.01em] transition-all duration-200',
                     'bg-[#135BEC] text-white',
                     'hover:bg-[#2A6BF0] hover:shadow-[0_0_24px_rgba(19,91,236,0.35)]',
                     'active:scale-[0.99]',
@@ -300,7 +300,7 @@ export function ContactSection() {
           <div className="rounded-[20px] bg-[#0F1525] border border-white/[0.08] shadow-[0_8px_40px_rgba(0,0,0,0.4)] px-6 py-8 flex flex-col justify-between">
 
             <div>
-              <p className="text-[10px] font-bold tracking-[0.1em] uppercase text-[#5A6A8A] mb-1">
+              <p className="text-[11px] font-bold tracking-[0.1em] uppercase text-[#5A6A8A] mb-1">
                 Contact us
               </p>
               {/* Expand/collapse icon — decorative to match screenshot */}
@@ -326,7 +326,7 @@ export function ContactSection() {
                 </div>
                 <a
                   href="mailto:hello@ai4planning.com"
-                  className="text-[13px] text-[#A8B8D8] hover:text-[#135BEC] transition-colors"
+                  className="text-[14.5px] text-[#A8B8D8] hover:text-[#135BEC] transition-colors"
                 >
                   hello@ai4planning.com
                 </a>
@@ -339,7 +339,7 @@ export function ContactSection() {
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
                   </svg>
                 </div>
-                <p className="text-[13px] text-[#A8B8D8] leading-relaxed">
+                <p className="text-[14.5px] text-[#A8B8D8] leading-relaxed">
                   [Your Office Address]<br />
                   City, Postcode
                 </p>

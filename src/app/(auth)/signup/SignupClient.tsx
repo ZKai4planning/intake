@@ -126,7 +126,7 @@ export default function SignupClient({
             ✓
           </span>
 
-          <p className="text-[12px] text-[#A8B8D8]">
+          <p className="text-[13.5px] text-[#A8B8D8]">
             Your planning goal is saved — we'll continue
             your check after sign-up.
           </p>
@@ -190,7 +190,7 @@ export default function SignupClient({
           </Button>
         </div>
 
-        <p className="text-center text-[11px] text-[#5A6A8A] leading-relaxed px-2">
+        <p className="text-center text-[12.5px] text-[#5A6A8A] leading-relaxed px-2">
           By signing up you agree to our{' '}
           <Link
             href="/terms"

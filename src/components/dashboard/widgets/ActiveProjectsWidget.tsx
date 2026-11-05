@@ -56,10 +56,10 @@
 //   return (
 //     <div className={cn('rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5', className)}>
 //       <div className="flex items-center justify-between mb-4">
-//         <h3 className="text-[14px] font-semibold text-[#E8F0FF]">Active projects</h3>
+//         <h3 className="text-[15.5px] font-semibold text-[#E8F0FF]">Active projects</h3>
 //         <button
 //           onClick={() => guardedNavigate('/dashboard/new/intent')}
-//           className="text-[12px] text-[#135BEC] hover:text-[#2A6BF0] font-medium"
+//           className="text-[13.5px] text-[#135BEC] hover:text-[#2A6BF0] font-medium"
 //         >
 //           + New application
 //         </button>
@@ -73,10 +73,10 @@
 //         </div>
 //       ) : projects.length === 0 ? (
 //         <div className="text-center py-6">
-//           <p className="text-[12.5px] text-[#5A6A8A] mb-3">No projects yet.</p>
+//           <p className="text-[14px] text-[#5A6A8A] mb-3">No projects yet.</p>
 //           <button
 //             onClick={() => guardedNavigate('/dashboard/new/intent')}
-//             className="text-[12.5px] px-3.5 py-2 rounded-[8px] bg-[#135BEC] text-white font-semibold hover:bg-[#2A6BF0] transition-colors"
+//             className="text-[14px] px-3.5 py-2 rounded-[8px] bg-[#135BEC] text-white font-semibold hover:bg-[#2A6BF0] transition-colors"
 //           >
 //             Start your first application
 //           </button>
@@ -98,26 +98,26 @@
 //                 )}
 //               >
 //                 <div className="flex-1 min-w-0">
-//                   <p className="text-[13px] font-medium text-[#E8F0FF] truncate">{p.title}</p>
-//                   <p className="text-[11.5px] text-[#5A6A8A] truncate">
+//                   <p className="text-[14.5px] font-medium text-[#E8F0FF] truncate">{p.title}</p>
+//                   <p className="text-[13px] text-[#5A6A8A] truncate">
 //                     {p.answeredCount} of {p.totalCount} answered &middot; updated {formatRelativeDate(p.updatedAt)}
 //                   </p>
 //                 </div>
 
 //                 {isConfirming ? (
 //                   <div className="shrink-0 flex items-center gap-1.5" onClick={e => e.stopPropagation()}>
-//                     <span className="text-[11px] text-[#A8B8D8] mr-0.5">Delete draft?</span>
+//                     <span className="text-[12.5px] text-[#A8B8D8] mr-0.5">Delete draft?</span>
 //                     <button
 //                       type="button"
 //                       onClick={() => handleDelete(p.id)}
-//                       className="text-[11px] font-semibold px-2 py-1 rounded-md bg-[rgba(248,113,113,0.15)] text-[#F87171] hover:bg-[rgba(248,113,113,0.25)]"
+//                       className="text-[12.5px] font-semibold px-2 py-1 rounded-md bg-[rgba(248,113,113,0.15)] text-[#F87171] hover:bg-[rgba(248,113,113,0.25)]"
 //                     >
 //                       Delete
 //                     </button>
 //                     <button
 //                       type="button"
 //                       onClick={() => setConfirmingId(null)}
-//                       className="text-[11px] font-medium px-2 py-1 rounded-md text-[#A8B8D8] hover:bg-white/[0.06]"
+//                       className="text-[12.5px] font-medium px-2 py-1 rounded-md text-[#A8B8D8] hover:bg-white/[0.06]"
 //                     >
 //                       Cancel
 //                     </button>
@@ -125,7 +125,7 @@
 //                 ) : (
 //                   <>
 //                     <span
-//                       className="shrink-0 text-[10.5px] font-medium px-2 py-1 rounded-full"
+//                       className="shrink-0 text-[12px] font-medium px-2 py-1 rounded-full"
 //                       style={{ background: `${meta.color}1A`, color: meta.color }}
 //                     >
 //                       {meta.label}
@@ -241,10 +241,10 @@ export function ActiveProjectsWidget({ className }: ActiveProjectsWidgetProps) {
   return (
     <div className={cn('rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5', className)}>
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-[14px] font-semibold text-[#E8F0FF]">Active projects</h3>
+        <h3 className="text-[15.5px] font-semibold text-[#E8F0FF]">Active projects</h3>
         <button
           onClick={() => guardedNavigate('/dashboard/new/intent')}
-          className="text-[12px] text-[#135BEC] hover:text-[#2A6BF0] font-medium"
+          className="text-[13.5px] text-[#135BEC] hover:text-[#2A6BF0] font-medium"
         >
           + New application
         </button>
@@ -258,10 +258,10 @@ export function ActiveProjectsWidget({ className }: ActiveProjectsWidgetProps) {
         </div>
       ) : projects.length === 0 ? (
         <div className="text-center py-6">
-          <p className="text-[12.5px] text-[#5A6A8A] mb-3">No projects yet.</p>
+          <p className="text-[14px] text-[#5A6A8A] mb-3">No projects yet.</p>
           <button
             onClick={() => guardedNavigate('/dashboard/new/intent')}
-            className="text-[12.5px] px-3.5 py-2 rounded-[8px] bg-[#135BEC] text-white font-semibold hover:bg-[#2A6BF0] transition-colors"
+            className="text-[14px] px-3.5 py-2 rounded-[8px] bg-[#135BEC] text-white font-semibold hover:bg-[#2A6BF0] transition-colors"
           >
             Start your first application
           </button>
@@ -298,26 +298,26 @@ export function ActiveProjectsWidget({ className }: ActiveProjectsWidgetProps) {
                 )}
               >
                 <div className="flex-1 min-w-0">
-                  <p className="text-[13px] font-medium text-[#E8F0FF] truncate">{p.title}</p>
-                  <p className="text-[11.5px] text-[#5A6A8A] truncate">
+                  <p className="text-[14.5px] font-medium text-[#E8F0FF] truncate">{p.title}</p>
+                  <p className="text-[13px] text-[#5A6A8A] truncate">
                     {p.answeredCount} of {p.totalCount} answered &middot; updated {formatRelativeDate(p.updatedAt)}
                   </p>
                 </div>
 
                 {isConfirming ? (
                   <div className="shrink-0 flex items-center gap-1.5" onClick={e => e.stopPropagation()}>
-                    <span className="text-[11px] text-[#A8B8D8] mr-0.5">Delete draft?</span>
+                    <span className="text-[12.5px] text-[#A8B8D8] mr-0.5">Delete draft?</span>
                     <button
                       type="button"
                       onClick={() => handleDelete(p.id)}
-                      className="text-[11px] font-semibold px-2 py-1 rounded-md bg-[rgba(248,113,113,0.15)] text-[#F87171] hover:bg-[rgba(248,113,113,0.25)]"
+                      className="text-[12.5px] font-semibold px-2 py-1 rounded-md bg-[rgba(248,113,113,0.15)] text-[#F87171] hover:bg-[rgba(248,113,113,0.25)]"
                     >
                       Delete
                     </button>
                     <button
                       type="button"
                       onClick={() => setConfirmingId(null)}
-                      className="text-[11px] font-medium px-2 py-1 rounded-md text-[#A8B8D8] hover:bg-white/[0.06]"
+                      className="text-[12.5px] font-medium px-2 py-1 rounded-md text-[#A8B8D8] hover:bg-white/[0.06]"
                     >
                       Cancel
                     </button>
@@ -325,7 +325,7 @@ export function ActiveProjectsWidget({ className }: ActiveProjectsWidgetProps) {
                 ) : (
                   <>
                     <span
-                      className="shrink-0 text-[10.5px] font-medium px-2 py-1 rounded-full"
+                      className="shrink-0 text-[12px] font-medium px-2 py-1 rounded-full"
                       style={{ background: `${meta.color}1A`, color: meta.color }}
                     >
                       {meta.label}

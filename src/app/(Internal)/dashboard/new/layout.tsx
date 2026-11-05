@@ -36,7 +36,7 @@
 //       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
 //         <div className="text-center max-w-[360px]">
 //           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-//           <p className="text-[13px] text-[#5A6A8A] mb-6">
+//           <p className="text-[14.5px] text-[#5A6A8A] mb-6">
 //             Please log in to access your workspace.
 //           </p>
 //           <button
@@ -100,7 +100,7 @@ export default function NewApplicationLayout({ children }: { children: React.Rea
       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
         <div className="text-center max-w-[360px]">
           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-          <p className="text-[13px] text-[#5A6A8A] mb-6">
+          <p className="text-[14.5px] text-[#5A6A8A] mb-6">
             Please log in to access your workspace.
           </p>
           <button

@@ -42,7 +42,7 @@
 //       <div
 //         aria-hidden="true"
 //         className={cn(
-//           'fixed inset-0 z-40 bg-[#0A0E1A]/80 backdrop-blur-sm transition-opacity duration-200 md:hidden',
+//           'fixed inset-0 z-40 bg-[#0A0E1A]/80 backdrop-blur-sm transition-opacity duration-200 lg:hidden',
 //           isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
 //         )}
 //         onClick={onClose}
@@ -54,14 +54,14 @@
 //         aria-modal="true"
 //         aria-label="Mobile navigation"
 //         className={cn(
-//           'fixed top-0 inset-x-0 z-50 md:hidden max-h-screen overflow-y-auto',
+//           'fixed top-0 inset-x-0 z-50 lg:hidden max-h-[100dvh] overflow-y-auto',
 //           'bg-[#0F1525] border-b border-white/[0.08]',
 //           'transition-transform duration-250 ease-[cubic-bezier(0.22,0.68,0,1.1)]',
 //           isOpen ? 'translate-y-0' : '-translate-y-full'
 //         )}
 //       >
 //         {/* Header row */}
-//         <div className="flex items-center justify-between px-5 h-[60px] border-b border-white/[0.06]">
+//         <div className="flex items-center justify-between px-4 h-20 border-b border-white/[0.06]">
 //           <Logo onClick={onClose} />
 //           <button
 //             type="button"
@@ -99,7 +99,7 @@
 //             >
 //               {item.label}
 //               {item.isExternal && (
-//                 <span className="ml-auto text-[10px] opacity-50">↗</span>
+//                 <span className="ml-auto text-[11px] opacity-50">↗</span>
 //               )}
 //             </Link>
 //           ))}
@@ -110,12 +110,12 @@
 //           {isLoggedIn ? (
 //             <>
 //               <div className="flex items-center gap-3 px-1 pb-1">
-//                 <span className="w-9 h-9 rounded-full bg-[rgba(0,212,255,0.14)] border border-[rgba(0,212,255,0.35)] text-[#00D4FF] text-[13px] font-semibold flex items-center justify-center shrink-0">
+//                 <span className="w-9 h-9 rounded-full bg-[rgba(0,212,255,0.14)] border border-[rgba(0,212,255,0.35)] text-[#00D4FF] text-[14.5px] font-semibold flex items-center justify-center shrink-0">
 //                   {firstName?.trim()?.[0]?.toUpperCase() || 'U'}
 //                 </span>
 //                 <div className="min-w-0">
-//                   <p className="text-[13.5px] font-medium text-[#E8F0FF] truncate">{firstName}</p>
-//                   {email && <p className="text-[11.5px] text-[#5A6A8A] truncate">{email}</p>}
+//                   <p className="text-[15px] font-medium text-[#E8F0FF] truncate">{firstName}</p>
+//                   {email && <p className="text-[13px] text-[#5A6A8A] truncate">{email}</p>}
 //                 </div>
 //               </div>
 //               <Button as="a" href="/dashboard/profile" variant="ghost" size="lg" fullWidth onClick={onClose}>
@@ -213,7 +213,7 @@ export function NavMobile({
       <div
         aria-hidden="true"
         className={cn(
-          'fixed inset-0 z-40 bg-[#0A0E1A]/80 backdrop-blur-sm transition-opacity duration-200 md:hidden',
+          'fixed inset-0 z-40 bg-[#0A0E1A]/80 backdrop-blur-sm transition-opacity duration-200 lg:hidden',
           isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         )}
         onClick={onClose}
@@ -225,22 +225,22 @@ export function NavMobile({
         aria-modal="true"
         aria-label="Mobile navigation"
         className={cn(
-          'fixed top-0 inset-x-0 z-50 md:hidden max-h-screen overflow-y-auto',
+          'fixed top-0 inset-x-0 z-50 lg:hidden max-h-[100dvh] overflow-y-auto',
           'bg-[#0F1525] border-b border-white/[0.08]',
           'transition-transform duration-250 ease-[cubic-bezier(0.22,0.68,0,1.1)]',
           isOpen ? 'translate-y-0' : '-translate-y-full'
         )}
       >
         {/* Header row */}
-        <div className="flex items-center justify-between px-5 h-[60px] border-b border-white/[0.06]">
+        <div className="flex items-center justify-between px-4 h-20 border-b border-white/[0.06]">
           <Logo onClick={onClose} />
           <button
             type="button"
             onClick={onClose}
             aria-label="Close menu"
             className={cn(
-              'flex items-center justify-center w-9 h-9 rounded-md',
-              'text-[#5A6A8A] hover:text-[#E8F0FF]',
+              'flex items-center justify-center w-11 h-11 rounded-md',
+              'text-[#A8B8D8] hover:text-[#E8F0FF]',
               'border border-white/[0.08] hover:border-white/[0.18]',
               'transition-colors duration-150'
             )}
@@ -270,7 +270,7 @@ export function NavMobile({
             >
               {item.label}
               {item.isExternal && (
-                <span className="ml-auto text-[10px] opacity-50">↗</span>
+                <span className="ml-auto text-[11px] opacity-50">↗</span>
               )}
             </Link>
           ))}
@@ -281,7 +281,7 @@ export function NavMobile({
           {isLoggedIn ? (
             <>
               <div className="flex items-center gap-3 px-1 pb-1">
-                <span className="w-9 h-9 rounded-full overflow-hidden bg-[rgba(0,212,255,0.14)] border border-[rgba(0,212,255,0.35)] text-[#00D4FF] text-[13px] font-semibold flex items-center justify-center shrink-0">
+                <span className="w-9 h-9 rounded-full overflow-hidden bg-[rgba(0,212,255,0.14)] border border-[rgba(0,212,255,0.35)] text-[#00D4FF] text-[14.5px] font-semibold flex items-center justify-center shrink-0">
                   {avatarUrl ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={avatarUrl} alt="" className="w-full h-full object-cover" />
@@ -290,8 +290,8 @@ export function NavMobile({
                   )}
                 </span>
                 <div className="min-w-0">
-                  <p className="text-[13.5px] font-medium text-[#E8F0FF] truncate">{firstName}</p>
-                  {email && <p className="text-[11.5px] text-[#5A6A8A] truncate">{email}</p>}
+                  <p className="text-[15px] font-medium text-[#E8F0FF] truncate">{firstName}</p>
+                  {email && <p className="text-[13px] text-[#5A6A8A] truncate">{email}</p>}
                 </div>
               </div>
               <Button as="a" href="/dashboard/profile" variant="ghost" size="lg" fullWidth onClick={onClose}>

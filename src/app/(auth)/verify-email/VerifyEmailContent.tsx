@@ -207,7 +207,7 @@ export default function VerifyEmailContent() {
 
         {error && (
           <p
-            className="text-center text-[13px] text-[#F87171]"
+            className="text-center text-[14.5px] text-[#F87171]"
             role="alert"
           >
             {error}
@@ -225,7 +225,7 @@ export default function VerifyEmailContent() {
           {isPending ? 'Verifying…' : 'Verify code'}
         </Button>
 
-        <div className="text-center text-[12px] text-[#5A6A8A] space-y-1.5">
+        <div className="text-center text-[13.5px] text-[#5A6A8A] space-y-1.5">
           <p>
             Didn't receive it?{' '}
             <button

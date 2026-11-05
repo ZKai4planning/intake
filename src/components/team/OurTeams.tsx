@@ -17,23 +17,23 @@ import { fadeUp, viewportOnce } from '@/lib/motion'
  */
 export function OurTeams() {
   return (
-    <section className="relative py-16 sm:py-20 border-t border-white/[0.05] bg-[#050912]" aria-labelledby="team-heading">
-      <div className="max-w-[1100px] mx-auto px-5 sm:px-8">
+    <section className="relative section-y border-t border-white/[0.05] bg-[#050912]" aria-labelledby="team-heading">
+      <div className="container">
 
         <motion.div
-          className="text-center max-w-[560px] mx-auto mb-12"
+          className="text-center max-w-[560px] mx-auto mb-10"
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
           variants={fadeUp}
         >
-          <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+          <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
             Our team
           </p>
-          <h2 id="team-heading" className="font-display text-[28px] sm:text-[34px] font-normal text-[#E8F0FF] tracking-tight">
+          <h2 id="team-heading" className="font-display text-[29px] sm:text-[36px] font-normal text-[#E8F0FF] tracking-tight">
             The people behind AI4Planning
           </h2>
-          <p className="mt-3 text-[14.5px] text-[#A8B8D8] leading-relaxed max-w-[480px] mx-auto">
+          <p className="mt-3 text-[16px] text-[#A8B8D8] leading-relaxed max-w-[480px] mx-auto">
             Meet the team leading the vision, delivery, and client experience.
           </p>
         </motion.div>

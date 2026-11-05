@@ -35,7 +35,7 @@ export function GoalStrip({ goal, className }: GoalStripProps) {
     >
       {/* Emoji */}
       <span
-        className="text-[20px] w-9 text-center shrink-0 leading-none"
+        className="text-[22.5px] w-9 text-center shrink-0 leading-none"
         aria-hidden="true"
       >
         {goal.emoji}
@@ -43,10 +43,10 @@ export function GoalStrip({ goal, className }: GoalStripProps) {
 
       {/* Text */}
       <div className="flex-1 min-w-0">
-        <p className="text-[14px] font-semibold text-[#E8F0FF] leading-snug truncate">
+        <p className="text-[15.5px] font-semibold text-[#E8F0FF] leading-snug truncate">
           {goal.title}
         </p>
-        <p className="mt-[2px] text-[12px] text-[#5A6A8A] leading-snug truncate">
+        <p className="mt-[2px] text-[13.5px] text-[#5A6A8A] leading-snug truncate">
           {goal.subtitle}
         </p>
       </div>

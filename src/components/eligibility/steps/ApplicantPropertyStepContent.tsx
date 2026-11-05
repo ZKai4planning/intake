@@ -157,7 +157,7 @@
 //               <textarea
 //                 rows={3}
 //                 placeholder="Describe the earlier proposal, what was applied for, and whether it was approved, refused, or withdrawn..."
-//                 className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[13.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
+//                 className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[15px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
 //                 value={asStringValue(savedFormData['What was previously proposed, and was it approved, refused, or withdrawn?'])}
 //                 onChange={e =>
 //                   updateSection('eligibility', {
@@ -225,7 +225,7 @@
 //           <textarea
 //             rows={2}
 //             placeholder="List any other known owners or agricultural tenants..."
-//             className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[13.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
+//             className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[15px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
 //             value={asStringValue(savedFormData[otherOwnersDetailsLabel])}
 //             onChange={e =>
 //               updateSection('eligibility', { formData: { ...savedFormData, [otherOwnersDetailsLabel]: e.target.value } })
@@ -445,7 +445,7 @@ export function ApplicantPropertyStepContent({
               <textarea
                 rows={3}
                 placeholder="Describe the earlier proposal, what was applied for, and whether it was approved, refused, or withdrawn..."
-                className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[13.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
+                className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[15px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
                 value={asStringValue(savedFormData['What was previously proposed, and was it approved, refused, or withdrawn?'])}
                 onChange={e =>
                   updateSection('eligibility', {
@@ -513,7 +513,7 @@ export function ApplicantPropertyStepContent({
           <textarea
             rows={2}
             placeholder="List any other known owners or agricultural tenants..."
-            className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[13.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
+            className="w-full resize-none rounded-[10px] border border-white/[0.12] bg-[#141C30] px-3.5 py-2.5 text-[15px] text-[#E8F0FF] placeholder:text-[#5A6A8A] outline-none focus:border-[#135BEC] focus:shadow-[0_0_0_3px_rgba(19,91,236,0.12)]"
             value={asStringValue(savedFormData[otherOwnersDetailsLabel])}
             onChange={e =>
               updateSection('eligibility', { formData: { ...savedFormData, [otherOwnersDetailsLabel]: e.target.value } })

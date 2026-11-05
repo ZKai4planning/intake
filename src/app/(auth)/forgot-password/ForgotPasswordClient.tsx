@@ -101,7 +101,7 @@ export default function ForgotPasswordClient({
             </svg>
           </div>
 
-          <p className="text-[14px] text-[#A8B8D8]">
+          <p className="text-[15.5px] text-[#A8B8D8]">
             Sending your reset code…
           </p>
         </div>
@@ -140,7 +140,7 @@ export default function ForgotPasswordClient({
               : 'Send reset code →'}
           </Button>
 
-          <p className="text-center text-[11px] text-[#5A6A8A] leading-relaxed">
+          <p className="text-center text-[12.5px] text-[#5A6A8A] leading-relaxed">
             🔒 We'll send a 6-digit code to your inbox. It expires
             in 10 minutes.
           </p>

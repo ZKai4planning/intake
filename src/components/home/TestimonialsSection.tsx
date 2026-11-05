@@ -38,10 +38,10 @@ export function TestimonialsSection() {
       <div className="max-w-[1100px] mx-auto px-5 sm:px-8">
 
         <div className="text-center max-w-[560px] mx-auto mb-12">
-          <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+          <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
             Who it's for
           </p>
-          <h2 id="testimonials-heading" className="font-display text-[28px] sm:text-[34px] font-normal text-[#E8F0FF] tracking-tight">
+          <h2 id="testimonials-heading" className="font-display text-[31.5px] sm:text-[38px] font-normal text-[#E8F0FF] tracking-tight">
             Real situations, not generic praise
           </h2>
         </div>

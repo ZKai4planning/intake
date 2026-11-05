@@ -68,7 +68,7 @@ export function HeroActorSelect({ className }: { className?: string }) {
         aria-controls="hero-actor-options"
         className={cn(
           'group inline-flex items-center gap-2 rounded-full px-8 py-3.5',
-          'bg-gradient-to-r from-[#135BEC] to-[#00D4FF] text-[15px] font-semibold text-white',
+          'bg-gradient-to-r from-[#135BEC] to-[#00D4FF] text-[17px] font-semibold text-white',
           'shadow-[0_8px_28px_rgba(19,91,236,0.35)] transition-transform duration-200 hover:-translate-y-0.5 active:scale-[0.98]'
         )}
       >
@@ -94,7 +94,7 @@ export function HeroActorSelect({ className }: { className?: string }) {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
           >
-            <p className="mb-3 text-center text-[11px] font-semibold uppercase tracking-[0.06em] text-[#5A6A8A]">
+            <p className="mb-3 text-center text-[12.5px] font-semibold uppercase tracking-[0.06em] text-[#5A6A8A]">
               I am a…
             </p>
             <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
@@ -126,12 +126,12 @@ export function HeroActorSelect({ className }: { className?: string }) {
                     {card.icon}
                   </div>
 
-                  <h3 className="text-[15px] font-semibold text-[#E8F0FF] mb-1.5">{card.title}</h3>
-                  <p className="text-[13px] text-[#8A96B8] leading-relaxed mb-5">{card.body}</p>
+                  <h3 className="text-[17px] font-semibold text-[#E8F0FF] mb-1.5">{card.title}</h3>
+                  <p className="text-[14.5px] text-[#8A96B8] leading-relaxed mb-5">{card.body}</p>
 
                   <span
                     className={cn(
-                      'inline-flex items-center gap-1.5 text-[13px] font-semibold',
+                      'inline-flex items-center gap-1.5 text-[14.5px] font-semibold',
                       card.accent === 'cyan' ? 'text-[#00D4FF]' : 'text-[#8B5CF6]'
                     )}
                   >

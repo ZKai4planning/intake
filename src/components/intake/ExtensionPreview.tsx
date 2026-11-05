@@ -125,7 +125,7 @@ export function ExtensionPreview({ property, planning, more, compact, className,
 
   if (!property || property.lat == null || property.lng == null) {
     return (
-      <div className={cn('flex items-start gap-3 rounded-xl border border-white/[0.08] bg-white/[0.03] p-3.5 text-[13px] text-[#A8B8D8]', className)}>
+      <div className={cn('flex items-start gap-3 rounded-xl border border-white/[0.08] bg-white/[0.03] p-3.5 text-[14.5px] text-[#A8B8D8]', className)}>
         <MapPinOff className="mt-0.5 h-4 w-4 shrink-0 text-[#F59E0B]" />
         <p>We couldn&apos;t get a map position for this address, so the live preview isn&apos;t available. You can still continue — we&apos;ll check the plans with you later.</p>
       </div>
@@ -194,12 +194,12 @@ export function ExtensionPreview({ property, planning, more, compact, className,
     labelY = minY - 20 >= 16 ? minY - 20 : Math.min(MAP_H - 44, maxY + 20)
   }
 
-  const tool = 'inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[12px] font-medium text-[#A8B8D8] transition-colors hover:border-white/25 hover:text-[#E8F0FF]'
+  const tool = 'inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[13.5px] font-medium text-[#A8B8D8] transition-colors hover:border-white/25 hover:text-[#E8F0FF]'
 
   return (
     <div className={cn('rounded-xl border border-white/[0.10] bg-[#0F1525]', className)} data-testid="extension-preview">
       <div className="flex flex-wrap items-center justify-between gap-2 px-3.5 pt-3">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.06em] text-[#00D4FF]">Live preview</p>
+        <p className="text-[12.5px] font-semibold uppercase tracking-[0.06em] text-[#00D4FF]">Live preview</p>
         <div className="flex rounded-full border border-white/10 bg-[#0A0E1A]/75 p-0.5">
           {([['aerial', 'Aerial'], ['streets', 'Map']] as const).map(([k, text]) => (
             <button
@@ -207,7 +207,7 @@ export function ExtensionPreview({ property, planning, more, compact, className,
               type="button"
               onClick={() => setLayer(k)}
               aria-pressed={layer === k}
-              className={cn('rounded-full px-3 py-1 text-[12px] font-medium transition-colors', layer === k ? 'bg-[#135BEC] text-white' : 'text-[#A8B8D8] hover:text-white')}
+              className={cn('rounded-full px-3 py-1 text-[13.5px] font-medium transition-colors', layer === k ? 'bg-[#135BEC] text-white' : 'text-[#A8B8D8] hover:text-white')}
             >
               {text}
             </button>
@@ -333,7 +333,7 @@ export function ExtensionPreview({ property, planning, more, compact, className,
       </div>
 
       {/* Legend */}
-      <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 px-3.5 pt-2.5 text-[12.5px] text-[#A8B8D8]">
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 px-3.5 pt-2.5 text-[14px] text-[#A8B8D8]">
         <span className="inline-flex items-center gap-2"><span className="h-3.5 w-3.5 rounded-[3px] border-2 border-dashed border-[#E11D2E]" />Existing house</span>
         <span className="inline-flex items-center gap-2"><span className="h-3.5 w-3.5 rounded-[3px] border-2 border-[#60A5FA] bg-[#3B82F6]/60" />Your proposal</span>
         {(ed ? ofKind('neighbour').length > 0 : !!site && site.neighbours.length > 0) && <span className="inline-flex items-center gap-2"><span className="h-3.5 w-3.5 rounded-[3px] border border-slate-300/70 bg-slate-400/20" />Neighbouring buildings</span>}
@@ -343,10 +343,10 @@ export function ExtensionPreview({ property, planning, more, compact, className,
 
       {fit?.items && fit.items.length > 0 && (
         <div className="mx-3.5 mt-3" data-testid="map-checks">
-          <p className="mb-1 text-[13px] font-semibold text-[#E8F0FF]">Map checks</p>
+          <p className="mb-1 text-[14.5px] font-semibold text-[#E8F0FF]">Map checks</p>
           <ul className="divide-y divide-white/[0.07] border-t border-white/[0.07]">
             {fit.items.map((it, i) => (
-              <li key={i} className="flex items-start gap-2.5 py-2 text-[12.5px] leading-snug text-[#C9D6F0]">
+              <li key={i} className="flex items-start gap-2.5 py-2 text-[14px] leading-snug text-[#C9D6F0]">
                 {it.status === 'fail' ? <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-[#EF4444]" />
                   : it.status === 'warn' ? <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-[#F59E0B]" />
                   : it.status === 'pass' ? <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#10B981]" />
@@ -356,7 +356,7 @@ export function ExtensionPreview({ property, planning, more, compact, className,
             ))}
           </ul>
           {!compact && (
-            <p className="pt-1.5 text-[11.5px] leading-snug text-[#5A6A8A]">
+            <p className="pt-1.5 text-[13px] leading-snug text-[#5A6A8A]">
               {ed
                 ? <>{ed.siteChecks.disclaimer} {ed.siteChecks.attribution.join(' · ')}</>
                 : <>Indicative only: based on OpenStreetMap building outlines and HM Land Registry title boundaries. Positions can be a metre or more out, and a title boundary is not the legal boundary. Please check on site.{plotAttribution ? <> {plotAttribution}</> : null}</>}
@@ -370,7 +370,7 @@ export function ExtensionPreview({ property, planning, more, compact, className,
           role={fit.status === 'collision' ? 'alert' : 'status'}
           data-testid="fit-alert"
           className={cn(
-            'mx-3.5 mt-3 flex items-start gap-2.5 rounded-lg border px-3 py-2.5 text-[12.5px] leading-snug',
+            'mx-3.5 mt-3 flex items-start gap-2.5 rounded-lg border px-3 py-2.5 text-[14px] leading-snug',
             fit.status === 'collision' && 'border-[#EF4444]/40 bg-[#EF4444]/10 text-[#FCA5A5]',
             fit.status === 'tight' && 'border-[#F59E0B]/40 bg-[#F59E0B]/10 text-[#FCD34D]',
             fit.status === 'ok' && 'border-[#10B981]/30 bg-[#10B981]/10 text-[#6EE7B7]',
@@ -381,12 +381,12 @@ export function ExtensionPreview({ property, planning, more, compact, className,
         </div>
       )}
       {fit?.status === 'unknown' && (
-        <p className="mx-3.5 mt-3 flex items-start gap-2 text-[12px] text-[#5A6A8A]"><Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />{fit.message}</p>
+        <p className="mx-3.5 mt-3 flex items-start gap-2 text-[13.5px] text-[#5A6A8A]"><Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />{fit.message}</p>
       )}
 
       {!compact && (
         <>
-          <p className="px-3.5 pt-2 text-[12px] leading-snug text-[#5A6A8A]">
+          <p className="px-3.5 pt-2 text-[13.5px] leading-snug text-[#5A6A8A]">
             {hasDrawing && !complete ? 'Enter the size below and the blue shape updates. ' : ''}
             {ed && !ed.frame.indicative
               ? <>Outline taken from the building on the map. {ed.frontNote} Indicative only. Front and back look wrong? Swap them.</>
@@ -406,8 +406,8 @@ export function ExtensionPreview({ property, planning, more, compact, className,
 
       {/* Your proposal */}
       <div className="mt-2 border-t border-white/[0.07] px-3.5 pb-3.5 pt-3">
-        <p className="mb-1.5 text-[14px] font-semibold text-[#E8F0FF]">Your proposal</p>
-        <dl className="grid grid-cols-1 gap-x-6 gap-y-1 text-[13px] sm:grid-cols-2">
+        <p className="mb-1.5 text-[15.5px] font-semibold text-[#E8F0FF]">Your proposal</p>
+        <dl className="grid grid-cols-1 gap-x-6 gap-y-1 text-[14.5px] sm:grid-cols-2">
           <div className="flex justify-between gap-3">
             <dt className="text-[#5A6A8A]">Status</dt>
             <dd className="text-right font-medium text-[#E8F0FF]">{fit?.status === 'collision' ? 'Appears not to fit' : fit?.status === 'tight' ? 'Tight fit — needs checking' : complete ? 'Preview matches your answers' : 'Choose the size below'}</dd>

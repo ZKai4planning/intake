@@ -47,7 +47,7 @@
 // //       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
 // //         <div className="text-center max-w-[360px]">
 // //           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-// //           <p className="text-[13px] text-[#5A6A8A] mb-6">
+// //           <p className="text-[14.5px] text-[#5A6A8A] mb-6">
 // //             Please log in to view your profile.
 // //           </p>
 // //           <button
@@ -83,22 +83,22 @@
 // //   return (
 // //     <DashboardShell workspace={workspace} firstName={firstName} email={session.email}>
 // //       <div className="max-w-[560px] mx-auto">
-// //         <h1 className="font-display text-[26px] sm:text-[30px] font-normal text-[#E8F0FF] tracking-tight mb-1">
+// //         <h1 className="font-display text-[29px] sm:text-[33.5px] font-normal text-[#E8F0FF] tracking-tight mb-1">
 // //           Profile
 // //         </h1>
-// //         <p className="text-[13.5px] text-[#A8B8D8] mb-7">
+// //         <p className="text-[15px] text-[#A8B8D8] mb-7">
 // //           Manage your account details and security settings.
 // //         </p>
 
 // //         {/* ── Identity card ────────────────────────────────── */}
 // //         <section className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 mb-4">
 // //           <div className="flex items-center gap-4 mb-6">
-// //             <div className="w-14 h-14 shrink-0 rounded-full bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[20px] font-semibold flex items-center justify-center">
+// //             <div className="w-14 h-14 shrink-0 rounded-full bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[22.5px] font-semibold flex items-center justify-center">
 // //               {initials}
 // //             </div>
 // //             <div className="min-w-0">
-// //               <p className="text-[15px] font-semibold text-[#E8F0FF] truncate">{session.name}</p>
-// //               <p className="text-[12.5px] text-[#5A6A8A] truncate">{session.email}</p>
+// //               <p className="text-[17px] font-semibold text-[#E8F0FF] truncate">{session.name}</p>
+// //               <p className="text-[14px] text-[#5A6A8A] truncate">{session.email}</p>
 // //             </div>
 // //           </div>
 
@@ -115,7 +115,7 @@
 // //                   onClick={handleSave}
 // //                   disabled={isSaving || !name.trim()}
 // //                   className={cn(
-// //                     'px-4 py-2 rounded-[10px] text-[13px] font-semibold transition-colors',
+// //                     'px-4 py-2 rounded-[10px] text-[14.5px] font-semibold transition-colors',
 // //                     isSaving || !name.trim()
 // //                       ? 'bg-white/[0.06] text-[#5A6A8A] cursor-not-allowed'
 // //                       : 'bg-[#135BEC] text-white hover:bg-[#2A6BF0]'
@@ -128,7 +128,7 @@
 // //                     setIsEditing(false)
 // //                     setName(session.name)
 // //                   }}
-// //                   className="px-4 py-2 rounded-[10px] text-[13px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] transition-colors"
+// //                   className="px-4 py-2 rounded-[10px] text-[14.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] transition-colors"
 // //                 >
 // //                   Cancel
 // //                 </button>
@@ -137,13 +137,13 @@
 // //           ) : (
 // //             <div className="flex items-center justify-between">
 // //               {saved ? (
-// //                 <p className="text-[12.5px] text-[#135BEC]">Name updated.</p>
+// //                 <p className="text-[14px] text-[#135BEC]">Name updated.</p>
 // //               ) : (
-// //                 <p className="text-[12.5px] text-[#5A6A8A]">Update your display name.</p>
+// //                 <p className="text-[14px] text-[#5A6A8A]">Update your display name.</p>
 // //               )}
 // //               <button
 // //                 onClick={() => setIsEditing(true)}
-// //                 className="text-[12.5px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
+// //                 className="text-[14px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
 // //               >
 // //                 Edit
 // //               </button>
@@ -153,7 +153,7 @@
 
 // //         {/* ── Workspace / role card ────────────────────────── */}
 // //         <section className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 mb-4">
-// //           <h2 className="text-[13px] font-semibold text-[#E8F0FF] mb-4">Workspace</h2>
+// //           <h2 className="text-[14.5px] font-semibold text-[#E8F0FF] mb-4">Workspace</h2>
 // //           <dl className="space-y-3">
 // //             <Row label="Workspace type" value={workspace.internalLabel} />
 // //             <Row label="Account role" value={capitalize(session.role)} />
@@ -166,20 +166,20 @@
 
 // //         {/* ── Phone number card ────────────────────────────── */}
 // //         <section className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 mb-4">
-// //           <h2 className="text-[13px] font-semibold text-[#E8F0FF] mb-4">Phone number</h2>
+// //           <h2 className="text-[14.5px] font-semibold text-[#E8F0FF] mb-4">Phone number</h2>
 // //           <div className="flex items-center justify-between">
 // //             <div>
-// //               <p className="text-[13px] text-[#E8F0FF]">
+// //               <p className="text-[14.5px] text-[#E8F0FF]">
 // //                 {session.phone ? formatUkPhone(session.phone) : 'No phone number'}
 // //               </p>
-// //               <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">
+// //               <p className="text-[13px] text-[#5A6A8A] mt-0.5">
 // //                 {session.phone
 // //                   ? 'Verified and linked to this account.'
 // //                   : 'Add a phone number to keep your account unique and secure.'}
 // //               </p>
 // //             </div>
 // //             <span
-// //               className="shrink-0 text-[10.5px] font-medium px-2.5 py-1 rounded-full"
+// //               className="shrink-0 text-[12px] font-medium px-2.5 py-1 rounded-full"
 // //               style={
 // //                 session.phone
 // //                   ? { background: 'rgba(19,91,236,0.1)', color: '#135BEC' }
@@ -191,7 +191,7 @@
 // //           </div>
 // //           <button
 // //             onClick={() => router.push(`/add-phone?returnTo=${encodeURIComponent('/dashboard/profile')}`)}
-// //             className="mt-4 text-[12.5px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
+// //             className="mt-4 text-[14px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
 // //           >
 // //             {session.phone ? 'Change phone number →' : 'Add phone number →'}
 // //           </button>
@@ -199,16 +199,16 @@
 
 // //         {/* ── Security card ────────────────────────────────── */}
 // //         <section className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 mb-4">
-// //           <h2 className="text-[13px] font-semibold text-[#E8F0FF] mb-4">Security</h2>
+// //           <h2 className="text-[14.5px] font-semibold text-[#E8F0FF] mb-4">Security</h2>
 // //           <div className="flex items-center justify-between">
 // //             <div>
-// //               <p className="text-[13px] text-[#E8F0FF]">Two-factor authentication</p>
-// //               <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">
+// //               <p className="text-[14.5px] text-[#E8F0FF]">Two-factor authentication</p>
+// //               <p className="text-[13px] text-[#5A6A8A] mt-0.5">
 // //                 {session.mfaEnabled ? 'Enabled for this account.' : 'Not set up yet.'}
 // //               </p>
 // //             </div>
 // //             <span
-// //               className="shrink-0 text-[10.5px] font-medium px-2.5 py-1 rounded-full"
+// //               className="shrink-0 text-[12px] font-medium px-2.5 py-1 rounded-full"
 // //               style={
 // //                 session.mfaEnabled
 // //                   ? { background: 'rgba(19,91,236,0.1)', color: '#135BEC' }
@@ -221,7 +221,7 @@
 // //           {!session.mfaEnabled && (
 // //             <button
 // //               onClick={() => router.push('/mfa-setup')}
-// //               className="mt-4 text-[12.5px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
+// //               className="mt-4 text-[14px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
 // //             >
 // //               Set up two-factor authentication →
 // //             </button>
@@ -232,8 +232,8 @@
 // //         <section className="rounded-[14px] border border-[rgba(255,107,107,0.2)] bg-[rgba(255,107,107,0.04)] p-5">
 // //           <div className="flex items-center justify-between gap-4">
 // //             <div>
-// //               <p className="text-[13px] font-medium text-[#E8F0FF]">Log out</p>
-// //               <p className="text-[11.5px] text-[#5A6A8A] mt-0.5">
+// //               <p className="text-[14.5px] font-medium text-[#E8F0FF]">Log out</p>
+// //               <p className="text-[13px] text-[#5A6A8A] mt-0.5">
 // //                 Sign out of this account on this device.
 // //               </p>
 // //             </div>
@@ -241,7 +241,7 @@
 // //               onClick={handleLogout}
 // //               disabled={isLoggingOut}
 // //               className={cn(
-// //                 'shrink-0 px-4 py-2 rounded-[10px] text-[13px] font-semibold transition-colors',
+// //                 'shrink-0 px-4 py-2 rounded-[10px] text-[14.5px] font-semibold transition-colors',
 // //                 isLoggingOut
 // //                   ? 'text-[#5A6A8A] cursor-not-allowed'
 // //                   : 'text-[#FF6B6B] bg-[rgba(255,107,107,0.08)] hover:bg-[rgba(255,107,107,0.14)]'
@@ -271,8 +271,8 @@
 // // function Row({ label, value }: { label: string; value: string }) {
 // //   return (
 // //     <div className="flex items-center justify-between">
-// //       <dt className="text-[12.5px] text-[#5A6A8A]">{label}</dt>
-// //       <dd className="text-[12.5px] text-[#E8F0FF] font-medium">{value}</dd>
+// //       <dt className="text-[14px] text-[#5A6A8A]">{label}</dt>
+// //       <dd className="text-[14px] text-[#E8F0FF] font-medium">{value}</dd>
 // //     </div>
 // //   )
 // // }
@@ -348,7 +348,7 @@
 //       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
 //         <div className="text-center max-w-[360px]">
 //           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-//           <p className="text-[13px] text-[#5A6A8A] mb-6">
+//           <p className="text-[14.5px] text-[#5A6A8A] mb-6">
 //             Please log in to view your profile.
 //           </p>
 //           <button
@@ -417,8 +417,8 @@
 //           {!isProfileComplete(completionChecks) && (
 //             <div className="rounded-[14px] border border-[rgba(19,91,236,0.25)] bg-[rgba(19,91,236,0.08)] p-4">
 //               <div className="flex items-center justify-between mb-2">
-//                 <p className="text-[12px] font-semibold text-[#E8F0FF]">Complete profile</p>
-//                 <span className="text-[11px] font-semibold text-[#135BEC]">{completionPct}%</span>
+//                 <p className="text-[13.5px] font-semibold text-[#E8F0FF]">Complete profile</p>
+//                 <span className="text-[12.5px] font-semibold text-[#135BEC]">{completionPct}%</span>
 //               </div>
 //               <div className="h-1.5 rounded-full bg-white/[0.08] overflow-hidden mb-3">
 //                 <div
@@ -429,7 +429,7 @@
 //               {!session.mfaEnabled && (
 //                 <button
 //                   onClick={() => router.push('/mfa-setup')}
-//                   className="w-full text-center px-3 py-2 rounded-[8px] bg-[#135BEC] text-white text-[12px] font-semibold hover:bg-[#2A6BF0] transition-colors"
+//                   className="w-full text-center px-3 py-2 rounded-[8px] bg-[#135BEC] text-white text-[13.5px] font-semibold hover:bg-[#2A6BF0] transition-colors"
 //                 >
 //                   Verify identity
 //                 </button>
@@ -453,10 +453,10 @@
 
 //         {/* ── Main content ─────────────────────────────────── */}
 //         <div className="flex-1 min-w-0">
-//           <h1 className="font-display text-[26px] sm:text-[30px] font-normal text-[#E8F0FF] tracking-tight mb-1">
+//           <h1 className="font-display text-[29px] sm:text-[33.5px] font-normal text-[#E8F0FF] tracking-tight mb-1">
 //             Personal information
 //           </h1>
-//           <p className="text-[13.5px] text-[#A8B8D8] mb-6">
+//           <p className="text-[15px] text-[#A8B8D8] mb-6">
 //             Manage your account details and security settings.
 //           </p>
 
@@ -464,7 +464,7 @@
 //           <section className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 mb-4">
 //             <div className="flex items-center gap-4 mb-2">
 //               <div className="relative shrink-0">
-//                 <div className="w-16 h-16 rounded-full overflow-hidden bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[22px] font-semibold flex items-center justify-center">
+//                 <div className="w-16 h-16 rounded-full overflow-hidden bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[24.5px] font-semibold flex items-center justify-center">
 //                   {avatarUrl ? (
 //                     // eslint-disable-next-line @next/next/no-img-element
 //                     <img src={avatarUrl} alt="Profile" className="w-full h-full object-cover" />
@@ -488,19 +488,19 @@
 //                 />
 //               </div>
 //               <div className="min-w-0 flex-1">
-//                 <p className="text-[15px] font-semibold text-[#E8F0FF] truncate">{session.name}</p>
-//                 <p className="text-[12.5px] text-[#5A6A8A] truncate">{capitalize(session.role)} · {workspace.internalLabel}</p>
+//                 <p className="text-[17px] font-semibold text-[#E8F0FF] truncate">{session.name}</p>
+//                 <p className="text-[14px] text-[#5A6A8A] truncate">{capitalize(session.role)} · {workspace.internalLabel}</p>
 //                 <div className="flex items-center gap-4 mt-2">
 //                   <button
 //                     onClick={handlePickAvatar}
-//                     className="text-[12px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
+//                     className="text-[13.5px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
 //                   >
 //                     Upload new picture
 //                   </button>
 //                   {avatarUrl && (
 //                     <button
 //                       onClick={handleRemoveAvatar}
-//                       className="text-[12px] font-medium text-[#5A6A8A] hover:text-[#FF6B6B]"
+//                       className="text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#FF6B6B]"
 //                     >
 //                       Remove
 //                     </button>
@@ -525,7 +525,7 @@
 //                     onClick={handleSave}
 //                     disabled={isSaving || !name.trim()}
 //                     className={cn(
-//                       'px-4 py-2 rounded-[10px] text-[13px] font-semibold transition-colors',
+//                       'px-4 py-2 rounded-[10px] text-[14.5px] font-semibold transition-colors',
 //                       isSaving || !name.trim()
 //                         ? 'bg-white/[0.06] text-[#5A6A8A] cursor-not-allowed'
 //                         : 'bg-[#135BEC] text-white hover:bg-[#2A6BF0]'
@@ -538,7 +538,7 @@
 //                       setIsEditing(false)
 //                       setName(session.name)
 //                     }}
-//                     className="px-4 py-2 rounded-[10px] text-[13px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] transition-colors"
+//                     className="px-4 py-2 rounded-[10px] text-[14.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:bg-white/[0.05] transition-colors"
 //                   >
 //                     Cancel
 //                   </button>
@@ -555,7 +555,7 @@
 //                   onEdit={() => router.push(`/add-phone?returnTo=${encodeURIComponent('/dashboard/profile')}`)}
 //                 />
 //                 {saved && (
-//                   <p className="text-[12px] text-[#135BEC] pt-2">Name updated.</p>
+//                   <p className="text-[13.5px] text-[#135BEC] pt-2">Name updated.</p>
 //                 )}
 //               </div>
 //             )}
@@ -563,7 +563,7 @@
 
 //           {/* ── Workspace grid ──────────────────────────────── */}
 //           <section className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 mb-4">
-//             <h2 className="text-[13px] font-semibold text-[#E8F0FF] mb-4">Workspace</h2>
+//             <h2 className="text-[14.5px] font-semibold text-[#E8F0FF] mb-4">Workspace</h2>
 //             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 //               <StaticField label="Workspace type" value={workspace.internalLabel} />
 //               <StaticField label="Account role" value={capitalize(session.role)} />
@@ -576,7 +576,7 @@
 //             {!session.mfaEnabled && (
 //               <button
 //                 onClick={() => router.push('/mfa-setup')}
-//                 className="mt-4 text-[12.5px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
+//                 className="mt-4 text-[14px] font-medium text-[#135BEC] hover:text-[#2A6BF0]"
 //               >
 //                 Set up two-factor authentication →
 //               </button>
@@ -586,7 +586,7 @@
 //           {/* ── Update button ────────────────────────────────── */}
 //           <button
 //             onClick={() => !isEditing && setIsEditing(true)}
-//             className="w-full mb-4 px-5 py-3 rounded-[10px] bg-[#135BEC] text-white text-[13.5px] font-semibold hover:bg-[#2A6BF0] transition-colors"
+//             className="w-full mb-4 px-5 py-3 rounded-[10px] bg-[#135BEC] text-white text-[15px] font-semibold hover:bg-[#2A6BF0] transition-colors"
 //           >
 //             Update profile
 //           </button>
@@ -634,13 +634,13 @@
 //     >
 //       <p
 //         className={cn(
-//           'text-[13px] font-medium',
+//           'text-[14.5px] font-medium',
 //           tone === 'danger' ? 'text-[#FF6B6B]' : active ? 'text-[#135BEC]' : 'text-[#E8F0FF]'
 //         )}
 //       >
 //         {label}
 //       </p>
-//       <p className="text-[11px] text-[#5A6A8A] mt-0.5">{description}</p>
+//       <p className="text-[12.5px] text-[#5A6A8A] mt-0.5">{description}</p>
 //     </button>
 //   )
 // }
@@ -659,13 +659,13 @@
 //   return (
 //     <div className="flex items-center justify-between gap-3 py-3 border-b border-white/[0.05] last:border-b-0">
 //       <div className="min-w-0">
-//         <p className="text-[11px] text-[#5A6A8A] mb-0.5">{label}</p>
-//         <p className="text-[13px] text-[#E8F0FF] font-medium truncate">{value}</p>
+//         <p className="text-[12.5px] text-[#5A6A8A] mb-0.5">{label}</p>
+//         <p className="text-[14.5px] text-[#E8F0FF] font-medium truncate">{value}</p>
 //       </div>
 //       <div className="flex items-center gap-3 shrink-0">
 //         {badge && (
 //           <span
-//             className="text-[10.5px] font-medium px-2.5 py-1 rounded-full"
+//             className="text-[12px] font-medium px-2.5 py-1 rounded-full"
 //             style={
 //               badge === 'Verified'
 //                 ? { background: 'rgba(19,91,236,0.1)', color: '#135BEC' }
@@ -692,8 +692,8 @@
 // function StaticField({ label, value }: { label: string; value: string }) {
 //   return (
 //     <div>
-//       <p className="text-[11px] text-[#5A6A8A] mb-0.5">{label}</p>
-//       <p className="text-[13px] text-[#E8F0FF] font-medium">{value}</p>
+//       <p className="text-[12.5px] text-[#5A6A8A] mb-0.5">{label}</p>
+//       <p className="text-[14.5px] text-[#E8F0FF] font-medium">{value}</p>
 //     </div>
 //   )
 // }
@@ -799,7 +799,7 @@ export default function ProfilePage() {
       <div className="min-h-screen bg-[#0A0E1A] flex items-center justify-center px-5">
         <div className="text-center max-w-[360px]">
           <p className="font-display text-2xl text-[#E8F0FF] mb-2">No active session</p>
-          <p className="text-[13px] text-[#5A6A8A] mb-6">
+          <p className="text-[14.5px] text-[#5A6A8A] mb-6">
             Please log in to view your profile.
           </p>
           <button
@@ -918,8 +918,8 @@ export default function ProfilePage() {
           {!isProfileComplete(completionChecks) && (
             <div className="rounded-[14px] border border-[rgba(19,91,236,0.25)] bg-[rgba(19,91,236,0.08)] p-4">
               <div className="flex items-center justify-between mb-2">
-                <p className="text-[12px] font-semibold text-[#E8F0FF]">Complete profile</p>
-                <span className="text-[11px] font-semibold text-[#135BEC]">{completionPct}%</span>
+                <p className="text-[13.5px] font-semibold text-[#E8F0FF]">Complete profile</p>
+                <span className="text-[12.5px] font-semibold text-[#135BEC]">{completionPct}%</span>
               </div>
               <div className="h-1.5 rounded-full bg-white/[0.08] overflow-hidden mb-3">
                 <div
@@ -930,7 +930,7 @@ export default function ProfilePage() {
               {!session.mfaEnabled && (
                 <button
                   onClick={() => router.push('/mfa-setup')}
-                  className="w-full text-center px-3 py-2 rounded-[8px] bg-[#135BEC] text-white text-[12px] font-semibold hover:bg-[#2A6BF0] transition-colors"
+                  className="w-full text-center px-3 py-2 rounded-[8px] bg-[#135BEC] text-white text-[13.5px] font-semibold hover:bg-[#2A6BF0] transition-colors"
                 >
                   Verify identity
                 </button>
@@ -958,10 +958,10 @@ export default function ProfilePage() {
 
         {/* ── Main content ─────────────────────────────────── */}
         <div className="flex-1 min-w-0">
-          <h1 className="font-display text-[26px] sm:text-[30px] font-normal text-[#E8F0FF] tracking-tight mb-1">
+          <h1 className="font-display text-[29px] sm:text-[33.5px] font-normal text-[#E8F0FF] tracking-tight mb-1">
             Personal information
           </h1>
-          <p className="text-[13.5px] text-[#A8B8D8] mb-6">
+          <p className="text-[15px] text-[#A8B8D8] mb-6">
             Manage your account details and security settings.
           </p>
 
@@ -969,7 +969,7 @@ export default function ProfilePage() {
           <section className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 mb-4">
             <div className="flex items-center gap-4 mb-2">
               <div className="relative shrink-0">
-                <div className="w-16 h-16 rounded-full overflow-hidden bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[22px] font-semibold flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full overflow-hidden bg-[rgba(19,91,236,0.12)] border border-[rgba(19,91,236,0.3)] text-[#135BEC] text-[24.5px] font-semibold flex items-center justify-center">
                   {isUploadingAvatar ? (
                     <span className="w-4 h-4 rounded-full border-2 border-[#135BEC] border-t-transparent animate-spin" />
                   ) : avatarUrl ? (
@@ -996,13 +996,13 @@ export default function ProfilePage() {
                 />
               </div>
               <div className="min-w-0 flex-1">
-                <p className="text-[15px] font-semibold text-[#E8F0FF] truncate">{session.name}</p>
-                <p className="text-[12.5px] text-[#5A6A8A] truncate">{capitalize(session.role)} · {workspace.internalLabel}</p>
+                <p className="text-[17px] font-semibold text-[#E8F0FF] truncate">{session.name}</p>
+                <p className="text-[14px] text-[#5A6A8A] truncate">{capitalize(session.role)} · {workspace.internalLabel}</p>
                 <div className="flex items-center gap-4 mt-2">
                   <button
                     onClick={handlePickAvatar}
                     disabled={isUploadingAvatar}
-                    className="text-[12px] font-medium text-[#135BEC] hover:text-[#2A6BF0] disabled:opacity-50"
+                    className="text-[13.5px] font-medium text-[#135BEC] hover:text-[#2A6BF0] disabled:opacity-50"
                   >
                     {isUploadingAvatar ? 'Uploading…' : 'Upload new picture'}
                   </button>
@@ -1010,7 +1010,7 @@ export default function ProfilePage() {
                     <button
                       onClick={handleRemoveAvatar}
                       disabled={isUploadingAvatar}
-                      className="text-[12px] font-medium text-[#5A6A8A] hover:text-[#FF6B6B] disabled:opacity-50"
+                      className="text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#FF6B6B] disabled:opacity-50"
                     >
                       Remove
                     </button>
@@ -1049,17 +1049,17 @@ export default function ProfilePage() {
               </div>
 
               {saved && (
-                <p className="text-[12px] text-[#135BEC]">Profile updated.</p>
+                <p className="text-[13.5px] text-[#135BEC]">Profile updated.</p>
               )}
               {saveError && (
-                <p className="text-[12px] text-[#F87171]" role="alert">{saveError}</p>
+                <p className="text-[13.5px] text-[#F87171]" role="alert">{saveError}</p>
               )}
             </div>
           </section>
 
           {/* ── Workspace grid ──────────────────────────────── */}
           <section className="rounded-[14px] border border-white/[0.08] bg-[#0F1525] p-5 mb-4">
-            <h2 className="text-[13px] font-semibold text-[#E8F0FF] mb-4">Workspace</h2>
+            <h2 className="text-[14.5px] font-semibold text-[#E8F0FF] mb-4">Workspace</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <StaticField label="Workspace type" value={workspace.internalLabel} />
               <StaticField label="Account role" value={capitalize(session.role)} />
@@ -1077,7 +1077,7 @@ export default function ProfilePage() {
             onClick={handleSave}
             disabled={isSaving || !name.trim()}
             className={cn(
-              'w-full mb-4 px-5 py-3 rounded-[10px] text-[13.5px] font-semibold transition-colors',
+              'w-full mb-4 px-5 py-3 rounded-[10px] text-[15px] font-semibold transition-colors',
               isSaving || !name.trim()
                 ? 'bg-white/[0.06] text-[#5A6A8A] cursor-not-allowed'
                 : 'bg-[#135BEC] text-white hover:bg-[#2A6BF0]'
@@ -1126,13 +1126,13 @@ function RailItem({
     >
       <p
         className={cn(
-          'text-[13px] font-medium',
+          'text-[14.5px] font-medium',
           tone === 'danger' ? 'text-[#FF6B6B]' : active ? 'text-[#135BEC]' : 'text-[#E8F0FF]'
         )}
       >
         {label}
       </p>
-      <p className="text-[11px] text-[#5A6A8A] mt-0.5">{description}</p>
+      <p className="text-[12.5px] text-[#5A6A8A] mt-0.5">{description}</p>
     </button>
   )
 }
@@ -1153,13 +1153,13 @@ function FieldRow({
   return (
     <div className="flex items-center justify-between gap-3 py-3 border-b border-white/[0.05] last:border-b-0">
       <div className="min-w-0">
-        <p className="text-[11px] text-[#5A6A8A] mb-0.5">{label}</p>
-        <p className="text-[13px] text-[#E8F0FF] font-medium truncate">{value}</p>
+        <p className="text-[12.5px] text-[#5A6A8A] mb-0.5">{label}</p>
+        <p className="text-[14.5px] text-[#E8F0FF] font-medium truncate">{value}</p>
       </div>
       <div className="flex items-center gap-3 shrink-0">
         {badge && (
           <span
-            className="text-[10.5px] font-medium px-2.5 py-1 rounded-full"
+            className="text-[12px] font-medium px-2.5 py-1 rounded-full"
             style={
               isPositiveBadge
                 ? { background: 'rgba(19,91,236,0.1)', color: '#135BEC' }
@@ -1186,8 +1186,8 @@ function FieldRow({
 function StaticField({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <p className="text-[11px] text-[#5A6A8A] mb-0.5">{label}</p>
-      <p className="text-[13px] text-[#E8F0FF] font-medium">{value}</p>
+      <p className="text-[12.5px] text-[#5A6A8A] mb-0.5">{label}</p>
+      <p className="text-[14.5px] text-[#E8F0FF] font-medium">{value}</p>
     </div>
   )
 }

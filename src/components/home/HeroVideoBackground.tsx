@@ -95,7 +95,7 @@ export function HeroVideoBackground() {
         style={{ background: 'linear-gradient(to bottom, transparent, #0A0E1A)' }}
       />
       <div
-        className="absolute inset-x-0 top-0 h-24"
+        className="absolute inset-x-0 top-0 h-20 sm:h-24 xl:h-[132px]"
         style={{ background: 'linear-gradient(to top, transparent, #0A0E1A)' }}
       />
     </div>

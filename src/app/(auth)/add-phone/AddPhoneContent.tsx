@@ -240,8 +240,8 @@
 //       >
 //         <div className="space-y-5">
 //           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4 flex items-center gap-3">
-//             <span className="text-[18px] shrink-0">📱</span>
-//             <p className="text-[13px] text-[#A8B8D8] break-words">{savedPhoneDisplay}</p>
+//             <span className="text-[20px] shrink-0">📱</span>
+//             <p className="text-[14.5px] text-[#A8B8D8] break-words">{savedPhoneDisplay}</p>
 //           </div>
 
 //           <Button type="button" variant="primary" size="lg" fullWidth onClick={handleDone} isLoading={isPending} disabled={isPending}>
@@ -266,7 +266,7 @@
 //           </div>
 
 //           {error && (
-//             <p className="text-center text-[13px] text-[#F87171]" role="alert">
+//             <p className="text-center text-[14.5px] text-[#F87171]" role="alert">
 //               {error}
 //             </p>
 //           )}
@@ -282,7 +282,7 @@
 //             {isPending ? 'Verifying…' : 'Verify phone number'}
 //           </Button>
 
-//           <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 text-[12px]">
+//           <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 text-[13.5px]">
 //             <button
 //               type="button"
 //               onClick={() => setStep('phone')}
@@ -310,7 +310,7 @@
 //         <p
 //           className={cn(
 //             'mt-7 pt-5 border-t border-white/[0.06]',
-//             'text-[11px] text-[#5A6A8A] text-center'
+//             'text-[12.5px] text-[#5A6A8A] text-center'
 //           )}
 //         >
 //           🛠 Mock mode — use code {DEMO_OTP}
@@ -330,8 +330,8 @@
 //     >
 //       <div className="space-y-5">
 //         <div className="flex gap-3 p-3.5 rounded-[10px] bg-[rgba(19,91,236,0.06)] border border-[rgba(19,91,236,0.15)]">
-//           <span className="text-[18px] shrink-0">📱</span>
-//           <p className="text-[12px] text-[#A8B8D8] leading-relaxed">
+//           <span className="text-[20px] shrink-0">📱</span>
+//           <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed">
 //             Each phone number can only be linked to{' '}
 //             <strong className="text-[#E8F0FF]">one account</strong>. We'll text
 //             you a code to confirm it's yours.
@@ -341,7 +341,7 @@
 //         <div className="flex flex-col gap-1.5">
 //           <label
 //             htmlFor="phone-number"
-//             className="text-[11px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A]"
+//             className="text-[12.5px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A]"
 //           >
 //             Mobile number
 //           </label>
@@ -351,7 +351,7 @@
 //             <div
 //               className={cn(
 //                 'h-[46px] shrink-0 flex items-center gap-1.5 rounded-[10px] px-3',
-//                 'bg-[#141C30] text-[#E8F0FF] text-[14px] font-sans',
+//                 'bg-[#141C30] text-[#E8F0FF] text-[15.5px] font-sans',
 //                 'border border-white/[0.12]'
 //               )}
 //               aria-hidden="true"
@@ -374,7 +374,7 @@
 //               onChange={e => setPhone(e.target.value.replace(/[^\d\s()-]/g, ''))}
 //               className={cn(
 //                 'flex-1 min-w-[160px] rounded-[10px] px-4 py-3',
-//                 'bg-[#141C30] text-[#E8F0FF] text-base sm:text-[14px] font-sans',
+//                 'bg-[#141C30] text-[#E8F0FF] text-base sm:text-[15.5px] font-sans',
 //                 'placeholder:text-[#5A6A8A]',
 //                 'border outline-none transition-all duration-150',
 //                 message
@@ -385,13 +385,13 @@
 //           </div>
 
 //           {message && (
-//             <p className="text-[12px] leading-snug text-[#F87171]" role="alert">
+//             <p className="text-[13.5px] leading-snug text-[#F87171]" role="alert">
 //               {message}
 //             </p>
 //           )}
 
 //           {error && (
-//             <p className="text-[12px] leading-snug text-[#F87171]" role="alert">
+//             <p className="text-[13.5px] leading-snug text-[#F87171]" role="alert">
 //               {error}
 //             </p>
 //           )}
@@ -412,7 +412,7 @@
 //         <button
 //           type="button"
 //           onClick={handleSkip}
-//           className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-2"
+//           className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-2"
 //         >
 //           Skip for now (you'll be asked again next login)
 //         </button>
@@ -665,8 +665,8 @@ export default function AddPhoneContent() {
       >
         <div className="space-y-5">
           <div className="rounded-[12px] bg-[#141C30] border border-white/[0.08] p-4 flex items-center gap-3">
-            <span className="text-[18px] shrink-0">📱</span>
-            <p className="text-[13px] text-[#A8B8D8] break-words">{savedPhoneDisplay}</p>
+            <span className="text-[20px] shrink-0">📱</span>
+            <p className="text-[14.5px] text-[#A8B8D8] break-words">{savedPhoneDisplay}</p>
           </div>
 
           <Button type="button" variant="primary" size="lg" fullWidth onClick={handleDone} isLoading={isPending} disabled={isPending}>
@@ -691,7 +691,7 @@ export default function AddPhoneContent() {
           </div>
 
           {error && (
-            <p className="text-center text-[13px] text-[#F87171]" role="alert">
+            <p className="text-center text-[14.5px] text-[#F87171]" role="alert">
               {error}
             </p>
           )}
@@ -707,7 +707,7 @@ export default function AddPhoneContent() {
             {isPending ? 'Verifying…' : 'Verify phone number'}
           </Button>
 
-          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 text-[12px]">
+          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 text-[13.5px]">
             <button
               type="button"
               onClick={() => setStep('phone')}
@@ -735,7 +735,7 @@ export default function AddPhoneContent() {
         <p
           className={cn(
             'mt-7 pt-5 border-t border-white/[0.06]',
-            'text-[11px] text-[#5A6A8A] text-center'
+            'text-[12.5px] text-[#5A6A8A] text-center'
           )}
         >
           🛠 Mock mode — use code {DEMO_OTP}
@@ -755,8 +755,8 @@ export default function AddPhoneContent() {
     >
       <div className="space-y-5">
         <div className="flex gap-3 p-3.5 rounded-[10px] bg-[rgba(19,91,236,0.06)] border border-[rgba(19,91,236,0.15)]">
-          <span className="text-[18px] shrink-0">📱</span>
-          <p className="text-[12px] text-[#A8B8D8] leading-relaxed">
+          <span className="text-[20px] shrink-0">📱</span>
+          <p className="text-[13.5px] text-[#A8B8D8] leading-relaxed">
             Each phone number can only be linked to{' '}
             <strong className="text-[#E8F0FF]">one account</strong>. We'll text
             you a code to confirm it's yours.
@@ -766,7 +766,7 @@ export default function AddPhoneContent() {
         <div className="flex flex-col gap-1.5">
           <label
             htmlFor="phone-number"
-            className="text-[11px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A]"
+            className="text-[12.5px] font-semibold tracking-[0.05em] uppercase text-[#5A6A8A]"
           >
             Mobile number
           </label>
@@ -776,7 +776,7 @@ export default function AddPhoneContent() {
             <div
               className={cn(
                 'h-[46px] shrink-0 flex items-center gap-1.5 rounded-[10px] px-3',
-                'bg-[#141C30] text-[#E8F0FF] text-[14px] font-sans',
+                'bg-[#141C30] text-[#E8F0FF] text-[15.5px] font-sans',
                 'border border-white/[0.12]'
               )}
               aria-hidden="true"
@@ -799,7 +799,7 @@ export default function AddPhoneContent() {
               onChange={e => setPhone(e.target.value.replace(/[^\d\s()-]/g, ''))}
               className={cn(
                 'flex-1 min-w-[160px] rounded-[10px] px-4 py-3',
-                'bg-[#141C30] text-[#E8F0FF] text-base sm:text-[14px] font-sans',
+                'bg-[#141C30] text-[#E8F0FF] text-base sm:text-[15.5px] font-sans',
                 'placeholder:text-[#5A6A8A]',
                 'border outline-none transition-all duration-150',
                 message
@@ -810,13 +810,13 @@ export default function AddPhoneContent() {
           </div>
 
           {message && (
-            <p className="text-[12px] leading-snug text-[#F87171]" role="alert">
+            <p className="text-[13.5px] leading-snug text-[#F87171]" role="alert">
               {message}
             </p>
           )}
 
           {error && (
-            <p className="text-[12px] leading-snug text-[#F87171]" role="alert">
+            <p className="text-[13.5px] leading-snug text-[#F87171]" role="alert">
               {error}
             </p>
           )}
@@ -837,7 +837,7 @@ export default function AddPhoneContent() {
         <button
           type="button"
           onClick={handleSkip}
-          className="w-full text-center text-[12px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-2"
+          className="w-full text-center text-[13.5px] text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors py-2"
         >
           Skip for now (you'll be asked again next login)
         </button>

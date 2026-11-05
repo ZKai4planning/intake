@@ -49,7 +49,7 @@ export function QuestionCard({
         type="button"
         onClick={onToggleAgent}
         className={cn(
-          'mt-3 inline-flex items-center gap-1.5 text-[11.5px] font-medium transition-colors',
+          'mt-3 inline-flex items-center gap-1.5 text-[13px] font-medium transition-colors',
           isAgentOpen ? 'text-[#00D4FF]' : 'text-[#5A6A8A] hover:text-[#00D4FF]'
         )}
       >

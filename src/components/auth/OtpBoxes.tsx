@@ -57,7 +57,7 @@
 //             // Layout
 //             'flex items-center justify-center text-center',
 //             // Typography
-//             'font-display text-[22px] sm:text-[26px] font-normal text-[#E8F0FF]',
+//             'font-display text-[24.5px] sm:text-[29px] font-normal text-[#E8F0FF]',
 //             // Shape
 //             'rounded-[12px] border outline-none',
 //             // Default state
@@ -153,7 +153,7 @@ export function OtpBoxes({ onComplete, hasError, disabled, className }: OtpBoxes
             // Layout
             'flex items-center justify-center text-center',
             // Typography
-            'font-display text-[18px] xs:text-[20px] sm:text-[26px] font-normal text-[#E8F0FF]',
+            'font-display text-[20px] xs:text-[22.5px] sm:text-[29px] font-normal text-[#E8F0FF]',
             // Shape
             'rounded-[10px] sm:rounded-[12px] border outline-none',
             // Default state

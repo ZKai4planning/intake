@@ -78,7 +78,7 @@ export function ReportDownloadGate({ reportId }: ReportDownloadGateProps) {
             setIsDownloading(false)
           }
         }}
-        className="mt-3 w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#135BEC] px-4 py-2.5 sm:py-2 text-[12.5px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors disabled:opacity-60"
+        className="mt-3 w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#135BEC] px-4 py-2.5 sm:py-2 text-[14px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors disabled:opacity-60"
       >
         <Download className="h-3.5 w-3.5" />
         {isDownloading ? 'Preparing PDF…' : 'Download report'}
@@ -92,7 +92,7 @@ export function ReportDownloadGate({ reportId }: ReportDownloadGateProps) {
         <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-amber-300">
           <ShieldAlert className="h-3.5 w-3.5" />
         </span>
-        <p className="text-[12.5px] text-[#A8B8D8] leading-relaxed">
+        <p className="text-[14px] text-[#A8B8D8] leading-relaxed">
           This report was generated under a different account. Sign in with that account to download it.
         </p>
       </div>
@@ -107,13 +107,13 @@ export function ReportDownloadGate({ reportId }: ReportDownloadGateProps) {
         <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-[#00D4FF]">
           <Lock className="h-3.5 w-3.5" />
         </span>
-        <p className="text-[12.5px] text-[#A8B8D8]">
+        <p className="text-[14px] text-[#A8B8D8]">
           Log in to download this report and save it to your dashboard.
         </p>
       </div>
       <a
         href={`/login?report=${reportId}&returnTo=${encodeURIComponent(`/dashboard/reports/${reportId}`)}`}
-        className="shrink-0 w-full sm:w-auto text-center rounded-full bg-[#135BEC] px-4 py-2.5 sm:py-2 text-[12.5px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
+        className="shrink-0 w-full sm:w-auto text-center rounded-full bg-[#135BEC] px-4 py-2.5 sm:py-2 text-[14px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
       >
         Log in
       </a>

@@ -96,10 +96,10 @@
 //   return (
 //     <section id="pricing" className="relative bg-[#050B18] text-white py-16 sm:py-20 border-t border-white/[0.05]">
 //       <div className="text-center mb-12 px-5 sm:px-8">
-//         <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#135BEC] mb-3">
+//         <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#135BEC] mb-3">
 //           Pricing
 //         </p>
-//         <h2 className="font-display text-[28px] sm:text-[34px] font-normal tracking-tight">
+//         <h2 className="font-display text-[31.5px] sm:text-[38px] font-normal tracking-tight">
 //           Our Plans
 //         </h2>
 //         <p className="mt-3 text-white/60 text-sm sm:text-base max-w-[560px] mx-auto">
@@ -290,10 +290,10 @@ export function PlansSection() {
         viewport={viewportOnce}
         variants={fadeUp}
       >
-        <p className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
+        <p className="text-[12.5px] font-bold tracking-[0.08em] uppercase text-[#00D4FF] mb-3">
           Pricing
         </p>
-        <h2 className="font-display text-[28px] sm:text-[34px] font-normal tracking-tight">
+        <h2 className="font-display text-[31.5px] sm:text-[38px] font-normal tracking-tight">
           Our Plans
         </h2>
         <p className="mt-3 text-white/60 text-sm sm:text-base max-w-[560px] mx-auto">
@@ -326,7 +326,7 @@ export function PlansSection() {
             >
               {plan.badge && (
                 <div
-                  className="absolute -top-3 right-4 bg-[#00D4FF] text-[#050B18] text-[11px] font-bold px-2.5 py-1 rounded-full shadow-[0_0_16px_rgba(0,212,255,0.5)]"
+                  className="absolute -top-3 right-4 bg-[#00D4FF] text-[#050B18] text-[12.5px] font-bold px-2.5 py-1 rounded-full shadow-[0_0_16px_rgba(0,212,255,0.5)]"
                 >
                   {plan.badge}
                 </div>

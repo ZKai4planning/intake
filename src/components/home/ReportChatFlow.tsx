@@ -124,16 +124,16 @@ export function ReportChatFlow({ query, goalId, actorId, resumeReportId, resumeT
         <div className="max-w-[760px] mx-auto flex items-center justify-between">
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 text-[13px] text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors"
+            className="inline-flex items-center gap-1.5 text-[14.5px] text-[#5A6A8A] hover:text-[#E8F0FF] transition-colors"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Back to homepage
           </Link>
           {cartCount > 0 && (
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-400/25 bg-blue-500/[0.08] px-3 py-1.5 text-[12px] font-medium text-[#A8B8D8]">
+            <Link href="/cart" className="inline-flex items-center gap-1.5 rounded-full border border-blue-400/25 bg-blue-500/[0.08] px-3 py-1.5 text-[13.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] transition-colors">
               <ShoppingCart className="h-3.5 w-3.5 text-[#00D4FF]" />
-              {cartCount} {cartCount === 1 ? 'report' : 'reports'} in cart · £{cartValue}
-            </span>
+              {cartCount} {cartCount === 1 ? 'item' : 'items'} in cart · £{cartValue}
+            </Link>
           )}
         </div>
       </div>
@@ -142,19 +142,19 @@ export function ReportChatFlow({ query, goalId, actorId, resumeReportId, resumeT
         <div className="max-w-[760px] mx-auto space-y-6">
           {resumableSession && (
             <div className="flex items-center justify-between gap-3 rounded-xl border border-blue-400/25 bg-blue-500/[0.06] px-4 py-3">
-              <p className="text-[12.5px] text-[#A8B8D8]">Continue your previous conversation?</p>
+              <p className="text-[14px] text-[#A8B8D8]">Continue your previous conversation?</p>
               <div className="flex items-center gap-2 shrink-0">
                 <button
                   type="button"
                   onClick={dismissChatSession}
-                  className="text-[12px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors px-2 py-1"
+                  className="text-[13.5px] font-medium text-[#5A6A8A] hover:text-[#A8B8D8] transition-colors px-2 py-1"
                 >
                   Start fresh
                 </button>
                 <button
                   type="button"
                   onClick={resumeChatSession}
-                  className="rounded-full bg-[#135BEC] px-3.5 py-1.5 text-[12px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
+                  className="rounded-full bg-[#135BEC] px-3.5 py-1.5 text-[13.5px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
                 >
                   Resume
                 </button>
@@ -204,7 +204,7 @@ export function ReportChatFlow({ query, goalId, actorId, resumeReportId, resumeT
                     : 'Ask a follow-up question…'
                 }
                 className={cn(
-                  'flex-1 min-w-0 bg-transparent py-3 text-[14px] text-[#E8F0FF] placeholder:text-[#5A6A8A] focus:outline-none disabled:opacity-50',
+                  'flex-1 min-w-0 bg-transparent py-3 text-[15.5px] text-[#E8F0FF] placeholder:text-[#5A6A8A] focus:outline-none disabled:opacity-50',
                   isListening && 'placeholder:text-[#00D4FF]'
                 )}
               />
@@ -224,7 +224,7 @@ export function ReportChatFlow({ query, goalId, actorId, resumeReportId, resumeT
               <Send className="h-4 w-4" />
             </button>
           </form>
-          <p className="mt-2 text-[11.5px] text-[#5A6A8A]">
+          <p className="mt-2 text-[13px] text-[#5A6A8A]">
             {inReportFlow
               ? "Answer above — your report builds as you go, free, no login needed."
               : "Ask anything — reports build right here in chat, free. Login's only needed to download one."}
@@ -349,7 +349,7 @@ function MessageRow({
     case 'report-loading':
       return (
         <AssistantShell>
-          <div className="inline-flex items-center gap-2.5 rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[13.5px] text-[#A8B8D8]">
+          <div className="inline-flex items-center gap-2.5 rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[15px] text-[#A8B8D8]">
             <span className="h-1.5 w-1.5 rounded-full bg-[#00D4FF] animate-bounce [animation-delay:-0.3s]" />
             <span className="h-1.5 w-1.5 rounded-full bg-[#00D4FF] animate-bounce [animation-delay:-0.15s]" />
             <span className="h-1.5 w-1.5 rounded-full bg-[#00D4FF] animate-bounce" />
@@ -360,7 +360,7 @@ function MessageRow({
     case 'question-loading':
       return (
         <AssistantShell>
-          <div className="inline-flex items-center gap-2.5 rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[13.5px] text-[#A8B8D8]">
+          <div className="inline-flex items-center gap-2.5 rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[15px] text-[#A8B8D8]">
             <span className="h-1.5 w-1.5 rounded-full bg-[#00D4FF] animate-bounce [animation-delay:-0.3s]" />
             <span className="h-1.5 w-1.5 rounded-full bg-[#00D4FF] animate-bounce [animation-delay:-0.15s]" />
             <span className="h-1.5 w-1.5 rounded-full bg-[#00D4FF] animate-bounce" />
@@ -467,11 +467,11 @@ function UserBubble({ text, questionLabel }: { text: string; questionLabel?: str
     <div className="flex items-start gap-3 justify-end">
       <div className="max-w-[80%] flex flex-col items-end gap-1">
         {questionLabel && (
-          <span className="pr-1 text-[11px] font-medium text-[#5A6A8A] uppercase tracking-wide">
+          <span className="pr-1 text-[12.5px] font-medium text-[#5A6A8A] uppercase tracking-wide">
             {questionLabel}
           </span>
         )}
-        <div className="rounded-2xl rounded-tr-sm bg-[#135BEC] text-white px-4 py-3 text-[14.5px] leading-relaxed">
+        <div className="rounded-2xl rounded-tr-sm bg-[#135BEC] text-white px-4 py-3 text-[16px] leading-relaxed">
           {text}
         </div>
       </div>
@@ -489,7 +489,7 @@ function AssistantTextBubble({ text, onProgress }: { text: string; onProgress?: 
       {phase === 'thinking' ? (
         <ThinkingBubble />
       ) : (
-        <div className="rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[14.5px] leading-relaxed text-[#E8F0FF]">
+        <div className="rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[16px] leading-relaxed text-[#E8F0FF]">
           {streamed}
           {phase === 'streaming' && <BlinkingCursor />}
         </div>
@@ -530,7 +530,7 @@ function AssistantAnswerBubble({
     return (
       <AssistantShell>
         <div className="rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] p-4">
-          <p className="text-[14.5px] leading-relaxed text-[#E8F0FF] mb-4">
+          <p className="text-[16px] leading-relaxed text-[#E8F0FF] mb-4">
             Here's what we help with — pick whichever's closest to your situation:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -544,10 +544,10 @@ function AssistantAnswerBubble({
                     : 'border-white/[0.05] bg-white/[0.015] opacity-60 cursor-not-allowed pointer-events-none'
                 }`}
               >
-                <p className="text-[11px] font-bold text-blue-400 mb-1">{service.label}</p>
-                <p className="text-[13px] font-semibold text-[#E8F0FF]">{service.subtitle}</p>
+                <p className="text-[12.5px] font-bold text-blue-400 mb-1">{service.label}</p>
+                <p className="text-[14.5px] font-semibold text-[#E8F0FF]">{service.subtitle}</p>
                 {service.status !== 'active' && (
-                  <p className="mt-1 text-[10.5px] font-medium text-amber-300/80">Coming soon</p>
+                  <p className="mt-1 text-[12px] font-medium text-amber-300/80">Coming soon</p>
                 )}
               </Link>
             ))}
@@ -559,19 +559,19 @@ function AssistantAnswerBubble({
 
   return (
     <AssistantShell>
-      <div className="rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[14.5px] leading-relaxed text-[#E8F0FF]">
+      <div className="rounded-2xl rounded-tl-sm bg-[#0F1525] border border-white/[0.08] px-4 py-3.5 text-[16px] leading-relaxed text-[#E8F0FF]">
         {streamed}
         {phase === 'streaming' && <BlinkingCursor />}
 
         {phase === 'done' && sourceTag && (
-          <p className="mt-2 inline-flex items-center gap-1.5 text-[10.5px] font-medium text-emerald-300/80">
+          <p className="mt-2 inline-flex items-center gap-1.5 text-[12px] font-medium text-emerald-300/80">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
             {sourceTag}
           </p>
         )}
 
         {phase === 'done' && answer.kind === 'howto' && answer.goal && (
-          <p className="mt-2 text-[12.5px] text-[#5A6A8A]">
+          <p className="mt-2 text-[14px] text-[#5A6A8A]">
             Matched goal: <span className="text-[#A8B8D8]">{answer.goal.title}</span>
           </p>
         )}
@@ -592,7 +592,7 @@ function AssistantAnswerBubble({
               >
                 <Sparkles className="h-3.5 w-3.5" />
               </span>
-              <p className="text-[12.5px] text-[#A8B8D8]">
+              <p className="text-[14px] text-[#A8B8D8]">
                 {hasStartedReport
                   ? 'Report started below ↓'
                   : 'Want the real, address-specific read? Build a free report right here.'}
@@ -602,7 +602,7 @@ function AssistantAnswerBubble({
               type="button"
               onClick={onStartReport}
               disabled={hasStartedReport}
-              className="shrink-0 rounded-full bg-[#135BEC] px-4 py-2 text-[12.5px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors disabled:opacity-40 disabled:pointer-events-none disabled:hover:bg-[#135BEC]"
+              className="shrink-0 rounded-full bg-[#135BEC] px-4 py-2 text-[14px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors disabled:opacity-40 disabled:pointer-events-none disabled:hover:bg-[#135BEC]"
             >
               {hasStartedReport ? 'Started' : 'Start free report'}
             </button>
@@ -633,14 +633,14 @@ function ChoiceBubble({
     return (
       <div className="rounded-2xl border border-white/[0.08] bg-[#0F1525] overflow-hidden">
         <div className="px-4 py-3">
-          <p className="text-[13.5px] font-medium text-[#E8F0FF] leading-snug">{message.prompt}</p>
+          <p className="text-[15px] font-medium text-[#E8F0FF] leading-snug">{message.prompt}</p>
         </div>
         <div className="flex items-center justify-between px-4 pb-3">
-          <p className="text-[12px] text-[#5A6A8A]">{message.resolvedLabel}</p>
+          <p className="text-[13.5px] text-[#5A6A8A]">{message.resolvedLabel}</p>
           <button
             type="button"
             onClick={() => onChange(message.id)}
-            className="text-[11px] font-medium text-[#00D4FF] hover:text-[#7FE0FF] transition-colors"
+            className="text-[12.5px] font-medium text-[#00D4FF] hover:text-[#7FE0FF] transition-colors"
           >
             Change
           </button>
@@ -689,16 +689,16 @@ function PartnerHandoffCard({
           <User className="h-3.5 w-3.5" />
         </span>
         <div>
-          <p className="text-[11px] font-bold uppercase tracking-wide text-purple-300 mb-1">
+          <p className="text-[12.5px] font-bold uppercase tracking-wide text-purple-300 mb-1">
             Worth a {specialism.toLowerCase()}
           </p>
-          <p className="text-[13.5px] leading-relaxed text-[#E8F0FF]">{reason}</p>
+          <p className="text-[15px] leading-relaxed text-[#E8F0FF]">{reason}</p>
         </div>
       </div>
       <button
         type="button"
         onClick={() => goToApp(actorId)}
-        className="w-full rounded-full bg-purple-500 px-4 py-2.5 text-[12.5px] font-semibold text-white hover:bg-purple-400 transition-colors"
+        className="w-full rounded-full bg-purple-500 px-4 py-2.5 text-[14px] font-semibold text-white hover:bg-purple-400 transition-colors"
       >
         Connect me with a {specialism.toLowerCase()}
       </button>
@@ -734,10 +734,10 @@ function QuestionBubble({
     return (
       <div className="rounded-2xl border border-white/[0.08] bg-[#0F1525] overflow-hidden">
         <div className="flex items-center justify-between gap-3 px-4 py-3">
-          <p className="text-[13.5px] font-medium text-[#E8F0FF] leading-snug">{question.prompt}</p>
-          <span className="shrink-0 text-[11.5px] text-[#5A6A8A]">{stepLabel}</span>
+          <p className="text-[15px] font-medium text-[#E8F0FF] leading-snug">{question.prompt}</p>
+          <span className="shrink-0 text-[13px] text-[#5A6A8A]">{stepLabel}</span>
         </div>
-        <p className="px-4 pb-3 text-[12px] text-[#5A6A8A]">{resolvedLabel}</p>
+        <p className="px-4 pb-3 text-[13.5px] text-[#5A6A8A]">{resolvedLabel}</p>
       </div>
     )
   }
@@ -762,10 +762,10 @@ function QuestionBubble({
   return (
     <div className="rounded-2xl border border-white/[0.08] bg-[#0F1525] overflow-hidden">
       <div className="flex items-center justify-between gap-3 px-4 py-3">
-        <p className="text-[13.5px] font-medium text-[#E8F0FF] leading-snug">{question.prompt}</p>
-        <span className="shrink-0 text-[11.5px] text-[#5A6A8A]">{stepLabel}</span>
+        <p className="text-[15px] font-medium text-[#E8F0FF] leading-snug">{question.prompt}</p>
+        <span className="shrink-0 text-[13px] text-[#5A6A8A]">{stepLabel}</span>
       </div>
-      <p className="px-4 pb-3 text-[12px] text-[#5A6A8A]">Type your answer in the box below ↓</p>
+      <p className="px-4 pb-3 text-[13.5px] text-[#5A6A8A]">Type your answer in the box below ↓</p>
     </div>
   )
 }
@@ -814,22 +814,22 @@ function LeadCard({
   return (
     <AssistantRevealShell onProgress={onProgress}>
       <div className="rounded-2xl rounded-tl-sm border border-blue-400/25 bg-blue-500/[0.06] p-4">
-        <p className="text-[11px] font-bold text-[#00D4FF] uppercase tracking-wide mb-1">{tierDef.badge}</p>
-        <p className="text-[14.5px] font-semibold text-[#E8F0FF] leading-relaxed">{tierDef.name}</p>
-        <p className="mt-1.5 text-[13px] text-[#A8B8D8] leading-relaxed">{summaryLine}</p>
-        <p className="mt-2 text-[12.5px] text-[#A8B8D8]">
+        <p className="text-[12.5px] font-bold text-[#00D4FF] uppercase tracking-wide mb-1">{tierDef.badge}</p>
+        <p className="text-[16px] font-semibold text-[#E8F0FF] leading-relaxed">{tierDef.name}</p>
+        <p className="mt-1.5 text-[14.5px] text-[#A8B8D8] leading-relaxed">{summaryLine}</p>
+        <p className="mt-2 text-[14px] text-[#A8B8D8]">
           This step needs a person, not just AI — leave your details and a consultant will pick it up from here.
         </p>
         <div className="mt-3 flex gap-2">
           <Link
             href="/signup"
-            className="rounded-full bg-[#135BEC] px-4 py-2 text-[12.5px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
+            className="rounded-full bg-[#135BEC] px-4 py-2 text-[14px] font-semibold text-white hover:bg-[#2A6BF0] transition-colors"
           >
             Register &amp; continue
           </Link>
           <Link
             href="/contact"
-            className="rounded-full border border-white/[0.12] px-4 py-2 text-[12.5px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:border-white/20 transition-colors"
+            className="rounded-full border border-white/[0.12] px-4 py-2 text-[14px] font-medium text-[#A8B8D8] hover:text-[#E8F0FF] hover:border-white/20 transition-colors"
           >
             Talk to us instead
           </Link>

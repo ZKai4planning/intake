@@ -63,91 +63,91 @@ export const teamShowcaseMembers = [
       },
     ],
   },
-  {
-    quote:
-      "Mike is a accomplished entrepreneur and qualified mechanical engineer whose career spans sales, marketing and project management.  Based in Norfolk, he has spent more than 20 years in property development\u2014leading new builds, renovations and design projects while navigating planning, building control and compliance.  He champions sustainability, integrating heat pumps, solar power and other technologies to ensure every project meets modern standards of efficiency and quality.",
-    name: "Mike",
-    designation: " Partner - Construction & Regulations Director",
-    src: "/Team2.png",
-    roleSummary:
-      "Works alongside the founder to coordinate timelines, site progress, and practical decision-making across high-detail residential renovation projects.",
-    focusAreas: [
-      "Project Coordination",
-      "Client Communication",
-      "Delivery Oversight",
-      "Renovation Support",
-    ],
-    workStats: [
-      { label: "Discipline", value: "Project Delivery" },
-      { label: "Strength", value: "Coordination & Support" },
-      { label: "Project Role", value: "Planning to Completion" },
-    ],
-    works: [
-      {
-        title: "Kitchen Transformation Oversight",
-        category: "Delivery Coordination",
-        image: "/team-work/member-1/work-1.jpg",
-        summary:
-          "Supported the final coordination of kitchen installation, sequencing, and finish quality across the fit-out stage.",
-      },
-      {
-        title: "Restoration Detailing Review",
-        category: "Heritage Coordination",
-        image: "/team-work/member-1/work-2.png",
-        summary:
-          "Managed practical review points around restoration detailing and finish consistency during the works.",
-      },
-      {
-        title: "Joinery and Interior Completion",
-        category: "Fit-Out Support",
-        image: "/team-work/member-1/work-3.png",
-        summary:
-          "Coordinated delivery details and completion sequencing for the final joinery and interior fit-out stage.",
-      },
-      {
-        title: "Renovation Phase Planning",
-        category: "Site Coordination",
-        image: "/team-work/member-1/work-4.png",
-        summary:
-          "Helped structure the transition from strip-out works into build, services, and finishing packages.",
-      },
-      {
-        title: "Completed Interior Handover",
-        category: "Project Delivery",
-        image: "/team-work/member-1/work-5.png",
-        summary:
-          "Supported completion review and handover preparation for the finished living space.",
-      },
-      {
-        title: "Bathroom Finish Coordination",
-        category: "Final Stage Review",
-        image: "/team-work/member-1/work-6.png",
-        summary:
-          "Assisted with final checks, sequencing, and finish sign-off for the bathroom completion stage.",
-      },
-    ],
-  },
-  {
-    quote:
-      "Ajay leads Ai4Planning\u2019s technology vision, with a focus on making the UK planning process simpler and faster for homeowners and developers. He combines deep technical expertise with an understanding of how local authorities operate, building practical AI tools that cut through uncertainty and provide clear answers early in the process. Ajay\u2019s team architects the data backbone of the platform\u2014curating and refreshing vast sets of planning, policy and site\u2011specific information to power our intelligence layer and Synapsis buttons. By blending real\u2011world planning insight with modern technology and scalable data infrastructure, he helps clients spot risks before they become delays and turn complex decisions into straightforward, confident choices.",
-    name: "Ajay",
-    designation: "Partner & Head of Technology",
-    src: "/placeholder.png",
-    roleSummary:
-      "Drives product architecture, AI systems, and data infrastructure powering planning intelligence.",
-    focusAreas: [
-      "AI & Machine Learning",
-      "Data Infrastructure",
-      "Platform Architecture",
-      "Planning Intelligence",
-    ],
-    workStats: [
-      { label: "Role", value: "Technology Leadership" },
-      { label: "Strength", value: "AI Systems" },
-      { label: "Focus", value: "Scalable Platforms" },
-    ],
-    works: [],
-  },
+  // {
+  //   quote:
+  //     "Mike is a accomplished entrepreneur and qualified mechanical engineer whose career spans sales, marketing and project management.  Based in Norfolk, he has spent more than 20 years in property development\u2014leading new builds, renovations and design projects while navigating planning, building control and compliance.  He champions sustainability, integrating heat pumps, solar power and other technologies to ensure every project meets modern standards of efficiency and quality.",
+  //   name: "Mike",
+  //   designation: " Partner - Construction & Regulations Director",
+  //   src: "/Team2.png",
+  //   roleSummary:
+  //     "Works alongside the founder to coordinate timelines, site progress, and practical decision-making across high-detail residential renovation projects.",
+  //   focusAreas: [
+  //     "Project Coordination",
+  //     "Client Communication",
+  //     "Delivery Oversight",
+  //     "Renovation Support",
+  //   ],
+  //   workStats: [
+  //     { label: "Discipline", value: "Project Delivery" },
+  //     { label: "Strength", value: "Coordination & Support" },
+  //     { label: "Project Role", value: "Planning to Completion" },
+  //   ],
+  //   works: [
+  //     {
+  //       title: "Kitchen Transformation Oversight",
+  //       category: "Delivery Coordination",
+  //       image: "/team-work/member-1/work-1.jpg",
+  //       summary:
+  //         "Supported the final coordination of kitchen installation, sequencing, and finish quality across the fit-out stage.",
+  //     },
+  //     {
+  //       title: "Restoration Detailing Review",
+  //       category: "Heritage Coordination",
+  //       image: "/team-work/member-1/work-2.png",
+  //       summary:
+  //         "Managed practical review points around restoration detailing and finish consistency during the works.",
+  //     },
+  //     {
+  //       title: "Joinery and Interior Completion",
+  //       category: "Fit-Out Support",
+  //       image: "/team-work/member-1/work-3.png",
+  //       summary:
+  //         "Coordinated delivery details and completion sequencing for the final joinery and interior fit-out stage.",
+  //     },
+  //     {
+  //       title: "Renovation Phase Planning",
+  //       category: "Site Coordination",
+  //       image: "/team-work/member-1/work-4.png",
+  //       summary:
+  //         "Helped structure the transition from strip-out works into build, services, and finishing packages.",
+  //     },
+  //     {
+  //       title: "Completed Interior Handover",
+  //       category: "Project Delivery",
+  //       image: "/team-work/member-1/work-5.png",
+  //       summary:
+  //         "Supported completion review and handover preparation for the finished living space.",
+  //     },
+  //     {
+  //       title: "Bathroom Finish Coordination",
+  //       category: "Final Stage Review",
+  //       image: "/team-work/member-1/work-6.png",
+  //       summary:
+  //         "Assisted with final checks, sequencing, and finish sign-off for the bathroom completion stage.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   quote:
+  //     "Ajay leads Ai4Planning\u2019s technology vision, with a focus on making the UK planning process simpler and faster for homeowners and developers. He combines deep technical expertise with an understanding of how local authorities operate, building practical AI tools that cut through uncertainty and provide clear answers early in the process. Ajay\u2019s team architects the data backbone of the platform\u2014curating and refreshing vast sets of planning, policy and site\u2011specific information to power our intelligence layer and Synapsis buttons. By blending real\u2011world planning insight with modern technology and scalable data infrastructure, he helps clients spot risks before they become delays and turn complex decisions into straightforward, confident choices.",
+  //   name: "Ajay",
+  //   designation: "Partner & Head of Technology",
+  //   src: "/placeholder.png",
+  //   roleSummary:
+  //     "Drives product architecture, AI systems, and data infrastructure powering planning intelligence.",
+  //   focusAreas: [
+  //     "AI & Machine Learning",
+  //     "Data Infrastructure",
+  //     "Platform Architecture",
+  //     "Planning Intelligence",
+  //   ],
+  //   workStats: [
+  //     { label: "Role", value: "Technology Leadership" },
+  //     { label: "Strength", value: "AI Systems" },
+  //     { label: "Focus", value: "Scalable Platforms" },
+  //   ],
+  //   works: [],
+  // },
   {
     quote: `Ritesh leads operations and customer engagement at AI4Planning, ensuring every customer experiences a clear, supported, and well-structured planning journey.
 He oversees end-to-end workflows, combining AI-driven processes with the Ai framework to streamline onboarding, documentation, and application handling from initial enquiry through to submission, and final delivery.
